@@ -1,14 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>로또 번호 생성기</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <div class="container">
+    <h1>로또 번호 생성기</h1>
+    <div class="lotto-numbers" id="lottoNumbers">
+      <span class="ball">?</span>
+      <span class="ball">?</span>
+      <span class="ball">?</span>
+      <span class="ball">?</span>
+      <span class="ball">?</span>
+      <span class="ball">?</span>
+      <span class="plus">+</span>
+      <span class="ball bonus">?</span>
+    </div>
+    <button id="generateBtn" onclick="generateLotto()">번호 생성</button>
+    <div class="history">
+      <h3>생성 기록</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>

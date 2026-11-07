@@ -1,0 +1,48 @@
+{
+  "mode": "layout",
+  "original": {
+    "width": 875,
+    "height": 1955
+  },
+  "clone": {
+    "width": 390,
+    "height": 844
+  },
+  "compared_at": {
+    "width": 390,
+    "height": 844
+  },
+  "height_delta_pct": -3.1,
+  "score": 17.0,
+  "verdict": "different",
+  "regions": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 861,
+      "h": 1938,
+      "cells": 258,
+      "where": "middle centre"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "w": 143,
+      "h": 143,
+      "cells": 3,
+      "where": "top left"
+    },
+    {
+      "x": 574,
+      "y": 1866,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "bottom right"
+    }
+  ],
+  "files": {
+    "original": "replica/diffs/orig-crops/appstore-kr-03-screen.png",
+    "clone": "replica/clone-screens/S10-nearby.png"
+  }
+}

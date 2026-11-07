@@ -6,7 +6,7 @@ feature,area,priority,original,clone,notes
 지도 롱프레스로 지점 선택 (地图选点),map,should,yes,yes,S14. 역지오코딩 없으면 좌표만
 한글·중국어·병음 통합 검색 + 자동완성,search,must,yes,yes,S02. v1 검색 확장
 최근 검색 기록,search,should,yes,yes,S02 빈 상태
-검색 결과 리스트+지도 (거리·평점 정렬),search,must,yes,partial,S03 · 결과는 드롭다운 리스트. 지도에 결과만 따로 핀 찍는 모드는 없음
+검색 결과 리스트+지도 (거리·평점 정렬),search,must,yes,yes,S03: Enter로 결과 화면(지도 핀 + 거리순/이름순 리스트)
 장소 상세: 한국어 이름 + 원문 토글 + 병음,place,must,yes,yes,"S04 ""원문 보기"""
 장소 상세: 중국어 주소·영업시간·전화·1인당 가격·팁,place,must,yes,yes,v1 데이터 확장
 장소 상세: 가까운 지하철역과 출구 안내,place,must,yes,yes,v1 metro 필드 구조화

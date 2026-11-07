@@ -10,7 +10,7 @@ export function init() {
   $('#btnSearchBack').innerHTML = icon('back').__raw; $('#btnClear').innerHTML = icon('x').__raw;
   inp.addEventListener('focus', open); inp.addEventListener('input', render);
   inp.addEventListener('keydown', e => {
-    if (e.key === 'Enter') { const first = $('.row-place', results); if (first) first.click(); }
+    if (e.key === 'Enter') { const q = inp.value.trim(); const rs = q ? search(q, { limit: 25 }) : []; if (rs.length >= 2) { store.pushHistory(q); close(); app.go('#/search?q=' + encodeURIComponent(q)); return; } const first = $('.row-place', results); if (first) first.click(); }
     if (e.key === 'ArrowDown') { $('.row-place', results)?.focus(); e.preventDefault(); }
     if (e.key === 'Escape') close();
   });
@@ -41,6 +41,30 @@ function render() {
   const rs = search(q, { limit: 25 });
   if (!rs.length) { results.innerHTML = html`<div class="empty">${icon('search')}<h2>'${q}'을(를) 못 찾았어요</h2><p>한글·중국어·병음으로 다시 검색해 보세요</p><button type="button" class="btn sm" data-go="#/nearby">주변에서 찾기</button></div>`; return; }
   results.innerHTML = rs.map(r => row(r)).join('');
+}
+// S03 검색 결과: 지도에 결과만 핀 + 거리순/이름순 리스트
+import * as mapx from '../map.js';
+import { openSheet } from '../ui.js';
+const rstate = { sort: 'distance' };
+export function showResults(params) {
+  const q = params.q || ''; inp.value = q; $('#btnClear').classList.remove('hidden');
+  const rs = search(q, { limit: 40 });
+  const center = app.me || mapx.center();
+  const items = rs.map(r => ({ ...r, distance_m: distance(center, r.ref) }));
+  if (rstate.sort === 'distance') items.sort((a, b) => a.distance_m - b.distance_m);
+  else items.sort((a, b) => (a.ref.name_ko || a.ref.ko).localeCompare(b.ref.name_ko || b.ref.ko, 'ko'));
+  mapx.renderPlaces(items.map(({ kind, ref }) => ({ kind, ref })), { labelMode: store.settings().label_mode, onClick: (kind, ref) => app.go(kind === 'place' ? `#/place/${ref.id}` : `#/station/${ref.id}`) });
+  if (items.length) mapx.map.fitBounds(items.map(i => [i.ref.lat, i.ref.lon]), { paddingTopLeft: [30, 120], paddingBottomRight: [30, Math.round(mapx.map.getSize().y * 0.45)] });
+  openSheet(html`
+    <div class="sheet-head"><h2>'${q}' 검색 결과 <span class="muted t-sm">${items.length}곳</span></h2><button type="button" class="btn icon" id="btnCloseSheet" aria-label="닫기">${icon('x')}</button></div>
+    <div class="chips" role="group" aria-label="정렬"><button type="button" class="chip" data-sort="distance" aria-pressed="${rstate.sort === 'distance'}">${app.me ? '내 위치에서 가까운 순' : '지도 중심에서 가까운 순'}</button><button type="button" class="chip" data-sort="name" aria-pressed="${rstate.sort === 'name'}">이름순</button></div>
+    ${items.length ? html`<div class="list" style="margin-top:var(--s-2)">${items.map(it => row(it, { dist: it.distance_m }))}</div>` : html`<div class="empty">${icon('search')}<h2>'${q}'을(를) 못 찾았어요</h2><p>한글·중국어·병음으로 다시 검색해 보세요</p></div>`}
+  `, { onClose: () => { inp.value = ''; $('#btnClear').classList.add('hidden'); } });
+  $('#btnCloseSheet').onclick = () => app.go('#/');
+  $('#sheetBody').addEventListener('click', e => {
+    const s = e.target.closest('[data-sort]'); if (s) { rstate.sort = s.dataset.sort; showResults(params); return; }
+    const go = e.target.closest('[data-go]'); if (go) app.go(go.dataset.go);
+  });
 }
 export function row({ kind, ref }, { dist = null } = {}) {
   const d = dist ?? (app.me ? distance(app.me, ref) : null);

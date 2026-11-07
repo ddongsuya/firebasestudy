@@ -49,6 +49,7 @@ async function onRoute() {
   walknav.stop();
   if (!seg.length) { closeSheet(); home.show(); return; }
   switch (seg[0]) {
+    case 'search': home.show({ keepSheet: true }); search.showResults(params); break;
     case 'place': home.show({ keepSheet: true }); place.show(seg[1], params); break;
     case 'station': home.show({ keepSheet: true }); station.show(seg[1]); break;
     case 'pick': closeSheet(); home.show({ keepSheet: true }); pick.show(params); break;

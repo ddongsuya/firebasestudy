@@ -62,3 +62,18 @@ test.describe('F01 장소 검색 → 상세 → 길찾기', () => {
     await expect(page.getByRole('heading', { name: /천단공원/ })).toBeVisible();
   });
 });
+
+test.describe('S03 검색 결과 화면', () => {
+  test('F01-H3 결과가 여러 개면 Enter로 지도+리스트 결과 화면', async ({ page }) => {
+    await boot(page);
+    const q = page.getByRole('combobox', { name: '장소 검색' });
+    await q.click(); await q.fill('공원'); await page.keyboard.press('Enter');
+    await expect(page).toHaveURL(/#\/search\?q=/);
+    const dlg = page.getByRole('dialog', { name: '상세' });
+    await expect(dlg.getByRole('heading', { name: /검색 결과/ })).toBeVisible();
+    await dlg.getByRole('button', { name: '이름순' }).click();
+    await expect(dlg.getByRole('button', { name: '이름순' })).toHaveAttribute('aria-pressed', 'true');
+    await dlg.getByRole('button', { name: /천단공원/ }).click();
+    await expect(page).toHaveURL(/#\/place\/tiantan/);
+  });
+});

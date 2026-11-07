@@ -1,0 +1,80 @@
+{
+  "mode": "layout",
+  "original": {
+    "width": 600,
+    "height": 1333
+  },
+  "clone": {
+    "width": 390,
+    "height": 844
+  },
+  "compared_at": {
+    "width": 390,
+    "height": 844
+  },
+  "height_delta_pct": -2.5,
+  "score": 34.8,
+  "verdict": "different",
+  "regions": [
+    {
+      "x": 0,
+      "y": 98,
+      "w": 590,
+      "h": 787,
+      "cells": 81,
+      "where": "middle centre"
+    },
+    {
+      "x": 0,
+      "y": 836,
+      "w": 590,
+      "h": 492,
+      "cells": 78,
+      "where": "bottom centre"
+    },
+    {
+      "x": 393,
+      "y": 0,
+      "w": 196,
+      "h": 393,
+      "cells": 18,
+      "where": "top right"
+    },
+    {
+      "x": 0,
+      "y": 492,
+      "w": 98,
+      "h": 295,
+      "cells": 9,
+      "where": "middle left"
+    },
+    {
+      "x": 98,
+      "y": 492,
+      "w": 147,
+      "h": 147,
+      "cells": 7,
+      "where": "middle left"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "w": 196,
+      "h": 98,
+      "cells": 6,
+      "where": "top left"
+    },
+    {
+      "x": 196,
+      "y": 49,
+      "w": 49,
+      "h": 49,
+      "cells": 1,
+      "where": "top centre"
+    }
+  ],
+  "files": {
+    "original": "replica/diffs/orig-crops/guide-csi-03-results.png",
+    "clone": "replica/clone-screens/S06-route-results.png"
+  }
+}

@@ -42,7 +42,7 @@ export function refreshMarkers(selectedId = null) {
 }
 let zoomBound = false;
 export function show({ keepSheet = false } = {}) {
-  if (!keepSheet) closeSheet();
+  if (!keepSheet) { closeSheet(); refreshMarkers(); }
   if (!zoomBound) { zoomBound = true; let last = mapx.map.getZoom() >= 15; mapx.map.on('zoomend', () => { const now = mapx.map.getZoom() >= 15; if (now !== last) { last = now; refreshMarkers(); } }); }
   setTimeout(() => mapx.map.invalidateSize(), 50);
 }

@@ -1,0 +1,48 @@
+{
+  "mode": "layout",
+  "original": {
+    "width": 450,
+    "height": 600
+  },
+  "clone": {
+    "width": 390,
+    "height": 844
+  },
+  "compared_at": {
+    "width": 390,
+    "height": 520
+  },
+  "height_delta_pct": 62.3,
+  "score": 33.5,
+  "verdict": "different",
+  "regions": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 443,
+      "h": 600,
+      "cells": 127,
+      "where": "middle centre"
+    },
+    {
+      "x": 110,
+      "y": 406,
+      "w": 147,
+      "h": 147,
+      "cells": 10,
+      "where": "bottom centre"
+    },
+    {
+      "x": 221,
+      "y": 369,
+      "w": 36,
+      "h": 36,
+      "cells": 1,
+      "where": "middle centre"
+    }
+  ],
+  "files": {
+    "original": "replica/diffs/orig-crops/guide-csi-02-home.png",
+    "clone": "replica/clone-screens/S01-home.png"
+  }
+}

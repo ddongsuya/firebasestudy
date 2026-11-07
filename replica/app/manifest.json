@@ -1,0 +1,17 @@
+{
+  "name": "고덕 KO · 베이징 길찾기",
+  "short_name": "고덕 KO",
+  "description": "베이징 여행용 한국어 지도. 지하철 길찾기와 기사에게 보여주는 중국어 카드.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f5f8",
+  "theme_color": "#1d5bd1",
+  "lang": "ko",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

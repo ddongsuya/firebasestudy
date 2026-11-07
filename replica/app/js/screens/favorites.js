@@ -1,7 +1,7 @@
 // S11 즐겨찾기(저장)·폴더·자주 가는 곳
 import { D } from '../data.js';
 import * as store from '../store.js';
-import { $, html, raw, icon, toast } from '../ui.js';
+import { $, html, raw, icon, toast, actionSheet, promptSheet } from '../ui.js';
 import * as driver from './driver.js';
 import { distance, fmtDist } from '../geo.js';
 
@@ -44,8 +44,8 @@ function render() {
     </div>`;
   $('#btnAllZh') && ($('#btnAllZh').onclick = () => driver.showList(favs.map(f => ({ zh: zhOf(f), addr: addrOf(f) }))));
   $('#btnCancelSet') && ($('#btnCancelSet').onclick = () => app.go('#/fav'));
-  $('#btnNewFolder') && ($('#btnNewFolder').onclick = () => { const n = prompt('폴더 이름 (예: 1일차, 쇼핑)'); if (n?.trim()) { const f = store.addFolder(n.trim()); state.folder = f.id; render(); } });
-  $('#btnDelFolder') && ($('#btnDelFolder').onclick = () => { if (confirm('폴더만 지우고 항목은 기본으로 옮길까요?')) { store.removeFolder(state.folder); state.folder = 'all'; render(); } });
+  $('#btnNewFolder') && ($('#btnNewFolder').onclick = () => promptSheet('새 폴더', { placeholder: '예: 1일차, 쇼핑', submitLabel: '만들기', onSubmit: n => { if (n?.trim()) { const f = store.addFolder(n.trim()); state.folder = f.id; render(); } } }));
+  $('#btnDelFolder') && ($('#btnDelFolder').onclick = () => actionSheet('폴더 삭제', [{ label: '폴더만 지우고 항목은 기본으로', icon: 'trash', danger: true, onSelect: () => { store.removeFolder(state.folder); state.folder = 'all'; render(); } }, { label: '취소', icon: 'x' }]));
   panel.querySelector('.panel-body').addEventListener('click', e => {
     const fo = e.target.closest('[data-folder]'); if (fo) { state.folder = fo.dataset.folder; render(); return; }
     const un = e.target.closest('[data-unset]'); if (un) { store.setFrequent(un.dataset.unset, null); render(); return; }
@@ -57,15 +57,11 @@ function render() {
 }
 function itemMenu(id) {
   const d = store.get(); const f = d.favorites.find(x => x.id === id); if (!f) return;
-  const folders = ['기본', ...d.folders.map(x => x.name)];
-  const choice = prompt(`${nameOf(f)}\n1) 호텔로 설정  2) 공항으로 설정  3) 메모 쓰기  4) 폴더 이동 (${folders.join('/')})  5) 삭제\n번호를 입력하세요`);
-  if (!choice) return;
-  switch (choice.trim()) {
-    case '1': store.setFrequent('hotel', id); toast('호텔로 설정했어요'); break;
-    case '2': store.setFrequent('airport', id); toast('공항으로 설정했어요'); break;
-    case '3': { const n = prompt('메모', f.note_ko || ''); if (n !== null) store.updateFavorite(id, { note_ko: n.trim() }); break; }
-    case '4': { const n = prompt(`폴더 이름 (${folders.join(', ')})`); if (n === null) break; const fo = d.folders.find(x => x.name === n.trim()); store.updateFavorite(id, { folder_id: fo ? fo.id : null }); break; }
-    case '5': store.removeFavorite(id); toast('삭제했어요', { action: '실행 취소', onAction: () => { const dd = store.get(); dd.favorites.push(f); store.save(dd); render(); } }); break;
-  }
-  render();
+  actionSheet(nameOf(f), [
+    { label: '호텔로 설정', icon: 'hotel', sub: '홈에서 "호텔로" 한 번에 길찾기', onSelect: () => { store.setFrequent('hotel', id); toast('호텔로 설정했어요'); render(); } },
+    { label: '공항으로 설정', icon: 'plane', onSelect: () => { store.setFrequent('airport', id); toast('공항으로 설정했어요'); render(); } },
+    { label: f.note_ko ? '메모 고치기' : '메모 쓰기', icon: 'edit', sub: f.note_ko || '', onSelect: () => promptSheet('메모', { value: f.note_ko || '', placeholder: '예: 2일차 점심, 예약 12:30', onSubmit: n => { store.updateFavorite(id, { note_ko: (n || '').trim() }); render(); } }) },
+    { label: '폴더 이동', icon: 'folder', sub: f.folder_id ? (d.folders.find(x => x.id === f.folder_id)?.name || '') : '기본', onSelect: () => actionSheet('어느 폴더로?', [{ label: '기본', icon: 'folder', onSelect: () => { store.updateFavorite(id, { folder_id: null }); render(); } }, ...d.folders.map(fo => ({ label: fo.name, icon: 'folder', onSelect: () => { store.updateFavorite(id, { folder_id: fo.id }); render(); } }))]) },
+    { label: '삭제', icon: 'trash', danger: true, onSelect: () => { store.removeFavorite(id); render(); toast('삭제했어요', { action: '실행 취소', onAction: () => { const dd = store.get(); dd.favorites.push(f); store.save(dd); render(); } }); } },
+  ], { subtitle: zhOf(f) });
 }

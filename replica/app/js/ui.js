@@ -87,4 +87,21 @@ export function openSheet(contentHtml, { onClose } = {}) {
   return sheet;
 }
 export function closeSheet() { const sheet = $('#sheet'); if (!sheet.classList.contains('open')) return; sheet.classList.remove('open'); delete sheet.dataset.open; sheet._onClose?.(); sheet._onClose = null; }
+/** 액션 시트: items [{label, icon, danger, onSelect, sub}] */
+export function actionSheet(title, items, { subtitle = '' } = {}) {
+  openSheet(html`<div class="sheet-head"><h2>${title}${subtitle ? html`<br><span class="muted t-sm">${subtitle}</span>` : ''}</h2><button type="button" class="btn icon" id="asClose" aria-label="닫기">${icon('x')}</button></div>
+    <div class="list" style="margin-top:var(--s-2)">${items.map((it, i) => html`<button type="button" class="row-place" data-as="${i}" style="${it.danger ? 'color:var(--c-danger)' : ''}"><span class="ico">${icon(it.icon || 'chevron')}</span><span class="main"><span class="name">${it.label}</span>${it.sub ? html`<span class="sub">${it.sub}</span>` : ''}</span></button>`)}</div>`);
+  $('#asClose').onclick = closeSheet;
+  $('#sheetBody').onclick = e => { const b = e.target.closest('[data-as]'); if (!b) return; closeSheet(); items[+b.dataset.as].onSelect?.(); };
+}
+/** 한 줄 입력 시트 */
+export function promptSheet(title, { value = '', placeholder = '', onSubmit, submitLabel = '저장' } = {}) {
+  openSheet(html`<div class="sheet-head"><h2>${title}</h2><button type="button" class="btn icon" id="asClose" aria-label="닫기">${icon('x')}</button></div>
+    <div class="searchbar" style="margin:var(--s-2) 0"><input id="psInput" type="text" value="${value}" placeholder="${placeholder}" aria-label="${title}" autocomplete="off"></div>
+    <button type="button" class="btn primary wide lg" id="psOk">${submitLabel}</button>`);
+  const inp = $('#psInput'); setTimeout(() => inp.focus(), 50);
+  $('#asClose').onclick = closeSheet;
+  const ok = () => { const v = inp.value; closeSheet(); onSubmit?.(v); };
+  $('#psOk').onclick = ok; inp.addEventListener('keydown', e => { if (e.key === 'Enter') ok(); });
+}
 export function sheetOpen() { return $('#sheet').classList.contains('open'); }

@@ -61,8 +61,9 @@ test.describe('F02 지하철 길찾기', () => {
   test('F02-E4 출발 시각을 23:50으로 하면 막차 경고', async ({ page }) => {
     await boot(page, '#/route?from=station:wangjing&to=place:gugong');
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
-    page.once('dialog', d => d.accept('23:50'));
     await page.getByRole('button', { name: /지금 출발/ }).click();
+    await page.getByLabel('출발 시각 (베이징 시각)').fill('23:50');
+    await page.getByRole('button', { name: '적용' }).click();
     await expect(page.getByText(/막차.*지났어요/).first()).toBeVisible();
   });
   test('F02-E5 뒤로 가기: 상세 → 목록 → 홈', async ({ page }) => {

@@ -49,3 +49,26 @@ test.describe('F06 저장 · 호텔', () => {
     await expect(page.getByRole('heading', { name: '저장한 곳이 없어요' })).toBeVisible();
   });
 });
+
+test.describe('S11 항목 메뉴(액션 시트)', () => {
+  test('F06-H2 메뉴에서 메모 쓰기와 폴더 이동', async ({ page }) => {
+    await boot(page, '#/place/tiantan');
+    await page.getByRole('button', { name: '저장' }).click();
+    await go(page, '#/fav');
+    await page.getByRole('button', { name: '더보기' }).first().click();
+    await page.getByRole('button', { name: /메모 쓰기/ }).click();
+    await page.getByLabel('메모').fill('2일차 오전');
+    await page.getByRole('button', { name: '저장', exact: true }).click();
+    await expect(page.locator('#panel')).toContainText('2일차 오전');
+    await page.getByRole('button', { name: /폴더/ }).first().click();
+    await page.getByLabel('새 폴더').fill('1일차');
+    await page.getByRole('button', { name: '만들기' }).click();
+    await expect(page.getByRole('button', { name: '1일차' })).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('button', { name: '전체 1' }).click();
+    await page.getByRole('button', { name: '더보기' }).first().click();
+    await page.getByRole('button', { name: /폴더 이동/ }).click();
+    await page.getByRole('dialog', { name: '상세' }).getByRole('button', { name: '1일차' }).click();
+    await page.locator('#panel').getByRole('button', { name: '1일차' }).click();
+    await expect(page.locator('#panel')).toContainText('천단공원');
+  });
+});

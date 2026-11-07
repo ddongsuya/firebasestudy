@@ -52,3 +52,13 @@ test.describe('F07 지도 선택 · F08 중국어 보여주기 · 더보기', ()
     await expect(page.locator('#panel').getByText('자금성').first()).toBeVisible();
   });
 });
+
+test.describe('오프라인 지도 저장', () => {
+  test('보이는 지역 저장 버튼이 타일을 내려받는다', async ({ page }) => {
+    test.setTimeout(90000);
+    await boot(page, '#/more?v=offline');
+    await expect(page.getByRole('heading', { name: '오프라인 지도' })).toBeVisible();
+    await page.getByRole('button', { name: /지금 보이는 지역 저장/ }).click();
+    await expect(page.locator('#offProg')).toContainText(/완료/, { timeout: 60000 });
+  });
+});

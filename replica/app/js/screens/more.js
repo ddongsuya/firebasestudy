@@ -5,6 +5,7 @@ import * as mapx from '../map.js';
 import { $, html, icon, toast } from '../ui.js';
 import * as driver from './driver.js';
 import * as home from './home.js';
+import { prefetch, cacheStats } from '../offline.js';
 
 let panel; const state = { view: 'menu' };
 export function show(params) { panel = $('#panel'); panel.classList.remove('hidden'); state.view = params.v || 'menu'; render(); }
@@ -29,6 +30,14 @@ function render() {
       <div class="radiolist">${[['straight', '직선 추정 (기본)', '오프라인에서도 동작. 거리는 1.3배로 보정'], ['osrm', '인터넷 도로 경로 시도', 'OSRM 공개 서버. 중국 내 데이터가 빈약하면 자동으로 직선으로 돌아가요']].map(([v, l, d]) => html`<label><input type="radio" name="walk_router" value="${v}" ${s.walk_router === v ? 'checked' : ''}><span class="lbl">${l}<small>${d}</small></span></label>`)}</div>
       <p class="note">첫차·막차와 택시 야간 할증은 베이징 시각(UTC+8) 기준으로 계산해요.</p>
     </div>`;
+  } else if (state.view === 'offline') {
+    body = head('오프라인 지도') + html`<div class="panel-body stack">
+      <p class="note">지금 지도에 보이는 범위를 줌 13~16까지 미리 내려받아요. 호텔·일정 지역을 화면에 맞춘 뒤 누르세요. 최대 3,000장(약 40MB)씩, 한 번에 한 지역. 와이파이에서 하세요.</p>
+      <div class="card"><div class="t-md" id="offStat">저장된 타일 확인 중…</div><div class="muted t-sm">장소·노선 데이터는 설치 때 이미 저장돼요. 타일만 추가로 저장합니다.</div></div>
+      <button type="button" class="btn primary lg" id="btnPrefetch">${icon('map')} 지금 보이는 지역 저장</button>
+      <div id="offProg" class="note"></div>
+      <a class="btn ghost" href="#/">지도로 가서 범위 맞추기</a>
+    </div>`;
   } else if (state.view === 'data') {
     body = head('내 데이터') + html`<div class="panel-body stack">
       <p class="note">저장한 곳·호텔·설정을 텍스트로 복사해 두면, 브라우저 데이터가 지워져도 복구할 수 있어요. 카톡 "나와의 채팅"에 붙여넣어 두세요.</p>
@@ -36,7 +45,7 @@ function render() {
       <div class="inline"><button type="button" class="btn" id="btnCopyData">${icon('copy')} 복사</button><button type="button" class="btn ghost" id="btnImportData">붙여넣은 내용으로 복구</button></div>
     </div>`;
   } else {
-    const items = [['phrases', 'speech', '회화', '택시·식당·결제·긴급 24문장, 크게 보기'], ['tips', 'bulb', '여행 팁', '결제·VPN·예약·여권'], ['settings', 'menu', '설정', '라벨 언어·테마·도보 경로'], ['data', 'copy', '내 데이터', '저장한 곳 내보내기/복구']];
+    const items = [['offline', 'map', '오프라인 지도 저장', '보이는 지역의 타일을 미리 내려받기'], ['phrases', 'speech', '회화', '택시·식당·결제·긴급 24문장, 크게 보기'], ['tips', 'bulb', '여행 팁', '결제·VPN·예약·여권'], ['settings', 'menu', '설정', '라벨 언어·테마·도보 경로'], ['data', 'copy', '내 데이터', '저장한 곳 내보내기/복구']];
     body = head('더보기', false) + html`<div class="panel-body stack">
       <div class="list">${items.map(([v, ic, t, d]) => html`<button type="button" class="row-place" data-v="${v}"><span class="ico">${icon(ic)}</span><span class="main"><span class="name">${t}</span><span class="sub">${d}</span></span>${icon('chevron', 'sm')}</button>`)}</div>
       <a class="btn ghost" href="./design.html" target="_blank" rel="noopener">디자인 프리미티브 (개발용)</a>
@@ -56,6 +65,18 @@ function render() {
     if (r.name === 'label_mode') home.refreshMarkers();
     toast('저장했어요');
   });
+  if (state.view === 'offline') {
+    cacheStats().then(s => { $('#offStat').textContent = s ? `저장된 타일 ${s.tiles.toLocaleString()}장` : '이 브라우저는 오프라인 캐시를 지원하지 않아요'; });
+    $('#btnPrefetch').onclick = async () => {
+      const b = $('#btnPrefetch'); b.disabled = true; b.setAttribute('aria-busy', 'true');
+      const bb = mapx.map.getBounds(); const bounds = { north: bb.getNorth(), south: bb.getSouth(), east: bb.getEast(), west: bb.getWest() };
+      const prog = $('#offProg');
+      const r = await prefetch(bounds, { onProgress: (d, t) => { prog.textContent = `내려받는 중 ${d}/${t}`; } });
+      prog.textContent = `완료: ${r.done - r.failed}장 저장${r.failed ? `, ${r.failed}장 실패` : ''}${r.total >= 3000 ? ' (범위가 커서 3,000장에서 멈췄어요. 지도를 더 확대해 나눠 저장하세요)' : ''}`;
+      b.disabled = false; b.removeAttribute('aria-busy'); cacheStats().then(s => { if (s) $('#offStat').textContent = `저장된 타일 ${s.tiles.toLocaleString()}장`; });
+      toast('오프라인 지도를 저장했어요');
+    };
+  }
   $('#btnCopyData') && ($('#btnCopyData').onclick = async () => { try { await navigator.clipboard.writeText($('#ioText').value); toast('복사했어요'); } catch { $('#ioText').select(); toast('전체 선택했어요. 길게 눌러 복사하세요'); } });
   $('#btnImportData') && ($('#btnImportData').onclick = () => { try { store.importJSON($('#ioText').value); toast('복구했어요'); home.refreshMarkers(); } catch (e) { toast('복구 실패: ' + e.message); } });
 }

@@ -2,7 +2,7 @@
 import { D, search, describePoint } from '../data.js';
 import * as store from '../store.js';
 import * as mapx from '../map.js';
-import { $, $$, html, raw, icon, toast, lineChip, lineChain, crowdHint, fmtDist, fmtMin } from '../ui.js';
+import { $, $$, html, raw, icon, toast, lineChip, lineChain, crowdHint, fmtDist, fmtMin, promptSheet } from '../ui.js';
 import { locate, distance } from '../geo.js';
 import * as transit from '../routing/transit.js';
 import * as walk from '../routing/walk.js';
@@ -116,7 +116,7 @@ function bind() {
     if (pick) { const which = state.editing; state.editing = null; state.status = 'resolving'; render(); try { state[which] = await resolve(pick.dataset.pick); } catch { state.error = '위치를 찾지 못했어요'; state.status = 'idle'; render(); return; } state.sel = null; setHash(); if (state.from && state.to) compute(); else { state.editing = state.from ? 'to' : 'from'; state.status = 'idle'; render(); } return; }
     const mode = e.target.closest('[data-mode]'); if (mode) { state.mode = mode.dataset.mode; state.sel = null; setHash(); compute(); return; }
     const strat = e.target.closest('[data-strategy]'); if (strat) { state.strategy = strat.dataset.strategy; state.sel = null; setHash(); compute(); return; }
-    const dep = e.target.closest('[data-depart]'); if (dep) { const v = prompt('출발 시각 (베이징 시각, 예 22:30). 비우면 지금 출발', state.depart === 'now' ? '' : state.depart); if (v === null) return; state.depart = /^\d{1,2}:\d{2}$/.test(v.trim()) ? v.trim().padStart(5, '0') : 'now'; compute(); return; }
+    const dep = e.target.closest('[data-depart]'); if (dep) { promptSheet('출발 시각 (베이징 시각)', { value: state.depart === 'now' ? '' : state.depart, placeholder: '예 22:30 · 비우면 지금 출발', submitLabel: '적용', onSubmit: v => { state.depart = /^\d{1,2}:\d{2}$/.test((v || '').trim()) ? v.trim().padStart(5, '0') : 'now'; compute(); } }); return; }
     const card = e.target.closest('[data-sel]'); if (card) { state.sel = +card.dataset.sel; setHash(); render(); mapx.drawPlan(state.plans[state.sel], { fit: true }); return; }
     const exp = e.target.closest('[data-expand]'); if (exp) { const ul = $('#' + exp.dataset.expand); const open = ul.hidden; ul.hidden = !open; exp.setAttribute('aria-expanded', String(open)); return; }
     const drv = e.target.closest('[data-driver]'); if (drv) { driver.show({ zh: state.to.name_zh, addr: state.to.addr || '', ko: state.to.name }); return; }

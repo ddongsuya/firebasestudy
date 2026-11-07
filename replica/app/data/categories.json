@@ -20,6 +20,16 @@
   "sort": 2
  },
  {
+  "id": "museum",
+  "label_ko": "박물관",
+  "label_zh": "博物馆",
+  "icon": "🏛️",
+  "typecodes": [
+   "140000"
+  ],
+  "sort": 3
+ },
+ {
   "id": "food",
   "label_ko": "맛집",
   "label_zh": "美食",
@@ -27,7 +37,7 @@
   "typecodes": [
    "050000"
   ],
-  "sort": 3
+  "sort": 4
  },
  {
   "id": "shop",
@@ -37,7 +47,7 @@
   "typecodes": [
    "060000"
   ],
-  "sort": 4
+  "sort": 5
  },
  {
   "id": "park",
@@ -47,7 +57,7 @@
   "typecodes": [
    "110100"
   ],
-  "sort": 5
+  "sort": 6
  },
  {
   "id": "transit",
@@ -57,16 +67,26 @@
   "typecodes": [
    "150000"
   ],
-  "sort": 6
+  "sort": 7
  },
  {
   "id": "hotel",
-  "label_ko": "호텔",
+  "label_ko": "숙소 지구",
   "label_zh": "酒店",
   "icon": "🏨",
   "typecodes": [
    "100000"
   ],
-  "sort": 7
+  "sort": 8
+ },
+ {
+  "id": "help",
+  "label_ko": "대사관·병원",
+  "label_zh": "求助",
+  "icon": "🆘",
+  "typecodes": [
+   "090000"
+  ],
+  "sort": 9
  }
 ]

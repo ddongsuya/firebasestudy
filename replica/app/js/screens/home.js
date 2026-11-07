@@ -35,7 +35,8 @@ export function refreshMarkers(selectedId = null) {
   if (!mapx.map) return;
   const favIds = new Set(store.favorites().map(f => f.place_id).filter(Boolean));
   const items = [];
-  if (state.cat !== 'station') for (const p of D.places) if (state.cat === 'all' || p.cat === state.cat) items.push({ kind: 'place', ref: p });
+  const z = mapx.map.getZoom();
+  if (state.cat !== 'station') for (const p of D.places) if (state.cat === 'all' || p.cat === state.cat) { if (state.cat === 'all' && z < 12 && !(p.tags || []).includes('필수') && !['wall', 'transit'].includes(p.cat)) continue; items.push({ kind: 'place', ref: p }); }
   if (state.cat === 'station' || mapx.map.getZoom() >= 15) for (const s of D.stations) items.push({ kind: 'station', ref: s });
   mapx.renderPlaces(items, { favIds, selectedId, labelMode: store.settings().label_mode, onClick: (kind, ref) => app.go(kind === 'place' ? `#/place/${ref.id}` : `#/station/${ref.id}`) });
   renderShortcuts();
@@ -43,7 +44,7 @@ export function refreshMarkers(selectedId = null) {
 let zoomBound = false;
 export function show({ keepSheet = false } = {}) {
   if (!keepSheet) { closeSheet(); refreshMarkers(); }
-  if (!zoomBound) { zoomBound = true; let last = mapx.map.getZoom() >= 15; mapx.map.on('zoomend', () => { const now = mapx.map.getZoom() >= 15; if (now !== last) { last = now; refreshMarkers(); } }); }
+  if (!zoomBound) { zoomBound = true; const band = () => { const z = mapx.map.getZoom(); return z >= 15 ? 2 : z >= 12 ? 1 : 0; }; let last = band(); mapx.map.on('zoomend', () => { const now = band(); if (now !== last) { last = now; refreshMarkers(); } }); }
   setTimeout(() => mapx.map.invalidateSize(), 50);
 }
 export async function locateMe() {

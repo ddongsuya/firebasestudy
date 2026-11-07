@@ -23,8 +23,8 @@ create table places (
   name_zh       text not null,
   name_en       text,
   pinyin        text not null,
-  lat           real not null check (lat between 39.4 and 40.6),
-  lon           real not null check (lon between 115.4 and 117.5),
+  lat           real not null check (lat between 39.4 and 41.1),
+  lon           real not null check (lon between 115.4 and 117.6),
   coord         text not null default 'gcj02' check (coord = 'gcj02'),
   address_zh    text not null,
   district_zh   text,
@@ -62,8 +62,8 @@ create table stations (
   name_zh     text not null,
   name_ko     text not null,
   pinyin      text not null,
-  lat         real not null check (lat between 39.4 and 40.6),
-  lon         real not null check (lon between 115.4 and 117.5),
+  lat         real not null check (lat between 39.4 and 41.1),
+  lon         real not null check (lon between 115.4 and 117.6),
   is_transfer integer not null default 0 check (is_transfer in (0,1))
 );
 create unique index stations_name_zh on stations(name_zh);

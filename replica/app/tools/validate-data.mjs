@@ -6,7 +6,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const read = f => JSON.parse(readFileSync(join(here, '..', 'data', f + '.json'), 'utf8'));
 const cats = read('categories'), places = read('places'), stations = read('stations'), lines = read('lines'), transfers = read('transfers'), fares = read('fares');
 const errs = [];
-const inBj = (lat, lon) => lat >= 39.4 && lat <= 40.6 && lon >= 115.4 && lon <= 117.5;
+const inBj = (lat, lon) => lat >= 39.4 && lat <= 41.1 && lon >= 115.4 && lon <= 117.6;
 const catIds = new Set(cats.map(c => c.id)), stIds = new Set(stations.map(s => s.id)), lineIds = new Set(lines.map(l => l.id));
 if (stIds.size !== stations.length) errs.push('역 id 중복');
 if (new Set(places.map(p => p.id)).size !== places.length) errs.push('장소 id 중복');

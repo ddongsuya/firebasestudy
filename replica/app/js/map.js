@@ -42,13 +42,13 @@ export function renderPlaces(items, { favIds = new Set(), selectedId = null, onC
     const label = kind === 'place' ? (labelMode === 'zh' ? ref.name_zh : labelMode === 'ko' ? ref.name_ko : `${ref.name_ko}`) : (labelMode === 'zh' ? ref.zh : ref.ko);
     m.bindTooltip(esc(label), { permanent: true, direction: 'top', className: 'ko-label', opacity: 1 });
     m.on('click', () => onClick?.(kind, ref)); m.on('keypress', e => { if (e.originalEvent.key === 'Enter') onClick?.(kind, ref); });
-    m._kind = kind; placeLayer.addLayer(m);
+    m._kind = kind; m._major = kind === 'place' && (ref.tags || []).includes('필수'); placeLayer.addLayer(m);
   }
   updateLabelVisibility();
 }
 export function updateLabelVisibility() {
   const z = map.getZoom();
-  placeLayer.eachLayer(m => { const t = m.getTooltip(); if (!t) return; const el = t.getElement(); if (el) el.style.display = (m._kind === 'station' ? z < 15 : z < 13) ? 'none' : ''; });
+  placeLayer.eachLayer(m => { const t = m.getTooltip(); if (!t) return; const el = t.getElement(); if (el) el.style.display = (m._kind === 'station' ? z < 15 : (z < 14 && !m._major)) ? 'none' : ''; });
 }
 export function clearRoute() { routeLayer.clearLayers(); }
 /** 경로 그리기: segments에 polyline 좌표를 넣는다. */

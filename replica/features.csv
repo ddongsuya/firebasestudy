@@ -1,0 +1,57 @@
+feature,area,priority,original,clone,notes
+고덕 지도 타일 표시 (중국어/영어 라벨 전환),map,must,yes,no,v1에 있음. 공개 타일 서버 개인 용도
+현재 위치 표시 + GCJ-02 보정 + 정확도 원,map,must,yes,no,v1에 있음. 지하철 안 GPS 끊김 상태 추가
+확대/축소/현재 위치/나침반 FAB,map,must,yes,no,
+핀 탭 시 장소 상세 바텀시트,map,must,yes,no,S04
+지도 롱프레스로 지점 선택 (地图选点),map,should,yes,no,S14. 역지오코딩 없으면 좌표만
+한글·중국어·병음 통합 검색 + 자동완성,search,must,yes,no,S02. v1 검색 확장
+최근 검색 기록,search,should,yes,no,S02 빈 상태
+검색 결과 리스트+지도 (거리·평점 정렬),search,must,yes,no,S03
+장소 상세: 한국어 이름 + 원문 토글 + 병음,place,must,yes,no,S04 "원문 보기"
+장소 상세: 중국어 주소·영업시간·전화·1인당 가격·팁,place,must,yes,no,v1 데이터 확장
+장소 상세: 가까운 지하철역과 출구 안내,place,must,yes,no,v1 metro 필드 구조화
+장소 상세: 사진 스트립,place,could,yes,no,직접 찍은 사진만. 고덕 사진 사용 불가
+장소 상세: 리뷰 요약·평점,place,could,yes,no,랭킹 데이터는 고덕 소유. 자체 한 줄 메모로 대체
+출발/도착 입력 + 교환 + 바로가기(내 위치·저장·호텔·지도 선택),routing,must,yes,no,S05
+대중교통 경로: 지하철 최단/환승 적음/도보 적음 전략,routing,must,yes,no,자체 지하철 그래프. 핵심 중의 핵심
+대중교통 결과 카드: 총 시간·걷기·노선 체인·역 수·요금·출구,routing,must,yes,no,S06
+경로 상세 타임라인: 승차역·방향·역 수·하차역·출구·도보 구간,routing,must,yes,no,S07
+첫차·막차 시간과 운행 종료 경고,routing,must,yes,no,nightflag. 노선별 start_time/end_time
+출발 시각 설정 (지금/시각 지정),routing,should,yes,no,막차 확인용
+버스 노선 포함 경로,routing,could,yes,no,데이터 부담 큼. 주요 노선만 또는 제외
+도보 경로: 거리·시간·방향 안내,routing,must,yes,no,직선+안내로 시작. 외부 라우터 옵션
+도보 내비게이션 (헤딩 추적·남은 거리·도착 시각),routing,should,yes,no,S08
+택시 예상 요금·시간 (베이징 요금표 기반),routing,must,yes,no,S06 打车 모드 대체
+자전거 경로,routing,could,yes,no,공유자전거 결제 불가라 가치 낮음
+경로 저장·공유·홈에 고정,routing,could,yes,no,S07 하단 바
+고덕 앱/애플 지도 딥링크로 길찾기 열기,routing,must,yes,no,v1에 있음. uri.amap.com 웹 폴백 추가
+기사용 중국어 카드 (큰 글씨 전체화면),traveler,must,yes,no,v1에 있음. 원본의 이중 언어 카드에 대응
+중국어 이름·주소 복사,traveler,must,yes,no,v1에 있음
+주변 탭: 카테고리 칩 (맛집·관광·화장실·편의점·지하철역·약국),nearby,should,yes,no,S10
+주변 탭: 거리순/평점순 정렬 + 반경,nearby,should,yes,no,周边搜索 radius·sortrule 대응
+주변 탭: 랭킹 리스트 카드 (사진·지수·평점),nearby,could,yes,no,고덕 랭킹 데이터 없음. 자체 추천 태그로 축소
+지하철역 상세: 노선·출구·첫차 막차,transit,should,yes,no,S13
+베이징 지하철 노선도 보기,transit,could,yes,no,자체 제작 SVG 또는 역 리스트로 대체
+즐겨찾기 저장(★)과 해제,favorites,must,yes,no,v1에 있음
+즐겨찾기 폴더 (일정별 묶음),favorites,should,yes,no,S11 创建收藏夹
+자주 가는 곳: 호텔(집)·공항 설정 + 홈에서 한 번에 길찾기,favorites,must,yes,no,S11 家/公司를 호텔/공항으로
+즐겨찾기 전체를 중국어로 한 번에 보기,favorites,should,yes,no,v1에 있음
+즐겨찾기 메모·태그,favorites,could,yes,no,S11 全部标签 필터
+PWA 설치 + 앱 셸 오프라인,offline,must,yes,no,v1에 있음
+최근 본 타일 캐시,offline,must,yes,no,v1에 있음
+장소·노선 데이터 내장으로 오프라인 검색·길찾기,offline,must,yes,no,고덕 오프라인 지도 대체
+오프라인 벡터 지도 다운로드,offline,could,yes,skip,고덕 소유 데이터
+설정: 지도 라벨 언어·테마·라벨 표시 방식,settings,should,yes,no,S12 축소
+회화 24개 + 여행 팁,traveler,should,no,no,v1에 있음. 원본엔 없지만 유지
+위치 공유 (6자리 코드),sharing,could,yes,no,중국어 주소+좌표 링크 복사로 축소
+고덕 POI 데이터베이스·랭킹(扫街榜),data,must,yes,skip,고덕 소유 데이터. 자체 큐레이션 100~200곳
+실시간 버스 위치·지하철 혼잡도·교통 상황,realtime,should,yes,skip,데이터 공급원 없음. 정적 안내로 대체
+택시 호출·결제·대리운전·순풍차,taxi,must,yes,skip,결제·전화번호·라이선스. 요금+카드+딥링크로 대체
+계정·로그인·동기화,account,should,yes,skip,1인 로컬 앱
+메시지 탭·친구 위치·鹰眼守护,social,could,yes,skip,네트워크 기능
+AI 비서(小高老师)·AI 탐색,ai,could,yes,skip,고덕 서비스
+차량 내비(차선 단위·3D·항공 스트리트뷰),driving,could,yes,skip,여행자는 운전 안 함
+호텔·입장권 예약·꽃·커피 주문,commerce,could,yes,skip,파트너 상거래
+충전소·주유소 지도,driving,could,yes,skip,불필요
+78개 언어 UI,i18n,could,yes,skip,한국어만
+고덕 Web 서비스 API 직접 호출,data,should,yes,skip,키 발급 실명 인증. 사용자 키 입력 옵션은 아키텍트가 결정

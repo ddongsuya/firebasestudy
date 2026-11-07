@@ -1,0 +1,6 @@
+{
+  "metro_distance": { "_note": "베이징 지하철 거리 요금(2014~). 6km 이하 3元, 6~12km 4元, 12~22km 5元, 22~32km 6元, 이후 20km마다 +1元", "bands": [[6000, 3], [12000, 4], [22000, 5], [32000, 6]], "extra_per_m": 20000, "extra_yuan": 1 },
+  "airport": { "_note": "수도공항선 정액", "flat": 25 },
+  "daxing": { "_note": "다싱공항선: 시내(草桥/丽泽)↔공항 35元", "flat": 35 },
+  "taxi": { "_note": "베이징 택시: 기본 13元(3km), 이후 2.3元/km, 15km 초과분 50% 할증, 23:00~05:00 야간 20% 할증, 연료 할증 1元, 저속·대기 시 추가. 추정치.", "flag_yuan": 13, "flag_km": 3, "per_km": 2.3, "long_km": 15, "long_mult": 1.5, "night_start": "2300", "night_end": "0500", "night_mult": 1.2, "fuel_yuan": 1, "avg_kmh_day": 24, "avg_kmh_night": 38 }
+}

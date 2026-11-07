@@ -1,0 +1,3153 @@
+[
+ {
+  "id": "Q748987",
+  "zh": "1号线",
+  "ko": "1호선",
+  "en": "Line 1",
+  "color": "#A12830",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 2.5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "universal-resort",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "huazhuang",
+    "seq": 1,
+    "dist_prev_m": 1839
+   },
+   {
+    "station": "tuqiao",
+    "seq": 2,
+    "dist_prev_m": 2148
+   },
+   {
+    "station": "linheli",
+    "seq": 3,
+    "dist_prev_m": 859
+   },
+   {
+    "station": "liyuan-station-beijing-subway",
+    "seq": 4,
+    "dist_prev_m": 1450
+   },
+   {
+    "station": "jiukeshu",
+    "seq": 5,
+    "dist_prev_m": 1379
+   },
+   {
+    "station": "guoyuan",
+    "seq": 6,
+    "dist_prev_m": 1140
+   },
+   {
+    "station": "tongzhou-beiyuan",
+    "seq": 7,
+    "dist_prev_m": 1621
+   },
+   {
+    "station": "baliqiao",
+    "seq": 8,
+    "dist_prev_m": 1850
+   },
+   {
+    "station": "guaanzhuang",
+    "seq": 9,
+    "dist_prev_m": 1972
+   },
+   {
+    "station": "shuangqiao",
+    "seq": 10,
+    "dist_prev_m": 2189
+   },
+   {
+    "station": "communication-univ-of-china",
+    "seq": 11,
+    "dist_prev_m": 2165
+   },
+   {
+    "station": "gaobeidian",
+    "seq": 12,
+    "dist_prev_m": 2282
+   },
+   {
+    "station": "sihui-dong-e",
+    "seq": 13,
+    "dist_prev_m": 1593
+   },
+   {
+    "station": "sihui",
+    "seq": 14,
+    "dist_prev_m": 1962
+   },
+   {
+    "station": "dawang-lu",
+    "seq": 15,
+    "dist_prev_m": 1750
+   },
+   {
+    "station": "guomao",
+    "seq": 16,
+    "dist_prev_m": 1740
+   },
+   {
+    "station": "yong-anli",
+    "seq": 17,
+    "dist_prev_m": 925
+   },
+   {
+    "station": "jianguomen",
+    "seq": 18,
+    "dist_prev_m": 1443
+   },
+   {
+    "station": "dongdan",
+    "seq": 19,
+    "dist_prev_m": 1628
+   },
+   {
+    "station": "wangfujing",
+    "seq": 20,
+    "dist_prev_m": 728
+   },
+   {
+    "station": "tian-anmendong",
+    "seq": 21,
+    "dist_prev_m": 1029
+   },
+   {
+    "station": "tian-anmenxi",
+    "seq": 22,
+    "dist_prev_m": 939
+   },
+   {
+    "station": "xidan",
+    "seq": 23,
+    "dist_prev_m": 1667
+   },
+   {
+    "station": "fuxingmen",
+    "seq": 24,
+    "dist_prev_m": 1739
+   },
+   {
+    "station": "nanlishi-lu",
+    "seq": 25,
+    "dist_prev_m": 388
+   },
+   {
+    "station": "muxidi",
+    "seq": 26,
+    "dist_prev_m": 1481
+   },
+   {
+    "station": "military-museum",
+    "seq": 27,
+    "dist_prev_m": 1556
+   },
+   {
+    "station": "gongzhufen",
+    "seq": 28,
+    "dist_prev_m": 1123
+   },
+   {
+    "station": "wanshou-lu",
+    "seq": 29,
+    "dist_prev_m": 1521
+   },
+   {
+    "station": "wukesong",
+    "seq": 30,
+    "dist_prev_m": 2037
+   },
+   {
+    "station": "yuquan-lu",
+    "seq": 31,
+    "dist_prev_m": 2081
+   },
+   {
+    "station": "babaoshan",
+    "seq": 32,
+    "dist_prev_m": 1684
+   },
+   {
+    "station": "bajiao-amusement-park",
+    "seq": 33,
+    "dist_prev_m": 2267
+   },
+   {
+    "station": "gucheng",
+    "seq": 34,
+    "dist_prev_m": 2156
+   },
+   {
+    "station": "pingguoyuan",
+    "seq": 35,
+    "dist_prev_m": 2703
+   },
+   {
+    "station": "fushouling",
+    "seq": 36,
+    "dist_prev_m": 1850
+   }
+  ],
+  "wd": "Q748987"
+ },
+ {
+  "id": "Q680973",
+  "zh": "2号线",
+  "ko": "2호선",
+  "en": "Line 2",
+  "color": "#00529B",
+  "kind": "metro",
+  "loop": true,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 3,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "fuxingmen",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "changchun-jie",
+    "seq": 1,
+    "dist_prev_m": 1199
+   },
+   {
+    "station": "xuanwumen",
+    "seq": 2,
+    "dist_prev_m": 1084
+   },
+   {
+    "station": "hepingmen",
+    "seq": 3,
+    "dist_prev_m": 960
+   },
+   {
+    "station": "qianmen",
+    "seq": 4,
+    "dist_prev_m": 1361
+   },
+   {
+    "station": "chongwenmen",
+    "seq": 5,
+    "dist_prev_m": 1997
+   },
+   {
+    "station": "beijing-railway",
+    "seq": 6,
+    "dist_prev_m": 1010
+   },
+   {
+    "station": "jianguomen",
+    "seq": 7,
+    "dist_prev_m": 930
+   },
+   {
+    "station": "chaoyangmen",
+    "seq": 8,
+    "dist_prev_m": 2038
+   },
+   {
+    "station": "dongsi-shitiao",
+    "seq": 9,
+    "dist_prev_m": 1179
+   },
+   {
+    "station": "dongzhimen",
+    "seq": 10,
+    "dist_prev_m": 972
+   },
+   {
+    "station": "yonghegong-lama-temple",
+    "seq": 11,
+    "dist_prev_m": 1921
+   },
+   {
+    "station": "andingmen",
+    "seq": 12,
+    "dist_prev_m": 929
+   },
+   {
+    "station": "gulou-dajie",
+    "seq": 13,
+    "dist_prev_m": 1388
+   },
+   {
+    "station": "jishuitan",
+    "seq": 14,
+    "dist_prev_m": 2047
+   },
+   {
+    "station": "xizhimen",
+    "seq": 15,
+    "dist_prev_m": 2037
+   },
+   {
+    "station": "chegongzhuang",
+    "seq": 16,
+    "dist_prev_m": 1031
+   },
+   {
+    "station": "fuchengmen",
+    "seq": 17,
+    "dist_prev_m": 1133
+   }
+  ],
+  "wd": "Q680973",
+  "loop_dist_m": 2093
+ },
+ {
+  "id": "Q6553113",
+  "zh": "3号线",
+  "ko": "3호선",
+  "en": "Line 3",
+  "color": "#D90627",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0530",
+  "last_dep": "2230",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "guanzhuanglu-xikou",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "dongbabei",
+    "seq": 1,
+    "dist_prev_m": 1633
+   },
+   {
+    "station": "dongba",
+    "seq": 2,
+    "dist_prev_m": 1580
+   },
+   {
+    "station": "dongbanan",
+    "seq": 3,
+    "dist_prev_m": 1619
+   },
+   {
+    "station": "yaojiayuan",
+    "seq": 4,
+    "dist_prev_m": 2032
+   },
+   {
+    "station": "chaoyang-railway",
+    "seq": 5,
+    "dist_prev_m": 2079
+   },
+   {
+    "station": "shifoying",
+    "seq": 6,
+    "dist_prev_m": 1313
+   },
+   {
+    "station": "chaoyang-park",
+    "seq": 7,
+    "dist_prev_m": 2036
+   },
+   {
+    "station": "tuanjiehu",
+    "seq": 8,
+    "dist_prev_m": 1644
+   },
+   {
+    "station": "workers-stadium",
+    "seq": 9,
+    "dist_prev_m": 1158
+   },
+   {
+    "station": "dongsi-shitiao",
+    "seq": 10,
+    "dist_prev_m": 1543
+   },
+   {
+    "station": "zhangzizhong-lu",
+    "seq": 11,
+    "dist_prev_m": 1637
+   },
+   {
+    "station": "nanluogu-xiang",
+    "seq": 12,
+    "dist_prev_m": 1334
+   },
+   {
+    "station": "ping-anli",
+    "seq": 13,
+    "dist_prev_m": 3063
+   },
+   {
+    "station": "fuchengmen",
+    "seq": 14,
+    "dist_prev_m": 1997
+   }
+  ],
+  "wd": "Q6553113"
+ },
+ {
+  "id": "Q304264",
+  "zh": "4号线",
+  "ko": "4호선",
+  "en": "Line 4",
+  "color": "#008193",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 3,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "anheqiaobei",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "beigongmen",
+    "seq": 1,
+    "dist_prev_m": 1456
+   },
+   {
+    "station": "xi-yuan",
+    "seq": 2,
+    "dist_prev_m": 1399
+   },
+   {
+    "station": "yuanmingyuan-park",
+    "seq": 3,
+    "dist_prev_m": 1883
+   },
+   {
+    "station": "peking-univ-east-gate",
+    "seq": 4,
+    "dist_prev_m": 1112
+   },
+   {
+    "station": "zhongguancun",
+    "seq": 5,
+    "dist_prev_m": 1049
+   },
+   {
+    "station": "haidian-huangzhuang",
+    "seq": 6,
+    "dist_prev_m": 1018
+   },
+   {
+    "station": "renmin-univ",
+    "seq": 7,
+    "dist_prev_m": 1213
+   },
+   {
+    "station": "weigongcun",
+    "seq": 8,
+    "dist_prev_m": 1222
+   },
+   {
+    "station": "national-library",
+    "seq": 9,
+    "dist_prev_m": 1875
+   },
+   {
+    "station": "dongwuyuan",
+    "seq": 10,
+    "dist_prev_m": 1481
+   },
+   {
+    "station": "xizhimen",
+    "seq": 11,
+    "dist_prev_m": 1637
+   },
+   {
+    "station": "xinjiekou",
+    "seq": 12,
+    "dist_prev_m": 1183
+   },
+   {
+    "station": "ping-anli",
+    "seq": 13,
+    "dist_prev_m": 1138
+   },
+   {
+    "station": "xisi",
+    "seq": 14,
+    "dist_prev_m": 1142
+   },
+   {
+    "station": "lingjing-hutong",
+    "seq": 15,
+    "dist_prev_m": 996
+   },
+   {
+    "station": "xidan",
+    "seq": 16,
+    "dist_prev_m": 1160
+   },
+   {
+    "station": "xuanwumen",
+    "seq": 17,
+    "dist_prev_m": 940
+   },
+   {
+    "station": "caishikou",
+    "seq": 18,
+    "dist_prev_m": 1330
+   },
+   {
+    "station": "taoranting",
+    "seq": 19,
+    "dist_prev_m": 1348
+   },
+   {
+    "station": "beijing-south-railway",
+    "seq": 20,
+    "dist_prev_m": 1826
+   },
+   {
+    "station": "majiapu",
+    "seq": 21,
+    "dist_prev_m": 1695
+   },
+   {
+    "station": "jiaomen-xi-w",
+    "seq": 22,
+    "dist_prev_m": 925
+   },
+   {
+    "station": "gongyi-xiqiao",
+    "seq": 23,
+    "dist_prev_m": 1187
+   },
+   {
+    "station": "xingong",
+    "seq": 24,
+    "dist_prev_m": 3123
+   },
+   {
+    "station": "xihong-men",
+    "seq": 25,
+    "dist_prev_m": 4610
+   },
+   {
+    "station": "gaomidian-bei-n",
+    "seq": 26,
+    "dist_prev_m": 1973
+   },
+   {
+    "station": "gaomidian-nan-s",
+    "seq": 27,
+    "dist_prev_m": 1344
+   },
+   {
+    "station": "zaoyuan",
+    "seq": 28,
+    "dist_prev_m": 1359
+   },
+   {
+    "station": "qingyuan-lu",
+    "seq": 29,
+    "dist_prev_m": 1302
+   },
+   {
+    "station": "huangcun-xidajie",
+    "seq": 30,
+    "dist_prev_m": 1449
+   },
+   {
+    "station": "huangcun-railway",
+    "seq": 31,
+    "dist_prev_m": 1141
+   },
+   {
+    "station": "yihezhuang",
+    "seq": 32,
+    "dist_prev_m": 1894
+   },
+   {
+    "station": "biomedical-base",
+    "seq": 33,
+    "dist_prev_m": 3337
+   },
+   {
+    "station": "tiangong-yuan",
+    "seq": 34,
+    "dist_prev_m": 2101
+   }
+  ],
+  "wd": "Q304264"
+ },
+ {
+  "id": "Q647340",
+  "zh": "5号线",
+  "ko": "5호선",
+  "en": "Line 5",
+  "color": "#AE005F",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0510",
+  "last_dep": "2300",
+  "headway_min": 3,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "tiantongyuanbei",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "tiantongyuan",
+    "seq": 1,
+    "dist_prev_m": 1063
+   },
+   {
+    "station": "tiantongyuannan",
+    "seq": 2,
+    "dist_prev_m": 1106
+   },
+   {
+    "station": "lishuiqiao",
+    "seq": 3,
+    "dist_prev_m": 1768
+   },
+   {
+    "station": "lishuiqiao-nan-s",
+    "seq": 4,
+    "dist_prev_m": 1406
+   },
+   {
+    "station": "beiyuanlu-bei-n",
+    "seq": 5,
+    "dist_prev_m": 1515
+   },
+   {
+    "station": "datunludong",
+    "seq": 6,
+    "dist_prev_m": 3432
+   },
+   {
+    "station": "huixin-xijie-beikou",
+    "seq": 7,
+    "dist_prev_m": 2045
+   },
+   {
+    "station": "huixin-xijie-nankou",
+    "seq": 8,
+    "dist_prev_m": 1308
+   },
+   {
+    "station": "heping-xiqiao",
+    "seq": 9,
+    "dist_prev_m": 1187
+   },
+   {
+    "station": "hepingli-beijie",
+    "seq": 10,
+    "dist_prev_m": 1189
+   },
+   {
+    "station": "yonghegong-lama-temple",
+    "seq": 11,
+    "dist_prev_m": 1212
+   },
+   {
+    "station": "beixinqiao",
+    "seq": 12,
+    "dist_prev_m": 1095
+   },
+   {
+    "station": "zhangzizhong-lu",
+    "seq": 13,
+    "dist_prev_m": 909
+   },
+   {
+    "station": "dongsi",
+    "seq": 14,
+    "dist_prev_m": 1195
+   },
+   {
+    "station": "dengshi-kou",
+    "seq": 15,
+    "dist_prev_m": 980
+   },
+   {
+    "station": "dongdan",
+    "seq": 16,
+    "dist_prev_m": 1096
+   },
+   {
+    "station": "chongwenmen",
+    "seq": 17,
+    "dist_prev_m": 913
+   },
+   {
+    "station": "ciqikou",
+    "seq": 18,
+    "dist_prev_m": 1030
+   },
+   {
+    "station": "temple-of-heaven-east-gate",
+    "seq": 19,
+    "dist_prev_m": 1222
+   },
+   {
+    "station": "puhuangyu",
+    "seq": 20,
+    "dist_prev_m": 2295
+   },
+   {
+    "station": "liujiayao",
+    "seq": 21,
+    "dist_prev_m": 1056
+   },
+   {
+    "station": "songjiazhuang",
+    "seq": 22,
+    "dist_prev_m": 1619
+   }
+  ],
+  "wd": "Q647340"
+ },
+ {
+  "id": "Q6553138",
+  "zh": "6号线",
+  "ko": "6호선",
+  "en": "Line 6",
+  "color": "#BB8900",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 3,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "luyang",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "lucheng",
+    "seq": 1,
+    "dist_prev_m": 1900
+   },
+   {
+    "station": "dongxia-yuan",
+    "seq": 2,
+    "dist_prev_m": 1415
+   },
+   {
+    "station": "haojia-fu",
+    "seq": 3,
+    "dist_prev_m": 1581
+   },
+   {
+    "station": "beiyunhe-dong-e",
+    "seq": 4,
+    "dist_prev_m": 919
+   },
+   {
+    "station": "beiyunhe-xi-w",
+    "seq": 5,
+    "dist_prev_m": 1951
+   },
+   {
+    "station": "tongyun-men",
+    "seq": 6,
+    "dist_prev_m": 1745
+   },
+   {
+    "station": "tongzhou-beiguan",
+    "seq": 7,
+    "dist_prev_m": 1532
+   },
+   {
+    "station": "wuzi-xueyuan-lu",
+    "seq": 8,
+    "dist_prev_m": 2426
+   },
+   {
+    "station": "caofang",
+    "seq": 9,
+    "dist_prev_m": 2309
+   },
+   {
+    "station": "changying",
+    "seq": 10,
+    "dist_prev_m": 1657
+   },
+   {
+    "station": "huangqu",
+    "seq": 11,
+    "dist_prev_m": 2004
+   },
+   {
+    "station": "dalianpo",
+    "seq": 12,
+    "dist_prev_m": 1465
+   },
+   {
+    "station": "qingnian-lu",
+    "seq": 13,
+    "dist_prev_m": 4626
+   },
+   {
+    "station": "shilipu",
+    "seq": 14,
+    "dist_prev_m": 1445
+   },
+   {
+    "station": "jintai-lu",
+    "seq": 15,
+    "dist_prev_m": 2316
+   },
+   {
+    "station": "hujialou",
+    "seq": 16,
+    "dist_prev_m": 1648
+   },
+   {
+    "station": "dongdaqiao",
+    "seq": 17,
+    "dist_prev_m": 975
+   },
+   {
+    "station": "chaoyangmen",
+    "seq": 18,
+    "dist_prev_m": 1735
+   },
+   {
+    "station": "dongsi",
+    "seq": 19,
+    "dist_prev_m": 1734
+   },
+   {
+    "station": "nanluogu-xiang",
+    "seq": 20,
+    "dist_prev_m": 1715
+   },
+   {
+    "station": "beihaibei",
+    "seq": 21,
+    "dist_prev_m": 1732
+   },
+   {
+    "station": "ping-anli",
+    "seq": 22,
+    "dist_prev_m": 1331
+   },
+   {
+    "station": "chegongzhuang",
+    "seq": 23,
+    "dist_prev_m": 1686
+   },
+   {
+    "station": "chegongzhuangxi",
+    "seq": 24,
+    "dist_prev_m": 1115
+   },
+   {
+    "station": "erligou",
+    "seq": 25,
+    "dist_prev_m": 1016
+   },
+   {
+    "station": "baishiqiaonan",
+    "seq": 26,
+    "dist_prev_m": 824
+   },
+   {
+    "station": "huayuan-qiao",
+    "seq": 27,
+    "dist_prev_m": 1503
+   },
+   {
+    "station": "cishou-si",
+    "seq": 28,
+    "dist_prev_m": 1486
+   },
+   {
+    "station": "haidian-wuluju",
+    "seq": 29,
+    "dist_prev_m": 1765
+   },
+   {
+    "station": "tiancun",
+    "seq": 30,
+    "dist_prev_m": 2387
+   },
+   {
+    "station": "liaogongzhuang",
+    "seq": 31,
+    "dist_prev_m": 2583
+   },
+   {
+    "station": "xihuangcun",
+    "seq": 32,
+    "dist_prev_m": 1985
+   },
+   {
+    "station": "yangzhuang",
+    "seq": 33,
+    "dist_prev_m": 2197
+   },
+   {
+    "station": "pingguoyuan",
+    "seq": 34,
+    "dist_prev_m": 785
+   },
+   {
+    "station": "jin-anqiao",
+    "seq": 35,
+    "dist_prev_m": 1503
+   }
+  ],
+  "wd": "Q6553138"
+ },
+ {
+  "id": "Q6553149",
+  "zh": "7号线",
+  "ko": "7호선",
+  "en": "Line 7",
+  "color": "#FFC66E",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0520",
+  "last_dep": "2300",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "beijing-west-railway",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "wanzi",
+    "seq": 1,
+    "dist_prev_m": 864
+   },
+   {
+    "station": "daguanying",
+    "seq": 2,
+    "dist_prev_m": 1022
+   },
+   {
+    "station": "guang-anmen-nei",
+    "seq": 3,
+    "dist_prev_m": 1969
+   },
+   {
+    "station": "caishikou",
+    "seq": 4,
+    "dist_prev_m": 1622
+   },
+   {
+    "station": "hufangqiao",
+    "seq": 5,
+    "dist_prev_m": 912
+   },
+   {
+    "station": "zhushikou",
+    "seq": 6,
+    "dist_prev_m": 1315
+   },
+   {
+    "station": "qiaowan",
+    "seq": 7,
+    "dist_prev_m": 1096
+   },
+   {
+    "station": "ciqikou",
+    "seq": 8,
+    "dist_prev_m": 1068
+   },
+   {
+    "station": "guangqumennei",
+    "seq": 9,
+    "dist_prev_m": 1482
+   },
+   {
+    "station": "guangqumenwai",
+    "seq": 10,
+    "dist_prev_m": 1500
+   },
+   {
+    "station": "shuangjing",
+    "seq": 11,
+    "dist_prev_m": 1194
+   },
+   {
+    "station": "jiulongshan",
+    "seq": 12,
+    "dist_prev_m": 1609
+   },
+   {
+    "station": "dajiaoting",
+    "seq": 13,
+    "dist_prev_m": 945
+   },
+   {
+    "station": "baiziwan",
+    "seq": 14,
+    "dist_prev_m": 876
+   },
+   {
+    "station": "huagong",
+    "seq": 15,
+    "dist_prev_m": 1183
+   },
+   {
+    "station": "nanlouzi-zhuang",
+    "seq": 16,
+    "dist_prev_m": 1372
+   },
+   {
+    "station": "happy-valley",
+    "seq": 17,
+    "dist_prev_m": 1013
+   },
+   {
+    "station": "fatou",
+    "seq": 18,
+    "dist_prev_m": 1463
+   },
+   {
+    "station": "shuanghe",
+    "seq": 19,
+    "dist_prev_m": 1637
+   },
+   {
+    "station": "jiaohua-chang",
+    "seq": 20,
+    "dist_prev_m": 1033
+   },
+   {
+    "station": "huangchang",
+    "seq": 21,
+    "dist_prev_m": 1758
+   },
+   {
+    "station": "langxinzhuang",
+    "seq": 22,
+    "dist_prev_m": 1889
+   },
+   {
+    "station": "heizhuanghu",
+    "seq": 23,
+    "dist_prev_m": 2826
+   },
+   {
+    "station": "wanshengxi",
+    "seq": 24,
+    "dist_prev_m": 3377
+   },
+   {
+    "station": "wanshengdong",
+    "seq": 25,
+    "dist_prev_m": 2376
+   },
+   {
+    "station": "qunfang",
+    "seq": 26,
+    "dist_prev_m": 1373
+   },
+   {
+    "station": "gaoloujin",
+    "seq": 27,
+    "dist_prev_m": 1416
+   },
+   {
+    "station": "huazhuang",
+    "seq": 28,
+    "dist_prev_m": 1280
+   },
+   {
+    "station": "universal-resort",
+    "seq": 29,
+    "dist_prev_m": 1839
+   }
+  ],
+  "wd": "Q6553149"
+ },
+ {
+  "id": "Q847771",
+  "zh": "8号线",
+  "ko": "8호선",
+  "en": "Line 8",
+  "color": "#00997A",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "zhuxinzhuang",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "yuzhi-lu",
+    "seq": 1,
+    "dist_prev_m": 2455
+   },
+   {
+    "station": "pingxifu",
+    "seq": 2,
+    "dist_prev_m": 2345
+   },
+   {
+    "station": "huilongguan-dongdajie",
+    "seq": 3,
+    "dist_prev_m": 1693
+   },
+   {
+    "station": "huoying",
+    "seq": 4,
+    "dist_prev_m": 1207
+   },
+   {
+    "station": "yuxin",
+    "seq": 5,
+    "dist_prev_m": 1998
+   },
+   {
+    "station": "xixiaokou",
+    "seq": 6,
+    "dist_prev_m": 1618
+   },
+   {
+    "station": "yongtaizhuang",
+    "seq": 7,
+    "dist_prev_m": 1239
+   },
+   {
+    "station": "lincuiqiao",
+    "seq": 8,
+    "dist_prev_m": 2737
+   },
+   {
+    "station": "forest-park-south-gate",
+    "seq": 9,
+    "dist_prev_m": 2412
+   },
+   {
+    "station": "aolinpike-gongyuan-olympic-park",
+    "seq": 10,
+    "dist_prev_m": 1127
+   },
+   {
+    "station": "aoti-zhongxin",
+    "seq": 11,
+    "dist_prev_m": 2080
+   },
+   {
+    "station": "beitucheng",
+    "seq": 12,
+    "dist_prev_m": 990
+   },
+   {
+    "station": "anhuaqiao",
+    "seq": 13,
+    "dist_prev_m": 1188
+   },
+   {
+    "station": "andeli-beijie",
+    "seq": 14,
+    "dist_prev_m": 1476
+   },
+   {
+    "station": "gulou-dajie",
+    "seq": 15,
+    "dist_prev_m": 1028
+   },
+   {
+    "station": "shichahai",
+    "seq": 16,
+    "dist_prev_m": 1497
+   },
+   {
+    "station": "nanluogu-xiang",
+    "seq": 17,
+    "dist_prev_m": 881
+   },
+   {
+    "station": "national-art-museum",
+    "seq": 18,
+    "dist_prev_m": 1287
+   },
+   {
+    "station": "jinyu-hutong",
+    "seq": 19,
+    "dist_prev_m": 1226
+   },
+   {
+    "station": "wangfujing",
+    "seq": 20,
+    "dist_prev_m": 961
+   },
+   {
+    "station": "qianmen",
+    "seq": 21,
+    "dist_prev_m": 1670
+   },
+   {
+    "station": "zhushikou",
+    "seq": 22,
+    "dist_prev_m": 1123
+   },
+   {
+    "station": "tianqiao",
+    "seq": 23,
+    "dist_prev_m": 1829
+   },
+   {
+    "station": "yongdingmenwai",
+    "seq": 24,
+    "dist_prev_m": 1385
+   },
+   {
+    "station": "muxiyuan",
+    "seq": 25,
+    "dist_prev_m": 801
+   },
+   {
+    "station": "haihutun",
+    "seq": 26,
+    "dist_prev_m": 1198
+   },
+   {
+    "station": "dahong-men",
+    "seq": 27,
+    "dist_prev_m": 704
+   },
+   {
+    "station": "dahongmennan",
+    "seq": 28,
+    "dist_prev_m": 1230
+   },
+   {
+    "station": "heyi",
+    "seq": 29,
+    "dist_prev_m": 2681
+   },
+   {
+    "station": "donggaodi",
+    "seq": 30,
+    "dist_prev_m": 1466
+   },
+   {
+    "station": "huojian-wanyuan",
+    "seq": 31,
+    "dist_prev_m": 1068
+   },
+   {
+    "station": "wufutang",
+    "seq": 32,
+    "dist_prev_m": 2024
+   },
+   {
+    "station": "demao",
+    "seq": 33,
+    "dist_prev_m": 2325
+   },
+   {
+    "station": "yinghai",
+    "seq": 34,
+    "dist_prev_m": 1674
+   }
+  ],
+  "wd": "Q847771"
+ },
+ {
+  "id": "Q5929508",
+  "zh": "9号线",
+  "ko": "9호선",
+  "en": "Line 9",
+  "color": "#87D300",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0520",
+  "last_dep": "2300",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "guogongzhuang",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "fengtai-science-park",
+    "seq": 1,
+    "dist_prev_m": 1469
+   },
+   {
+    "station": "keyi-lu",
+    "seq": 2,
+    "dist_prev_m": 874
+   },
+   {
+    "station": "fengtai-nanlu",
+    "seq": 3,
+    "dist_prev_m": 1105
+   },
+   {
+    "station": "fengtai-dongdajie",
+    "seq": 4,
+    "dist_prev_m": 1885
+   },
+   {
+    "station": "qilizhuang",
+    "seq": 5,
+    "dist_prev_m": 1416
+   },
+   {
+    "station": "liuliqiao",
+    "seq": 6,
+    "dist_prev_m": 1923
+   },
+   {
+    "station": "liuliqiaodong",
+    "seq": 7,
+    "dist_prev_m": 1478
+   },
+   {
+    "station": "beijing-west-railway",
+    "seq": 8,
+    "dist_prev_m": 1168
+   },
+   {
+    "station": "military-museum",
+    "seq": 9,
+    "dist_prev_m": 1611
+   },
+   {
+    "station": "baiduizi",
+    "seq": 10,
+    "dist_prev_m": 2152
+   },
+   {
+    "station": "baishiqiaonan",
+    "seq": 11,
+    "dist_prev_m": 1117
+   },
+   {
+    "station": "national-library",
+    "seq": 12,
+    "dist_prev_m": 1316
+   }
+  ],
+  "wd": "Q5929508"
+ },
+ {
+  "id": "Q847886",
+  "zh": "10号线",
+  "ko": "10호선",
+  "en": "Line 10",
+  "color": "#0092BC",
+  "kind": "metro",
+  "loop": true,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 3,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "dahong-men",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "shiliuzhuang",
+    "seq": 1,
+    "dist_prev_m": 1489
+   },
+   {
+    "station": "songjiazhuang",
+    "seq": 2,
+    "dist_prev_m": 1423
+   },
+   {
+    "station": "chengshou-si",
+    "seq": 3,
+    "dist_prev_m": 1956
+   },
+   {
+    "station": "fenzhongsi",
+    "seq": 4,
+    "dist_prev_m": 955
+   },
+   {
+    "station": "shilihe",
+    "seq": 5,
+    "dist_prev_m": 1871
+   },
+   {
+    "station": "panjiayuan",
+    "seq": 6,
+    "dist_prev_m": 1319
+   },
+   {
+    "station": "jingsong",
+    "seq": 7,
+    "dist_prev_m": 1049
+   },
+   {
+    "station": "shuangjing",
+    "seq": 8,
+    "dist_prev_m": 1154
+   },
+   {
+    "station": "guomao",
+    "seq": 9,
+    "dist_prev_m": 1922
+   },
+   {
+    "station": "jintai-xizhao",
+    "seq": 10,
+    "dist_prev_m": 1156
+   },
+   {
+    "station": "hujialou",
+    "seq": 11,
+    "dist_prev_m": 785
+   },
+   {
+    "station": "tuanjiehu",
+    "seq": 12,
+    "dist_prev_m": 1292
+   },
+   {
+    "station": "agricultural-exhibition-center",
+    "seq": 13,
+    "dist_prev_m": 1016
+   },
+   {
+    "station": "liangmaqiao",
+    "seq": 14,
+    "dist_prev_m": 1039
+   },
+   {
+    "station": "sanyuan-qiao",
+    "seq": 15,
+    "dist_prev_m": 1547
+   },
+   {
+    "station": "taiyanggong",
+    "seq": 16,
+    "dist_prev_m": 1788
+   },
+   {
+    "station": "shaoyaoju",
+    "seq": 17,
+    "dist_prev_m": 1269
+   },
+   {
+    "station": "huixin-xijie-nankou",
+    "seq": 18,
+    "dist_prev_m": 1799
+   },
+   {
+    "station": "anzhen-men",
+    "seq": 19,
+    "dist_prev_m": 1193
+   },
+   {
+    "station": "beitucheng",
+    "seq": 20,
+    "dist_prev_m": 1106
+   },
+   {
+    "station": "jiandemen",
+    "seq": 21,
+    "dist_prev_m": 1302
+   },
+   {
+    "station": "mudanyuan",
+    "seq": 22,
+    "dist_prev_m": 1149
+   },
+   {
+    "station": "xitucheng",
+    "seq": 23,
+    "dist_prev_m": 1501
+   },
+   {
+    "station": "zhichun-lu",
+    "seq": 24,
+    "dist_prev_m": 1315
+   },
+   {
+    "station": "zhichun-li",
+    "seq": 25,
+    "dist_prev_m": 1126
+   },
+   {
+    "station": "haidian-huangzhuang",
+    "seq": 26,
+    "dist_prev_m": 1121
+   },
+   {
+    "station": "suzhou-jie",
+    "seq": 27,
+    "dist_prev_m": 1135
+   },
+   {
+    "station": "bagou",
+    "seq": 28,
+    "dist_prev_m": 1239
+   },
+   {
+    "station": "huoqiying",
+    "seq": 29,
+    "dist_prev_m": 1213
+   },
+   {
+    "station": "changchun-qiao",
+    "seq": 30,
+    "dist_prev_m": 1014
+   },
+   {
+    "station": "chedaogou",
+    "seq": 31,
+    "dist_prev_m": 1553
+   },
+   {
+    "station": "cishou-si",
+    "seq": 32,
+    "dist_prev_m": 1738
+   },
+   {
+    "station": "xidiaoyutai",
+    "seq": 33,
+    "dist_prev_m": 1270
+   },
+   {
+    "station": "gongzhufen",
+    "seq": 34,
+    "dist_prev_m": 2342
+   },
+   {
+    "station": "lianhua-qiao",
+    "seq": 35,
+    "dist_prev_m": 1285
+   },
+   {
+    "station": "liuliqiao",
+    "seq": 36,
+    "dist_prev_m": 2352
+   },
+   {
+    "station": "xiju",
+    "seq": 37,
+    "dist_prev_m": 1724
+   },
+   {
+    "station": "niwa",
+    "seq": 38,
+    "dist_prev_m": 1004
+   },
+   {
+    "station": "fengtai-railway",
+    "seq": 39,
+    "dist_prev_m": 1109
+   },
+   {
+    "station": "shoujingmao",
+    "seq": 40,
+    "dist_prev_m": 1682
+   },
+   {
+    "station": "jijiamiao",
+    "seq": 41,
+    "dist_prev_m": 1300
+   },
+   {
+    "station": "caoqiao",
+    "seq": 42,
+    "dist_prev_m": 1772
+   },
+   {
+    "station": "jiaomen-xi-w",
+    "seq": 43,
+    "dist_prev_m": 1925
+   },
+   {
+    "station": "jiaomen-dong-e",
+    "seq": 44,
+    "dist_prev_m": 1374
+   }
+  ],
+  "wd": "Q847886",
+  "loop_dist_m": 1322
+ },
+ {
+  "id": "Q6553057",
+  "zh": "11号线",
+  "ko": "11호선",
+  "en": "Line 11",
+  "color": "#FF8674",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0600",
+  "last_dep": "2200",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "moshikou",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "jin-anqiao",
+    "seq": 1,
+    "dist_prev_m": 1489
+   },
+   {
+    "station": "beixin-an",
+    "seq": 2,
+    "dist_prev_m": 1118
+   },
+   {
+    "station": "xinshougang-shougang-park",
+    "seq": 3,
+    "dist_prev_m": 663
+   }
+  ],
+  "wd": "Q6553057"
+ },
+ {
+  "id": "Q26262009",
+  "zh": "12号线",
+  "ko": "12호선",
+  "en": "Line 12",
+  "color": "#9C4F01",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0530",
+  "last_dep": "2230",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "sijiqing-qiao",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "landianchang",
+    "seq": 1,
+    "dist_prev_m": 1788
+   },
+   {
+    "station": "changchun-qiao",
+    "seq": 2,
+    "dist_prev_m": 1140
+   },
+   {
+    "station": "suzhou-qiao",
+    "seq": 3,
+    "dist_prev_m": 1446
+   },
+   {
+    "station": "renmin-univ",
+    "seq": 4,
+    "dist_prev_m": 1471
+   },
+   {
+    "station": "dazhong-si",
+    "seq": 5,
+    "dist_prev_m": 2299
+   },
+   {
+    "station": "jimenqiao",
+    "seq": 6,
+    "dist_prev_m": 1003
+   },
+   {
+    "station": "beitaipingzhuang",
+    "seq": 7,
+    "dist_prev_m": 1456
+   },
+   {
+    "station": "madian-qiao",
+    "seq": 8,
+    "dist_prev_m": 1230
+   },
+   {
+    "station": "anhuaqiao",
+    "seq": 9,
+    "dist_prev_m": 1169
+   },
+   {
+    "station": "anzhen-qiao",
+    "seq": 10,
+    "dist_prev_m": 1249
+   },
+   {
+    "station": "heping-xiqiao",
+    "seq": 11,
+    "dist_prev_m": 1047
+   },
+   {
+    "station": "guangxi-men",
+    "seq": 12,
+    "dist_prev_m": 1356
+   },
+   {
+    "station": "xibahe",
+    "seq": 13,
+    "dist_prev_m": 946
+   },
+   {
+    "station": "sanyuan-qiao",
+    "seq": 14,
+    "dist_prev_m": 1747
+   },
+   {
+    "station": "jiangtaixi",
+    "seq": 15,
+    "dist_prev_m": 2574
+   },
+   {
+    "station": "gaojiayuan",
+    "seq": 16,
+    "dist_prev_m": 1400
+   },
+   {
+    "station": "tuofangying",
+    "seq": 17,
+    "dist_prev_m": 1640
+   },
+   {
+    "station": "dongbaxi",
+    "seq": 18,
+    "dist_prev_m": 2955
+   },
+   {
+    "station": "dongbabei",
+    "seq": 19,
+    "dist_prev_m": 2039
+   }
+  ],
+  "wd": "Q26262009"
+ },
+ {
+  "id": "Q847744",
+  "zh": "13号线",
+  "ko": "13호선",
+  "en": "Line 13",
+  "color": "#F5D312",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 4,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "dongzhimen",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "liufang",
+    "seq": 1,
+    "dist_prev_m": 2168
+   },
+   {
+    "station": "guangxi-men",
+    "seq": 2,
+    "dist_prev_m": 1306
+   },
+   {
+    "station": "shaoyaoju",
+    "seq": 3,
+    "dist_prev_m": 1214
+   },
+   {
+    "station": "wangjingxi",
+    "seq": 4,
+    "dist_prev_m": 2604
+   },
+   {
+    "station": "beiyuan",
+    "seq": 5,
+    "dist_prev_m": 6219
+   },
+   {
+    "station": "lishuiqiao",
+    "seq": 6,
+    "dist_prev_m": 2529
+   },
+   {
+    "station": "huoying",
+    "seq": 7,
+    "dist_prev_m": 5620
+   },
+   {
+    "station": "huilongguan",
+    "seq": 8,
+    "dist_prev_m": 2375
+   },
+   {
+    "station": "longze",
+    "seq": 9,
+    "dist_prev_m": 1623
+   },
+   {
+    "station": "xi-erqi",
+    "seq": 10,
+    "dist_prev_m": 2619
+   },
+   {
+    "station": "qinghe-railway",
+    "seq": 11,
+    "dist_prev_m": 1752
+   },
+   {
+    "station": "shangdi",
+    "seq": 12,
+    "dist_prev_m": 1141
+   },
+   {
+    "station": "qinghua-donglu-xikou",
+    "seq": 13,
+    "dist_prev_m": 4585
+   },
+   {
+    "station": "wudao-kou",
+    "seq": 14,
+    "dist_prev_m": 957
+   },
+   {
+    "station": "baofusi",
+    "seq": 15,
+    "dist_prev_m": 984
+   },
+   {
+    "station": "zhichun-lu",
+    "seq": 16,
+    "dist_prev_m": 1131
+   },
+   {
+    "station": "dazhong-si",
+    "seq": 17,
+    "dist_prev_m": 1334
+   },
+   {
+    "station": "xizhimen",
+    "seq": 18,
+    "dist_prev_m": 3478
+   }
+  ],
+  "wd": "Q847744"
+ },
+ {
+  "id": "Q6553070",
+  "zh": "14号线",
+  "ko": "14호선",
+  "en": "Line 14",
+  "color": "#D4A7A1",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0500",
+  "last_dep": "2300",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "zhangguozhuang",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "garden-expo-park",
+    "seq": 1,
+    "dist_prev_m": 1495
+   },
+   {
+    "station": "dawayao",
+    "seq": 2,
+    "dist_prev_m": 3797
+   },
+   {
+    "station": "guozhuangzi",
+    "seq": 3,
+    "dist_prev_m": 1550
+   },
+   {
+    "station": "dajing",
+    "seq": 4,
+    "dist_prev_m": 2010
+   },
+   {
+    "station": "qilizhuang",
+    "seq": 5,
+    "dist_prev_m": 1903
+   },
+   {
+    "station": "xiju",
+    "seq": 6,
+    "dist_prev_m": 948
+   },
+   {
+    "station": "dongguantou",
+    "seq": 7,
+    "dist_prev_m": 1665
+   },
+   {
+    "station": "lize-shangwuqu",
+    "seq": 8,
+    "dist_prev_m": 1076
+   },
+   {
+    "station": "caihuying",
+    "seq": 9,
+    "dist_prev_m": 1086
+   },
+   {
+    "station": "xitieying",
+    "seq": 10,
+    "dist_prev_m": 1517
+   },
+   {
+    "station": "jingfengmen",
+    "seq": 11,
+    "dist_prev_m": 1044
+   },
+   {
+    "station": "beijing-south-railway",
+    "seq": 12,
+    "dist_prev_m": 1269
+   },
+   {
+    "station": "taoran-qiao",
+    "seq": 13,
+    "dist_prev_m": 955
+   },
+   {
+    "station": "yongdingmenwai",
+    "seq": 14,
+    "dist_prev_m": 1241
+   },
+   {
+    "station": "jingtai",
+    "seq": 15,
+    "dist_prev_m": 1063
+   },
+   {
+    "station": "puhuangyu",
+    "seq": 16,
+    "dist_prev_m": 1145
+   },
+   {
+    "station": "fangzhuang",
+    "seq": 17,
+    "dist_prev_m": 1811
+   },
+   {
+    "station": "shilihe",
+    "seq": 18,
+    "dist_prev_m": 1867
+   },
+   {
+    "station": "beijing-univ-of-tech-west-gate",
+    "seq": 19,
+    "dist_prev_m": 2129
+   },
+   {
+    "station": "pingle-yuan",
+    "seq": 20,
+    "dist_prev_m": 1305
+   },
+   {
+    "station": "jiulongshan",
+    "seq": 21,
+    "dist_prev_m": 1056
+   },
+   {
+    "station": "dawang-lu",
+    "seq": 22,
+    "dist_prev_m": 1897
+   },
+   {
+    "station": "hongmiao",
+    "seq": 23,
+    "dist_prev_m": 979
+   },
+   {
+    "station": "jintai-lu",
+    "seq": 24,
+    "dist_prev_m": 898
+   },
+   {
+    "station": "chaoyang-park",
+    "seq": 25,
+    "dist_prev_m": 1321
+   },
+   {
+    "station": "zaoying",
+    "seq": 26,
+    "dist_prev_m": 1448
+   },
+   {
+    "station": "dongfeng-beiqiao",
+    "seq": 27,
+    "dist_prev_m": 2190
+   },
+   {
+    "station": "jiangtai",
+    "seq": 28,
+    "dist_prev_m": 1513
+   },
+   {
+    "station": "gaojiayuan",
+    "seq": 29,
+    "dist_prev_m": 1255
+   },
+   {
+    "station": "wangjingnan",
+    "seq": 30,
+    "dist_prev_m": 871
+   },
+   {
+    "station": "futong",
+    "seq": 31,
+    "dist_prev_m": 1396
+   },
+   {
+    "station": "wangjing",
+    "seq": 32,
+    "dist_prev_m": 796
+   },
+   {
+    "station": "donghuqu",
+    "seq": 33,
+    "dist_prev_m": 1611
+   },
+   {
+    "station": "laiguangying",
+    "seq": 34,
+    "dist_prev_m": 1245
+   },
+   {
+    "station": "shangezhuang",
+    "seq": 35,
+    "dist_prev_m": 1503
+   }
+  ],
+  "wd": "Q6553070"
+ },
+ {
+  "id": "Q734917",
+  "zh": "15号线",
+  "ko": "15호선",
+  "en": "Line 15",
+  "color": "#6A1D44",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0530",
+  "last_dep": "2250",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "fengbo",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "shunyi",
+    "seq": 1,
+    "dist_prev_m": 2745
+   },
+   {
+    "station": "shimen",
+    "seq": 2,
+    "dist_prev_m": 1565
+   },
+   {
+    "station": "nanfaxin",
+    "seq": 3,
+    "dist_prev_m": 3103
+   },
+   {
+    "station": "houshayu",
+    "seq": 4,
+    "dist_prev_m": 4785
+   },
+   {
+    "station": "hualikan",
+    "seq": 5,
+    "dist_prev_m": 3850
+   },
+   {
+    "station": "china-int-l-exhibition-center",
+    "seq": 6,
+    "dist_prev_m": 1862
+   },
+   {
+    "station": "sunhe",
+    "seq": 7,
+    "dist_prev_m": 3773
+   },
+   {
+    "station": "maquanying",
+    "seq": 8,
+    "dist_prev_m": 3300
+   },
+   {
+    "station": "cuigezhuang",
+    "seq": 9,
+    "dist_prev_m": 1904
+   },
+   {
+    "station": "wangjingdong",
+    "seq": 10,
+    "dist_prev_m": 2434
+   },
+   {
+    "station": "wangjing",
+    "seq": 11,
+    "dist_prev_m": 1932
+   },
+   {
+    "station": "wangjingxi",
+    "seq": 12,
+    "dist_prev_m": 2047
+   },
+   {
+    "station": "guanzhuang-station-line-15",
+    "seq": 13,
+    "dist_prev_m": 1779
+   },
+   {
+    "station": "datunludong",
+    "seq": 14,
+    "dist_prev_m": 1404
+   },
+   {
+    "station": "anli-lu",
+    "seq": 15,
+    "dist_prev_m": 1022
+   },
+   {
+    "station": "aolinpike-gongyuan-olympic-park",
+    "seq": 16,
+    "dist_prev_m": 1372
+   },
+   {
+    "station": "beishatan",
+    "seq": 17,
+    "dist_prev_m": 2424
+   },
+   {
+    "station": "liudaokou",
+    "seq": 18,
+    "dist_prev_m": 1414
+   },
+   {
+    "station": "qinghua-donglu-xikou",
+    "seq": 19,
+    "dist_prev_m": 1455
+   }
+  ],
+  "wd": "Q734917"
+ },
+ {
+  "id": "Q6553080",
+  "zh": "16号线",
+  "ko": "16호선",
+  "en": "Line 16",
+  "color": "#6BA53A",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0520",
+  "last_dep": "2250",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "wanpingcheng",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "hongtaizhuang",
+    "seq": 1,
+    "dist_prev_m": 2009
+   },
+   {
+    "station": "yushuzhuang",
+    "seq": 2,
+    "dist_prev_m": 1460
+   },
+   {
+    "station": "kandan",
+    "seq": 3,
+    "dist_prev_m": 1429
+   },
+   {
+    "station": "fufengqiao",
+    "seq": 4,
+    "dist_prev_m": 1419
+   },
+   {
+    "station": "fengtai-nanlu",
+    "seq": 5,
+    "dist_prev_m": 1122
+   },
+   {
+    "station": "fengtai-railway",
+    "seq": 6,
+    "dist_prev_m": 1416
+   },
+   {
+    "station": "dongguantounan",
+    "seq": 7,
+    "dist_prev_m": 1862
+   },
+   {
+    "station": "lize-shangwuqu",
+    "seq": 8,
+    "dist_prev_m": 1899
+   },
+   {
+    "station": "honglian-nanlu",
+    "seq": 9,
+    "dist_prev_m": 1363
+   },
+   {
+    "station": "daguanying",
+    "seq": 10,
+    "dist_prev_m": 1552
+   },
+   {
+    "station": "muxidi",
+    "seq": 11,
+    "dist_prev_m": 2288
+   },
+   {
+    "station": "yuyuantan-park-east-gate",
+    "seq": 12,
+    "dist_prev_m": 1006
+   },
+   {
+    "station": "ganjiakou",
+    "seq": 13,
+    "dist_prev_m": 1019
+   },
+   {
+    "station": "erligou",
+    "seq": 14,
+    "dist_prev_m": 1208
+   },
+   {
+    "station": "national-library",
+    "seq": 15,
+    "dist_prev_m": 1596
+   },
+   {
+    "station": "wanshousi",
+    "seq": 16,
+    "dist_prev_m": 1697
+   },
+   {
+    "station": "suzhou-qiao",
+    "seq": 17,
+    "dist_prev_m": 1917
+   },
+   {
+    "station": "suzhou-jie",
+    "seq": 18,
+    "dist_prev_m": 1566
+   },
+   {
+    "station": "wanquanheqiao",
+    "seq": 19,
+    "dist_prev_m": 1361
+   },
+   {
+    "station": "xi-yuan",
+    "seq": 20,
+    "dist_prev_m": 1916
+   },
+   {
+    "station": "nongda-nanlu",
+    "seq": 21,
+    "dist_prev_m": 2848
+   },
+   {
+    "station": "malianwa",
+    "seq": 22,
+    "dist_prev_m": 1984
+   },
+   {
+    "station": "xibeiwang",
+    "seq": 23,
+    "dist_prev_m": 2488
+   },
+   {
+    "station": "yongfeng-nan-s",
+    "seq": 24,
+    "dist_prev_m": 2107
+   },
+   {
+    "station": "yongfeng",
+    "seq": 25,
+    "dist_prev_m": 1511
+   },
+   {
+    "station": "tundian",
+    "seq": 26,
+    "dist_prev_m": 2186
+   },
+   {
+    "station": "daoxianghu-lu",
+    "seq": 27,
+    "dist_prev_m": 2688
+   },
+   {
+    "station": "wenyang-lu",
+    "seq": 28,
+    "dist_prev_m": 2749
+   },
+   {
+    "station": "bei-anhe",
+    "seq": 29,
+    "dist_prev_m": 2910
+   }
+  ],
+  "wd": "Q6553080"
+ },
+ {
+  "id": "Q24834015",
+  "zh": "17号线",
+  "ko": "17호선",
+  "en": "Line 17",
+  "color": "#00ABAB",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0530",
+  "last_dep": "2230",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "jiahuihu",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "ciqu",
+    "seq": 1,
+    "dist_prev_m": 2339
+   },
+   {
+    "station": "ciqubei",
+    "seq": 2,
+    "dist_prev_m": 1676
+   },
+   {
+    "station": "beishenshu",
+    "seq": 3,
+    "dist_prev_m": 2608
+   },
+   {
+    "station": "shibalidian",
+    "seq": 4,
+    "dist_prev_m": 6505
+   },
+   {
+    "station": "zhoujiazhuang",
+    "seq": 5,
+    "dist_prev_m": 2385
+   },
+   {
+    "station": "shilihe",
+    "seq": 6,
+    "dist_prev_m": 2119
+   },
+   {
+    "station": "panjiayuanxi",
+    "seq": 7,
+    "dist_prev_m": 1432
+   },
+   {
+    "station": "guangqumenwai",
+    "seq": 8,
+    "dist_prev_m": 2364
+   },
+   {
+    "station": "yong-anli",
+    "seq": 9,
+    "dist_prev_m": 1896
+   },
+   {
+    "station": "dongdaqiao",
+    "seq": 10,
+    "dist_prev_m": 1848
+   },
+   {
+    "station": "workers-stadium",
+    "seq": 11,
+    "dist_prev_m": 1381
+   },
+   {
+    "station": "zuojiazhuang",
+    "seq": 12,
+    "dist_prev_m": 2193
+   },
+   {
+    "station": "xibahe",
+    "seq": 13,
+    "dist_prev_m": 2106
+   },
+   {
+    "station": "taiyanggong",
+    "seq": 14,
+    "dist_prev_m": 1004
+   },
+   {
+    "station": "wangjingxi",
+    "seq": 15,
+    "dist_prev_m": 2917
+   },
+   {
+    "station": "hongjunying",
+    "seq": 16,
+    "dist_prev_m": 4988
+   },
+   {
+    "station": "qingheying",
+    "seq": 17,
+    "dist_prev_m": 2186
+   },
+   {
+    "station": "tiantongyuandong",
+    "seq": 18,
+    "dist_prev_m": 1921
+   },
+   {
+    "station": "future-science-city",
+    "seq": 19,
+    "dist_prev_m": 6733
+   },
+   {
+    "station": "future-science-city-north",
+    "seq": 20,
+    "dist_prev_m": 1870
+   }
+  ],
+  "wd": "Q24834015"
+ },
+ {
+  "id": "Q135581001",
+  "zh": "18号线",
+  "ko": "18호선",
+  "en": "Line 18",
+  "color": "#5554A2",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0530",
+  "last_dep": "2230",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "tiantongyuandong",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "taipingzhuang",
+    "seq": 1,
+    "dist_prev_m": 1798
+   },
+   {
+    "station": "tiantongyuan",
+    "seq": 2,
+    "dist_prev_m": 1369
+   },
+   {
+    "station": "huoyingdong",
+    "seq": 3,
+    "dist_prev_m": 3736
+   },
+   {
+    "station": "huilongguan-dongdajie",
+    "seq": 4,
+    "dist_prev_m": 1252
+   },
+   {
+    "station": "wenhua-lu",
+    "seq": 5,
+    "dist_prev_m": 2038
+   },
+   {
+    "station": "huilongguan-xidajie",
+    "seq": 6,
+    "dist_prev_m": 1056
+   },
+   {
+    "station": "longzexi",
+    "seq": 7,
+    "dist_prev_m": 2457
+   },
+   {
+    "station": "xi-erqi",
+    "seq": 8,
+    "dist_prev_m": 2510
+   }
+  ],
+  "wd": "Q135581001"
+ },
+ {
+  "id": "Q6553202",
+  "zh": "19号线",
+  "ko": "19호선",
+  "en": "Line 19",
+  "color": "#D3A3C9",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0520",
+  "last_dep": "2300",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "xingong",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "xinfadi",
+    "seq": 1,
+    "dist_prev_m": 2352
+   },
+   {
+    "station": "caoqiao",
+    "seq": 2,
+    "dist_prev_m": 2882
+   },
+   {
+    "station": "jingfengmen",
+    "seq": 3,
+    "dist_prev_m": 2599
+   },
+   {
+    "station": "niujie",
+    "seq": 4,
+    "dist_prev_m": 3577
+   },
+   {
+    "station": "taipingqiao",
+    "seq": 5,
+    "dist_prev_m": 2505
+   },
+   {
+    "station": "ping-anli",
+    "seq": 6,
+    "dist_prev_m": 3037
+   },
+   {
+    "station": "jishuitan",
+    "seq": 7,
+    "dist_prev_m": 2027
+   },
+   {
+    "station": "beitaipingzhuang",
+    "seq": 8,
+    "dist_prev_m": 2463
+   },
+   {
+    "station": "mudanyuan",
+    "seq": 9,
+    "dist_prev_m": 1087
+   }
+  ],
+  "wd": "Q6553202"
+ },
+ {
+  "id": "Q4881158",
+  "zh": "S1线",
+  "ko": "S1호선",
+  "en": "Line S1",
+  "color": "#A65A2A",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0600",
+  "last_dep": "2200",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "pingguoyuan",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "jin-anqiao",
+    "seq": 1,
+    "dist_prev_m": 1503
+   },
+   {
+    "station": "sidaoqiao",
+    "seq": 2,
+    "dist_prev_m": 3038
+   },
+   {
+    "station": "qiaohuying",
+    "seq": 3,
+    "dist_prev_m": 896
+   },
+   {
+    "station": "shang-an",
+    "seq": 4,
+    "dist_prev_m": 989
+   },
+   {
+    "station": "liyuanzhuang",
+    "seq": 5,
+    "dist_prev_m": 1206
+   },
+   {
+    "station": "xiaoyuan",
+    "seq": 6,
+    "dist_prev_m": 1098
+   },
+   {
+    "station": "shichang",
+    "seq": 7,
+    "dist_prev_m": 1395
+   }
+  ],
+  "wd": "Q4881158"
+ },
+ {
+  "id": "Q19840478",
+  "zh": "大兴机场线",
+  "ko": "다싱공항선",
+  "en": "Daxing Airport Express",
+  "color": "#0045BD",
+  "kind": "airport",
+  "loop": false,
+  "first_dep": "0600",
+  "last_dep": "2230",
+  "headway_min": 10,
+  "avg_kmh": 60,
+  "fare_rule": "daxing",
+  "stations": [
+   {
+    "station": "daxing-airport",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "daxing-xincheng",
+    "seq": 1,
+    "dist_prev_m": 29039
+   },
+   {
+    "station": "caoqiao",
+    "seq": 2,
+    "dist_prev_m": 13932
+   },
+   {
+    "station": "lize-shangwuqu",
+    "seq": 3,
+    "dist_prev_m": 3382
+   }
+  ],
+  "wd": "Q19840478"
+ },
+ {
+  "id": "Q847767",
+  "zh": "首都机场线",
+  "ko": "수도공항선",
+  "en": "Capital Airport Express",
+  "color": "#9B91B1",
+  "kind": "airport",
+  "loop": false,
+  "first_dep": "0600",
+  "last_dep": "2230",
+  "headway_min": 10,
+  "avg_kmh": 60,
+  "fare_rule": "airport",
+  "stations": [
+   {
+    "station": "beixinqiao",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "dongzhimen",
+    "seq": 1,
+    "dist_prev_m": 1689
+   },
+   {
+    "station": "sanyuan-qiao",
+    "seq": 2,
+    "dist_prev_m": 3412
+   },
+   {
+    "station": "terminal-2",
+    "seq": 3,
+    "dist_prev_m": 20078
+   },
+   {
+    "station": "terminal-3",
+    "seq": 4,
+    "dist_prev_m": 4027
+   }
+  ],
+  "wd": "Q847767"
+ },
+ {
+  "id": "Q3400451",
+  "zh": "西郊线",
+  "ko": "시자오선",
+  "en": "Xijiao line",
+  "color": "#E1261C",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0600",
+  "last_dep": "2200",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "fragrant-hills",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "china-national-botanical-garden",
+    "seq": 1,
+    "dist_prev_m": 1120
+   },
+   {
+    "station": "wan-an",
+    "seq": 2,
+    "dist_prev_m": 2346
+   },
+   {
+    "station": "chapeng",
+    "seq": 3,
+    "dist_prev_m": 1292
+   },
+   {
+    "station": "summer-palace-west-gate",
+    "seq": 4,
+    "dist_prev_m": 1575
+   },
+   {
+    "station": "bagou",
+    "seq": 5,
+    "dist_prev_m": 3295
+   }
+  ],
+  "wd": "Q3400451"
+ },
+ {
+  "id": "Q8048350",
+  "zh": "燕房线",
+  "ko": "옌팡선",
+  "en": "Yanfang line",
+  "color": "#D85F26",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0530",
+  "last_dep": "2210",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "yancun-dong-e",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "zicaowu",
+    "seq": 1,
+    "dist_prev_m": 1505
+   },
+   {
+    "station": "yancun",
+    "seq": 2,
+    "dist_prev_m": 1178
+   },
+   {
+    "station": "xingcheng",
+    "seq": 3,
+    "dist_prev_m": 1896
+   },
+   {
+    "station": "dashihe-dong-e",
+    "seq": 4,
+    "dist_prev_m": 2138
+   },
+   {
+    "station": "magezhuang",
+    "seq": 5,
+    "dist_prev_m": 2397
+   },
+   {
+    "station": "raolefu",
+    "seq": 6,
+    "dist_prev_m": 1135
+   },
+   {
+    "station": "fangshan-chengguan",
+    "seq": 7,
+    "dist_prev_m": 1724
+   },
+   {
+    "station": "yanshan",
+    "seq": 8,
+    "dist_prev_m": 2361
+   }
+  ],
+  "wd": "Q8048350"
+ },
+ {
+  "id": "Q5944471",
+  "zh": "亦庄线",
+  "ko": "이좡선",
+  "en": "Yizhuang line",
+  "color": "#D61572",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0520",
+  "last_dep": "2240",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "yizhuang-railway",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "ciqu",
+    "seq": 1,
+    "dist_prev_m": 1430
+   },
+   {
+    "station": "ciqunan",
+    "seq": 2,
+    "dist_prev_m": 1514
+   },
+   {
+    "station": "jinghai-lu",
+    "seq": 3,
+    "dist_prev_m": 2338
+   },
+   {
+    "station": "tongji-nanlu",
+    "seq": 4,
+    "dist_prev_m": 2593
+   },
+   {
+    "station": "rongchang-dongjie",
+    "seq": 5,
+    "dist_prev_m": 2104
+   },
+   {
+    "station": "rongjing-dongjie",
+    "seq": 6,
+    "dist_prev_m": 1693
+   },
+   {
+    "station": "wanyuan-jie",
+    "seq": 7,
+    "dist_prev_m": 1470
+   },
+   {
+    "station": "yizhuang-culture-park",
+    "seq": 8,
+    "dist_prev_m": 1543
+   },
+   {
+    "station": "yizhuang-qiao",
+    "seq": 9,
+    "dist_prev_m": 1127
+   },
+   {
+    "station": "jiugong",
+    "seq": 10,
+    "dist_prev_m": 1980
+   },
+   {
+    "station": "xiaohong-men",
+    "seq": 11,
+    "dist_prev_m": 2705
+   },
+   {
+    "station": "xiaocun",
+    "seq": 12,
+    "dist_prev_m": 1287
+   },
+   {
+    "station": "songjiazhuang",
+    "seq": 13,
+    "dist_prev_m": 2526
+   }
+  ],
+  "wd": "Q5944471"
+ },
+ {
+  "id": "Q5066697",
+  "zh": "昌平线",
+  "ko": "창핑선",
+  "en": "Changping line",
+  "color": "#D47DAA",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0510",
+  "last_dep": "2240",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "changping-xishankou",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "ming-tombs",
+    "seq": 1,
+    "dist_prev_m": 1365
+   },
+   {
+    "station": "changping",
+    "seq": 2,
+    "dist_prev_m": 3506
+   },
+   {
+    "station": "changping-dongguan",
+    "seq": 3,
+    "dist_prev_m": 2875
+   },
+   {
+    "station": "beishaowa",
+    "seq": 4,
+    "dist_prev_m": 1811
+   },
+   {
+    "station": "nanshao",
+    "seq": 5,
+    "dist_prev_m": 1906
+   },
+   {
+    "station": "shahe-univ-park",
+    "seq": 6,
+    "dist_prev_m": 5582
+   },
+   {
+    "station": "shahe",
+    "seq": 7,
+    "dist_prev_m": 2246
+   },
+   {
+    "station": "gonghuacheng",
+    "seq": 8,
+    "dist_prev_m": 2277
+   },
+   {
+    "station": "zhuxinzhuang",
+    "seq": 9,
+    "dist_prev_m": 3913
+   },
+   {
+    "station": "life-science-park",
+    "seq": 10,
+    "dist_prev_m": 2247
+   },
+   {
+    "station": "xi-erqi",
+    "seq": 11,
+    "dist_prev_m": 5485
+   },
+   {
+    "station": "qinghe-railway",
+    "seq": 12,
+    "dist_prev_m": 1752
+   },
+   {
+    "station": "zhufangbei",
+    "seq": 13,
+    "dist_prev_m": 1777
+   },
+   {
+    "station": "qinghe-xiaoyingqiao",
+    "seq": 14,
+    "dist_prev_m": 1093
+   },
+   {
+    "station": "xuezhiyuan",
+    "seq": 15,
+    "dist_prev_m": 2654
+   },
+   {
+    "station": "liudaokou",
+    "seq": 16,
+    "dist_prev_m": 1873
+   },
+   {
+    "station": "xueyuanqiao",
+    "seq": 17,
+    "dist_prev_m": 1764
+   },
+   {
+    "station": "xitucheng",
+    "seq": 18,
+    "dist_prev_m": 1368
+   },
+   {
+    "station": "jimenqiao",
+    "seq": 19,
+    "dist_prev_m": 1103
+   }
+  ],
+  "wd": "Q5066697"
+ },
+ {
+  "id": "Q5433860",
+  "zh": "房山線",
+  "ko": "팡산선",
+  "en": "Fangshan line",
+  "color": "#D85F26",
+  "kind": "metro",
+  "loop": false,
+  "first_dep": "0510",
+  "last_dep": "2230",
+  "headway_min": 5,
+  "avg_kmh": 35,
+  "fare_rule": "distance",
+  "stations": [
+   {
+    "station": "yancun-dong-e",
+    "seq": 0,
+    "dist_prev_m": 0
+   },
+   {
+    "station": "suzhuang",
+    "seq": 1,
+    "dist_prev_m": 2507
+   },
+   {
+    "station": "liangxiang-nanguan",
+    "seq": 2,
+    "dist_prev_m": 1499
+   },
+   {
+    "station": "liangxiang-univ-town-west",
+    "seq": 3,
+    "dist_prev_m": 1548
+   },
+   {
+    "station": "liangxiang-univ-town",
+    "seq": 4,
+    "dist_prev_m": 1989
+   },
+   {
+    "station": "liangxiang-univ-town-north",
+    "seq": 5,
+    "dist_prev_m": 1086
+   },
+   {
+    "station": "guangyangcheng",
+    "seq": 6,
+    "dist_prev_m": 2323
+   },
+   {
+    "station": "libafang",
+    "seq": 7,
+    "dist_prev_m": 1691
+   },
+   {
+    "station": "changyang",
+    "seq": 8,
+    "dist_prev_m": 2307
+   },
+   {
+    "station": "daotian",
+    "seq": 9,
+    "dist_prev_m": 4022
+   },
+   {
+    "station": "dabaotai",
+    "seq": 10,
+    "dist_prev_m": 7325
+   },
+   {
+    "station": "guogongzhuang",
+    "seq": 11,
+    "dist_prev_m": 1355
+   },
+   {
+    "station": "baipenyao",
+    "seq": 12,
+    "dist_prev_m": 1270
+   },
+   {
+    "station": "huaxiang-dongqiao",
+    "seq": 13,
+    "dist_prev_m": 1397
+   },
+   {
+    "station": "shoujingmao",
+    "seq": 14,
+    "dist_prev_m": 1964
+   },
+   {
+    "station": "dongguantounan",
+    "seq": 15,
+    "dist_prev_m": 1304
+   }
+  ],
+  "wd": "Q5433860"
+ }
+]

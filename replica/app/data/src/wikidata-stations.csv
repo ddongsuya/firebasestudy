@@ -1,0 +1,470 @@
+s,zh,ko,en,coord,lines
+http://www.wikidata.org/entity/Q75258,大红门站,다훙먼역,Dahong Men station,Point(116.3922626 39.8440129),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q75262,角門東站,자오먼둥 역,Jiaomen Dong (E) station,Point(116.3788076 39.8438402),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q75264,车道沟站,처다오거우역,Chedaogou station,Point(116.2878965 39.9451275),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q75387,西局站,시쥐역,Xiju station,Point(116.2978076 39.8652242),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q75393,成寿寺站,청서우쓰역,Chengshou Si station,Point(116.4418815 39.8445478),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q75398,莲花桥站,롄화차오역,Lianhua Qiao station,Point(116.3043065 39.8961589),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q82796,金台路站,진타이루역,Jintai Lu station,Point(116.4723407 39.9215918),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q82802,十里堡站,스리푸역,Shilipu station,Point(116.4960424 39.9216269),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q82801,草房站,차오팡역,Caofang station,Point(116.6102647 39.923208),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q82803,东大桥站,둥다차오역,Dongdaqiao station,Point(116.4455546 39.9215232),http://www.wikidata.org/entity/Q24834015|http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q130094,二里沟站,얼리거우역,Erligou station,Point(116.3276537 39.9310781),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q130435,车公庄西站,처궁좡시역,Chegongzhuangxi station,Point(116.3379924 39.9310984),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q130437,花园桥站,화위안차오역,Huayuan Qiao station,Point(116.3039811 39.9312135),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q130441,海淀五路居站,하이뎬우루쥐역,Haidian Wuluju station,Point(116.2708883 39.9314412),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q842064,西单站,시단역,Xidan station,Point(116.3682035 39.9057386),http://www.wikidata.org/entity/Q748987|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q842087,玉泉路站,위취안루역,Yuquan Lu station,Point(116.246817 39.9062535),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q842090,五棵松站,우커숭 역,Wukesong station,Point(116.2680339 39.906235),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q842095,天安门西站,톈안먼시역,Tian'anmenxi station,Point(116.385169 39.9060184),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q842107,木樨地站,무시디역,Muxidi station,Point(116.3315051 39.9061161),http://www.wikidata.org/entity/Q6553080|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q842136,八宝山站,바바오산역,Babaoshan station,Point(116.2296321 39.9061876),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q842140,南礼士路站,난리스루역,Nanlishi Lu station,Point(116.346567 39.9058929),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q842959,八角游乐园站,바자오유러위안역,Bajiao Amusement Park station,Point(116.206484 39.9061948),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5581824,公主坟站,궁주펀역,Gongzhufen station,Point(116.3042532 39.9062083),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5613705,光熙门站,광시먼역,Guangxi Men station,Point(116.425641 39.9669843),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q5613854,关庄站,관좡역,Guanzhuang station (Line 15),Point(116.4250584 39.9997494),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5613861,管庄站,관좡역,Guaanzhuang Station,Point(116.5931388 39.9080803),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5614482,古城站,구청역,Gucheng station,Point(116.1844475 39.9061423),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5617853,鼓楼大街站,구러우다제역,Gulou Dajie station,Point(116.3879183 39.947544),http://www.wikidata.org/entity/Q847771|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q847757,三元桥站,싼위안차오역,Sanyuan Qiao station,Point(116.4514183 39.9597643),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q847767
+http://www.wikidata.org/entity/Q847787,森林公园南门站,삼림공원 남문역,Forest Park South Gate station,Point(116.3864002 40.009195),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q847791,西直门站,시즈먼역,Xizhimen station,Point(116.3492348 39.9392172),http://www.wikidata.org/entity/Q847744|http://www.wikidata.org/entity/Q680973|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q847850,东直门站,둥즈먼역,Dongzhimen station,Point(116.4281041 39.9398861),http://www.wikidata.org/entity/Q847767|http://www.wikidata.org/entity/Q847744|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q847852,劲松站,진쑹역,Jingsong station,Point(116.4551162 39.8830661),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q847877,巴沟站,바거우역,Bagou station,Point(116.2874286 39.9732969),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q21245984,昌平东关站,창핑둥관역,Changping Dongguan station,Point(116.2569098 40.2204936),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q21245985,昌平西山口站,창핑시산커우역,Changping Xishankou station,Point(116.1893808 40.243313),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q21245988,永定门外站,융딩먼와이역,Yongdingmenwai station,Point(116.3931466 39.8649435),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q21246002,陶然桥站,,Taoran Qiao Station,Point(116.3809112 39.8673715),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q21850054,方庄站,팡좡역,Fangzhuang station,Point(116.4339348 39.8646354),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q21850056,北工大西门站,베이궁다시먼역,Beijing Univ. of Tech. West Gate station,Point(116.4713573 39.8736424),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q22098905,十三陵景区车辆段,,Shisanling Jingqu Depot,Point(116.1784 40.2303),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q24327754,温阳路站,원양루역,Wenyang Lu station,Point(116.1541093 40.0675638),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q24328251,稻香湖路站,다오샹후루역,Daoxianghu Lu station,Point(116.1822798 40.0675431),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q24699103,北安河站,베이안허역,Bei'anhe station,Point(116.1243197 40.0668901),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q5296033,东四站,둥쓰역,Dongsi station,Point(116.4102477 39.9229744),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5328414,北京大学东门站,베이징 대학 동문역,Peking Univ. East Gate station,Point(116.3095941 39.9908074),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5443701,分钟寺站,펀중쓰역,Fenzhongsi station,Point(116.447588 39.8506149),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5506924,阜成门站,푸청먼역,Fuchengmen station,Point(116.3500666 39.922313),http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q5521677,高碑店站,가오베이뎬역,Gaobeidian station,Point(116.5254528 39.9083217),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5521694,高米店南站,가오미뎬난 역,Gaomidian Nan (S) Station,Point(116.3256248 39.7625565),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5521693,高米店北站,가오미뎬베이 역,Gaomidian Bei (N) Station,Point(116.3245724 39.7730349),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5581810,公益西桥站,궁이시차오역,Gongyi Xiqiao station,Point(116.3646621 39.8351204),http://www.wikidata.org/entity/Q5242742|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q105062204,北京西站,베이징 서역 (지하철),Beijing West Railway Station,Point(116.3149215 39.893543888),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q105064164,清河站,칭허역,Qinghe Railway Station,Point(116.309172222 40.039863888),http://www.wikidata.org/entity/Q847744|http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q105069698,东管头站,둥관터우역,Dongguantou Station,Point(116.31469 39.86616),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q105069699,菜户营站,차이후잉역,Caihuying Station,Point(116.33667 39.86627),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q105069700,西铁营站,시톄잉역,Xitieying Station,Point(116.349568 39.859738),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q105072002,丰台站,펑타이역,Fengtai Railway Station,Point(116.29864 39.84871),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q105802536,周家庄站,,Zhoujiazhuang station,Point(116.47066 39.8551),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107059818,老观里站,,Laoguan Li station,Point(116.50302 39.70668),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q107061513,定福庄站,,Dingfuzhuang station,Point(116.55805 39.91491),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q107323241,北神树站,,Beishenshu station,Point(116.5467 39.81756),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107344118,次渠北站,,Ciqubei station,Point(116.57058 39.80861),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q103742571,驼房营站,퉈팡잉역,Tuofangying station,Point(116.499542 39.979212),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q103745051,学知园站,쉐즈위안역,Xuezhiyuan station,Point(116.34584 40.01393),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q103745077,学院桥站,쉐위안차오역,Xueyuanqiao station,Point(116.34727 39.98556),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q103745656,四季青桥站,쓰지칭차오역,Sijiqing Qiao station,Point(116.267568 39.943732),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q103745773,蓝靛厂站,란뎬창역,Landianchang station,Point(116.27667 39.95584),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q103745911,东坝西站,둥바시역,Dongbaxi station,Point(116.528728 39.973186),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q103791191,东坝站,둥바역,Dongba Station,Point(116.541293 39.963767),http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q103819135,东坝南站,둥바난역,Dongbanan station,Point(116.541112 39.951104),http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q103819136,姚家园站,야오자위안역,Yaojiayuan station,Point(116.521177 39.94654),http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q105061192,朝阳站,차오양역,Chaoyang Railway Station,Point(116.50038 39.94303),http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q843202,永安里站,융안리역,Yong'anli station,Point(116.4439779 39.9071215),http://www.wikidata.org/entity/Q24834015|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q843213,王府井站,왕푸징역,Wangfujing station,Point(116.4052048 39.9066495),http://www.wikidata.org/entity/Q847771|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q843217,国贸站,궈마오역,Guomao Station,Point(116.45343 39.90706),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q843279,东单站,둥단역,Dongdan station,Point(116.412626 39.9068579),http://www.wikidata.org/entity/Q748987|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q843282,建国门站,젠궈먼역,Jianguomen station,Point(116.4292321 39.9071594),http://www.wikidata.org/entity/Q748987|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q847653,北土城站,베이투청역,Beitucheng station,Point(116.3879263 39.9763987),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q847741,天通苑北站,톈퉁위안 북역,Tiantongyuanbei station,Point(116.4067673 40.0820885),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5192742,崔各庄站,추이거좡역,Cuigezhuang station,Point(116.4866625 40.0205651),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5207411,大葆台站,다바오타이역,Dabaotai station,Point(116.2854558 39.8064689),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q5210947,褡裢坡站,다롄포역,Dalianpo station,Point(116.5581345 39.9226731),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q5227793,大屯路东站,다툰루둥역,Datunludong station,Point(116.4110688 40.0021697),http://www.wikidata.org/entity/Q734917|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5242277,大望路站,다왕루역,Dawang Lu station,Point(116.4712272 39.9069399),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5243679,大钟寺站,다중쓰역,Dazhong Si station,Point(116.3390137 39.9652731),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q5256961,灯市口站,덩시커우 역,Dengshi Kou station,Point(116.4118355 39.9154103),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5296031,东四十条站,둥쓰스탸오역,Dongsi Shitiao station,Point(116.4280068 39.932287),http://www.wikidata.org/entity/Q6553113|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q9278249,慈寿寺站,츠서우쓰역,Cishou Si station,Point(116.2888626 39.9315586),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q10865096,万柳车辆段,,Wanliu depot,Point(116.29240556 39.98010278),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q10882198,五路停车场,,Wulu yard,Point(116.28264 39.93244),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q10882276,五里桥车辆段,,Wuliqiao depot,Point(116.6121 39.93),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q10883056,亦庄火车站,이좡훠처 역,Yizhuang Railway Station,Point(116.595 39.8111),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q10902386,北京站,베이징 역,Beijing Railway Station,Point(116.4209544 39.9035987),http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q10902508,通州北关站,퉁저우베이관역,Tongzhou Beiguan station,Point(116.6555958 39.9174745),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q10909164,南锣鼓巷站,난뤄구샹역,Nanluogu Xiang station,Point(116.3976888 39.9323094),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q10913188,古城车辆段,,Gucheng depot,Point(116.18800278 39.91838889),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q10925002,四惠车辆段,,Sihui depot,Point(116.50041 39.90844),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q10925580,回龙观车辆段,,Huilongguan depot,Point(116.37301111 40.07154722),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q10927801,土桥车辆段,,Tuqiao depot,Point(116.68770599 39.86380005),http://www.wikidata.org/entity/Q1039452
+http://www.wikidata.org/entity/Q10941368,太平庄车辆段,,Taipingzhuang depot,Point(116.397825 40.084661111),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q10947488,宋家庄停车场,,Songjiazhuang yard,Point(116.43047222 39.84045556),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q5944471|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q1039422,四惠东站,쓰후이 동역,Sihui Dong (E) station,Point(116.5092004 39.9073292),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q111813013,文华路站,,Wenhua Lu station,Point(116.33606 40.07895),http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q111813027,霍营东站,,Huoyingdong station,Point(116.369533333 40.0806),http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q111823410,太平庄站,,Taipingzhuang station,Point(116.42057 40.07272),http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q112284157,永顺站,,Yongshun station,Point(116.6357 39.91201),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q112762834,荣昌东街站,,Rongchang Dongjie station,Point(116.51564 39.78038),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q113457299,慈云寺站,,Ciyunsi station,Point(116.48381 39.91426),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q113457300,甘露园站,,Ganluyuan station,Point(116.51524 39.91569),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q113457314,马坊物流港站,,Mafang Logistics Port station,Point(116.99401 40.05157),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q113457316,马昌营站,,Machangying station,Point(117.0171 40.1422),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q113457317,平谷站,,Pinggu station,Point(117.08909 40.14861),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q113720157,潞阳站,루양역,Luyang station,Point(116.750277777 39.888333333),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q125065505,国农港站,,Guononggang station,Point(117.062241 40.148851),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q125252069,芙蓉西路站,,Furong Xilu station,Point(116.679352 39.910322),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q125400011,通州站,,Tongzhou Railway Station,Point(116.702416666 39.902722222),http://www.wikidata.org/entity/Q25227136|http://www.wikidata.org/entity/Q105940338
+http://www.wikidata.org/entity/Q125400017,潞源站,,Luyuan station,Point(116.715469444 39.908944444),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q125400045,潞源东站,,Luyuandong station,Point(116.732508333 39.909302777),http://www.wikidata.org/entity/Q25227136
+http://www.wikidata.org/entity/Q125728233,管庄路西口站,,Guanzhuanglu Xikou station,Point(116.566123 39.975923),http://www.wikidata.org/entity/Q39058571|http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q24831566,永丰南站,융펑난역,Yongfeng Nan (S) station,Point(116.2435978 40.0630295),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q24831587,永丰站,융펑역,Yongfeng station,Point(116.2317741 40.0706378),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q24835471,屯佃站,툰뎬역,Tundian station,Point(116.2098149 40.0673465),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q25349546,农大南路站,눙다난루역,Nongda Nanlu station,Point(116.2770203 40.0185756),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q26206379,西北旺站,시베이왕역,Xibeiwang station,Point(116.2521294 40.0479023),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q26261976,红庙站,,Hongmiao Station,Point(116.4720611 39.9145709),http://www.wikidata.org/entity/Q25227136|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q26261977,马连洼站,마롄와역,Malianwa station,Point(116.2658838 40.0315401),http://www.wikidata.org/entity/Q135581001|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q27916010,景风门站,징펑먼역,Jingfengmen station,Point(116.35996 39.8614),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q27949117,丽泽商务区站,리쩌 상무구역,Lize Shangwuqu station,Point(116.32563 39.86627),http://www.wikidata.org/entity/Q6553080|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q107393874,新宫车辆段,,Xin Gong Depot,Point(116.3539 39.8164),http://www.wikidata.org/entity/Q6553202
+http://www.wikidata.org/entity/Q107393889,次渠南停车场,,Ciqu South Depot,Point(116.6069 39.7935),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107398183,东坝车辆段,,Dongba Depot,Point(116.5383 39.9751),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q107471993,红军营站,훙쥔잉역,Hongjunying station,Point(116.43557 40.03287),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107472049,清河营站,칭허잉역,Qingheying station,Point(116.43575 40.04996),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107472104,天通苑东站,톈퉁위안둥역,Tiantongyuandong station,Point(116.43592 40.06498),http://www.wikidata.org/entity/Q24834015|http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q107580040,嘉会湖站,자후이후역,Jiahuihu station,Point(116.60487 39.79168),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107580086,十八里店站,스바리뎬역,Shibalidian station,Point(116.48947 39.84328),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107583300,未来科学城北站,웨이라이커쉐청베이역,Future Science City North station,Point(116.46248 40.12878),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107583301,未来科学城站,웨이라이커쉐청역,Future Science City station,Point(116.46043 40.11424),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q107870434,上地软件园站,,Shangdi Software Park station,Point(116.28057 40.0426),http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q109562090,屈庄站,,Qu Zhuang (Benchi Nan(S)) station,Point(116.50123 39.71369),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q5937094,太阳宫站,타이양궁역,Taiyanggong station,Point(116.4412241 39.9713492),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q5937216,国家图书馆站,국가도서관역,National Library station,Point(116.3190603 39.941681),http://www.wikidata.org/entity/Q6553080|http://www.wikidata.org/entity/Q5929508|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5937256,亮马桥站,량마차오역,Liangmaqiao station,Point(116.4562709 39.9482568),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5937635,马泉营站,마촨잉 역,Maquanying station,Point(116.4983103 40.0325513),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5937661,荣昌东街站,룽창둥제 역,Rongchang Dongjie Station,Point(116.5158378 39.7816866),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5937712,花梨坎站,화리칸역,Hualikan station,Point(116.5517422 40.0833525),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5937736,沙河站,사허역,Shahe Station,Point(116.2827677 40.1470443),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q5937762,西苑站,시위안역,Xi Yuan station,Point(116.2845798 39.9970627),http://www.wikidata.org/entity/Q6553080|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q6124366,天通苑站,톈퉁위안역,Tiantongyuan station,Point(116.4066402 40.0737747),http://www.wikidata.org/entity/Q135581001|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q6124548,柳芳站,류팡역,Liufang station,Point(116.4266211 39.9568025),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q6124616,牡丹园站,무단위안역,Mudanyuan station,Point(116.3630635 39.9749126),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q6124697,知春路站,즈춘루역,Zhichun Lu station,Point(116.3343902 39.9750927),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q6125577,望京西站,왕징시역,Wangjingxi station,Point(116.4417045 39.9941582),http://www.wikidata.org/entity/Q847744|http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q6125611,天安门东站,톈안먼둥역,Tian'anmendong station,Point(116.3947232 39.9063467),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q6125740,立水桥站,리수이차오역,Lishuiqiao station,Point(116.4056235 40.0513166),http://www.wikidata.org/entity/Q847744|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q1039435,四惠站,스후이 역,Sihui station,Point(116.4891221 39.9075675),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q1039443,苹果园站,핑궈위안역,Pingguoyuan station,Point(116.171783 39.924909),http://www.wikidata.org/entity/Q4881158|http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q1042990,太平湖车辆段,,Taipinghu depot,Point(116.3638 39.94853889),http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q1767779,潞城站,루청역,Lucheng station,Point(116.7416309 39.9016234),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q2043475,纪家庙站,진자먀오 역,Jijiamiao station,Point(116.3273549 39.8432146),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q2044193,首经贸站,서우징마오역,Shoujingmao station,Point(116.3141425 39.8431392),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q2257617,草桥站,차오차오역,Caoqiao station,Point(116.34528 39.84453),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q19840478
+http://www.wikidata.org/entity/Q109562091,融兴街站,,Rongxing Jie station,Point(116.49914 39.72209),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562094,四海庄站,,Sihai Zhuang station,Point(116.49866 39.74547),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562092,瑞合庄站,,Ruihe Zhuang station,Point(116.49736 39.7291),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562093,太和桥北站,,Taihe Qiao Bei (N) station,Point(116.49589 39.7399),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562098,鹿圈东站,,Lujuan Dong (E) station,Point(116.50804 39.7652),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562099,亦庄同仁站,,Yizhuang Tongren station,Point(116.51237 39.77575),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562096,九号村站,,Jiuhaocun station,Point(116.50282 39.7538),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562097,泰河路站,,Taihe Lu station,Point(116.50537 39.75888),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562103,经海一路站,,Jinghai Yilu (BOE) station,Point(116.53499 39.78969),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562100,亦创会展中心站,,Beijing Etrong International Exhibition & Convention Center station,Point(116.52152 39.78318),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562104,定海园西站,,Dinghai Yuan Xi (W) station,Point(116.54595 39.795),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q109562105,定海园站,,Dinghai Yuan station,Point(116.55645 39.80008),http://www.wikidata.org/entity/Q96359551
+http://www.wikidata.org/entity/Q111785734,巴沟站,,Bagou station,Point(116.2874286 39.9732969),http://www.wikidata.org/entity/Q3400451
+http://www.wikidata.org/entity/Q111802257,东北旺站,,Dongbeiwang station,Point(116.28875 40.05192),http://www.wikidata.org/entity/Q135581001|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q111802872,龙泽西站,,Longzexi station,Point(116.30178 40.0713),http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q111812996,回龙观西大街站,,Huilongguan Xidajie station,Point(116.32545 40.07755),http://www.wikidata.org/entity/Q135581001|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q28104777,北安河车辆段,,Bei'anhe Depot,Point(116.1236 40.0639),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q28309040,甘家口站,간자커우역,Ganjiakou Station,Point(116.3288857 39.9216791),http://www.wikidata.org/entity/Q6553113|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q28309051,苏州桥站,쑤저우차오역,Suzhou Qiao Station,Point(116.3014191 39.9621319),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q28411146,万泉河桥站,완촨허차오역,Wanquanheqiao Station,Point(116.2942563 39.9840366),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q28412821,万寿寺站,완서우쓰역,Wanshousi Station,Point(116.3033381 39.9472132),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q38679541,金安桥站,진안차오역,Jin'anqiao station,Point(116.1568565 39.9220759),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q4881158|http://www.wikidata.org/entity/Q6553057
+http://www.wikidata.org/entity/Q38679550,石厂站,스창역,Shichang station,Point(116.0939924 39.8878821),http://www.wikidata.org/entity/Q4881158
+http://www.wikidata.org/entity/Q39085456,阎村东站,옌춘 동역,Yancun Dong (E) station,Point(116.094557 39.7275574),http://www.wikidata.org/entity/Q8048350|http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q41627671,燕山站,옌산역,Yanshan station,Point(115.9675411 39.7183414),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q5937809,荣京东街站,룽징둥제 역,Rongjing Dongjie Station,Point(116.5074445 39.7920117),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5937841,西土城站,시투청역,Xitucheng Station,Point(116.3477745 39.9748659),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q5937882,中关村站,중관춘역,Zhongguancun station,Point(116.3104743 39.9826335),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5938025,亦庄文化园站,이좡 문화원 역,Yizhuang Culture Park Station,Point(116.4846211 39.8056285),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5938103,西红门站,시훙먼역,Xihong Men Station,Point(116.3227016 39.7883955),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5938143,南邵站,난사오역,Nanshao station,Point(116.281971 40.2066479),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q5938212,清源路站,칭위안루역,Qingyuan Lu station,Point(116.3262542 39.7417545),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5938257,圆明园站,위안밍위안역,Yuanmingyuan Park station,Point(116.3037007 39.9982481),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5938302,魏公村站,웨이궁춘역,Weigongcun station,Point(116.3172894 39.9562855),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5938338,人民大学站,인민대학역,Renmin Univ. station,Point(116.3156202 39.965758),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5940665,望京东站,왕징둥역,Wangjingdong Station,Point(116.4809035 40.0020276),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5946141,火器营站,훠치잉역,Huoqiying station,Point(116.2834171 39.9643309),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5946183,霍营站,훠잉역,Huoying station,Point(116.3539423 40.070441),http://www.wikidata.org/entity/Q847771|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q5956448,金台夕照站,진타이시자오 역,Jintai Xizhao station,Point(116.4555255 39.9159595),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5959373,马家堡站,마자푸역,Majiapu station,Point(116.365093 39.8516387),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q847934,前门站,첸먼역,Qianmen station,Point(116.3916409 39.8987591),http://www.wikidata.org/entity/Q847771|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q848119,3号航站楼站,3터미널역,Terminal 3 station,Point(116.6098499 40.0517571),http://www.wikidata.org/entity/Q847767
+http://www.wikidata.org/entity/Q848128,2号航站楼站,2터미널역,Terminal 2 station,Point(116.5871332 40.0780121),http://www.wikidata.org/entity/Q847767
+http://www.wikidata.org/entity/Q848288,崇文门站,충원먼역,Chongwenmen station,Point(116.4119567 39.8997371),http://www.wikidata.org/entity/Q680973|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q898095,宋家庄站,쑹자좡역,Songjiazhuang station,Point(116.4219287 39.8443821),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q5944471|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q1037957,复兴门站,푸싱먼역,Fuxingmen station,Point(116.3505107 39.905948),http://www.wikidata.org/entity/Q748987|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q1039412,土桥站,투차오역,Tuqiao station,Point(116.6802742 39.8707455),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q7496096,什刹海站,스차하이역,Shichahai station,Point(116.3900647 39.9359528),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q7496646,十里河站,스리허역,Shilihe station,Point(116.4530028 39.8646535),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q24834015|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q7496655,石榴庄站,스류좡역,Shiliuzhuang station,Point(116.4074195 39.8444497),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q8044360,西钓鱼台站,시댜오위타이역,Xidiaoyutai station,Point(116.2919093 39.9218994),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q9206167,大井站,다징역,Dajing station,Point(116.2688628 39.864019),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q9206210,张郭庄站,장궈좡역,Zhangguozhuang station,Point(116.18099 39.85675),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q9206264,郭庄子站,궈좡쯔역,Guozhuangzi station,Point(116.2483861 39.8640535),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q9206315,园博园站,위안보위안역,Garden Expo Park station,Point(116.1956719 39.8599934),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q9206415,大瓦窑站,다와야오역,Dawayao station,Point(116.2343757 39.8584372),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q5619660,郭公庄站,궈궁좡역,Guogongzhuang station,Point(116.2960334 39.8132383),http://www.wikidata.org/entity/Q5929508|http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q5619690,果园站,궈위안역,Guoyuan station,Point(116.6407497 39.8922731),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5639035,海淀黄庄站,하이뎬황좡역,Haidian Huangzhuang station,Point(116.3115201 39.9747132),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5731938,和平门站,허핑먼역,Hepingmen station,Point(116.3777751 39.8986925),http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q5925867,黄村火车站,황춘훠처 역,Huangcun Railway Station,Point(116.3266885 39.7215003),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5926481,七里庄站,치리좡역,Qilizhuang station,Point(116.2881665 39.8652402),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q5934777,小红门站,샤오훙먼 역,Xiaohong Men Station,Point(116.4532399 39.8267264),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5935093,回龙观东大街站,후이룽관둥다제역,Huilongguan Dongdajie station,Point(116.3568234 40.0796096),http://www.wikidata.org/entity/Q135581001|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q5935100,回龙观站,후이룽관역,Huilongguan station,Point(116.329755 40.069525),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q6126685,奥体中心站,올림픽스포츠센터역,Aoti Zhongxin station,Point(116.3874758 39.9841326),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q6126985,龙泽站,룽쩌역,Longze station,Point(116.3132033 40.0695732),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q6970482,中国美术馆站,중국미술관역,National Art Museum station,Point(116.4045955 39.9237474),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q7041866,泥洼站,니와역,Niwa station,Point(116.2981946 39.8573762),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q7089092,奥林匹克公园站,올림픽공원역,Aolinpike Gongyuan (Olympic Park) station,Point(116.3867559 40.0003857),http://www.wikidata.org/entity/Q847771|http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q7131255,潘家园站,판자위안역,Panjiayuan station,Point(116.4549705 39.8748619),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q7258998,蒲黄榆站,푸황위역,Puhuangyu station,Point(116.4154612 39.8643287),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q7267855,青年路站,칭녠루역,Qingnian Lu station,Point(116.5108366 39.9216819),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q5936478,知春里站,즈춘리역,Zhichun Li station,Point(116.3229323 39.974909),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5936562,天宫院站,톈궁위안역,Tiangong Yuan station,Point(116.3138995 39.6687841),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5936601,肖村站,샤오춘역,Xiaocun Station,Point(116.4427214 39.8327372),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5936696,朱辛庄站,주신좡역,Zhuxinzhuang station,Point(116.3075432 40.1029987),http://www.wikidata.org/entity/Q847771|http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q5936756,枣园站,자오위안 역,Zaoyuan Station,Point(116.3260695 39.7519313),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5936795,苏庄站,수좡 역,Suzhuang Station,Point(116.1189698 39.7218705),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q5936835,亦庄桥站,이좡차오 역,Yizhuang Qiao Station,Point(116.4742727 39.8017277),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5936980,后沙峪站,허우사유 역,Houshayu station,Point(116.5583661 40.1130443),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5937020,同济南路站,퉁지난루역,Tongji Nanlu Station,Point(116.533948 39.7718151),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q127748303,四道口站,,Sidaokou station,Point(116.340230555 39.956633333),http://www.wikidata.org/entity/Q135581001
+http://www.wikidata.org/entity/Q133757964,保福寺站,,Baofusi station,Point(116.332316666 39.983797222),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q135471810,青龙湖东站,,Qinglonghudong station,Point(116.087 39.807),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q15929178,珠市口站,주스커우역,Zhushikou station,Point(116.3907039 39.8900077),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q15929607,达官营站,다관잉역,Daguanying station,Point(116.3317091 39.8882224),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q15931937,朝阳公园站,차오양 공원역,Chaoyang Park station,Point(116.4724181 39.931925),http://www.wikidata.org/entity/Q6553113|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q15940872,湾子站,완쯔역,Wanzi station,Point(116.3213598 39.8889326),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q15941383,广渠门内站,광취먼네이역,Guangqumennei station,Point(116.4277207 39.8922863),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q15942316,南楼梓庄站,난뤄쯔좡역,Nanlouzi Zhuang station,Point(116.4954124 39.8733935),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q15942662,化工站,,Huagong station,Point(116.4975172 39.8840067),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q15952186,广安门内站,광안먼네이역,Guang'anmen Nei station,Point(116.351727 39.8885681),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q57658585,德茂站,더마오역,Demao station,Point(116.4355574 39.7712874),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q57658896,和义站,허이역,Heyi Station,Point(116.3959362 39.813652),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q57659078,大红门南站,다훙먼 남역,Dahongmennan station,Point(116.3948888 39.8346048),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q57659234,海户屯站,하이후툰역,Haihutun station,Point(116.3941236 39.8493317),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q57777858,西黄村站,시황춘역,Xihuangcun station,Point(116.2005982 39.9324935),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q60177174,金鱼胡同站,진위후퉁역,Jinyu Hutong Station,Point(116.404865 39.914162),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q64866714,大兴新城站,다싱신청역,Daxing Xincheng Station,Point(116.3594091 39.7361064),http://www.wikidata.org/entity/Q19840478
+http://www.wikidata.org/entity/Q65052284,大兴机场站,다싱공항역,Daxing Airport station,Point(116.4107117 39.5124922),http://www.wikidata.org/entity/Q19840478
+http://www.wikidata.org/entity/Q6119466,生命科学园站,생명과학원역,Life Science Park Station,Point(116.2881667 40.0936293),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q6119497,义和庄站,이허좡역,Yihezhuang Station,Point(116.3130423 39.7111031),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q6122274,西四站,시스 역,Xisi station,Point(116.3667178 39.9225541),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q6123642,万寿路站,완서우루역,Wanshou Lu station,Point(116.2887741 39.9062468),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q6123757,刘家窑站,류자야오역,Liujiayao station,Point(116.4156074 39.8560744),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q6123956,和平西桥站,허핑시차오역,Heping Xiqiao station,Point(116.411798 39.9666821),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q6124150,芍药居站,사오야오쥐역,Shaoyaoju station,Point(116.4297381 39.9759527),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q6124229,五道口站,우다오커우역,Wudao Kou station,Point(116.3317017 39.9914779),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q46173973,香山站,샹산역,Fragrant Hills Station,Point(116.1983763 39.9927933),http://www.wikidata.org/entity/Q3400451
+http://www.wikidata.org/entity/Q46174634,万安站,완안역,Wan'an station,Point(116.2285883 39.980817),http://www.wikidata.org/entity/Q3400451
+http://www.wikidata.org/entity/Q46174701,颐和园西门站,이화원서문역,Summer Palace West Gate station,Point(116.2571405 39.9844867),http://www.wikidata.org/entity/Q3400451
+http://www.wikidata.org/entity/Q46716045,阎村站,옌춘역,Yancun Station,Point(116.0739687 39.7152761),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q46717114,星城站,싱청역,Xingcheng Station,Point(116.0551355 39.7122328),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q46828844,桥户营站,차오후잉역,Qiaohuying station,Point(116.1195271 39.9108915),http://www.wikidata.org/entity/Q4881158
+http://www.wikidata.org/entity/Q46828863,上岸站,상안역,Shang'an station,Point(116.115941 39.9036594),http://www.wikidata.org/entity/Q4881158
+http://www.wikidata.org/entity/Q46828886,小园站,샤오위안역,Xiaoyuan station,Point(116.1081411 39.8889934),http://www.wikidata.org/entity/Q4881158
+http://www.wikidata.org/entity/Q46828911,四道桥站,쓰다오차오역,Sidaoqiao station,Point(116.1274415 39.9144126),http://www.wikidata.org/entity/Q4881158
+http://www.wikidata.org/entity/Q46829369,栗园庄站,리위안좡역,Liyuanzhuang station,Point(116.116991 39.8942679),http://www.wikidata.org/entity/Q4881158
+http://www.wikidata.org/entity/Q5959491,新街口站,신제커우역,Xinjiekou station,Point(116.3612739 39.9394291),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5959534,平安里站,핑안리역,Ping'anli station,Point(116.3664948 39.9314815),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5959844,灵境胡同站,링징후퉁역,Lingjing Hutong station,Point(116.3672738 39.9147796),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5960410,陶然亭站,타오란팅역,Taoranting station,Point(116.3680928 39.8774533),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5960800,角门西站,자오먼시 역,Jiaomen Xi (W) station,Point(116.364851 39.8444042),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5966161,惠新西街南口站,후이신시제난커우역,Huixin Xijie Nankou station,Point(116.4113554 39.9759588),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5972622,立水桥南站,리수이차오난역,Lishuiqiao Nan (S) station,Point(116.4082437 40.0405075),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5972674,天通苑南站,톈퉁위안난역,Tiantongyuannan station,Point(116.4065063 40.0651231),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q4392198,沙河高教园站,사허 고교원 역,Shahe Univ. Park station,Point(116.2743857 40.1633993),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q4392201,良乡大学城北站,량상다쉐청베이 역,Liangxiang Univ. Town North station,Point(116.1774398 39.7284674),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q4392224,西小口站,시샤오커우역,Xixiaokou station,Point(116.3451639 40.0460679),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q4392228,广阳城站,광양청역,Guangyangcheng Station,Point(116.1789519 39.7465941),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q4392236,六里桥站,류리차오역,Liuliqiao station,Point(116.2968997 39.8786861),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4392244,顺义站,순이 역,Shunyi station,Point(116.6511833 40.1288708),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q4392249,科怡路站,커이루역,Keyi Lu station,Point(116.2914257 39.830959),http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4392266,巩华城站,궁화청역,Gonghuacheng station,Point(116.2878759 40.1296641),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q4392273,丰台南路站,펑타이난루역,Fengtai Nanlu station,Point(116.2905368 39.8395745),http://www.wikidata.org/entity/Q6553080|http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q5976575,积水潭站,지수이탄역,Jishuitan station,Point(116.3670609 39.947325),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q6119031,孙河站,쑨허역,Sunhe station,Point(116.5287171 40.0439512),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q6119094,良乡南关站,량상난관 역,Liangxiang Nanguan station,Point(116.1342397 39.7218824),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q6119178,望京站,왕징역,Wangjing station,Point(116.4624279 39.9965663),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q6119338,黄村西大街站,황춘시다제역,Huangcun Xidajie station,Point(116.3265479 39.7304217),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q6119375,健德门站,젠더먼역,Jiandemen station,Point(116.3747659 39.9750859),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q6119390,经海路站,징하이루 역,Jinghai Lu Station,Point(116.5564358 39.7825504),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q17061997,马泉营车辆段,,Maquanying depot,Point(116.47800556 40.03373889),http://www.wikidata.org/entity/Q734917|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q5972711,天坛东门站,톈탄둥먼역,Temple of Heaven East Gate station,Point(116.4144792 39.8822564),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5972925,惠新西街北口站,후이신시제베이커우역,Huixin Xijie Beikou station,Point(116.4109068 39.9861781),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5973022,临河里站,린허리역,Linheli station,Point(116.6728357 39.8742806),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5973051,九棵树站,주커수역,Jiukeshu station,Point(116.6516162 39.8891486),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5973079,通州北苑站,퉁저우베이위안역,Tongzhou Beiyuan station,Point(116.6314284 39.9027464),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5973148,梨园站,리위안역,Liyuan station (Beijing Subway),Point(116.6627085 39.8825312),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5973184,双桥站,솽차오역,Shuangqiao station,Point(116.5708496 39.9091568),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q5976309,军事博物馆站,군사박물관역,Military Museum station,Point(116.3156818 39.9061232),http://www.wikidata.org/entity/Q748987|http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q72328419,黄厂站,황창역,Huangchang Station,Point(116.5475285 39.8479616),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q75161769,环球度假区站,유니버설리조트역,Universal Resort Station,Point(116.673141666 39.847936111),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q75161881,花庄站,화좡역,Huazhuang Station,Point(116.6891062 39.8553663),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q75161991,高楼金站,가오러우진역,Gaoloujin Station,Point(116.679103 39.861785),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q76063542,郎辛庄站,랑신좡역,Langxinzhuang station,Point(116.5641046 39.8555351),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q76063590,黑庄户站,헤이좡후역,Heizhuanghu station,Point(116.5927827 39.8577135),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q76063631,万盛西站,완성시역,Wanshengxi station,Point(116.626618 39.862344),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q76063646,万盛东站,완성둥역,Wanshengdong station,Point(116.650774 39.862276),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q10948584,定泗路停车场,,Dingsilu yard,Point(116.3056047 40.1118855),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q11061294,平西府车辆段,,Pingxifu depot,Point(116.34545 40.09016),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q11081564,通运门站,,Tongyun Men station,Point(116.667369 39.909603),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q11177956,黄渠站,황추 역,Huangqu station,Point(116.5730944 39.9227753),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q11181715,龙背村停车场,,Longbeicun yard,Point(116.271036 40.0125482),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q11591976,福寿岭站,,Fushouling station,Point(116.1649999 39.9384043),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q11667944,马家堡车辆段,,Majiabao depot,Point(116.36108333 39.83544444),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q11668737,53号站,가오징역,No.53 station,Point(116.1511949 39.946152),http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q15500795,平西府站,핑시푸역,Pingxifu station,Point(116.3441902 40.0886607),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q15500806,育知路站,유즈루 역,Yuzhi Lu station,Point(116.320442 40.0865204),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q15919571,清华东路西口站,칭화둥루시커우역,Qinghua Donglu Xikou station,Point(116.3328659 39.9989055),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q15928637,九龙山站,주룽산역,Jiulongshan station,Point(116.4716849 39.8921089),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q19852289,天桥站,,Tianqiao station,Point(116.3922046 39.8757538),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q21017081,昌平站,창핑역,Changping station,Point(116.2274887 40.2192202),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q21245978,十三陵景区站,스싼링징취역,Ming Tombs station,Point(116.2018079 40.2383896),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q21245977,北邵洼站,베이사오와역,Beishaowa Station,Point(116.2754466 40.2206969),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q21245986,景泰站,징타이역,Jingtai station,Point(116.4038312 39.8636079),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q17163628,东湖渠站,둥후취역,Donghuqu station,Point(116.4611561 40.0091272),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q17498770,双合站,솽허역,Shuanghe station,Point(116.5223453 39.8581385),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q17498803,垡头站,파터우역,Fatou station,Point(116.5057156 39.859574),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q17499129,欢乐谷景区站,환러구징취역,Happy Valley station,Point(116.4930838 39.8656674),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q17499265,焦化厂站,쟈오화창 역,Jiaohua Chang station,Point(116.531614 39.8542896),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q18394757,东夏园站,둥샤위안역,Dongxia Yuan station,Point(116.7272447 39.9022116),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q18651655,六道口站,류다오커우역,Liudaokou station,Point(116.347669 39.9993477),http://www.wikidata.org/entity/Q5066697|http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q18651878,北运河东站,베이윈허둥역,Beiyunhe Dong (E) station,Point(116.7018094 39.9021187),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q18652168,善各庄站,산거좡역,Shangezhuang station,Point(116.4725535 40.0263879),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q5935355,呼家楼站,후자러우역,Hujialou station,Point(116.4554956 39.9220995),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5935686,新宫站,신궁역,Xingong station,Point(116.359 39.8111),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q5242742|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5935707,旧宫站,주궁 역,Jiugong Station,Point(116.4547113 39.8056065),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5935750,团结湖站,퇀제후역,Tuanjiehu station,Point(116.4556066 39.9322013),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q5936021,双井站,솽징역,Shuangjing station,Point(116.4552314 39.8920933),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q5936047,万源街站,완위안제 역,Wanyuan Jie Station,Point(116.4995335 39.8017615),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5936074,苏州街站,쑤저우제역,Suzhou Jie station,Point(116.2999736 39.9743281),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q5121332,次渠站,츠추 역,Ciqu station,Point(116.5856816 39.8025087),http://www.wikidata.org/entity/Q24834015|http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q5154119,传媒大学站,촨메이 대학역,Communication Univ. of China station,Point(116.5487824 39.9080637),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q41695204,房山城关站,팡산청관역,Fangshan Chengguan station,Point(115.9836445 39.7046445),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q42748562,紫草坞站,쯔차오우역,Zicaowu station,Point(116.0804381 39.7230214),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q42751307,廖公庄站,랴오궁좡역,Liaogongzhuang station,Point(116.2208525 39.9316009),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q43750525,大石河东站,다스허 동역,Dashihe Dong (E) station,Point(116.0339915 39.7085953),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q45412676,红莲南路站,훙롄난루역,Honglian Nanlu station,Point(116.3309473 39.8761003),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q45797647,饶乐府站,라오러푸역,Raolefu station,Point(116.0001044 39.7000983),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q45859909,宛平城站,완핑청역,Wanpingcheng station,Point(116.2228632 39.8475435),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q46173397,茶棚站,차펑역,Chapeng station,Point(116.2417823 39.9808449),http://www.wikidata.org/entity/Q3400451
+http://www.wikidata.org/entity/Q46173464,国家植物园站,국가식물원역,China National Botanical Garden station,Point(116.2098031 39.9922021),http://www.wikidata.org/entity/Q3400451
+http://www.wikidata.org/entity/Q76063691,群芳站,췬팡역,Qunfang Station,Point(116.664728 39.86226),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q78054167,东管头南站,둥관터우난역,Dongguantounan station,Point(116.316661 39.853142),http://www.wikidata.org/entity/Q6553080|http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q78144946,玉渊潭东门站,위위안탄둥먼역,Yuyuantan Park East Gate Station,Point(116.3288106 39.9137137),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q78872883,富丰桥站,푸펑차오역,Fufengqiao Station,Point(116.280878 39.834921),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q78872905,榆树庄站,위수좡역,Yushuzhuang Station,Point(116.252907 39.837518),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q78872939,看丹站,칸단역,Kandan Station,Point(116.26654 39.833599),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q84244521,工人体育场站,노동자 경기장역,Workers' Stadium Station,Point(116.44377 39.932233),http://www.wikidata.org/entity/Q24834015|http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q84244726,西坝河站,시바허역,Xibahe Station,Point(116.434989 39.965102),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q84244808,蓟门桥站,지먼차오역,Jimenqiao Station,Point(116.349137 39.966304),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q102346922,潘家园西站,,Panjiayuanxi station,Point(116.444722 39.873872),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q102353038,朱房北站,주팡베이역,Zhufangbei station,Point(116.325995 40.034677),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q102353068,清河小营桥站,칭허샤오잉차오역,Qinghe Xiaoyingqiao station,Point(116.337041111 40.03357),http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q102353132,牛街站,뉴제역,Niujie Station,Point(116.357361111 39.889305555),http://www.wikidata.org/entity/Q6553202
+http://www.wikidata.org/entity/Q102353186,太平桥站,타이핑차오역,Taipingqiao Station,Point(116.357013888 39.908888888),http://www.wikidata.org/entity/Q6553202
+http://www.wikidata.org/entity/Q102367262,模式口站,모스커우역,Moshikou station,Point(116.14969 39.932339),http://www.wikidata.org/entity/Q6553057
+http://www.wikidata.org/entity/Q102367263,北辛安站,베이신안역,Beixin'an station,Point(116.158449 39.913424),http://www.wikidata.org/entity/Q6553057
+http://www.wikidata.org/entity/Q102367265,新首钢站,신서우강역,Xinshougang (Shougang Park) station,Point(116.158578 39.908239),http://www.wikidata.org/entity/Q6553057
+http://www.wikidata.org/entity/Q102367414,将台西站,장타이시역,Jiangtaixi station,Point(116.473398 39.970921),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q103742468,东坝北站,둥바베이역,Dongbabei station,Point(116.549541666 39.974411111),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q18652379,大郊亭站,다자오팅역,Dajiaoting station,Point(116.4813499 39.8921857),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q18653130,广渠门外站,광취먼와이역,Guangqumenwai station,Point(116.4430351 39.8923066),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q18653714,望京南站,왕징난역,Wangjingnan station,Point(116.4756461 39.9833646),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q18654011,桥湾站,차오완역,Qiaowan station,Point(116.4017416 39.8913178),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q18657528,百子湾站,바이쯔완역,Baiziwan station,Point(116.4902447 39.8913756),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q18697398,安立路站,안리루역,Anli Lu station,Point(116.400721 40.0011501),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q18699937,北沙滩站,베이사탄역,Beishatan station,Point(116.3620432 40.0001238),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q18759603,来广营站,라이광잉역,Laiguangying station,Point(116.4606994 40.0188571),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q18759604,阜通站,푸퉁역,Futong station,Point(116.4650632 39.9906798),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q4764353,安河桥北站,안허차오 북역,Anheqiaobei station,Point(116.2639202 40.0110618),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q4764370,安华桥站,안화치아오 역,Anhuaqiao station,Point(116.3883984 39.9671117),http://www.wikidata.org/entity/Q26262009|http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q4778457,安贞门站,안전먼역,Anzhen Men station,Point(116.3991828 39.9758344),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q4843191,白堆子站,바이두이쯔역,Baiduizi station,Point(116.3196625 39.9226607),http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4848682,白石桥南站,바이스차오난역,Baishiqiaonan station,Point(116.3192794 39.9313879),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4851007,八里桥站,바리차오역,Baliqiao station,Point(116.6128233 39.9049983),http://www.wikidata.org/entity/Q1039452|http://www.wikidata.org/entity/Q748987
+http://www.wikidata.org/entity/Q4881073,北宫门,베이궁먼역,Beigongmen,Point(116.2713642 40.0012063),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q4881077,北海北站,베이하이베이역,Beihaibei station,Point(116.3800445 39.9317985),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q4881188,北京南站,베이징 남역 (지하철),Beijing South Railway Station,Point(116.3725472 39.8635824),http://www.wikidata.org/entity/Q6553070|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q4881220,动物园站,동물원역,Dongwuyuan station,Point(116.3328455 39.936964),http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q4881506,北新桥站,베이신차오역,Beixinqiao station,Point(116.4108701 39.9393835),http://www.wikidata.org/entity/Q847767|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q4881517,北苑路北站,베이위안루베이역,Beiyuanlu Bei (N) station,Point(116.4118956 40.0289966),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q4915106,生物医药基地站,생물의학기지 역,Biomedical Base Station,Point(116.3161458 39.6851176),http://www.wikidata.org/entity/Q5242742
+http://www.wikidata.org/entity/Q5017826,菜市口站,차이스커우역,Caishikou station,Point(116.3682164 39.887991),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5071746,长椿街站,창춘제역,Changchun Jie station,Point(116.357 39.898),http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q5071745,长春桥站,창춘차오역,Changchun Qiao station,Point(116.2881369 39.9572724),http://www.wikidata.org/entity/Q847886|http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q5072154,长阳站,창양역,Changyang station,Point(116.2065053 39.7624413),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q5072152,常营站,창잉역,Changying station,Point(116.5934394 39.9243238),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q5089563,车公庄站,처공좡 역,Chegongzhuang station,Point(116.3493426 39.9311554),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q5099743,国展站,궈잔역,China Int'l Exhibition Center station,Point(116.549457 40.0688967),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5121330,磁器口站,츠치커우역,Ciqikou station,Point(116.4126199 39.8917025),http://www.wikidata.org/entity/Q6553149|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5121331,次渠南站,츠추난 역,Ciqunan station,Point(116.5753324 39.7937219),http://www.wikidata.org/entity/Q5944471
+http://www.wikidata.org/entity/Q15953285,虎坊桥站,후팡차오역,Hufangqiao station,Point(116.3774806 39.8883975),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q16928775,焦化厂车辆段,,Jiaohuachang depot,Point(116.53503 39.85351),http://www.wikidata.org/entity/Q6553149
+http://www.wikidata.org/entity/Q16928789,物资学院路站,우쯔쉐위안루역,Wuzi Xueyuan Lu station,Point(116.6334967 39.9259644),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q16928795,北运河西站,베이윈허시역,Beiyunhe Xi (W) station,Point(116.6819734 39.9018256),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q16928969,郝家府站,하오자푸역,Haojia Fu station,Point(116.7111595 39.9021403),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q17013586,东风北桥站,둥펑베이차오역,Dongfeng Beiqiao station,Point(116.4789687 39.9583029),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q17024829,将台站,장타이역,Jiangtai station,Point(116.4840447 39.9694941),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q17028044,枣营站,짜오잉역,Zaoying station,Point(116.4690136 39.942932),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q17034758,高家园站,가오자위안역,Gaojiayuan station,Point(116.482741 39.979253),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q4392144,俸伯站,펑보 역,Fengbo station,Point(116.6789785 40.1313792),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q4392148,稻田站,다오톈역,Daotian Station,Point(116.2128049 39.7935287),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q4392154,丰台东大街站,펑타이둥다제역,Fengtai Dongdajie Station,Point(116.287865 39.8541717),http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4392161,篱笆房站,리바팡역,Libafang Station,Point(116.1833027 39.7593938),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q4392166,六里桥东站,류리차오둥역,Liuliqiaodong station,Point(116.308784 39.8857391),http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4392172,丰台科技园站,펑타이 과기원역,Fengtai Science Park station,Point(116.291261111 39.82412778),http://www.wikidata.org/entity/Q5929508
+http://www.wikidata.org/entity/Q4392184,林萃桥站,린추이차오역,Lincuiqiao station,Point(116.3667905 40.0206001),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q4392190,石门站,스먼 역,Shimen station,Point(116.6352231 40.1285677),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q5976333,和平里北街站,허핑리베이제역,Hepingli Beijie station,Point(116.4121496 39.9573904),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5976347,雍和宫站,융허궁역,Yonghegong Lama Temple station,Point(116.4115432 39.9479275),http://www.wikidata.org/entity/Q680973|http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5976388,张自忠路站,장쯔중루역,Zhangzizhong Lu station,Point(116.4112952 39.9322844),http://www.wikidata.org/entity/Q647340
+http://www.wikidata.org/entity/Q5976401,宣武门站,쉬안우먼역,Xuanwumen station,Point(116.3680141 39.8983866),http://www.wikidata.org/entity/Q680973|http://www.wikidata.org/entity/Q304264
+http://www.wikidata.org/entity/Q5976481,朝阳门站,차오양먼역,Chaoyangmen station,Point(116.4279504 39.9230647),http://www.wikidata.org/entity/Q6553138|http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q5976495,北苑站,베이위안역,Beiyuan station,Point(116.428187 40.0416631),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q5976563,上地站,상디역,Shangdi station,Point(116.313861111 40.031694444),http://www.wikidata.org/entity/Q847744
+http://www.wikidata.org/entity/Q46999367,平乐园站,핑러위안역,Pingle Yuan station,Point(116.4713411 39.8838514),http://www.wikidata.org/entity/Q6553070
+http://www.wikidata.org/entity/Q46999649,马各庄站,마거좡역,Magezhuang Station,Point(116.0105419 39.703788),http://www.wikidata.org/entity/Q8048350
+http://www.wikidata.org/entity/Q56449093,东高地站,둥가오디역,Donggaodi station,Point(116.4035402 39.8037849),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q56683211,五福堂站,우푸탕역,Wufutang station,Point(116.4178236 39.7833243),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q56683263,杨庄站,양좡역,Yangzhuang station,Point(116.1795516 39.9264588),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q56881426,田村站,톈춘역,Tiancun station,Point(116.2468822 39.9283896),http://www.wikidata.org/entity/Q6553138
+http://www.wikidata.org/entity/Q56882345,瀛海站,잉하이역,Yinghai station,Point(116.4427514 39.7594316),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q56882475,火箭万源站,훠젠완위안역,Huojian Wanyuan station,Point(116.4119554 39.7984951),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q57025115,木樨园站,무시위안역,Muxiyuan station,Point(116.3936241 39.8586937),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q84249130,北太平庄站,베이타이핑좡역,Beitaipingzhuang station,Point(116.363963 39.96644),http://www.wikidata.org/entity/Q6553202|http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q84251336,马甸桥站,마뎬차오역,Madian Qiao station,Point(116.376487 39.966777),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q84262185,左家庄站,쭤자좡역,Zuojiazhuang station,Point(116.438019 39.9488),http://www.wikidata.org/entity/Q24834015
+http://www.wikidata.org/entity/Q96632013,安贞桥站,안전차오역,Anzhen Qiao Station,Point(116.40114 39.96724),http://www.wikidata.org/entity/Q26262009
+http://www.wikidata.org/entity/Q96649511,洪泰庄站,훙타이좡역,Hongtaizhuang station,Point(116.243278 39.846225),http://www.wikidata.org/entity/Q6553080
+http://www.wikidata.org/entity/Q97171678,花乡东桥站,화샹둥차오역,Huaxiang Dongqiao station,Point(116.313899 39.827783),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q97172031,新发地站,신파디역,Xinfadi Station,Point(116.340065 39.82236),http://www.wikidata.org/entity/Q6553202
+http://www.wikidata.org/entity/Q97172312,白盆窑站,바이펀야오역,Baipenyao Station,Point(116.30724 39.818147),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q97172525,石佛营站,스포잉역,Shifoying station,Point(116.493011 39.934426),http://www.wikidata.org/entity/Q6553113
+http://www.wikidata.org/entity/Q4392279,南法信站,난파신 역,Nanfaxin station,Point(116.6035653 40.1274695),http://www.wikidata.org/entity/Q734917
+http://www.wikidata.org/entity/Q4392290,永泰庄站,융타이좡역,Yongtaizhuang station,Point(116.3483302 40.0366785),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q4392294,良乡大学城站,량상다쉐청 역,Liangxiang Univ. Town station,Point(116.1702924 39.7219726),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q4392300,良乡大学城西站,량상다쉐청시 역,Liangxiang Univ. Town West station,Point(116.1500158 39.7219283),http://www.wikidata.org/entity/Q5433860
+http://www.wikidata.org/entity/Q4392665,育新站,위신역,Yuxin station,Point(116.3410977 40.0583363),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q4674479,西二旗站,시얼치역,Xi'erqi station,Point(116.3001813 40.0517165),http://www.wikidata.org/entity/Q847744|http://www.wikidata.org/entity/Q5066697
+http://www.wikidata.org/entity/Q4693902,农业展览馆站,농업전람관역,Agricultural Exhibition Center station,Point(116.4562886 39.940129),http://www.wikidata.org/entity/Q847886
+http://www.wikidata.org/entity/Q4753682,安德里北街站,안더리베이제역,Andeli Beijie station,Point(116.3885073 39.9555696),http://www.wikidata.org/entity/Q847771
+http://www.wikidata.org/entity/Q4754482,安定门站,안딩먼역,Andingmen station,Point(116.4020676 39.9476674),http://www.wikidata.org/entity/Q680973
+http://www.wikidata.org/entity/Q10914553,台湖车辆段,,,Point(116.59984444 39.82610556),http://www.wikidata.org/entity/Q5944471

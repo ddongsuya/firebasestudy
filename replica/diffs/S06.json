@@ -1,0 +1,88 @@
+{
+  "mode": "layout",
+  "original": {
+    "width": 875,
+    "height": 1955
+  },
+  "clone": {
+    "width": 390,
+    "height": 844
+  },
+  "compared_at": {
+    "width": 390,
+    "height": 844
+  },
+  "height_delta_pct": -3.1,
+  "score": 30.3,
+  "verdict": "different",
+  "regions": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 861,
+      "h": 1938,
+      "cells": 207,
+      "where": "middle centre"
+    },
+    {
+      "x": 215,
+      "y": 1005,
+      "w": 143,
+      "h": 71,
+      "cells": 2,
+      "where": "middle left"
+    },
+    {
+      "x": 215,
+      "y": 0,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "top left"
+    },
+    {
+      "x": 143,
+      "y": 646,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "middle left"
+    },
+    {
+      "x": 430,
+      "y": 1076,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "middle centre"
+    },
+    {
+      "x": 71,
+      "y": 1148,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "middle left"
+    },
+    {
+      "x": 215,
+      "y": 1435,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "bottom left"
+    },
+    {
+      "x": 0,
+      "y": 1866,
+      "w": 71,
+      "h": 71,
+      "cells": 1,
+      "where": "bottom left"
+    }
+  ],
+  "files": {
+    "original": "replica/diffs/orig-crops/appstore-kr-05-screen.png",
+    "clone": "replica/clone-screens/S06-route-results.png"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "고덕지도 한국어판 · 베이징",
+  "short_name": "고덕지도",
+  "description": "베이징 여행용 고덕지도(高德地图) 한국어 안내 지도",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0a84ff",
+  "lang": "ko",
+  "icons": [
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

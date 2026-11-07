@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <title>고덕 KO · 베이징 길찾기</title>
+  <meta name="description" content="베이징 여행용 한국어 지도. 지하철 길찾기, 장소 검색, 기사에게 보여주는 중국어 카드.">
+  <meta name="theme-color" content="#1d5bd1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="고덕 KO">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/ui.css">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div id="app">
+  <div id="map" role="application" aria-label="베이징 지도"></div>
+
+  <!-- 상단: 검색 + 카테고리 칩 (S01/S02) -->
+  <div class="topbar" id="topbar">
+    <div class="searchbar" id="searchbar">
+      <button class="btn icon hidden" id="btnSearchBack" aria-label="뒤로"></button>
+      <span class="brand" id="brand">고덕 KO</span>
+      <input id="q" type="search" placeholder="장소·역 검색 (한글·中文·pinyin)" autocomplete="off" enterkeyhint="search" aria-label="장소 검색" role="combobox" aria-expanded="false" aria-controls="results">
+      <button class="btn icon hidden" id="btnClear" aria-label="지우기"></button>
+    </div>
+    <div id="results" class="results hidden" role="listbox" aria-label="검색 결과"></div>
+    <div id="chips" class="chips"></div>
+    <div id="homeShortcuts" class="shortcuts"></div>
+  </div>
+
+  <!-- 우측 FAB (S01) -->
+  <div class="fabs" id="fabs">
+    <button class="fab text" id="btnLang" aria-label="지도 글자 언어 전환" aria-pressed="false">中</button>
+    <button class="fab" id="btnZoomIn" aria-label="확대"></button>
+    <button class="fab" id="btnZoomOut" aria-label="축소"></button>
+    <button class="fab" id="btnLocate" aria-label="현재 위치" aria-pressed="false"></button>
+    <button class="fab route" id="btnRoute" aria-label="길찾기"></button>
+  </div>
+
+  <!-- 바텀 시트 (S04, S13, S14) -->
+  <div id="sheet" class="sheet" role="dialog" aria-label="상세"><div class="grip" aria-hidden="true"></div><div class="sheet-body" id="sheetBody"></div></div>
+
+  <!-- 전체 패널 (S05~S08, S10, S11, S12, S17) -->
+  <section id="panel" class="panel hidden" aria-live="polite"></section>
+
+  <!-- 하단 탭 -->
+  <nav id="tabbar" class="tabbar" aria-label="주요" role="tablist">
+    <button class="tab" role="tab" data-tab="map" aria-selected="true"><span class="i"></span>지도</button>
+    <button class="tab" role="tab" data-tab="nearby" aria-selected="false"><span class="i"></span>주변</button>
+    <button class="tab" role="tab" data-tab="route" aria-selected="false"><span class="i"></span>길찾기</button>
+    <button class="tab" role="tab" data-tab="fav" aria-selected="false"><span class="i"></span>저장<span id="favBadge" class="badge hidden">0</span></button>
+    <button class="tab" role="tab" data-tab="more" aria-selected="false"><span class="i"></span>더보기</button>
+  </nav>
+
+  <!-- 기사에게 보여주기 (S16) -->
+  <div id="driver" class="driver hidden" role="dialog" aria-label="기사에게 보여주는 카드"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="./vendor/leaflet/leaflet.js"></script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

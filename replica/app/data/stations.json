@@ -1,0 +1,5922 @@
+[
+ {
+  "id": "agricultural-exhibition-center",
+  "zh": "农业展览馆",
+  "ko": "농업전람관",
+  "en": "Agricultural Exhibition Center",
+  "py": "Agricultural Exhibition Center",
+  "lat": 39.941471,
+  "lon": 116.462453,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q4693902"
+ },
+ {
+  "id": "andeli-beijie",
+  "zh": "安德里北街",
+  "ko": "안더리베이제",
+  "en": "Andeli Beijie",
+  "py": "Andeli Beijie",
+  "lat": 39.956971,
+  "lon": 116.394753,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q4753682"
+ },
+ {
+  "id": "andingmen",
+  "zh": "安定门",
+  "ko": "안딩먼",
+  "en": "Andingmen",
+  "py": "Andingmen",
+  "lat": 39.949073,
+  "lon": 116.408316,
+  "lines": [
+   "Q680973"
+  ],
+  "transfer": false,
+  "wd": "Q4754482"
+ },
+ {
+  "id": "anheqiaobei",
+  "zh": "安河桥北",
+  "ko": "안허차오 북",
+  "en": "Anheqiaobei",
+  "py": "Anheqiaobei",
+  "lat": 40.012286,
+  "lon": 116.269964,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q4764353"
+ },
+ {
+  "id": "anhuaqiao",
+  "zh": "安华桥",
+  "ko": "안화치아오",
+  "en": "Anhuaqiao",
+  "py": "Anhuaqiao",
+  "lat": 39.968514,
+  "lon": 116.394645,
+  "lines": [
+   "Q26262009",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q4764370"
+ },
+ {
+  "id": "anli-lu",
+  "zh": "安立路",
+  "ko": "안리루",
+  "en": "Anli Lu",
+  "py": "Anli Lu",
+  "lat": 40.002558,
+  "lon": 116.406977,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q18697398"
+ },
+ {
+  "id": "anzhen-men",
+  "zh": "安贞门",
+  "ko": "안전먼",
+  "en": "Anzhen Men",
+  "py": "Anzhen Men",
+  "lat": 39.977241,
+  "lon": 116.405435,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q4778457"
+ },
+ {
+  "id": "anzhen-qiao",
+  "zh": "安贞桥",
+  "ko": "안전차오",
+  "en": "Anzhen Qiao",
+  "py": "Anzhen Qiao",
+  "lat": 39.968646,
+  "lon": 116.407391,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q96632013"
+ },
+ {
+  "id": "aolinpike-gongyuan-olympic-park",
+  "zh": "奥林匹克公园",
+  "ko": "올림픽공원",
+  "en": "Aolinpike Gongyuan (Olympic Park)",
+  "py": "Aolinpike Gongyuan (Olympic Park)",
+  "lat": 40.001788,
+  "lon": 116.393006,
+  "lines": [
+   "Q734917",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q7089092"
+ },
+ {
+  "id": "aoti-zhongxin",
+  "zh": "奥体中心",
+  "ko": "올림픽스포츠센터",
+  "en": "Aoti Zhongxin",
+  "py": "Aoti Zhongxin",
+  "lat": 39.985535,
+  "lon": 116.393724,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q6126685"
+ },
+ {
+  "id": "babaoshan",
+  "zh": "八宝山",
+  "ko": "바바오산",
+  "en": "Babaoshan",
+  "py": "Babaoshan",
+  "lat": 39.907411,
+  "lon": 116.235677,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q842136"
+ },
+ {
+  "id": "bagou",
+  "zh": "巴沟",
+  "ko": "바거우",
+  "en": "Bagou",
+  "py": "Bagou",
+  "lat": 39.974541,
+  "lon": 116.29349,
+  "lines": [
+   "Q3400451",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q847877"
+ },
+ {
+  "id": "baiduizi",
+  "zh": "白堆子",
+  "ko": "바이두이쯔",
+  "en": "Baiduizi",
+  "py": "Baiduizi",
+  "lat": 39.923957,
+  "lon": 116.325779,
+  "lines": [
+   "Q5929508"
+  ],
+  "transfer": false,
+  "wd": "Q4843191"
+ },
+ {
+  "id": "baipenyao",
+  "zh": "白盆窑",
+  "ko": "바이펀야오",
+  "en": "Baipenyao",
+  "py": "Baipenyao",
+  "lat": 39.819415,
+  "lon": 116.313317,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q97172312"
+ },
+ {
+  "id": "baishiqiaonan",
+  "zh": "白石桥南",
+  "ko": "바이스차오난",
+  "en": "Baishiqiaonan",
+  "py": "Baishiqiaonan",
+  "lat": 39.932684,
+  "lon": 116.325396,
+  "lines": [
+   "Q6553138",
+   "Q5929508"
+  ],
+  "transfer": true,
+  "wd": "Q4848682"
+ },
+ {
+  "id": "baiziwan",
+  "zh": "百子湾",
+  "ko": "바이쯔완",
+  "en": "Baiziwan",
+  "py": "Baiziwan",
+  "lat": 39.892625,
+  "lon": 116.496286,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q18657528"
+ },
+ {
+  "id": "bajiao-amusement-park",
+  "zh": "八角游乐园",
+  "ko": "바자오유러위안",
+  "en": "Bajiao Amusement Park",
+  "py": "Bajiao Amusement Park",
+  "lat": 39.907443,
+  "lon": 116.21257,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q842959"
+ },
+ {
+  "id": "baliqiao",
+  "zh": "八里桥",
+  "ko": "바리차오",
+  "en": "Baliqiao",
+  "py": "Baliqiao",
+  "lat": 39.906042,
+  "lon": 116.618619,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q4851007"
+ },
+ {
+  "id": "baofusi",
+  "zh": "保福寺",
+  "ko": "保福寺",
+  "en": "Baofusi",
+  "py": "Baofusi",
+  "lat": 39.98512,
+  "lon": 116.33847,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q133757964"
+ },
+ {
+  "id": "bei-anhe",
+  "zh": "北安河",
+  "ko": "베이안허",
+  "en": "Bei'anhe",
+  "py": "Bei'anhe",
+  "lat": 40.068281,
+  "lon": 116.130635,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q24699103"
+ },
+ {
+  "id": "beigongmen",
+  "zh": "北宫门",
+  "ko": "베이궁먼",
+  "en": "Beigongmen",
+  "py": "Beigongmen",
+  "lat": 40.002435,
+  "lon": 116.277411,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q4881073"
+ },
+ {
+  "id": "beihaibei",
+  "zh": "北海北",
+  "ko": "베이하이베이",
+  "en": "Beihaibei",
+  "py": "Beihaibei",
+  "lat": 39.933193,
+  "lon": 116.38628,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q4881077"
+ },
+ {
+  "id": "beijing-railway",
+  "zh": "北京",
+  "ko": "베이징",
+  "en": "Beijing Railway",
+  "py": "Beijing Railway",
+  "lat": 39.904995,
+  "lon": 116.427187,
+  "lines": [
+   "Q680973"
+  ],
+  "transfer": false,
+  "wd": "Q10902386"
+ },
+ {
+  "id": "beijing-south-railway",
+  "zh": "北京南",
+  "ko": "베이징 남",
+  "en": "Beijing South Railway",
+  "py": "Beijing South Railway",
+  "lat": 39.864966,
+  "lon": 116.378765,
+  "lines": [
+   "Q6553070",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q4881188"
+ },
+ {
+  "id": "beijing-univ-of-tech-west-gate",
+  "zh": "北工大西门",
+  "ko": "베이궁다시먼",
+  "en": "Beijing Univ. of Tech. West Gate",
+  "py": "Beijing Univ. of Tech. West Gate",
+  "lat": 39.874945,
+  "lon": 116.477465,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q21850056"
+ },
+ {
+  "id": "beijing-west-railway",
+  "zh": "北京西",
+  "ko": "베이징 서",
+  "en": "Beijing West Railway",
+  "py": "Beijing West Railway",
+  "lat": 39.89483,
+  "lon": 116.321024,
+  "lines": [
+   "Q6553149",
+   "Q5929508"
+  ],
+  "transfer": true,
+  "wd": "Q105062204"
+ },
+ {
+  "id": "beishaowa",
+  "zh": "北邵洼",
+  "ko": "베이사오와",
+  "en": "Beishaowa",
+  "py": "Beishaowa",
+  "lat": 40.221948,
+  "lon": 116.281524,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q21245977"
+ },
+ {
+  "id": "beishatan",
+  "zh": "北沙滩",
+  "ko": "베이사탄",
+  "en": "Beishatan",
+  "py": "Beishatan",
+  "lat": 40.001499,
+  "lon": 116.368261,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q18699937"
+ },
+ {
+  "id": "beishenshu",
+  "zh": "北神树",
+  "ko": "北神树",
+  "en": "Beishenshu",
+  "py": "Beishenshu",
+  "lat": 39.81865,
+  "lon": 116.552537,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107323241"
+ },
+ {
+  "id": "beitaipingzhuang",
+  "zh": "北太平庄",
+  "ko": "베이타이핑좡",
+  "en": "Beitaipingzhuang",
+  "py": "Beitaipingzhuang",
+  "lat": 39.967817,
+  "lon": 116.37018,
+  "lines": [
+   "Q6553202",
+   "Q26262009"
+  ],
+  "transfer": true,
+  "wd": "Q84249130"
+ },
+ {
+  "id": "beitucheng",
+  "zh": "北土城",
+  "ko": "베이투청",
+  "en": "Beitucheng",
+  "py": "Beitucheng",
+  "lat": 39.977801,
+  "lon": 116.394174,
+  "lines": [
+   "Q847771",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q847653"
+ },
+ {
+  "id": "beixin-an",
+  "zh": "北辛安",
+  "ko": "베이신안",
+  "en": "Beixin'an",
+  "py": "Beixin'an",
+  "lat": 39.914757,
+  "lon": 116.164665,
+  "lines": [
+   "Q6553057"
+  ],
+  "transfer": false,
+  "wd": "Q102367263"
+ },
+ {
+  "id": "beixinqiao",
+  "zh": "北新桥",
+  "ko": "베이신차오",
+  "en": "Beixinqiao",
+  "py": "Beixinqiao",
+  "lat": 39.940787,
+  "lon": 116.417115,
+  "lines": [
+   "Q647340",
+   "Q847767"
+  ],
+  "transfer": true,
+  "wd": "Q4881506"
+ },
+ {
+  "id": "beiyuan",
+  "zh": "北苑",
+  "ko": "베이위안",
+  "en": "Beiyuan",
+  "py": "Beiyuan",
+  "lat": 40.043058,
+  "lon": 116.434427,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q5976495"
+ },
+ {
+  "id": "beiyuanlu-bei-n",
+  "zh": "北苑路北",
+  "ko": "베이위안루베이",
+  "en": "Beiyuanlu Bei (N)",
+  "py": "Beiyuanlu Bei (N)",
+  "lat": 40.030404,
+  "lon": 116.418152,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q4881517"
+ },
+ {
+  "id": "beiyunhe-dong-e",
+  "zh": "北运河东",
+  "ko": "베이윈허둥",
+  "en": "Beiyunhe Dong (E)",
+  "py": "Beiyunhe Dong (E)",
+  "lat": 39.903304,
+  "lon": 116.707818,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q18651878"
+ },
+ {
+  "id": "beiyunhe-xi-w",
+  "zh": "北运河西",
+  "ko": "베이윈허시",
+  "en": "Beiyunhe Xi (W)",
+  "py": "Beiyunhe Xi (W)",
+  "lat": 39.902976,
+  "lon": 116.687929,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q16928795"
+ },
+ {
+  "id": "biomedical-base",
+  "zh": "生物医药基地",
+  "ko": "생물의학기지",
+  "en": "Biomedical Base",
+  "py": "Biomedical Base",
+  "lat": 39.686387,
+  "lon": 116.322225,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q4915106"
+ },
+ {
+  "id": "caihuying",
+  "zh": "菜户营",
+  "ko": "차이후잉",
+  "en": "Caihuying",
+  "py": "Caihuying",
+  "lat": 39.867596,
+  "lon": 116.342818,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q105069699"
+ },
+ {
+  "id": "caishikou",
+  "zh": "菜市口",
+  "ko": "차이스커우",
+  "en": "Caishikou",
+  "py": "Caishikou",
+  "lat": 39.88937,
+  "lon": 116.37443,
+  "lines": [
+   "Q6553149",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q5017826"
+ },
+ {
+  "id": "caofang",
+  "zh": "草房",
+  "ko": "차오팡",
+  "en": "Caofang",
+  "py": "Caofang",
+  "lat": 39.924251,
+  "lon": 116.61606,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q82801"
+ },
+ {
+  "id": "caoqiao",
+  "zh": "草桥",
+  "ko": "차오차오",
+  "en": "Caoqiao",
+  "py": "Caoqiao",
+  "lat": 39.845871,
+  "lon": 116.351445,
+  "lines": [
+   "Q6553202",
+   "Q19840478",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q2257617"
+ },
+ {
+  "id": "changchun-jie",
+  "zh": "长椿街",
+  "ko": "창춘제",
+  "en": "Changchun Jie",
+  "py": "Changchun Jie",
+  "lat": 39.899363,
+  "lon": 116.363196,
+  "lines": [
+   "Q680973"
+  ],
+  "transfer": false,
+  "wd": "Q5071746"
+ },
+ {
+  "id": "changchun-qiao",
+  "zh": "长春桥",
+  "ko": "창춘차오",
+  "en": "Changchun Qiao",
+  "py": "Changchun Qiao",
+  "lat": 39.958517,
+  "lon": 116.294197,
+  "lines": [
+   "Q26262009",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5071745"
+ },
+ {
+  "id": "changping",
+  "zh": "昌平",
+  "ko": "창핑",
+  "en": "Changping",
+  "py": "Changping",
+  "lat": 40.220468,
+  "lon": 116.233576,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q21017081"
+ },
+ {
+  "id": "changping-dongguan",
+  "zh": "昌平东关",
+  "ko": "창핑둥관",
+  "en": "Changping Dongguan",
+  "py": "Changping Dongguan",
+  "lat": 40.221734,
+  "lon": 116.262978,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q21245984"
+ },
+ {
+  "id": "changping-xishankou",
+  "zh": "昌平西山口",
+  "ko": "창핑시산커우",
+  "en": "Changping Xishankou",
+  "py": "Changping Xishankou",
+  "lat": 40.244616,
+  "lon": 116.195552,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q21245985"
+ },
+ {
+  "id": "changyang",
+  "zh": "长阳",
+  "ko": "창양",
+  "en": "Changyang",
+  "py": "Changyang",
+  "lat": 39.76368,
+  "lon": 116.212574,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q5072154"
+ },
+ {
+  "id": "changying",
+  "zh": "常营",
+  "ko": "창잉",
+  "en": "Changying",
+  "py": "Changying",
+  "lat": 39.925364,
+  "lon": 116.599226,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q5072152"
+ },
+ {
+  "id": "chaoyang-park",
+  "zh": "朝阳公园",
+  "ko": "차오양 공원",
+  "en": "Chaoyang Park",
+  "py": "Chaoyang Park",
+  "lat": 39.933227,
+  "lon": 116.47853,
+  "lines": [
+   "Q6553113",
+   "Q6553070"
+  ],
+  "transfer": true,
+  "wd": "Q15931937"
+ },
+ {
+  "id": "chaoyang-railway",
+  "zh": "朝阳",
+  "ko": "차오양",
+  "en": "Chaoyang Railway",
+  "py": "Chaoyang Railway",
+  "lat": 39.944252,
+  "lon": 116.50639,
+  "lines": [
+   "Q6553113"
+  ],
+  "transfer": false,
+  "wd": "Q105061192"
+ },
+ {
+  "id": "chaoyangmen",
+  "zh": "朝阳门",
+  "ko": "차오양먼",
+  "en": "Chaoyangmen",
+  "py": "Chaoyangmen",
+  "lat": 39.924455,
+  "lon": 116.434176,
+  "lines": [
+   "Q6553138",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5976481"
+ },
+ {
+  "id": "chapeng",
+  "zh": "茶棚",
+  "ko": "차펑",
+  "en": "Chapeng",
+  "py": "Chapeng",
+  "lat": 39.982065,
+  "lon": 116.247825,
+  "lines": [
+   "Q3400451"
+  ],
+  "transfer": false,
+  "wd": "Q46173397"
+ },
+ {
+  "id": "chedaogou",
+  "zh": "车道沟",
+  "ko": "처다오거우",
+  "en": "Chedaogou",
+  "py": "Chedaogou",
+  "lat": 39.946372,
+  "lon": 116.293955,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q75264"
+ },
+ {
+  "id": "chegongzhuang",
+  "zh": "车公庄",
+  "ko": "처공좡",
+  "en": "Chegongzhuang",
+  "py": "Chegongzhuang",
+  "lat": 39.932507,
+  "lon": 116.355527,
+  "lines": [
+   "Q6553138",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5089563"
+ },
+ {
+  "id": "chegongzhuangxi",
+  "zh": "车公庄西",
+  "ko": "처궁좡시",
+  "en": "Chegongzhuangxi",
+  "py": "Chegongzhuangxi",
+  "lat": 39.93243,
+  "lon": 116.344152,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q130435"
+ },
+ {
+  "id": "chengshou-si",
+  "zh": "成寿寺",
+  "ko": "청서우쓰",
+  "en": "Chengshou Si",
+  "py": "Chengshou Si",
+  "lat": 39.845914,
+  "lon": 116.448071,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q75393"
+ },
+ {
+  "id": "china-int-l-exhibition-center",
+  "zh": "国展",
+  "ko": "궈잔",
+  "en": "China Int'l Exhibition Center",
+  "py": "China Int'l Exhibition Center",
+  "lat": 40.069993,
+  "lon": 116.555318,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5099743"
+ },
+ {
+  "id": "china-national-botanical-garden",
+  "zh": "国家植物园",
+  "ko": "국가식물원",
+  "en": "China National Botanical Garden",
+  "py": "China National Botanical Garden",
+  "lat": 39.993449,
+  "lon": 116.215893,
+  "lines": [
+   "Q3400451"
+  ],
+  "transfer": false,
+  "wd": "Q46173464"
+ },
+ {
+  "id": "chongwenmen",
+  "zh": "崇文门",
+  "ko": "충원먼",
+  "en": "Chongwenmen",
+  "py": "Chongwenmen",
+  "lat": 39.901139,
+  "lon": 116.418196,
+  "lines": [
+   "Q647340",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q848288"
+ },
+ {
+  "id": "ciqikou",
+  "zh": "磁器口",
+  "ko": "츠치커우",
+  "en": "Ciqikou",
+  "py": "Ciqikou",
+  "lat": 39.893104,
+  "lon": 116.418858,
+  "lines": [
+   "Q6553149",
+   "Q647340"
+  ],
+  "transfer": true,
+  "wd": "Q5121330"
+ },
+ {
+  "id": "ciqu",
+  "zh": "次渠",
+  "ko": "츠추",
+  "en": "Ciqu",
+  "py": "Ciqu",
+  "lat": 39.803544,
+  "lon": 116.591455,
+  "lines": [
+   "Q5944471",
+   "Q24834015"
+  ],
+  "transfer": true,
+  "wd": "Q5121332"
+ },
+ {
+  "id": "ciqubei",
+  "zh": "次渠北",
+  "ko": "次渠北",
+  "en": "Ciqubei",
+  "py": "Ciqubei",
+  "lat": 39.809659,
+  "lon": 116.576368,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107344118"
+ },
+ {
+  "id": "ciqunan",
+  "zh": "次渠南",
+  "ko": "츠추난",
+  "en": "Ciqunan",
+  "py": "Ciqunan",
+  "lat": 39.794765,
+  "lon": 116.581113,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5121331"
+ },
+ {
+  "id": "cishou-si",
+  "zh": "慈寿寺",
+  "ko": "츠서우쓰",
+  "en": "Cishou Si",
+  "py": "Cishou Si",
+  "lat": 39.932803,
+  "lon": 116.294921,
+  "lines": [
+   "Q6553138",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q9278249"
+ },
+ {
+  "id": "communication-univ-of-china",
+  "zh": "传媒大学",
+  "ko": "촨메이 대학",
+  "en": "Communication Univ. of China",
+  "py": "Communication Univ. of China",
+  "lat": 39.909154,
+  "lon": 116.554625,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5154119"
+ },
+ {
+  "id": "cuigezhuang",
+  "zh": "崔各庄",
+  "ko": "추이거좡",
+  "en": "Cuigezhuang",
+  "py": "Cuigezhuang",
+  "lat": 40.021831,
+  "lon": 116.492734,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5192742"
+ },
+ {
+  "id": "dabaotai",
+  "zh": "大葆台",
+  "ko": "다바오타이",
+  "en": "Dabaotai",
+  "py": "Dabaotai",
+  "lat": 39.807702,
+  "lon": 116.291493,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q5207411"
+ },
+ {
+  "id": "daguanying",
+  "zh": "达官营",
+  "ko": "다관잉",
+  "en": "Daguanying",
+  "py": "Daguanying",
+  "lat": 39.88954,
+  "lon": 116.337849,
+  "lines": [
+   "Q6553149",
+   "Q6553080"
+  ],
+  "transfer": true,
+  "wd": "Q15929607"
+ },
+ {
+  "id": "dahong-men",
+  "zh": "大红门",
+  "ko": "다훙먼",
+  "en": "Dahong Men",
+  "py": "Dahong Men",
+  "lat": 39.845411,
+  "lon": 116.398496,
+  "lines": [
+   "Q847771",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q75258"
+ },
+ {
+  "id": "dahongmennan",
+  "zh": "大红门南",
+  "ko": "다훙먼 남",
+  "en": "Dahongmennan",
+  "py": "Dahongmennan",
+  "lat": 39.836004,
+  "lon": 116.401122,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q57659078"
+ },
+ {
+  "id": "dajiaoting",
+  "zh": "大郊亭",
+  "ko": "다자오팅",
+  "en": "Dajiaoting",
+  "py": "Dajiaoting",
+  "lat": 39.893461,
+  "lon": 116.487425,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q18652379"
+ },
+ {
+  "id": "dajing",
+  "zh": "大井",
+  "ko": "다징",
+  "en": "Dajing",
+  "py": "Dajing",
+  "lat": 39.86524,
+  "lon": 116.27489,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q9206167"
+ },
+ {
+  "id": "dalianpo",
+  "zh": "褡裢坡",
+  "ko": "다롄포",
+  "en": "Dalianpo",
+  "py": "Dalianpo",
+  "lat": 39.923747,
+  "lon": 116.563958,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q5210947"
+ },
+ {
+  "id": "daotian",
+  "zh": "稻田",
+  "ko": "다오톈",
+  "en": "Daotian",
+  "py": "Daotian",
+  "lat": 39.794762,
+  "lon": 116.218864,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q4392148"
+ },
+ {
+  "id": "daoxianghu-lu",
+  "zh": "稻香湖路",
+  "ko": "다오샹후루",
+  "en": "Daoxianghu Lu",
+  "py": "Daoxianghu Lu",
+  "lat": 40.068839,
+  "lon": 116.188448,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q24328251"
+ },
+ {
+  "id": "dashihe-dong-e",
+  "zh": "大石河东",
+  "ko": "다스허 동",
+  "en": "Dashihe Dong (E)",
+  "py": "Dashihe Dong (E)",
+  "lat": 39.709887,
+  "lon": 116.040206,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q43750525"
+ },
+ {
+  "id": "datunludong",
+  "zh": "大屯路东",
+  "ko": "다툰루둥",
+  "en": "Datunludong",
+  "py": "Datunludong",
+  "lat": 40.003576,
+  "lon": 116.417322,
+  "lines": [
+   "Q647340",
+   "Q734917"
+  ],
+  "transfer": true,
+  "wd": "Q5227793"
+ },
+ {
+  "id": "dawang-lu",
+  "zh": "大望路",
+  "ko": "다왕루",
+  "en": "Dawang Lu",
+  "py": "Dawang Lu",
+  "lat": 39.908244,
+  "lon": 116.47734,
+  "lines": [
+   "Q6553070",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q5242277"
+ },
+ {
+  "id": "dawayao",
+  "zh": "大瓦窑",
+  "ko": "다와야오",
+  "en": "Dawayao",
+  "py": "Dawayao",
+  "lat": 39.859655,
+  "lon": 116.240409,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q9206415"
+ },
+ {
+  "id": "daxing-airport",
+  "zh": "大兴机场",
+  "ko": "다싱공항",
+  "en": "Daxing Airport",
+  "py": "Daxing Airport",
+  "lat": 39.513835,
+  "lon": 116.416903,
+  "lines": [
+   "Q19840478"
+  ],
+  "transfer": false,
+  "wd": "Q65052284"
+ },
+ {
+  "id": "daxing-xincheng",
+  "zh": "大兴新城",
+  "ko": "다싱신청",
+  "en": "Daxing Xincheng",
+  "py": "Daxing Xincheng",
+  "lat": 39.737461,
+  "lon": 116.365589,
+  "lines": [
+   "Q19840478"
+  ],
+  "transfer": false,
+  "wd": "Q64866714"
+ },
+ {
+  "id": "dazhong-si",
+  "zh": "大钟寺",
+  "ko": "다중쓰",
+  "en": "Dazhong Si",
+  "py": "Dazhong Si",
+  "lat": 39.966608,
+  "lon": 116.34518,
+  "lines": [
+   "Q26262009",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q5243679"
+ },
+ {
+  "id": "demao",
+  "zh": "德茂",
+  "ko": "더마오",
+  "en": "Demao",
+  "py": "Demao",
+  "lat": 39.772658,
+  "lon": 116.441751,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q57658585"
+ },
+ {
+  "id": "dengshi-kou",
+  "zh": "灯市口",
+  "ko": "덩시커우",
+  "en": "Dengshi Kou",
+  "py": "Dengshi Kou",
+  "lat": 39.916813,
+  "lon": 116.418077,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q5256961"
+ },
+ {
+  "id": "dongba",
+  "zh": "东坝",
+  "ko": "둥바",
+  "en": "Dongba",
+  "py": "Dongba",
+  "lat": 39.964876,
+  "lon": 116.547163,
+  "lines": [
+   "Q6553113"
+  ],
+  "transfer": false,
+  "wd": "Q103791191"
+ },
+ {
+  "id": "dongbabei",
+  "zh": "东坝北",
+  "ko": "둥바베이",
+  "en": "Dongbabei",
+  "py": "Dongbabei",
+  "lat": 39.975503,
+  "lon": 116.555391,
+  "lines": [
+   "Q6553113",
+   "Q26262009"
+  ],
+  "transfer": true,
+  "wd": "Q103742468"
+ },
+ {
+  "id": "dongbanan",
+  "zh": "东坝南",
+  "ko": "둥바난",
+  "en": "Dongbanan",
+  "py": "Dongbanan",
+  "lat": 39.952213,
+  "lon": 116.546981,
+  "lines": [
+   "Q6553113"
+  ],
+  "transfer": false,
+  "wd": "Q103819135"
+ },
+ {
+  "id": "dongbaxi",
+  "zh": "东坝西",
+  "ko": "둥바시",
+  "en": "Dongbaxi",
+  "py": "Dongbaxi",
+  "lat": 39.974327,
+  "lon": 116.534638,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q103745911"
+ },
+ {
+  "id": "dongdan",
+  "zh": "东单",
+  "ko": "둥단",
+  "en": "Dongdan",
+  "py": "Dongdan",
+  "lat": 39.90826,
+  "lon": 116.418866,
+  "lines": [
+   "Q647340",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q843279"
+ },
+ {
+  "id": "dongdaqiao",
+  "zh": "东大桥",
+  "ko": "둥다차오",
+  "en": "Dongdaqiao",
+  "py": "Dongdaqiao",
+  "lat": 39.922887,
+  "lon": 116.451745,
+  "lines": [
+   "Q6553138",
+   "Q24834015"
+  ],
+  "transfer": true,
+  "wd": "Q82803"
+ },
+ {
+  "id": "dongfeng-beiqiao",
+  "zh": "东风北桥",
+  "ko": "둥펑베이차오",
+  "en": "Dongfeng Beiqiao",
+  "py": "Dongfeng Beiqiao",
+  "lat": 39.959588,
+  "lon": 116.48506,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q17013586"
+ },
+ {
+  "id": "donggaodi",
+  "zh": "东高地",
+  "ko": "둥가오디",
+  "en": "Donggaodi",
+  "py": "Donggaodi",
+  "lat": 39.805183,
+  "lon": 116.409771,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q56449093"
+ },
+ {
+  "id": "dongguantou",
+  "zh": "东管头",
+  "ko": "둥관터우",
+  "en": "Dongguantou",
+  "py": "Dongguantou",
+  "lat": 39.867444,
+  "lon": 116.320789,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q105069698"
+ },
+ {
+  "id": "dongguantounan",
+  "zh": "东管头南",
+  "ko": "둥관터우난",
+  "en": "Dongguantounan",
+  "py": "Dongguantounan",
+  "lat": 39.854429,
+  "lon": 116.322762,
+  "lines": [
+   "Q6553080",
+   "Q5433860"
+  ],
+  "transfer": true,
+  "wd": "Q78054167"
+ },
+ {
+  "id": "donghuqu",
+  "zh": "东湖渠",
+  "ko": "둥후취",
+  "en": "Donghuqu",
+  "py": "Donghuqu",
+  "lat": 40.010461,
+  "lon": 116.467314,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q17163628"
+ },
+ {
+  "id": "dongsi",
+  "zh": "东四",
+  "ko": "둥쓰",
+  "en": "Dongsi",
+  "py": "Dongsi",
+  "lat": 39.924378,
+  "lon": 116.416491,
+  "lines": [
+   "Q6553138",
+   "Q647340"
+  ],
+  "transfer": true,
+  "wd": "Q5296033"
+ },
+ {
+  "id": "dongsi-shitiao",
+  "zh": "东四十条",
+  "ko": "둥쓰스탸오",
+  "en": "Dongsi Shitiao",
+  "py": "Dongsi Shitiao",
+  "lat": 39.933678,
+  "lon": 116.434233,
+  "lines": [
+   "Q6553113",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5296031"
+ },
+ {
+  "id": "dongwuyuan",
+  "zh": "动物园",
+  "ko": "동물원",
+  "en": "Dongwuyuan",
+  "py": "Dongwuyuan",
+  "lat": 39.938286,
+  "lon": 116.338994,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q4881220"
+ },
+ {
+  "id": "dongxia-yuan",
+  "zh": "东夏园",
+  "ko": "둥샤위안",
+  "en": "Dongxia Yuan",
+  "py": "Dongxia Yuan",
+  "lat": 39.903428,
+  "lon": 116.733305,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q18394757"
+ },
+ {
+  "id": "dongzhimen",
+  "zh": "东直门",
+  "ko": "둥즈먼",
+  "en": "Dongzhimen",
+  "py": "Dongzhimen",
+  "lat": 39.941277,
+  "lon": 116.434332,
+  "lines": [
+   "Q680973",
+   "Q847744",
+   "Q847767"
+  ],
+  "transfer": true,
+  "wd": "Q847850"
+ },
+ {
+  "id": "erligou",
+  "zh": "二里沟",
+  "ko": "얼리거우",
+  "en": "Erligou",
+  "py": "Erligou",
+  "lat": 39.93239,
+  "lon": 116.33379,
+  "lines": [
+   "Q6553138",
+   "Q6553080"
+  ],
+  "transfer": true,
+  "wd": "Q130094"
+ },
+ {
+  "id": "fangshan-chengguan",
+  "zh": "房山城关",
+  "ko": "팡산청관",
+  "en": "Fangshan Chengguan",
+  "py": "Fangshan Chengguan",
+  "lat": 39.705789,
+  "lon": 115.989693,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q41695204"
+ },
+ {
+  "id": "fangzhuang",
+  "zh": "方庄",
+  "ko": "팡좡",
+  "en": "Fangzhuang",
+  "py": "Fangzhuang",
+  "lat": 39.866015,
+  "lon": 116.440143,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q21850054"
+ },
+ {
+  "id": "fatou",
+  "zh": "垡头",
+  "ko": "파터우",
+  "en": "Fatou",
+  "py": "Fatou",
+  "lat": 39.860776,
+  "lon": 116.511695,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q17498803"
+ },
+ {
+  "id": "fengbo",
+  "zh": "俸伯",
+  "ko": "펑보",
+  "en": "Fengbo",
+  "py": "Fengbo",
+  "lat": 40.132536,
+  "lon": 116.684954,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q4392144"
+ },
+ {
+  "id": "fengtai-dongdajie",
+  "zh": "丰台东大街",
+  "ko": "펑타이둥다제",
+  "en": "Fengtai Dongdajie",
+  "py": "Fengtai Dongdajie",
+  "lat": 39.855412,
+  "lon": 116.293912,
+  "lines": [
+   "Q5929508"
+  ],
+  "transfer": false,
+  "wd": "Q4392154"
+ },
+ {
+  "id": "fengtai-nanlu",
+  "zh": "丰台南路",
+  "ko": "펑타이난루",
+  "en": "Fengtai Nanlu",
+  "py": "Fengtai Nanlu",
+  "lat": 39.840817,
+  "lon": 116.296586,
+  "lines": [
+   "Q5929508",
+   "Q6553080"
+  ],
+  "transfer": true,
+  "wd": "Q4392273"
+ },
+ {
+  "id": "fengtai-railway",
+  "zh": "丰台",
+  "ko": "펑타이",
+  "en": "Fengtai Railway",
+  "py": "Fengtai Railway",
+  "lat": 39.849965,
+  "lon": 116.304704,
+  "lines": [
+   "Q6553080",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q105072002"
+ },
+ {
+  "id": "fengtai-science-park",
+  "zh": "丰台科技园",
+  "ko": "펑타이 과기원",
+  "en": "Fengtai Science Park",
+  "py": "Fengtai Science Park",
+  "lat": 39.82537,
+  "lon": 116.297309,
+  "lines": [
+   "Q5929508"
+  ],
+  "transfer": false,
+  "wd": "Q4392172"
+ },
+ {
+  "id": "fenzhongsi",
+  "zh": "分钟寺",
+  "ko": "펀중쓰",
+  "en": "Fenzhongsi",
+  "py": "Fenzhongsi",
+  "lat": 39.851971,
+  "lon": 116.453764,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q5443701"
+ },
+ {
+  "id": "forest-park-south-gate",
+  "zh": "森林公园南门",
+  "ko": "삼림공원 남문",
+  "en": "Forest Park South Gate",
+  "py": "Forest Park South Gate",
+  "lat": 40.010598,
+  "lon": 116.392651,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q847787"
+ },
+ {
+  "id": "fragrant-hills",
+  "zh": "香山",
+  "ko": "샹산",
+  "en": "Fragrant Hills",
+  "py": "Fragrant Hills",
+  "lat": 39.994057,
+  "lon": 116.204492,
+  "lines": [
+   "Q3400451"
+  ],
+  "transfer": false,
+  "wd": "Q46173973"
+ },
+ {
+  "id": "fuchengmen",
+  "zh": "阜成门",
+  "ko": "푸청먼",
+  "en": "Fuchengmen",
+  "py": "Fuchengmen",
+  "lat": 39.923666,
+  "lon": 116.356252,
+  "lines": [
+   "Q6553113",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5506924"
+ },
+ {
+  "id": "fufengqiao",
+  "zh": "富丰桥",
+  "ko": "푸펑차오",
+  "en": "Fufengqiao",
+  "py": "Fufengqiao",
+  "lat": 39.836151,
+  "lon": 116.286913,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q78872883"
+ },
+ {
+  "id": "fushouling",
+  "zh": "福寿岭",
+  "ko": "福寿岭",
+  "en": "Fushouling",
+  "py": "Fushouling",
+  "lat": 39.939726,
+  "lon": 116.1712,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q11591976"
+ },
+ {
+  "id": "futong",
+  "zh": "阜通",
+  "ko": "푸퉁",
+  "en": "Futong",
+  "py": "Futong",
+  "lat": 39.992003,
+  "lon": 116.471207,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q18759604"
+ },
+ {
+  "id": "future-science-city",
+  "zh": "未来科学城",
+  "ko": "웨이라이커쉐청",
+  "en": "Future Science City",
+  "py": "Future Science City",
+  "lat": 40.115582,
+  "lon": 116.466604,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107583301"
+ },
+ {
+  "id": "future-science-city-north",
+  "zh": "未来科学城北",
+  "ko": "웨이라이커쉐청베이",
+  "en": "Future Science City North",
+  "py": "Future Science City North",
+  "lat": 40.130118,
+  "lon": 116.468649,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107583300"
+ },
+ {
+  "id": "fuxingmen",
+  "zh": "复兴门",
+  "ko": "푸싱먼",
+  "en": "Fuxingmen",
+  "py": "Fuxingmen",
+  "lat": 39.907301,
+  "lon": 116.356694,
+  "lines": [
+   "Q680973",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q1037957"
+ },
+ {
+  "id": "ganjiakou",
+  "zh": "甘家口",
+  "ko": "간자커우",
+  "en": "Ganjiakou",
+  "py": "Ganjiakou",
+  "lat": 39.922993,
+  "lon": 116.335023,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q28309040"
+ },
+ {
+  "id": "gaobeidian",
+  "zh": "高碑店",
+  "ko": "가오베이뎬",
+  "en": "Gaobeidian",
+  "py": "Gaobeidian",
+  "lat": 39.909469,
+  "lon": 116.531366,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5521677"
+ },
+ {
+  "id": "gaojiayuan",
+  "zh": "高家园",
+  "ko": "가오자위안",
+  "en": "Gaojiayuan",
+  "py": "Gaojiayuan",
+  "lat": 39.980528,
+  "lon": 116.488822,
+  "lines": [
+   "Q6553070",
+   "Q26262009"
+  ],
+  "transfer": true,
+  "wd": "Q17034758"
+ },
+ {
+  "id": "gaoloujin",
+  "zh": "高楼金",
+  "ko": "가오러우진",
+  "en": "Gaoloujin",
+  "py": "Gaoloujin",
+  "lat": 39.862928,
+  "lon": 116.685045,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q75161991"
+ },
+ {
+  "id": "gaomidian-bei-n",
+  "zh": "高米店北",
+  "ko": "가오미뎬베이",
+  "en": "Gaomidian Bei (N)",
+  "py": "Gaomidian Bei (N)",
+  "lat": 39.774331,
+  "lon": 116.330682,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5521693"
+ },
+ {
+  "id": "gaomidian-nan-s",
+  "zh": "高米店南",
+  "ko": "가오미뎬난",
+  "en": "Gaomidian Nan (S)",
+  "py": "Gaomidian Nan (S)",
+  "lat": 39.763854,
+  "lon": 116.331735,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5521694"
+ },
+ {
+  "id": "garden-expo-park",
+  "zh": "园博园",
+  "ko": "위안보위안",
+  "en": "Garden Expo Park",
+  "py": "Garden Expo Park",
+  "lat": 39.861256,
+  "lon": 116.201778,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q9206315"
+ },
+ {
+  "id": "gonghuacheng",
+  "zh": "巩华城",
+  "ko": "궁화청",
+  "en": "Gonghuacheng",
+  "py": "Gonghuacheng",
+  "lat": 40.130918,
+  "lon": 116.293957,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q4392266"
+ },
+ {
+  "id": "gongyi-xiqiao",
+  "zh": "公益西桥",
+  "ko": "궁이시차오",
+  "en": "Gongyi Xiqiao",
+  "py": "Gongyi Xiqiao",
+  "lat": 39.836492,
+  "lon": 116.370864,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5581810"
+ },
+ {
+  "id": "gongzhufen",
+  "zh": "公主坟",
+  "ko": "궁주펀",
+  "en": "Gongzhufen",
+  "py": "Gongzhufen",
+  "lat": 39.907476,
+  "lon": 116.310335,
+  "lines": [
+   "Q748987",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5581824"
+ },
+ {
+  "id": "guaanzhuang",
+  "zh": "管庄",
+  "ko": "관좡",
+  "en": "Guaanzhuang",
+  "py": "Guaanzhuang",
+  "lat": 39.909119,
+  "lon": 116.598924,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5613861"
+ },
+ {
+  "id": "guang-anmen-nei",
+  "zh": "广安门内",
+  "ko": "광안먼네이",
+  "en": "Guang'anmen Nei",
+  "py": "Guang'anmen Nei",
+  "lat": 39.889922,
+  "lon": 116.357911,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q15952186"
+ },
+ {
+  "id": "guangqumennei",
+  "zh": "广渠门内",
+  "ko": "광취먼네이",
+  "en": "Guangqumennei",
+  "py": "Guangqumennei",
+  "lat": 39.893675,
+  "lon": 116.433943,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q15941383"
+ },
+ {
+  "id": "guangqumenwai",
+  "zh": "广渠门外",
+  "ko": "광취먼와이",
+  "en": "Guangqumenwai",
+  "py": "Guangqumenwai",
+  "lat": 39.893674,
+  "lon": 116.449228,
+  "lines": [
+   "Q6553149",
+   "Q24834015"
+  ],
+  "transfer": true,
+  "wd": "Q18653130"
+ },
+ {
+  "id": "guangxi-men",
+  "zh": "光熙门",
+  "ko": "광시먼",
+  "en": "Guangxi Men",
+  "py": "Guangxi Men",
+  "lat": 39.968379,
+  "lon": 116.431875,
+  "lines": [
+   "Q26262009",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q5613705"
+ },
+ {
+  "id": "guangyangcheng",
+  "zh": "广阳城",
+  "ko": "광양청",
+  "en": "Guangyangcheng",
+  "py": "Guangyangcheng",
+  "lat": 39.747877,
+  "lon": 116.185089,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q4392228"
+ },
+ {
+  "id": "guanzhuang-station-line-15",
+  "zh": "关庄",
+  "ko": "관좡",
+  "en": "Guanzhuang station (Line 15)",
+  "py": "Guanzhuang station (Line 15)",
+  "lat": 40.001146,
+  "lon": 116.431298,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5613854"
+ },
+ {
+  "id": "guanzhuanglu-xikou",
+  "zh": "管庄路西口",
+  "ko": "管庄路西口",
+  "en": "Guanzhuanglu Xikou",
+  "py": "Guanzhuanglu Xikou",
+  "lat": 39.976986,
+  "lon": 116.571938,
+  "lines": [
+   "Q6553113"
+  ],
+  "transfer": false,
+  "wd": "Q125728233"
+ },
+ {
+  "id": "gucheng",
+  "zh": "古城",
+  "ko": "구청",
+  "en": "Gucheng",
+  "py": "Gucheng",
+  "lat": 39.907427,
+  "lon": 116.190589,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5614482"
+ },
+ {
+  "id": "gulou-dajie",
+  "zh": "鼓楼大街",
+  "ko": "구러우다제",
+  "en": "Gulou Dajie",
+  "py": "Gulou Dajie",
+  "lat": 39.948945,
+  "lon": 116.394163,
+  "lines": [
+   "Q680973",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q5617853"
+ },
+ {
+  "id": "guogongzhuang",
+  "zh": "郭公庄",
+  "ko": "궈궁좡",
+  "en": "Guogongzhuang",
+  "py": "Guogongzhuang",
+  "lat": 39.814487,
+  "lon": 116.302088,
+  "lines": [
+   "Q5929508",
+   "Q5433860"
+  ],
+  "transfer": true,
+  "wd": "Q5619660"
+ },
+ {
+  "id": "guomao",
+  "zh": "国贸",
+  "ko": "궈마오",
+  "en": "Guomao",
+  "py": "Guomao",
+  "lat": 39.908407,
+  "lon": 116.459598,
+  "lines": [
+   "Q748987",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q843217"
+ },
+ {
+  "id": "guoyuan",
+  "zh": "果园",
+  "ko": "궈위안",
+  "en": "Guoyuan",
+  "py": "Guoyuan",
+  "lat": 39.893348,
+  "lon": 116.646593,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5619690"
+ },
+ {
+  "id": "guozhuangzi",
+  "zh": "郭庄子",
+  "ko": "궈좡쯔",
+  "en": "Guozhuangzi",
+  "py": "Guozhuangzi",
+  "lat": 39.865267,
+  "lon": 116.254411,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q9206264"
+ },
+ {
+  "id": "haidian-huangzhuang",
+  "zh": "海淀黄庄",
+  "ko": "하이뎬황좡",
+  "en": "Haidian Huangzhuang",
+  "py": "Haidian Huangzhuang",
+  "lat": 39.975996,
+  "lon": 116.317626,
+  "lines": [
+   "Q304264",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5639035"
+ },
+ {
+  "id": "haidian-wuluju",
+  "zh": "海淀五路居",
+  "ko": "하이뎬우루쥐",
+  "en": "Haidian Wuluju",
+  "py": "Haidian Wuluju",
+  "lat": 39.932666,
+  "lon": 116.276926,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q130441"
+ },
+ {
+  "id": "haihutun",
+  "zh": "海户屯",
+  "ko": "하이후툰",
+  "en": "Haihutun",
+  "py": "Haihutun",
+  "lat": 39.850731,
+  "lon": 116.400359,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q57659234"
+ },
+ {
+  "id": "haojia-fu",
+  "zh": "郝家府",
+  "ko": "하오자푸",
+  "en": "Haojia Fu",
+  "py": "Haojia Fu",
+  "lat": 39.903339,
+  "lon": 116.717189,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q16928969"
+ },
+ {
+  "id": "happy-valley",
+  "zh": "欢乐谷景区",
+  "ko": "환러구징취",
+  "en": "Happy Valley",
+  "py": "Happy Valley",
+  "lat": 39.866907,
+  "lon": 116.499111,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q17499129"
+ },
+ {
+  "id": "heizhuanghu",
+  "zh": "黑庄户",
+  "ko": "헤이좡후",
+  "en": "Heizhuanghu",
+  "py": "Heizhuanghu",
+  "lat": 39.85875,
+  "lon": 116.598561,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q76063590"
+ },
+ {
+  "id": "heping-xiqiao",
+  "zh": "和平西桥",
+  "ko": "허핑시차오",
+  "en": "Heping Xiqiao",
+  "py": "Heping Xiqiao",
+  "lat": 39.968087,
+  "lon": 116.418046,
+  "lines": [
+   "Q26262009",
+   "Q647340"
+  ],
+  "transfer": true,
+  "wd": "Q6123956"
+ },
+ {
+  "id": "hepingli-beijie",
+  "zh": "和平里北街",
+  "ko": "허핑리베이제",
+  "en": "Hepingli Beijie",
+  "py": "Hepingli Beijie",
+  "lat": 39.958794,
+  "lon": 116.418396,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q5976333"
+ },
+ {
+  "id": "hepingmen",
+  "zh": "和平门",
+  "ko": "허핑먼",
+  "en": "Hepingmen",
+  "py": "Hepingmen",
+  "lat": 39.900083,
+  "lon": 116.384004,
+  "lines": [
+   "Q680973"
+  ],
+  "transfer": false,
+  "wd": "Q5731938"
+ },
+ {
+  "id": "heyi",
+  "zh": "和义",
+  "ko": "허이",
+  "en": "Heyi",
+  "py": "Heyi",
+  "lat": 39.81505,
+  "lon": 116.402167,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q57658896"
+ },
+ {
+  "id": "hongjunying",
+  "zh": "红军营",
+  "ko": "훙쥔잉",
+  "en": "Hongjunying",
+  "py": "Hongjunying",
+  "lat": 40.034255,
+  "lon": 116.441796,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107471993"
+ },
+ {
+  "id": "honglian-nanlu",
+  "zh": "红莲南路",
+  "ko": "훙롄난루",
+  "en": "Honglian Nanlu",
+  "py": "Honglian Nanlu",
+  "lat": 39.877416,
+  "lon": 116.337084,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q45412676"
+ },
+ {
+  "id": "hongmiao",
+  "zh": "红庙",
+  "ko": "红庙",
+  "en": "Hongmiao",
+  "py": "Hongmiao",
+  "lat": 39.915873,
+  "lon": 116.478172,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q26261976"
+ },
+ {
+  "id": "hongtaizhuang",
+  "zh": "洪泰庄",
+  "ko": "훙타이좡",
+  "en": "Hongtaizhuang",
+  "py": "Hongtaizhuang",
+  "lat": 39.847438,
+  "lon": 116.249303,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q96649511"
+ },
+ {
+  "id": "houshayu",
+  "zh": "后沙峪",
+  "ko": "허우사유",
+  "en": "Houshayu",
+  "py": "Houshayu",
+  "lat": 40.114127,
+  "lon": 116.564212,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5936980"
+ },
+ {
+  "id": "huagong",
+  "zh": "化工",
+  "ko": "化工",
+  "en": "Huagong",
+  "py": "Huagong",
+  "lat": 39.885234,
+  "lon": 116.50353,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q15942662"
+ },
+ {
+  "id": "hualikan",
+  "zh": "花梨坎",
+  "ko": "화리칸",
+  "en": "Hualikan",
+  "py": "Hualikan",
+  "lat": 40.084446,
+  "lon": 116.557599,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5937712"
+ },
+ {
+  "id": "huangchang",
+  "zh": "黄厂",
+  "ko": "황창",
+  "en": "Huangchang",
+  "py": "Huangchang",
+  "lat": 39.849052,
+  "lon": 116.553367,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q72328419"
+ },
+ {
+  "id": "huangcun-railway",
+  "zh": "黄村火车",
+  "ko": "황춘훠처",
+  "en": "Huangcun Railway",
+  "py": "Huangcun Railway",
+  "lat": 39.722795,
+  "lon": 116.332796,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5925867"
+ },
+ {
+  "id": "huangcun-xidajie",
+  "zh": "黄村西大街",
+  "ko": "황춘시다제",
+  "en": "Huangcun Xidajie",
+  "py": "Huangcun Xidajie",
+  "lat": 39.731717,
+  "lon": 116.332656,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q6119338"
+ },
+ {
+  "id": "huangqu",
+  "zh": "黄渠",
+  "ko": "황추",
+  "en": "Huangqu",
+  "py": "Huangqu",
+  "lat": 39.923828,
+  "lon": 116.578893,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q11177956"
+ },
+ {
+  "id": "huaxiang-dongqiao",
+  "zh": "花乡东桥",
+  "ko": "화샹둥차오",
+  "en": "Huaxiang Dongqiao",
+  "py": "Huaxiang Dongqiao",
+  "lat": 39.829063,
+  "lon": 116.319991,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q97171678"
+ },
+ {
+  "id": "huayuan-qiao",
+  "zh": "花园桥",
+  "ko": "화위안차오",
+  "en": "Huayuan Qiao",
+  "py": "Huayuan Qiao",
+  "lat": 39.932482,
+  "lon": 116.310066,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q130437"
+ },
+ {
+  "id": "huazhuang",
+  "zh": "花庄",
+  "ko": "화좡",
+  "en": "Huazhuang",
+  "py": "Huazhuang",
+  "lat": 39.856527,
+  "lon": 116.695076,
+  "lines": [
+   "Q6553149",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q75161881"
+ },
+ {
+  "id": "hufangqiao",
+  "zh": "虎坊桥",
+  "ko": "후팡차오",
+  "en": "Hufangqiao",
+  "py": "Hufangqiao",
+  "lat": 39.889788,
+  "lon": 116.383707,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q15953285"
+ },
+ {
+  "id": "huilongguan",
+  "zh": "回龙观",
+  "ko": "후이룽관",
+  "en": "Huilongguan",
+  "py": "Huilongguan",
+  "lat": 40.070847,
+  "lon": 116.335913,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q5935100"
+ },
+ {
+  "id": "huilongguan-dongdajie",
+  "zh": "回龙观东大街",
+  "ko": "후이룽관둥다제",
+  "en": "Huilongguan Dongdajie",
+  "py": "Huilongguan Dongdajie",
+  "lat": 40.080981,
+  "lon": 116.363042,
+  "lines": [
+   "Q135581001",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q5935093"
+ },
+ {
+  "id": "huilongguan-xidajie",
+  "zh": "回龙观西大街",
+  "ko": "回龙观西大街",
+  "en": "Huilongguan Xidajie",
+  "py": "Huilongguan Xidajie",
+  "lat": 40.078864,
+  "lon": 116.331599,
+  "lines": [
+   "Q135581001"
+  ],
+  "transfer": false,
+  "wd": "Q111812996"
+ },
+ {
+  "id": "huixin-xijie-beikou",
+  "zh": "惠新西街北口",
+  "ko": "후이신시제베이커우",
+  "en": "Huixin Xijie Beikou",
+  "py": "Huixin Xijie Beikou",
+  "lat": 39.987584,
+  "lon": 116.417158,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q5972925"
+ },
+ {
+  "id": "huixin-xijie-nankou",
+  "zh": "惠新西街南口",
+  "ko": "후이신시제난커우",
+  "en": "Huixin Xijie Nankou",
+  "py": "Huixin Xijie Nankou",
+  "lat": 39.977364,
+  "lon": 116.417605,
+  "lines": [
+   "Q647340",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5966161"
+ },
+ {
+  "id": "hujialou",
+  "zh": "呼家楼",
+  "ko": "후자러우",
+  "en": "Hujialou",
+  "py": "Hujialou",
+  "lat": 39.923443,
+  "lon": 116.46166,
+  "lines": [
+   "Q6553138",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5935355"
+ },
+ {
+  "id": "huojian-wanyuan",
+  "zh": "火箭万源",
+  "ko": "훠젠완위안",
+  "en": "Huojian Wanyuan",
+  "py": "Huojian Wanyuan",
+  "lat": 39.799891,
+  "lon": 116.418182,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q56882475"
+ },
+ {
+  "id": "huoqiying",
+  "zh": "火器营",
+  "ko": "훠치잉",
+  "en": "Huoqiying",
+  "py": "Huoqiying",
+  "lat": 39.96557,
+  "lon": 116.289472,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q5946141"
+ },
+ {
+  "id": "huoying",
+  "zh": "霍营",
+  "ko": "훠잉",
+  "en": "Huoying",
+  "py": "Huoying",
+  "lat": 40.071807,
+  "lon": 116.360154,
+  "lines": [
+   "Q847744",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q5946183"
+ },
+ {
+  "id": "huoyingdong",
+  "zh": "霍营东",
+  "ko": "霍营东",
+  "en": "Huoyingdong",
+  "py": "Huoyingdong",
+  "lat": 40.08199,
+  "lon": 116.375774,
+  "lines": [
+   "Q135581001"
+  ],
+  "transfer": false,
+  "wd": "Q111813027"
+ },
+ {
+  "id": "jiahuihu",
+  "zh": "嘉会湖",
+  "ko": "자후이후",
+  "en": "Jiahuihu",
+  "py": "Jiahuihu",
+  "lat": 39.792713,
+  "lon": 116.610645,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107580040"
+ },
+ {
+  "id": "jiandemen",
+  "zh": "健德门",
+  "ko": "젠더먼",
+  "en": "Jiandemen",
+  "py": "Jiandemen",
+  "lat": 39.976477,
+  "lon": 116.381,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q6119375"
+ },
+ {
+  "id": "jiangtai",
+  "zh": "将台",
+  "ko": "장타이",
+  "en": "Jiangtai",
+  "py": "Jiangtai",
+  "lat": 39.970765,
+  "lon": 116.490119,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q17024829"
+ },
+ {
+  "id": "jiangtaixi",
+  "zh": "将台西",
+  "ko": "장타이시",
+  "en": "Jiangtaixi",
+  "py": "Jiangtaixi",
+  "lat": 39.972222,
+  "lon": 116.479511,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q102367414"
+ },
+ {
+  "id": "jianguomen",
+  "zh": "建国门",
+  "ko": "젠궈먼",
+  "en": "Jianguomen",
+  "py": "Jianguomen",
+  "lat": 39.908548,
+  "lon": 116.435454,
+  "lines": [
+   "Q680973",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q843282"
+ },
+ {
+  "id": "jiaohua-chang",
+  "zh": "焦化厂",
+  "ko": "쟈오화창",
+  "en": "Jiaohua Chang",
+  "py": "Jiaohua Chang",
+  "lat": 39.855418,
+  "lon": 116.5375,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q17499265"
+ },
+ {
+  "id": "jiaomen-dong-e",
+  "zh": "角門東",
+  "ko": "자오먼둥",
+  "en": "Jiaomen Dong (E)",
+  "py": "Jiaomen Dong (E)",
+  "lat": 39.845229,
+  "lon": 116.38503,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q75262"
+ },
+ {
+  "id": "jiaomen-xi-w",
+  "zh": "角门西",
+  "ko": "자오먼시",
+  "en": "Jiaomen Xi (W)",
+  "py": "Jiaomen Xi (W)",
+  "lat": 39.845777,
+  "lon": 116.371054,
+  "lines": [
+   "Q304264",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5960800"
+ },
+ {
+  "id": "jijiamiao",
+  "zh": "纪家庙",
+  "ko": "진자먀오",
+  "en": "Jijiamiao",
+  "py": "Jijiamiao",
+  "lat": 39.844521,
+  "lon": 116.333479,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q2043475"
+ },
+ {
+  "id": "jimenqiao",
+  "zh": "蓟门桥",
+  "ko": "지먼차오",
+  "en": "Jimenqiao",
+  "py": "Jimenqiao",
+  "lat": 39.967657,
+  "lon": 116.355326,
+  "lines": [
+   "Q26262009",
+   "Q5066697"
+  ],
+  "transfer": true,
+  "wd": "Q84244808"
+ },
+ {
+  "id": "jin-anqiao",
+  "zh": "金安桥",
+  "ko": "진안차오",
+  "en": "Jin'anqiao",
+  "py": "Jin'anqiao",
+  "lat": 39.923412,
+  "lon": 116.163077,
+  "lines": [
+   "Q6553138",
+   "Q6553057",
+   "Q4881158"
+  ],
+  "transfer": true,
+  "wd": "Q38679541"
+ },
+ {
+  "id": "jingfengmen",
+  "zh": "景风门",
+  "ko": "징펑먼",
+  "en": "Jingfengmen",
+  "py": "Jingfengmen",
+  "lat": 39.862766,
+  "lon": 116.366157,
+  "lines": [
+   "Q6553202",
+   "Q6553070"
+  ],
+  "transfer": true,
+  "wd": "Q27916010"
+ },
+ {
+  "id": "jinghai-lu",
+  "zh": "经海路",
+  "ko": "징하이루",
+  "en": "Jinghai Lu",
+  "py": "Jinghai Lu",
+  "lat": 39.783618,
+  "lon": 116.562246,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q6119390"
+ },
+ {
+  "id": "jingsong",
+  "zh": "劲松",
+  "ko": "진쑹",
+  "en": "Jingsong",
+  "py": "Jingsong",
+  "lat": 39.884409,
+  "lon": 116.461277,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q847852"
+ },
+ {
+  "id": "jingtai",
+  "zh": "景泰",
+  "ko": "징타이",
+  "en": "Jingtai",
+  "py": "Jingtai",
+  "lat": 39.86501,
+  "lon": 116.410069,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q21245986"
+ },
+ {
+  "id": "jintai-lu",
+  "zh": "金台路",
+  "ko": "진타이루",
+  "en": "Jintai Lu",
+  "py": "Jintai Lu",
+  "lat": 39.922894,
+  "lon": 116.478451,
+  "lines": [
+   "Q6553138",
+   "Q6553070"
+  ],
+  "transfer": true,
+  "wd": "Q82796"
+ },
+ {
+  "id": "jintai-xizhao",
+  "zh": "金台夕照",
+  "ko": "진타이시자오",
+  "en": "Jintai Xizhao",
+  "py": "Jintai Xizhao",
+  "lat": 39.917303,
+  "lon": 116.461689,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q5956448"
+ },
+ {
+  "id": "jinyu-hutong",
+  "zh": "金鱼胡同",
+  "ko": "진위후퉁",
+  "en": "Jinyu Hutong",
+  "py": "Jinyu Hutong",
+  "lat": 39.915566,
+  "lon": 116.411109,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q60177174"
+ },
+ {
+  "id": "jishuitan",
+  "zh": "积水潭",
+  "ko": "지수이탄",
+  "en": "Jishuitan",
+  "py": "Jishuitan",
+  "lat": 39.948705,
+  "lon": 116.373281,
+  "lines": [
+   "Q6553202",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5976575"
+ },
+ {
+  "id": "jiugong",
+  "zh": "旧宫",
+  "ko": "주궁",
+  "en": "Jiugong",
+  "py": "Jiugong",
+  "lat": 39.806945,
+  "lon": 116.460863,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5935707"
+ },
+ {
+  "id": "jiukeshu",
+  "zh": "九棵树",
+  "ko": "주커수",
+  "en": "Jiukeshu",
+  "py": "Jiukeshu",
+  "lat": 39.890241,
+  "lon": 116.657486,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5973051"
+ },
+ {
+  "id": "jiulongshan",
+  "zh": "九龙山",
+  "ko": "주룽산",
+  "en": "Jiulongshan",
+  "py": "Jiulongshan",
+  "lat": 39.893411,
+  "lon": 116.477794,
+  "lines": [
+   "Q6553149",
+   "Q6553070"
+  ],
+  "transfer": true,
+  "wd": "Q15928637"
+ },
+ {
+  "id": "kandan",
+  "zh": "看丹",
+  "ko": "칸단",
+  "en": "Kandan",
+  "py": "Kandan",
+  "lat": 39.834816,
+  "lon": 116.272563,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q78872939"
+ },
+ {
+  "id": "keyi-lu",
+  "zh": "科怡路",
+  "ko": "커이루",
+  "en": "Keyi Lu",
+  "py": "Keyi Lu",
+  "lat": 39.832202,
+  "lon": 116.297475,
+  "lines": [
+   "Q5929508"
+  ],
+  "transfer": false,
+  "wd": "Q4392249"
+ },
+ {
+  "id": "laiguangying",
+  "zh": "来广营",
+  "ko": "라이광잉",
+  "en": "Laiguangying",
+  "py": "Laiguangying",
+  "lat": 40.020193,
+  "lon": 116.46686,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q18759603"
+ },
+ {
+  "id": "landianchang",
+  "zh": "蓝靛厂",
+  "ko": "란뎬창",
+  "en": "Landianchang",
+  "py": "Landianchang",
+  "lat": 39.957071,
+  "lon": 116.282716,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q103745773"
+ },
+ {
+  "id": "langxinzhuang",
+  "zh": "郎辛庄",
+  "ko": "랑신좡",
+  "en": "Langxinzhuang",
+  "py": "Langxinzhuang",
+  "lat": 39.856596,
+  "lon": 116.569909,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q76063542"
+ },
+ {
+  "id": "liangmaqiao",
+  "zh": "亮马桥",
+  "ko": "량마차오",
+  "en": "Liangmaqiao",
+  "py": "Liangmaqiao",
+  "lat": 39.9496,
+  "lon": 116.462436,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q5937256"
+ },
+ {
+  "id": "liangxiang-nanguan",
+  "zh": "良乡南关",
+  "ko": "량상난관",
+  "en": "Liangxiang Nanguan",
+  "py": "Liangxiang Nanguan",
+  "lat": 39.72324,
+  "lon": 116.140491,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q6119094"
+ },
+ {
+  "id": "liangxiang-univ-town",
+  "zh": "良乡大学城",
+  "ko": "량상다쉐청",
+  "en": "Liangxiang Univ. Town",
+  "py": "Liangxiang Univ. Town",
+  "lat": 39.723269,
+  "lon": 116.176451,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q4392294"
+ },
+ {
+  "id": "liangxiang-univ-town-north",
+  "zh": "良乡大学城北",
+  "ko": "량상다쉐청베이",
+  "en": "Liangxiang Univ. Town North",
+  "py": "Liangxiang Univ. Town North",
+  "lat": 39.729751,
+  "lon": 116.183579,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q4392201"
+ },
+ {
+  "id": "liangxiang-univ-town-west",
+  "zh": "良乡大学城西",
+  "ko": "량상다쉐청시",
+  "en": "Liangxiang Univ. Town West",
+  "py": "Liangxiang Univ. Town West",
+  "lat": 39.723262,
+  "lon": 116.15623,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q4392300"
+ },
+ {
+  "id": "lianhua-qiao",
+  "zh": "莲花桥",
+  "ko": "롄화차오",
+  "en": "Lianhua Qiao",
+  "py": "Lianhua Qiao",
+  "lat": 39.897426,
+  "lon": 116.310387,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q75398"
+ },
+ {
+  "id": "liaogongzhuang",
+  "zh": "廖公庄",
+  "ko": "랴오궁좡",
+  "en": "Liaogongzhuang",
+  "py": "Liaogongzhuang",
+  "lat": 39.932833,
+  "lon": 116.226914,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q42751307"
+ },
+ {
+  "id": "libafang",
+  "zh": "篱笆房",
+  "ko": "리바팡",
+  "en": "Libafang",
+  "py": "Libafang",
+  "lat": 39.760671,
+  "lon": 116.189429,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q4392161"
+ },
+ {
+  "id": "life-science-park",
+  "zh": "生命科学园",
+  "ko": "생명과학원",
+  "en": "Life Science Park",
+  "py": "Life Science Park",
+  "lat": 40.094881,
+  "lon": 116.294244,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q6119466"
+ },
+ {
+  "id": "lincuiqiao",
+  "zh": "林萃桥",
+  "ko": "린추이차오",
+  "en": "Lincuiqiao",
+  "py": "Lincuiqiao",
+  "lat": 40.021983,
+  "lon": 116.373019,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q4392184"
+ },
+ {
+  "id": "lingjing-hutong",
+  "zh": "灵境胡同",
+  "ko": "링징후퉁",
+  "en": "Lingjing Hutong",
+  "py": "Lingjing Hutong",
+  "lat": 39.916159,
+  "lon": 116.37349,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5959844"
+ },
+ {
+  "id": "linheli",
+  "zh": "临河里",
+  "ko": "린허리",
+  "en": "Linheli",
+  "py": "Linheli",
+  "lat": 39.875412,
+  "lon": 116.678762,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5973022"
+ },
+ {
+  "id": "lishuiqiao",
+  "zh": "立水桥",
+  "ko": "리수이차오",
+  "en": "Lishuiqiao",
+  "py": "Lishuiqiao",
+  "lat": 40.052727,
+  "lon": 116.411885,
+  "lines": [
+   "Q647340",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q6125740"
+ },
+ {
+  "id": "lishuiqiao-nan-s",
+  "zh": "立水桥南",
+  "ko": "리수이차오난",
+  "en": "Lishuiqiao Nan (S)",
+  "py": "Lishuiqiao Nan (S)",
+  "lat": 40.041916,
+  "lon": 116.414503,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q5972622"
+ },
+ {
+  "id": "liudaokou",
+  "zh": "六道口",
+  "ko": "류다오커우",
+  "en": "Liudaokou",
+  "py": "Liudaokou",
+  "lat": 40.0007,
+  "lon": 116.353859,
+  "lines": [
+   "Q734917",
+   "Q5066697"
+  ],
+  "transfer": true,
+  "wd": "Q18651655"
+ },
+ {
+  "id": "liufang",
+  "zh": "柳芳",
+  "ko": "류팡",
+  "en": "Liufang",
+  "py": "Liufang",
+  "lat": 39.958196,
+  "lon": 116.432853,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q6124548"
+ },
+ {
+  "id": "liujiayao",
+  "zh": "刘家窑",
+  "ko": "류자야오",
+  "en": "Liujiayao",
+  "py": "Liujiayao",
+  "lat": 39.857472,
+  "lon": 116.421839,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q6123757"
+ },
+ {
+  "id": "liuliqiao",
+  "zh": "六里桥",
+  "ko": "류리차오",
+  "en": "Liuliqiao",
+  "py": "Liuliqiao",
+  "lat": 39.87994,
+  "lon": 116.302964,
+  "lines": [
+   "Q5929508",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q4392236"
+ },
+ {
+  "id": "liuliqiaodong",
+  "zh": "六里桥东",
+  "ko": "류리차오둥",
+  "en": "Liuliqiaodong",
+  "py": "Liuliqiaodong",
+  "lat": 39.887013,
+  "lon": 116.314872,
+  "lines": [
+   "Q5929508"
+  ],
+  "transfer": false,
+  "wd": "Q4392166"
+ },
+ {
+  "id": "liyuan-station-beijing-subway",
+  "zh": "梨园",
+  "ko": "리위안",
+  "en": "Liyuan station (Beijing Subway)",
+  "py": "Liyuan station (Beijing Subway)",
+  "lat": 39.883644,
+  "lon": 116.668607,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5973148"
+ },
+ {
+  "id": "liyuanzhuang",
+  "zh": "栗园庄",
+  "ko": "리위안좡",
+  "en": "Liyuanzhuang",
+  "py": "Liyuanzhuang",
+  "lat": 39.895657,
+  "lon": 116.123296,
+  "lines": [
+   "Q4881158"
+  ],
+  "transfer": false,
+  "wd": "Q46829369"
+ },
+ {
+  "id": "lize-shangwuqu",
+  "zh": "丽泽商务区",
+  "ko": "리쩌 상무구",
+  "en": "Lize Shangwuqu",
+  "py": "Lize Shangwuqu",
+  "lat": 39.867575,
+  "lon": 116.331753,
+  "lines": [
+   "Q6553070",
+   "Q6553080",
+   "Q19840478"
+  ],
+  "transfer": true,
+  "wd": "Q27949117"
+ },
+ {
+  "id": "longze",
+  "zh": "龙泽",
+  "ko": "룽쩌",
+  "en": "Longze",
+  "py": "Longze",
+  "lat": 40.070864,
+  "lon": 116.319324,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q6126985"
+ },
+ {
+  "id": "longzexi",
+  "zh": "龙泽西",
+  "ko": "龙泽西",
+  "en": "Longzexi",
+  "py": "Longzexi",
+  "lat": 40.072571,
+  "lon": 116.307878,
+  "lines": [
+   "Q135581001"
+  ],
+  "transfer": false,
+  "wd": "Q111802872"
+ },
+ {
+  "id": "lucheng",
+  "zh": "潞城",
+  "ko": "루청",
+  "en": "Lucheng",
+  "py": "Lucheng",
+  "lat": 39.902849,
+  "lon": 116.747708,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q1767779"
+ },
+ {
+  "id": "luyang",
+  "zh": "潞阳",
+  "ko": "루양",
+  "en": "Luyang",
+  "py": "Luyang",
+  "lat": 39.889559,
+  "lon": 116.756359,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q113720157"
+ },
+ {
+  "id": "madian-qiao",
+  "zh": "马甸桥",
+  "ko": "마뎬차오",
+  "en": "Madian Qiao",
+  "py": "Madian Qiao",
+  "lat": 39.968169,
+  "lon": 116.382723,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q84251336"
+ },
+ {
+  "id": "magezhuang",
+  "zh": "马各庄",
+  "ko": "마거좡",
+  "en": "Magezhuang",
+  "py": "Magezhuang",
+  "lat": 39.705013,
+  "lon": 116.016682,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q46999649"
+ },
+ {
+  "id": "majiapu",
+  "zh": "马家堡",
+  "ko": "마자푸",
+  "en": "Majiapu",
+  "py": "Majiapu",
+  "lat": 39.853012,
+  "lon": 116.371297,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5959373"
+ },
+ {
+  "id": "malianwa",
+  "zh": "马连洼",
+  "ko": "마롄와",
+  "en": "Malianwa",
+  "py": "Malianwa",
+  "lat": 40.032766,
+  "lon": 116.271931,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q26261977"
+ },
+ {
+  "id": "maquanying",
+  "zh": "马泉营",
+  "ko": "마촨잉",
+  "en": "Maquanying",
+  "py": "Maquanying",
+  "lat": 40.033783,
+  "lon": 116.504339,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5937635"
+ },
+ {
+  "id": "military-museum",
+  "zh": "军事博物馆",
+  "ko": "군사박물관",
+  "en": "Military Museum",
+  "py": "Military Museum",
+  "lat": 39.907411,
+  "lon": 116.321788,
+  "lines": [
+   "Q5929508",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q5976309"
+ },
+ {
+  "id": "ming-tombs",
+  "zh": "十三陵景区",
+  "ko": "스싼링징취",
+  "en": "Ming Tombs",
+  "py": "Ming Tombs",
+  "lat": 40.239671,
+  "lon": 116.207947,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q21245978"
+ },
+ {
+  "id": "moshikou",
+  "zh": "模式口",
+  "ko": "모스커우",
+  "en": "Moshikou",
+  "py": "Moshikou",
+  "lat": 39.933688,
+  "lon": 116.155931,
+  "lines": [
+   "Q6553057"
+  ],
+  "transfer": false,
+  "wd": "Q102367262"
+ },
+ {
+  "id": "mudanyuan",
+  "zh": "牡丹园",
+  "ko": "무단위안",
+  "en": "Mudanyuan",
+  "py": "Mudanyuan",
+  "lat": 39.976288,
+  "lon": 116.36928,
+  "lines": [
+   "Q6553202",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q6124616"
+ },
+ {
+  "id": "muxidi",
+  "zh": "木樨地",
+  "ko": "무시디",
+  "en": "Muxidi",
+  "py": "Muxidi",
+  "lat": 39.907434,
+  "lon": 116.337647,
+  "lines": [
+   "Q6553080",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q842107"
+ },
+ {
+  "id": "muxiyuan",
+  "zh": "木樨园",
+  "ko": "무시위안",
+  "en": "Muxiyuan",
+  "py": "Muxiyuan",
+  "lat": 39.860094,
+  "lon": 116.39986,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q57025115"
+ },
+ {
+  "id": "nanfaxin",
+  "zh": "南法信",
+  "ko": "난파신",
+  "en": "Nanfaxin",
+  "py": "Nanfaxin",
+  "lat": 40.128521,
+  "lon": 116.60938,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q4392279"
+ },
+ {
+  "id": "nanlishi-lu",
+  "zh": "南礼士路",
+  "ko": "난리스루",
+  "en": "Nanlishi Lu",
+  "py": "Nanlishi Lu",
+  "lat": 39.907239,
+  "lon": 116.352742,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q842140"
+ },
+ {
+  "id": "nanlouzi-zhuang",
+  "zh": "南楼梓庄",
+  "ko": "난뤄쯔좡",
+  "en": "Nanlouzi Zhuang",
+  "py": "Nanlouzi Zhuang",
+  "lat": 39.874627,
+  "lon": 116.501432,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q15942316"
+ },
+ {
+  "id": "nanluogu-xiang",
+  "zh": "南锣鼓巷",
+  "ko": "난뤄구샹",
+  "en": "Nanluogu Xiang",
+  "py": "Nanluogu Xiang",
+  "lat": 39.933714,
+  "lon": 116.403935,
+  "lines": [
+   "Q6553113",
+   "Q6553138",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q10909164"
+ },
+ {
+  "id": "nanshao",
+  "zh": "南邵",
+  "ko": "난사오",
+  "en": "Nanshao",
+  "py": "Nanshao",
+  "lat": 40.207904,
+  "lon": 116.288054,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q5938143"
+ },
+ {
+  "id": "national-art-museum",
+  "zh": "中国美术馆",
+  "ko": "중국미술관",
+  "en": "National Art Museum",
+  "py": "National Art Museum",
+  "lat": 39.925152,
+  "lon": 116.410841,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q6970482"
+ },
+ {
+  "id": "national-library",
+  "zh": "国家图书馆",
+  "ko": "국가도서관",
+  "en": "National Library",
+  "py": "National Library",
+  "lat": 39.942977,
+  "lon": 116.325178,
+  "lines": [
+   "Q5929508",
+   "Q6553080",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q5937216"
+ },
+ {
+  "id": "niujie",
+  "zh": "牛街",
+  "ko": "뉴제",
+  "en": "Niujie",
+  "py": "Niujie",
+  "lat": 39.890669,
+  "lon": 116.363556,
+  "lines": [
+   "Q6553202"
+  ],
+  "transfer": false,
+  "wd": "Q102353132"
+ },
+ {
+  "id": "niwa",
+  "zh": "泥洼",
+  "ko": "니와",
+  "en": "Niwa",
+  "py": "Niwa",
+  "lat": 39.858631,
+  "lon": 116.304259,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q7041866"
+ },
+ {
+  "id": "nongda-nanlu",
+  "zh": "农大南路",
+  "ko": "눙다난루",
+  "en": "Nongda Nanlu",
+  "py": "Nongda Nanlu",
+  "lat": 40.01981,
+  "lon": 116.283074,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q25349546"
+ },
+ {
+  "id": "panjiayuan",
+  "zh": "潘家园",
+  "ko": "판자위안",
+  "en": "Panjiayuan",
+  "py": "Panjiayuan",
+  "lat": 39.876204,
+  "lon": 116.46113,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q7131255"
+ },
+ {
+  "id": "panjiayuanxi",
+  "zh": "潘家园西",
+  "ko": "潘家园西",
+  "en": "Panjiayuanxi",
+  "py": "Panjiayuanxi",
+  "lat": 39.875235,
+  "lon": 116.450908,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q102346922"
+ },
+ {
+  "id": "peking-univ-east-gate",
+  "zh": "北京大学东门",
+  "ko": "베이징 대학 동문",
+  "en": "Peking Univ. East Gate",
+  "py": "Peking Univ. East Gate",
+  "lat": 39.992088,
+  "lon": 116.315697,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5328414"
+ },
+ {
+  "id": "ping-anli",
+  "zh": "平安里",
+  "ko": "핑안리",
+  "en": "Ping'anli",
+  "py": "Ping'anli",
+  "lat": 39.93286,
+  "lon": 116.372712,
+  "lines": [
+   "Q6553113",
+   "Q6553138",
+   "Q6553202",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q5959534"
+ },
+ {
+  "id": "pingguoyuan",
+  "zh": "苹果园",
+  "ko": "핑궈위안",
+  "en": "Pingguoyuan",
+  "py": "Pingguoyuan",
+  "lat": 39.926218,
+  "lon": 116.177963,
+  "lines": [
+   "Q6553138",
+   "Q748987",
+   "Q4881158"
+  ],
+  "transfer": true,
+  "wd": "Q1039443"
+ },
+ {
+  "id": "pingle-yuan",
+  "zh": "平乐园",
+  "ko": "핑러위안",
+  "en": "Pingle Yuan",
+  "py": "Pingle Yuan",
+  "lat": 39.885154,
+  "lon": 116.47745,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q46999367"
+ },
+ {
+  "id": "pingxifu",
+  "zh": "平西府",
+  "ko": "핑시푸",
+  "en": "Pingxifu",
+  "py": "Pingxifu",
+  "lat": 40.090011,
+  "lon": 116.350384,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q15500795"
+ },
+ {
+  "id": "puhuangyu",
+  "zh": "蒲黄榆",
+  "ko": "푸황위",
+  "en": "Puhuangyu",
+  "py": "Puhuangyu",
+  "lat": 39.865727,
+  "lon": 116.421694,
+  "lines": [
+   "Q6553070",
+   "Q647340"
+  ],
+  "transfer": true,
+  "wd": "Q7258998"
+ },
+ {
+  "id": "qianmen",
+  "zh": "前门",
+  "ko": "첸먼",
+  "en": "Qianmen",
+  "py": "Qianmen",
+  "lat": 39.90016,
+  "lon": 116.397881,
+  "lines": [
+   "Q680973",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q847934"
+ },
+ {
+  "id": "qiaohuying",
+  "zh": "桥户营",
+  "ko": "차오후잉",
+  "en": "Qiaohuying",
+  "py": "Qiaohuying",
+  "lat": 39.912279,
+  "lon": 116.12583,
+  "lines": [
+   "Q4881158"
+  ],
+  "transfer": false,
+  "wd": "Q46828844"
+ },
+ {
+  "id": "qiaowan",
+  "zh": "桥湾",
+  "ko": "차오완",
+  "en": "Qiaowan",
+  "py": "Qiaowan",
+  "lat": 39.892721,
+  "lon": 116.407983,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q18654011"
+ },
+ {
+  "id": "qilizhuang",
+  "zh": "七里庄",
+  "ko": "치리좡",
+  "en": "Qilizhuang",
+  "py": "Qilizhuang",
+  "lat": 39.866481,
+  "lon": 116.294215,
+  "lines": [
+   "Q5929508",
+   "Q6553070"
+  ],
+  "transfer": true,
+  "wd": "Q5926481"
+ },
+ {
+  "id": "qinghe-railway",
+  "zh": "清河",
+  "ko": "칭허",
+  "en": "Qinghe Railway",
+  "py": "Qinghe Railway",
+  "lat": 40.041146,
+  "lon": 116.315281,
+  "lines": [
+   "Q5066697",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q105064164"
+ },
+ {
+  "id": "qinghe-xiaoyingqiao",
+  "zh": "清河小营桥",
+  "ko": "칭허샤오잉차오",
+  "en": "Qinghe Xiaoyingqiao",
+  "py": "Qinghe Xiaoyingqiao",
+  "lat": 40.034904,
+  "lon": 116.343212,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q102353068"
+ },
+ {
+  "id": "qingheying",
+  "zh": "清河营",
+  "ko": "칭허잉",
+  "en": "Qingheying",
+  "py": "Qingheying",
+  "lat": 40.051346,
+  "lon": 116.441978,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107472049"
+ },
+ {
+  "id": "qinghua-donglu-xikou",
+  "zh": "清华东路西口",
+  "ko": "칭화둥루시커우",
+  "en": "Qinghua Donglu Xikou",
+  "py": "Qinghua Donglu Xikou",
+  "lat": 40.00023,
+  "lon": 116.339022,
+  "lines": [
+   "Q734917",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q15919571"
+ },
+ {
+  "id": "qingnian-lu",
+  "zh": "青年路",
+  "ko": "칭녠루",
+  "en": "Qingnian Lu",
+  "py": "Qingnian Lu",
+  "lat": 39.922872,
+  "lon": 116.516804,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q7267855"
+ },
+ {
+  "id": "qingyuan-lu",
+  "zh": "清源路",
+  "ko": "칭위안루",
+  "en": "Qingyuan Lu",
+  "py": "Qingyuan Lu",
+  "lat": 39.74305,
+  "lon": 116.332363,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5938212"
+ },
+ {
+  "id": "qunfang",
+  "zh": "群芳",
+  "ko": "췬팡",
+  "en": "Qunfang",
+  "py": "Qunfang",
+  "lat": 39.863375,
+  "lon": 116.67063,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q76063691"
+ },
+ {
+  "id": "raolefu",
+  "zh": "饶乐府",
+  "ko": "라오러푸",
+  "en": "Raolefu",
+  "py": "Raolefu",
+  "lat": 39.701291,
+  "lon": 116.006208,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q45797647"
+ },
+ {
+  "id": "renmin-univ",
+  "zh": "人民大学",
+  "ko": "인민대학",
+  "en": "Renmin Univ.",
+  "py": "Renmin Univ.",
+  "lat": 39.967048,
+  "lon": 116.321733,
+  "lines": [
+   "Q26262009",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q5938338"
+ },
+ {
+  "id": "rongchang-dongjie",
+  "zh": "荣昌东街",
+  "ko": "荣昌东街",
+  "en": "Rongchang Dongjie",
+  "py": "Rongchang Dongjie",
+  "lat": 39.781547,
+  "lon": 116.521572,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q112762834"
+ },
+ {
+  "id": "rongjing-dongjie",
+  "zh": "荣京东街",
+  "ko": "룽징둥제",
+  "en": "Rongjing Dongjie",
+  "py": "Rongjing Dongjie",
+  "lat": 39.793204,
+  "lon": 116.513409,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5937809"
+ },
+ {
+  "id": "sanyuan-qiao",
+  "zh": "三元桥",
+  "ko": "싼위안차오",
+  "en": "Sanyuan Qiao",
+  "py": "Sanyuan Qiao",
+  "lat": 39.961118,
+  "lon": 116.457599,
+  "lines": [
+   "Q26262009",
+   "Q847767",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q847757"
+ },
+ {
+  "id": "shahe",
+  "zh": "沙河",
+  "ko": "사허",
+  "en": "Shahe",
+  "py": "Shahe",
+  "lat": 40.148294,
+  "lon": 116.288844,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q5937736"
+ },
+ {
+  "id": "shahe-univ-park",
+  "zh": "沙河高教园",
+  "ko": "사허 고교원",
+  "en": "Shahe Univ. Park",
+  "py": "Shahe Univ. Park",
+  "lat": 40.164642,
+  "lon": 116.280455,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q4392198"
+ },
+ {
+  "id": "shang-an",
+  "zh": "上岸",
+  "ko": "상안",
+  "en": "Shang'an",
+  "py": "Shang'an",
+  "lat": 39.90505,
+  "lon": 116.122249,
+  "lines": [
+   "Q4881158"
+  ],
+  "transfer": false,
+  "wd": "Q46828863"
+ },
+ {
+  "id": "shangdi",
+  "zh": "上地",
+  "ko": "상디",
+  "en": "Shangdi",
+  "py": "Shangdi",
+  "lat": 40.032984,
+  "lon": 116.319979,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q5976563"
+ },
+ {
+  "id": "shangezhuang",
+  "zh": "善各庄",
+  "ko": "산거좡",
+  "en": "Shangezhuang",
+  "py": "Shangezhuang",
+  "lat": 40.027694,
+  "lon": 116.478676,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q18652168"
+ },
+ {
+  "id": "shaoyaoju",
+  "zh": "芍药居",
+  "ko": "사오야오쥐",
+  "en": "Shaoyaoju",
+  "py": "Shaoyaoju",
+  "lat": 39.977343,
+  "lon": 116.435968,
+  "lines": [
+   "Q847744",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q6124150"
+ },
+ {
+  "id": "shibalidian",
+  "zh": "十八里店",
+  "ko": "스바리뎬",
+  "en": "Shibalidian",
+  "py": "Shibalidian",
+  "lat": 39.844529,
+  "lon": 116.495509,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q107580086"
+ },
+ {
+  "id": "shichahai",
+  "zh": "什刹海",
+  "ko": "스차하이",
+  "en": "Shichahai",
+  "py": "Shichahai",
+  "lat": 39.937355,
+  "lon": 116.396309,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q7496096"
+ },
+ {
+  "id": "shichang",
+  "zh": "石厂",
+  "ko": "스창",
+  "en": "Shichang",
+  "py": "Shichang",
+  "lat": 39.889278,
+  "lon": 116.100316,
+  "lines": [
+   "Q4881158"
+  ],
+  "transfer": false,
+  "wd": "Q38679550"
+ },
+ {
+  "id": "shifoying",
+  "zh": "石佛营",
+  "ko": "스포잉",
+  "en": "Shifoying",
+  "py": "Shifoying",
+  "lat": 39.935669,
+  "lon": 116.499048,
+  "lines": [
+   "Q6553113"
+  ],
+  "transfer": false,
+  "wd": "Q97172525"
+ },
+ {
+  "id": "shilihe",
+  "zh": "十里河",
+  "ko": "스리허",
+  "en": "Shilihe",
+  "py": "Shilihe",
+  "lat": 39.866,
+  "lon": 116.459167,
+  "lines": [
+   "Q6553070",
+   "Q24834015",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q7496646"
+ },
+ {
+  "id": "shilipu",
+  "zh": "十里堡",
+  "ko": "스리푸",
+  "en": "Shilipu",
+  "py": "Shilipu",
+  "lat": 39.922861,
+  "lon": 116.502066,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q82802"
+ },
+ {
+  "id": "shiliuzhuang",
+  "zh": "石榴庄",
+  "ko": "스류좡",
+  "en": "Shiliuzhuang",
+  "py": "Shiliuzhuang",
+  "lat": 39.84585,
+  "lon": 116.413654,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q7496655"
+ },
+ {
+  "id": "shimen",
+  "zh": "石门",
+  "ko": "스먼",
+  "en": "Shimen",
+  "py": "Shimen",
+  "lat": 40.129647,
+  "lon": 116.641083,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q4392190"
+ },
+ {
+  "id": "shoujingmao",
+  "zh": "首经贸",
+  "ko": "서우징마오",
+  "en": "Shoujingmao",
+  "py": "Shoujingmao",
+  "lat": 39.844421,
+  "lon": 116.320237,
+  "lines": [
+   "Q5433860",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q2044193"
+ },
+ {
+  "id": "shuanghe",
+  "zh": "双合",
+  "ko": "솽허",
+  "en": "Shuanghe",
+  "py": "Shuanghe",
+  "lat": 39.859292,
+  "lon": 116.528263,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q17498770"
+ },
+ {
+  "id": "shuangjing",
+  "zh": "双井",
+  "ko": "솽징",
+  "en": "Shuangjing",
+  "py": "Shuangjing",
+  "lat": 39.893436,
+  "lon": 116.461393,
+  "lines": [
+   "Q6553149",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5936021"
+ },
+ {
+  "id": "shuangqiao",
+  "zh": "双桥",
+  "ko": "솽차오",
+  "en": "Shuangqiao",
+  "py": "Shuangqiao",
+  "lat": 39.910211,
+  "lon": 116.57665,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5973184"
+ },
+ {
+  "id": "shunyi",
+  "zh": "顺义",
+  "ko": "순이",
+  "en": "Shunyi",
+  "py": "Shunyi",
+  "lat": 40.129975,
+  "lon": 116.657081,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q4392244"
+ },
+ {
+  "id": "sidaoqiao",
+  "zh": "四道桥",
+  "ko": "쓰다오차오",
+  "en": "Sidaoqiao",
+  "py": "Sidaoqiao",
+  "lat": 39.915793,
+  "lon": 116.133732,
+  "lines": [
+   "Q4881158"
+  ],
+  "transfer": false,
+  "wd": "Q46828911"
+ },
+ {
+  "id": "sihui",
+  "zh": "四惠",
+  "ko": "스후이",
+  "en": "Sihui",
+  "py": "Sihui",
+  "lat": 39.908821,
+  "lon": 116.49517,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q1039435"
+ },
+ {
+  "id": "sihui-dong-e",
+  "zh": "四惠东",
+  "ko": "쓰후이 동",
+  "en": "Sihui Dong (E)",
+  "py": "Sihui Dong (E)",
+  "lat": 39.908523,
+  "lon": 116.515172,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q1039422"
+ },
+ {
+  "id": "sijiqing-qiao",
+  "zh": "四季青桥",
+  "ko": "쓰지칭차오",
+  "en": "Sijiqing Qiao",
+  "py": "Sijiqing Qiao",
+  "lat": 39.944955,
+  "lon": 116.273605,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q103745656"
+ },
+ {
+  "id": "songjiazhuang",
+  "zh": "宋家庄",
+  "ko": "쑹자좡",
+  "en": "Songjiazhuang",
+  "py": "Songjiazhuang",
+  "lat": 39.845775,
+  "lon": 116.428152,
+  "lines": [
+   "Q5944471",
+   "Q647340",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q898095"
+ },
+ {
+  "id": "summer-palace-west-gate",
+  "zh": "颐和园西门",
+  "ko": "이화원서문",
+  "en": "Summer Palace West Gate",
+  "py": "Summer Palace West Gate",
+  "lat": 39.985707,
+  "lon": 116.263179,
+  "lines": [
+   "Q3400451"
+  ],
+  "transfer": false,
+  "wd": "Q46174701"
+ },
+ {
+  "id": "sunhe",
+  "zh": "孙河",
+  "ko": "쑨허",
+  "en": "Sunhe",
+  "py": "Sunhe",
+  "lat": 40.045096,
+  "lon": 116.534636,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q6119031"
+ },
+ {
+  "id": "suzhou-jie",
+  "zh": "苏州街",
+  "ko": "쑤저우제",
+  "en": "Suzhou Jie",
+  "py": "Suzhou Jie",
+  "lat": 39.975591,
+  "lon": 116.306056,
+  "lines": [
+   "Q6553080",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5936074"
+ },
+ {
+  "id": "suzhou-qiao",
+  "zh": "苏州桥",
+  "ko": "쑤저우차오",
+  "en": "Suzhou Qiao",
+  "py": "Suzhou Qiao",
+  "lat": 39.963397,
+  "lon": 116.307502,
+  "lines": [
+   "Q6553080",
+   "Q26262009"
+  ],
+  "transfer": true,
+  "wd": "Q28309051"
+ },
+ {
+  "id": "suzhuang",
+  "zh": "苏庄",
+  "ko": "수좡",
+  "en": "Suzhuang",
+  "py": "Suzhuang",
+  "lat": 39.723244,
+  "lon": 116.12525,
+  "lines": [
+   "Q5433860"
+  ],
+  "transfer": false,
+  "wd": "Q5936795"
+ },
+ {
+  "id": "taipingqiao",
+  "zh": "太平桥",
+  "ko": "타이핑차오",
+  "en": "Taipingqiao",
+  "py": "Taipingqiao",
+  "lat": 39.910253,
+  "lon": 116.363211,
+  "lines": [
+   "Q6553202"
+  ],
+  "transfer": false,
+  "wd": "Q102353186"
+ },
+ {
+  "id": "taipingzhuang",
+  "zh": "太平庄",
+  "ko": "太平庄",
+  "en": "Taipingzhuang",
+  "py": "Taipingzhuang",
+  "lat": 40.074124,
+  "lon": 116.426824,
+  "lines": [
+   "Q135581001"
+  ],
+  "transfer": false,
+  "wd": "Q111823410"
+ },
+ {
+  "id": "taiyanggong",
+  "zh": "太阳宫",
+  "ko": "타이양궁",
+  "en": "Taiyanggong",
+  "py": "Taiyanggong",
+  "lat": 39.972723,
+  "lon": 116.447431,
+  "lines": [
+   "Q24834015",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5937094"
+ },
+ {
+  "id": "taoran-qiao",
+  "zh": "陶然桥",
+  "ko": "陶然桥",
+  "en": "Taoran Qiao",
+  "py": "Taoran Qiao",
+  "lat": 39.868764,
+  "lon": 116.387139,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q21246002"
+ },
+ {
+  "id": "taoranting",
+  "zh": "陶然亭",
+  "ko": "타오란팅",
+  "en": "Taoranting",
+  "py": "Taoranting",
+  "lat": 39.878832,
+  "lon": 116.374305,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5960410"
+ },
+ {
+  "id": "temple-of-heaven-east-gate",
+  "zh": "天坛东门",
+  "ko": "톈탄둥먼",
+  "en": "Temple of Heaven East Gate",
+  "py": "Temple of Heaven East Gate",
+  "lat": 39.883656,
+  "lon": 116.420715,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q5972711"
+ },
+ {
+  "id": "terminal-2",
+  "zh": "2号航站楼",
+  "ko": "2터미널",
+  "en": "Terminal 2",
+  "py": "Terminal 2",
+  "lat": 40.079061,
+  "lon": 116.59294,
+  "lines": [
+   "Q847767"
+  ],
+  "transfer": false,
+  "wd": "Q848128"
+ },
+ {
+  "id": "terminal-3",
+  "zh": "3号航站楼",
+  "ko": "3터미널",
+  "en": "Terminal 3",
+  "py": "Terminal 3",
+  "lat": 40.052805,
+  "lon": 116.61566,
+  "lines": [
+   "Q847767"
+  ],
+  "transfer": false,
+  "wd": "Q848119"
+ },
+ {
+  "id": "tian-anmendong",
+  "zh": "天安门东",
+  "ko": "톈안먼둥",
+  "en": "Tian'anmendong",
+  "py": "Tian'anmendong",
+  "lat": 39.907749,
+  "lon": 116.400966,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q6125611"
+ },
+ {
+  "id": "tian-anmenxi",
+  "zh": "天安门西",
+  "ko": "톈안먼시",
+  "en": "Tian'anmenxi",
+  "py": "Tian'anmenxi",
+  "lat": 39.907416,
+  "lon": 116.391406,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q842095"
+ },
+ {
+  "id": "tiancun",
+  "zh": "田村",
+  "ko": "톈춘",
+  "en": "Tiancun",
+  "py": "Tiancun",
+  "lat": 39.929606,
+  "lon": 116.252915,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q56881426"
+ },
+ {
+  "id": "tiangong-yuan",
+  "zh": "天宫院",
+  "ko": "톈궁위안",
+  "en": "Tiangong Yuan",
+  "py": "Tiangong Yuan",
+  "lat": 39.670046,
+  "lon": 116.319972,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5936562"
+ },
+ {
+  "id": "tianqiao",
+  "zh": "天桥",
+  "ko": "天桥",
+  "en": "Tianqiao",
+  "py": "Tianqiao",
+  "lat": 39.877154,
+  "lon": 116.398442,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q19852289"
+ },
+ {
+  "id": "tiantongyuan",
+  "zh": "天通苑",
+  "ko": "톈퉁위안",
+  "en": "Tiantongyuan",
+  "py": "Tiantongyuan",
+  "lat": 40.075186,
+  "lon": 116.412904,
+  "lines": [
+   "Q135581001",
+   "Q647340"
+  ],
+  "transfer": true,
+  "wd": "Q6124366"
+ },
+ {
+  "id": "tiantongyuanbei",
+  "zh": "天通苑北",
+  "ko": "톈퉁위안 북",
+  "en": "Tiantongyuanbei",
+  "py": "Tiantongyuanbei",
+  "lat": 40.0835,
+  "lon": 116.413033,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q847741"
+ },
+ {
+  "id": "tiantongyuandong",
+  "zh": "天通苑东",
+  "ko": "톈퉁위안둥",
+  "en": "Tiantongyuandong",
+  "py": "Tiantongyuandong",
+  "lat": 40.066366,
+  "lon": 116.44215,
+  "lines": [
+   "Q24834015",
+   "Q135581001"
+  ],
+  "transfer": true,
+  "wd": "Q107472104"
+ },
+ {
+  "id": "tiantongyuannan",
+  "zh": "天通苑南",
+  "ko": "톈퉁위안난",
+  "en": "Tiantongyuannan",
+  "py": "Tiantongyuannan",
+  "lat": 40.066534,
+  "lon": 116.412769,
+  "lines": [
+   "Q647340"
+  ],
+  "transfer": false,
+  "wd": "Q5972674"
+ },
+ {
+  "id": "tongji-nanlu",
+  "zh": "同济南路",
+  "ko": "퉁지난루",
+  "en": "Tongji Nanlu",
+  "py": "Tongji Nanlu",
+  "lat": 39.772931,
+  "lon": 116.539817,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5937020"
+ },
+ {
+  "id": "tongyun-men",
+  "zh": "通运门",
+  "ko": "通运门",
+  "en": "Tongyun Men",
+  "py": "Tongyun Men",
+  "lat": 39.910726,
+  "lon": 116.673284,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q11081564"
+ },
+ {
+  "id": "tongzhou-beiguan",
+  "zh": "通州北关",
+  "ko": "퉁저우베이관",
+  "en": "Tongzhou Beiguan",
+  "py": "Tongzhou Beiguan",
+  "lat": 39.918575,
+  "lon": 116.661479,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q10902508"
+ },
+ {
+  "id": "tongzhou-beiyuan",
+  "zh": "通州北苑",
+  "ko": "퉁저우베이위안",
+  "en": "Tongzhou Beiyuan",
+  "py": "Tongzhou Beiyuan",
+  "lat": 39.903808,
+  "lon": 116.637253,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q5973079"
+ },
+ {
+  "id": "tuanjiehu",
+  "zh": "团结湖",
+  "ko": "퇀제후",
+  "en": "Tuanjiehu",
+  "py": "Tuanjiehu",
+  "lat": 39.933545,
+  "lon": 116.461772,
+  "lines": [
+   "Q6553113",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5935750"
+ },
+ {
+  "id": "tundian",
+  "zh": "屯佃",
+  "ko": "툰뎬",
+  "en": "Tundian",
+  "py": "Tundian",
+  "lat": 40.068597,
+  "lon": 116.215914,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q24835471"
+ },
+ {
+  "id": "tuofangying",
+  "zh": "驼房营",
+  "ko": "퉈팡잉",
+  "en": "Tuofangying",
+  "py": "Tuofangying",
+  "lat": 39.980438,
+  "lon": 116.505559,
+  "lines": [
+   "Q26262009"
+  ],
+  "transfer": false,
+  "wd": "Q103742571"
+ },
+ {
+  "id": "tuqiao",
+  "zh": "土桥",
+  "ko": "투차오",
+  "en": "Tuqiao",
+  "py": "Tuqiao",
+  "lat": 39.871891,
+  "lon": 116.686221,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q1039412"
+ },
+ {
+  "id": "universal-resort",
+  "zh": "环球度假区",
+  "ko": "유니버설리조트",
+  "en": "Universal Resort",
+  "py": "Universal Resort",
+  "lat": 39.849067,
+  "lon": 116.679065,
+  "lines": [
+   "Q6553149",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q75161769"
+ },
+ {
+  "id": "wan-an",
+  "zh": "万安",
+  "ko": "완안",
+  "en": "Wan'an",
+  "py": "Wan'an",
+  "lat": 39.982044,
+  "lon": 116.234644,
+  "lines": [
+   "Q3400451"
+  ],
+  "transfer": false,
+  "wd": "Q46174634"
+ },
+ {
+  "id": "wangfujing",
+  "zh": "王府井",
+  "ko": "왕푸징",
+  "en": "Wangfujing",
+  "py": "Wangfujing",
+  "lat": 39.908053,
+  "lon": 116.411448,
+  "lines": [
+   "Q748987",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q843213"
+ },
+ {
+  "id": "wangjing",
+  "zh": "望京",
+  "ko": "왕징",
+  "en": "Wangjing",
+  "py": "Wangjing",
+  "lat": 39.997897,
+  "lon": 116.468581,
+  "lines": [
+   "Q6553070",
+   "Q734917"
+  ],
+  "transfer": true,
+  "wd": "Q6119178"
+ },
+ {
+  "id": "wangjingdong",
+  "zh": "望京东",
+  "ko": "왕징둥",
+  "en": "Wangjingdong",
+  "py": "Wangjingdong",
+  "lat": 40.003309,
+  "lon": 116.486994,
+  "lines": [
+   "Q734917"
+  ],
+  "transfer": false,
+  "wd": "Q5940665"
+ },
+ {
+  "id": "wangjingnan",
+  "zh": "望京南",
+  "ko": "왕징난",
+  "en": "Wangjingnan",
+  "py": "Wangjingnan",
+  "lat": 39.98466,
+  "lon": 116.481753,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q18653714"
+ },
+ {
+  "id": "wangjingxi",
+  "zh": "望京西",
+  "ko": "왕징시",
+  "en": "Wangjingxi",
+  "py": "Wangjingxi",
+  "lat": 39.995532,
+  "lon": 116.447913,
+  "lines": [
+   "Q24834015",
+   "Q734917",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q6125577"
+ },
+ {
+  "id": "wanpingcheng",
+  "zh": "宛平城",
+  "ko": "완핑청",
+  "en": "Wanpingcheng",
+  "py": "Wanpingcheng",
+  "lat": 39.848769,
+  "lon": 116.228911,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q45859909"
+ },
+ {
+  "id": "wanquanheqiao",
+  "zh": "万泉河桥",
+  "ko": "완촨허차오",
+  "en": "Wanquanheqiao",
+  "py": "Wanquanheqiao",
+  "lat": 39.985291,
+  "lon": 116.300329,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q28411146"
+ },
+ {
+  "id": "wanshengdong",
+  "zh": "万盛东",
+  "ko": "완성둥",
+  "en": "Wanshengdong",
+  "py": "Wanshengdong",
+  "lat": 39.863366,
+  "lon": 116.656638,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q76063646"
+ },
+ {
+  "id": "wanshengxi",
+  "zh": "万盛西",
+  "ko": "완성시",
+  "en": "Wanshengxi",
+  "py": "Wanshengxi",
+  "lat": 39.863398,
+  "lon": 116.632428,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q76063631"
+ },
+ {
+  "id": "wanshou-lu",
+  "zh": "万寿路",
+  "ko": "완서우루",
+  "en": "Wanshou Lu",
+  "py": "Wanshou Lu",
+  "lat": 39.90749,
+  "lon": 116.294829,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q6123642"
+ },
+ {
+  "id": "wanshousi",
+  "zh": "万寿寺",
+  "ko": "완서우쓰",
+  "en": "Wanshousi",
+  "py": "Wanshousi",
+  "lat": 39.948481,
+  "lon": 116.309423,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q28412821"
+ },
+ {
+  "id": "wanyuan-jie",
+  "zh": "万源街",
+  "ko": "완위안제",
+  "en": "Wanyuan Jie",
+  "py": "Wanyuan Jie",
+  "lat": 39.802978,
+  "lon": 116.505529,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5936047"
+ },
+ {
+  "id": "wanzi",
+  "zh": "湾子",
+  "ko": "완쯔",
+  "en": "Wanzi",
+  "py": "Wanzi",
+  "lat": 39.89023,
+  "lon": 116.327476,
+  "lines": [
+   "Q6553149"
+  ],
+  "transfer": false,
+  "wd": "Q15940872"
+ },
+ {
+  "id": "weigongcun",
+  "zh": "魏公村",
+  "ko": "웨이궁춘",
+  "en": "Weigongcun",
+  "py": "Weigongcun",
+  "lat": 39.957578,
+  "lon": 116.323405,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5938302"
+ },
+ {
+  "id": "wenhua-lu",
+  "zh": "文华路",
+  "ko": "文华路",
+  "en": "Wenhua Lu",
+  "py": "Wenhua Lu",
+  "lat": 40.080285,
+  "lon": 116.342234,
+  "lines": [
+   "Q135581001"
+  ],
+  "transfer": false,
+  "wd": "Q111813013"
+ },
+ {
+  "id": "wenyang-lu",
+  "zh": "温阳路",
+  "ko": "원양루",
+  "en": "Wenyang Lu",
+  "py": "Wenyang Lu",
+  "lat": 40.068912,
+  "lon": 116.160356,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q24327754"
+ },
+ {
+  "id": "workers-stadium",
+  "zh": "工人体育场",
+  "ko": "노동자 경기장",
+  "en": "Workers' Stadium",
+  "py": "Workers' Stadium",
+  "lat": 39.9336,
+  "lon": 116.449966,
+  "lines": [
+   "Q6553113",
+   "Q24834015"
+  ],
+  "transfer": true,
+  "wd": "Q84244521"
+ },
+ {
+  "id": "wudao-kou",
+  "zh": "五道口",
+  "ko": "우다오커우",
+  "en": "Wudao Kou",
+  "py": "Wudao Kou",
+  "lat": 39.9928,
+  "lon": 116.337855,
+  "lines": [
+   "Q847744"
+  ],
+  "transfer": false,
+  "wd": "Q6124229"
+ },
+ {
+  "id": "wufutang",
+  "zh": "五福堂",
+  "ko": "우푸탕",
+  "en": "Wufutang",
+  "py": "Wufutang",
+  "lat": 39.784715,
+  "lon": 116.424044,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q56683211"
+ },
+ {
+  "id": "wukesong",
+  "zh": "五棵松",
+  "ko": "우커숭",
+  "en": "Wukesong",
+  "py": "Wukesong",
+  "lat": 39.907457,
+  "lon": 116.274066,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q842090"
+ },
+ {
+  "id": "wuzi-xueyuan-lu",
+  "zh": "物资学院路",
+  "ko": "우쯔쉐위안루",
+  "en": "Wuzi Xueyuan Lu",
+  "py": "Wuzi Xueyuan Lu",
+  "lat": 39.92703,
+  "lon": 116.639328,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q16928789"
+ },
+ {
+  "id": "xi-erqi",
+  "zh": "西二旗",
+  "ko": "시얼치",
+  "en": "Xi'erqi",
+  "py": "Xi'erqi",
+  "lat": 40.052983,
+  "lon": 116.306274,
+  "lines": [
+   "Q135581001",
+   "Q5066697",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q4674479"
+ },
+ {
+  "id": "xi-yuan",
+  "zh": "西苑",
+  "ko": "시위안",
+  "en": "Xi Yuan",
+  "py": "Xi Yuan",
+  "lat": 39.998305,
+  "lon": 116.29064,
+  "lines": [
+   "Q6553080",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q5937762"
+ },
+ {
+  "id": "xiaocun",
+  "zh": "肖村",
+  "ko": "샤오춘",
+  "en": "Xiaocun",
+  "py": "Xiaocun",
+  "lat": 39.834101,
+  "lon": 116.448907,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5936601"
+ },
+ {
+  "id": "xiaohong-men",
+  "zh": "小红门",
+  "ko": "샤오훙먼",
+  "en": "Xiaohong Men",
+  "py": "Xiaohong Men",
+  "lat": 39.82807,
+  "lon": 116.459398,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5934777"
+ },
+ {
+  "id": "xiaoyuan",
+  "zh": "小园",
+  "ko": "샤오위안",
+  "en": "Xiaoyuan",
+  "py": "Xiaoyuan",
+  "lat": 39.890388,
+  "lon": 116.114456,
+  "lines": [
+   "Q4881158"
+  ],
+  "transfer": false,
+  "wd": "Q46828886"
+ },
+ {
+  "id": "xibahe",
+  "zh": "西坝河",
+  "ko": "시바허",
+  "en": "Xibahe",
+  "py": "Xibahe",
+  "lat": 39.966485,
+  "lon": 116.441208,
+  "lines": [
+   "Q24834015",
+   "Q26262009"
+  ],
+  "transfer": true,
+  "wd": "Q84244726"
+ },
+ {
+  "id": "xibeiwang",
+  "zh": "西北旺",
+  "ko": "시베이왕",
+  "en": "Xibeiwang",
+  "py": "Xibeiwang",
+  "lat": 40.049124,
+  "lon": 116.258176,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q26206379"
+ },
+ {
+  "id": "xidan",
+  "zh": "西单",
+  "ko": "시단",
+  "en": "Xidan",
+  "py": "Xidan",
+  "lat": 39.907119,
+  "lon": 116.37442,
+  "lines": [
+   "Q304264",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q842064"
+ },
+ {
+  "id": "xidiaoyutai",
+  "zh": "西钓鱼台",
+  "ko": "시댜오위타이",
+  "en": "Xidiaoyutai",
+  "py": "Xidiaoyutai",
+  "lat": 39.923148,
+  "lon": 116.297971,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q8044360"
+ },
+ {
+  "id": "xihong-men",
+  "zh": "西红门",
+  "ko": "시훙먼",
+  "en": "Xihong Men",
+  "py": "Xihong Men",
+  "lat": 39.789689,
+  "lon": 116.328808,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5938103"
+ },
+ {
+  "id": "xihuangcun",
+  "zh": "西黄村",
+  "ko": "시황춘",
+  "en": "Xihuangcun",
+  "py": "Xihuangcun",
+  "lat": 39.933752,
+  "lon": 116.206701,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q57777858"
+ },
+ {
+  "id": "xiju",
+  "zh": "西局",
+  "ko": "시쥐",
+  "en": "Xiju",
+  "py": "Xiju",
+  "lat": 39.866479,
+  "lon": 116.303872,
+  "lines": [
+   "Q6553070",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q75387"
+ },
+ {
+  "id": "xinfadi",
+  "zh": "新发地",
+  "ko": "신파디",
+  "en": "Xinfadi",
+  "py": "Xinfadi",
+  "lat": 39.82369,
+  "lon": 116.346216,
+  "lines": [
+   "Q6553202"
+  ],
+  "transfer": false,
+  "wd": "Q97172031"
+ },
+ {
+  "id": "xingcheng",
+  "zh": "星城",
+  "ko": "싱청",
+  "en": "Xingcheng",
+  "py": "Xingcheng",
+  "lat": 39.713573,
+  "lon": 116.061402,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q46717114"
+ },
+ {
+  "id": "xingong",
+  "zh": "新宫",
+  "ko": "신궁",
+  "en": "Xingong",
+  "py": "Xingong",
+  "lat": 39.812462,
+  "lon": 116.365189,
+  "lines": [
+   "Q6553202",
+   "Q304264"
+  ],
+  "transfer": true,
+  "wd": "Q5935686"
+ },
+ {
+  "id": "xinjiekou",
+  "zh": "新街口",
+  "ko": "신제커우",
+  "en": "Xinjiekou",
+  "py": "Xinjiekou",
+  "lat": 39.940801,
+  "lon": 116.367483,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5959491"
+ },
+ {
+  "id": "xinshougang-shougang-park",
+  "zh": "新首钢",
+  "ko": "신서우강",
+  "en": "Xinshougang (Shougang Park)",
+  "py": "Xinshougang (Shougang Park)",
+  "lat": 39.909572,
+  "lon": 116.164792,
+  "lines": [
+   "Q6553057"
+  ],
+  "transfer": false,
+  "wd": "Q102367265"
+ },
+ {
+  "id": "xisi",
+  "zh": "西四",
+  "ko": "시스",
+  "en": "Xisi",
+  "py": "Xisi",
+  "lat": 39.923933,
+  "lon": 116.372934,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q6122274"
+ },
+ {
+  "id": "xitieying",
+  "zh": "西铁营",
+  "ko": "시톄잉",
+  "en": "Xitieying",
+  "py": "Xitieying",
+  "lat": 39.861087,
+  "lon": 116.355744,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q105069700"
+ },
+ {
+  "id": "xitucheng",
+  "zh": "西土城",
+  "ko": "시투청",
+  "en": "Xitucheng",
+  "py": "Xitucheng",
+  "lat": 39.976217,
+  "lon": 116.353961,
+  "lines": [
+   "Q5066697",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q5937841"
+ },
+ {
+  "id": "xixiaokou",
+  "zh": "西小口",
+  "ko": "시샤오커우",
+  "en": "Xixiaokou",
+  "py": "Xixiaokou",
+  "lat": 40.047417,
+  "lon": 116.351354,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q4392224"
+ },
+ {
+  "id": "xizhimen",
+  "zh": "西直门",
+  "ko": "시즈먼",
+  "en": "Xizhimen",
+  "py": "Xizhimen",
+  "lat": 39.940569,
+  "lon": 116.35542,
+  "lines": [
+   "Q304264",
+   "Q680973",
+   "Q847744"
+  ],
+  "transfer": true,
+  "wd": "Q847791"
+ },
+ {
+  "id": "xuanwumen",
+  "zh": "宣武门",
+  "ko": "쉬안우먼",
+  "en": "Xuanwumen",
+  "py": "Xuanwumen",
+  "lat": 39.899766,
+  "lon": 116.374229,
+  "lines": [
+   "Q304264",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5976401"
+ },
+ {
+  "id": "xueyuanqiao",
+  "zh": "学院桥",
+  "ko": "쉐위안차오",
+  "en": "Xueyuanqiao",
+  "py": "Xueyuanqiao",
+  "lat": 39.986911,
+  "lon": 116.353457,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q103745077"
+ },
+ {
+  "id": "xuezhiyuan",
+  "zh": "学知园",
+  "ko": "쉐즈위안",
+  "en": "Xuezhiyuan",
+  "py": "Xuezhiyuan",
+  "lat": 40.015279,
+  "lon": 116.352028,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q103745051"
+ },
+ {
+  "id": "yancun",
+  "zh": "阎村",
+  "ko": "옌춘",
+  "en": "Yancun",
+  "py": "Yancun",
+  "lat": 39.716645,
+  "lon": 116.080263,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q46716045"
+ },
+ {
+  "id": "yancun-dong-e",
+  "zh": "阎村东",
+  "ko": "옌춘 동",
+  "en": "Yancun Dong (E)",
+  "py": "Yancun Dong (E)",
+  "lat": 39.72894,
+  "lon": 116.10086,
+  "lines": [
+   "Q8048350",
+   "Q5433860"
+  ],
+  "transfer": true,
+  "wd": "Q39085456"
+ },
+ {
+  "id": "yangzhuang",
+  "zh": "杨庄",
+  "ko": "양좡",
+  "en": "Yangzhuang",
+  "py": "Yangzhuang",
+  "lat": 39.927753,
+  "lon": 116.185709,
+  "lines": [
+   "Q6553138"
+  ],
+  "transfer": false,
+  "wd": "Q56683263"
+ },
+ {
+  "id": "yanshan",
+  "zh": "燕山",
+  "ko": "옌산",
+  "en": "Yanshan",
+  "py": "Yanshan",
+  "lat": 39.719442,
+  "lon": 115.973542,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q41627671"
+ },
+ {
+  "id": "yaojiayuan",
+  "zh": "姚家园",
+  "ko": "야오자위안",
+  "en": "Yaojiayuan",
+  "py": "Yaojiayuan",
+  "lat": 39.947701,
+  "lon": 116.52711,
+  "lines": [
+   "Q6553113"
+  ],
+  "transfer": false,
+  "wd": "Q103819136"
+ },
+ {
+  "id": "yihezhuang",
+  "zh": "义和庄",
+  "ko": "이허좡",
+  "en": "Yihezhuang",
+  "py": "Yihezhuang",
+  "lat": 39.71237,
+  "lon": 116.319118,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q6119497"
+ },
+ {
+  "id": "yinghai",
+  "zh": "瀛海",
+  "ko": "잉하이",
+  "en": "Yinghai",
+  "py": "Yinghai",
+  "lat": 39.76079,
+  "lon": 116.448928,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q56882345"
+ },
+ {
+  "id": "yizhuang-culture-park",
+  "zh": "亦庄文化园",
+  "ko": "이좡 문화원",
+  "en": "Yizhuang Culture Park",
+  "py": "Yizhuang Culture Park",
+  "lat": 39.806889,
+  "lon": 116.490673,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5938025"
+ },
+ {
+  "id": "yizhuang-qiao",
+  "zh": "亦庄桥",
+  "ko": "이좡차오",
+  "en": "Yizhuang Qiao",
+  "py": "Yizhuang Qiao",
+  "lat": 39.803018,
+  "lon": 116.480361,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q5936835"
+ },
+ {
+  "id": "yizhuang-railway",
+  "zh": "亦庄火车",
+  "ko": "이좡훠처",
+  "en": "Yizhuang Railway",
+  "py": "Yizhuang Railway",
+  "lat": 39.812133,
+  "lon": 116.600773,
+  "lines": [
+   "Q5944471"
+  ],
+  "transfer": false,
+  "wd": "Q10883056"
+ },
+ {
+  "id": "yong-anli",
+  "zh": "永安里",
+  "ko": "융안리",
+  "en": "Yong'anli",
+  "py": "Yong'anli",
+  "lat": 39.908487,
+  "lon": 116.45017,
+  "lines": [
+   "Q24834015",
+   "Q748987"
+  ],
+  "transfer": true,
+  "wd": "Q843202"
+ },
+ {
+  "id": "yongdingmenwai",
+  "zh": "永定门外",
+  "ko": "융딩먼와이",
+  "en": "Yongdingmenwai",
+  "py": "Yongdingmenwai",
+  "lat": 39.866344,
+  "lon": 116.399383,
+  "lines": [
+   "Q6553070",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q21245988"
+ },
+ {
+  "id": "yongfeng",
+  "zh": "永丰",
+  "ko": "융펑",
+  "en": "Yongfeng",
+  "py": "Yongfeng",
+  "lat": 40.071867,
+  "lon": 116.237837,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q24831587"
+ },
+ {
+  "id": "yongfeng-nan-s",
+  "zh": "永丰南",
+  "ko": "융펑난",
+  "en": "Yongfeng Nan (S)",
+  "py": "Yongfeng Nan (S)",
+  "lat": 40.064253,
+  "lon": 116.249649,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q24831566"
+ },
+ {
+  "id": "yonghegong-lama-temple",
+  "zh": "雍和宫",
+  "ko": "융허궁",
+  "en": "Yonghegong Lama Temple",
+  "py": "Yonghegong Lama Temple",
+  "lat": 39.949331,
+  "lon": 116.417789,
+  "lines": [
+   "Q647340",
+   "Q680973"
+  ],
+  "transfer": true,
+  "wd": "Q5976347"
+ },
+ {
+  "id": "yongtaizhuang",
+  "zh": "永泰庄",
+  "ko": "융타이좡",
+  "en": "Yongtaizhuang",
+  "py": "Yongtaizhuang",
+  "lat": 40.038033,
+  "lon": 116.354526,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q4392290"
+ },
+ {
+  "id": "yuanmingyuan-park",
+  "zh": "圆明园",
+  "ko": "위안밍위안",
+  "en": "Yuanmingyuan Park",
+  "py": "Yuanmingyuan Park",
+  "lat": 39.999518,
+  "lon": 116.309793,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5938257"
+ },
+ {
+  "id": "yuquan-lu",
+  "zh": "玉泉路",
+  "ko": "위취안루",
+  "en": "Yuquan Lu",
+  "py": "Yuquan Lu",
+  "lat": 39.907469,
+  "lon": 116.252847,
+  "lines": [
+   "Q748987"
+  ],
+  "transfer": false,
+  "wd": "Q842087"
+ },
+ {
+  "id": "yushuzhuang",
+  "zh": "榆树庄",
+  "ko": "위수좡",
+  "en": "Yushuzhuang",
+  "py": "Yushuzhuang",
+  "lat": 39.83873,
+  "lon": 116.258927,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q78872905"
+ },
+ {
+  "id": "yuxin",
+  "zh": "育新",
+  "ko": "위신",
+  "en": "Yuxin",
+  "py": "Yuxin",
+  "lat": 40.059679,
+  "lon": 116.34728,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q4392665"
+ },
+ {
+  "id": "yuyuantan-park-east-gate",
+  "zh": "玉渊潭东门",
+  "ko": "위위안탄둥먼",
+  "en": "Yuyuantan Park East Gate",
+  "py": "Yuyuantan Park East Gate",
+  "lat": 39.915027,
+  "lon": 116.334947,
+  "lines": [
+   "Q6553080"
+  ],
+  "transfer": false,
+  "wd": "Q78144946"
+ },
+ {
+  "id": "yuzhi-lu",
+  "zh": "育知路",
+  "ko": "유즈루",
+  "en": "Yuzhi Lu",
+  "py": "Yuzhi Lu",
+  "lat": 40.087826,
+  "lon": 116.326581,
+  "lines": [
+   "Q847771"
+  ],
+  "transfer": false,
+  "wd": "Q15500806"
+ },
+ {
+  "id": "zaoying",
+  "zh": "枣营",
+  "ko": "짜오잉",
+  "en": "Zaoying",
+  "py": "Zaoying",
+  "lat": 39.944244,
+  "lon": 116.475138,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q17028044"
+ },
+ {
+  "id": "zaoyuan",
+  "zh": "枣园",
+  "ko": "자오위안",
+  "en": "Zaoyuan",
+  "py": "Zaoyuan",
+  "lat": 39.753228,
+  "lon": 116.332179,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5936756"
+ },
+ {
+  "id": "zhangguozhuang",
+  "zh": "张郭庄",
+  "ko": "장궈좡",
+  "en": "Zhangguozhuang",
+  "py": "Zhangguozhuang",
+  "lat": 39.858039,
+  "lon": 116.187135,
+  "lines": [
+   "Q6553070"
+  ],
+  "transfer": false,
+  "wd": "Q9206210"
+ },
+ {
+  "id": "zhangzizhong-lu",
+  "zh": "张自忠路",
+  "ko": "장쯔중루",
+  "en": "Zhangzizhong Lu",
+  "py": "Zhangzizhong Lu",
+  "lat": 39.933688,
+  "lon": 116.417539,
+  "lines": [
+   "Q6553113",
+   "Q647340"
+  ],
+  "transfer": true,
+  "wd": "Q5976388"
+ },
+ {
+  "id": "zhichun-li",
+  "zh": "知春里",
+  "ko": "즈춘리",
+  "en": "Zhichun Li",
+  "py": "Zhichun Li",
+  "lat": 39.976213,
+  "lon": 116.329063,
+  "lines": [
+   "Q847886"
+  ],
+  "transfer": false,
+  "wd": "Q5936478"
+ },
+ {
+  "id": "zhichun-lu",
+  "zh": "知春路",
+  "ko": "즈춘루",
+  "en": "Zhichun Lu",
+  "py": "Zhichun Lu",
+  "lat": 39.976419,
+  "lon": 116.340547,
+  "lines": [
+   "Q847744",
+   "Q847886"
+  ],
+  "transfer": true,
+  "wd": "Q6124697"
+ },
+ {
+  "id": "zhongguancun",
+  "zh": "中关村",
+  "ko": "중관춘",
+  "en": "Zhongguancun",
+  "py": "Zhongguancun",
+  "lat": 39.983915,
+  "lon": 116.316578,
+  "lines": [
+   "Q304264"
+  ],
+  "transfer": false,
+  "wd": "Q5937882"
+ },
+ {
+  "id": "zhoujiazhuang",
+  "zh": "周家庄",
+  "ko": "周家庄",
+  "en": "Zhoujiazhuang",
+  "py": "Zhoujiazhuang",
+  "lat": 39.856403,
+  "lon": 116.476768,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q105802536"
+ },
+ {
+  "id": "zhufangbei",
+  "zh": "朱房北",
+  "ko": "주팡베이",
+  "en": "Zhufangbei",
+  "py": "Zhufangbei",
+  "lat": 40.03599,
+  "lon": 116.33214,
+  "lines": [
+   "Q5066697"
+  ],
+  "transfer": false,
+  "wd": "Q102353038"
+ },
+ {
+  "id": "zhushikou",
+  "zh": "珠市口",
+  "ko": "주스커우",
+  "en": "Zhushikou",
+  "py": "Zhushikou",
+  "lat": 39.891408,
+  "lon": 116.396943,
+  "lines": [
+   "Q6553149",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q15929178"
+ },
+ {
+  "id": "zhuxinzhuang",
+  "zh": "朱辛庄",
+  "ko": "주신좡",
+  "en": "Zhuxinzhuang",
+  "py": "Zhuxinzhuang",
+  "lat": 40.104282,
+  "lon": 116.313656,
+  "lines": [
+   "Q5066697",
+   "Q847771"
+  ],
+  "transfer": true,
+  "wd": "Q5936696"
+ },
+ {
+  "id": "zicaowu",
+  "zh": "紫草坞",
+  "ko": "쯔차오우",
+  "en": "Zicaowu",
+  "py": "Zicaowu",
+  "lat": 39.724397,
+  "lon": 116.086738,
+  "lines": [
+   "Q8048350"
+  ],
+  "transfer": false,
+  "wd": "Q42748562"
+ },
+ {
+  "id": "zuojiazhuang",
+  "zh": "左家庄",
+  "ko": "쭤자좡",
+  "en": "Zuojiazhuang",
+  "py": "Zuojiazhuang",
+  "lat": 39.950178,
+  "lon": 116.44423,
+  "lines": [
+   "Q24834015"
+  ],
+  "transfer": false,
+  "wd": "Q84262185"
+ }
+]

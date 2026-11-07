@@ -1,0 +1,802 @@
+[
+{
+"sl": 106,
+"zh": "故宫",
+"ko": "자금성",
+"en": "Forbidden City",
+"cat": "sight",
+"coord": "Point(116.390833333 39.915833333)",
+"addr": "",
+"wd": "Q80290"
+},
+{
+"sl": 80,
+"zh": "北京大学",
+"ko": "베이징 대학",
+"en": "Peking University",
+"cat": "sight",
+"coord": "Point(116.305277777 39.989722222)",
+"addr": "",
+"wd": "Q16952"
+},
+{
+"sl": 78,
+"zh": "天安門廣場",
+"ko": "톈안먼 광장",
+"en": "Tiananmen Square",
+"cat": "sight",
+"coord": "Point(116.391392 39.904567)",
+"addr": "",
+"wd": "Q164055"
+},
+{
+"sl": 76,
+"zh": "北京首都國際機場",
+"ko": "베이징 서우두 국제공항",
+"en": "Beijing Capital International Airport",
+"cat": "transit",
+"coord": "Point(116.584444444 40.08)",
+"addr": "",
+"wd": "Q32190"
+},
+{
+"sl": 69,
+"zh": "清华大学",
+"ko": "칭화 대학",
+"en": "Tsinghua University",
+"cat": "sight",
+"coord": "Point(116.326666666 40.0)",
+"addr": "",
+"wd": "Q16955"
+},
+{
+"sl": 69,
+"zh": "天坛",
+"ko": "천단",
+"en": "Temple of Heaven",
+"cat": "sight",
+"coord": "Point(116.4066 39.8822)",
+"addr": "",
+"wd": "Q125445"
+},
+{
+"sl": 64,
+"zh": "国家体育场",
+"ko": "베이징 국가체육장",
+"en": "Beijing National Stadium",
+"cat": "sight",
+"coord": "Point(116.390478 39.991544)",
+"addr": "",
+"wd": "Q133525"
+},
+{
+"sl": 62,
+"zh": "颐和园",
+"ko": "이화원",
+"en": "Summer Palace",
+"cat": "sight",
+"coord": "Point(116.2689 39.9975)",
+"addr": "",
+"wd": "Q4132"
+},
+{
+"sl": 51,
+"zh": "北京大兴国际机场",
+"ko": "베이징 다싱 국제공항",
+"en": "Beijing Daxing International Airport",
+"cat": "transit",
+"coord": "Point(116.410556 39.511944)",
+"addr": "",
+"wd": "Q1139574"
+},
+{
+"sl": 45,
+"zh": "中国国家博物馆",
+"ko": "중국국가박물관",
+"en": "National Museum of China",
+"cat": "sight",
+"coord": "Point(116.395 39.903611111)",
+"addr": "",
+"wd": "Q1074318"
+},
+{
+"sl": 40,
+"zh": "国家游泳中心",
+"ko": "베이징 국가수영센터",
+"en": "Beijing National Aquatics Center",
+"cat": "sight",
+"coord": "Point(116.384166666 39.991666666)",
+"addr": "",
+"wd": "Q244877"
+},
+{
+"sl": 39,
+"zh": "中南海",
+"ko": "중난하이",
+"en": "Zhongnanhai",
+"cat": "park",
+"coord": "Point(116.380555555 39.911388888)",
+"addr": "",
+"wd": "Q197889"
+},
+{
+"sl": 37,
+"zh": "中央广播电视总台光华路办公区",
+"ko": "CCTV 본사 빌딩",
+"en": "China Media Group Guanghua Road Office Area",
+"cat": "sight",
+"coord": "Point(116.457981 39.913842)",
+"addr": "",
+"wd": "Q754321"
+},
+{
+"sl": 36,
+"zh": "毛主席纪念堂",
+"ko": "마오쩌둥 기념당",
+"en": "Mausoleum of Mao Zedong",
+"cat": "sight",
+"coord": "Point(116.391580555 39.901025)",
+"addr": "",
+"wd": "Q1154819"
+},
+{
+"sl": 35,
+"zh": "圆明园",
+"ko": "원명원",
+"en": "Old Summer Palace",
+"cat": "park",
+"coord": "Point(116.306793055 40.012045)",
+"addr": "",
+"wd": "Q907894"
+},
+{
+"sl": 32,
+"zh": "北京工人体育场",
+"ko": "베이징 공인체육장",
+"en": "Workers Stadium",
+"cat": "sight",
+"coord": "Point(116.441139 39.929528)",
+"addr": "",
+"wd": "Q627250"
+},
+{
+"sl": 31,
+"zh": "景山公园",
+"ko": "징산 공원",
+"en": "Jingshan Park",
+"cat": "park",
+"coord": "Point(116.390555555 39.923611111)",
+"addr": "",
+"wd": "Q734499"
+},
+{
+"sl": 31,
+"zh": "國家體育館",
+"ko": "베이징 국립 실내경기장",
+"en": "Beijing National Indoor Stadium",
+"cat": "sight",
+"coord": "Point(116.383958333 39.994780555)",
+"addr": "",
+"wd": "Q1139142"
+},
+{
+"sl": 31,
+"zh": "北京站",
+"ko": "베이징역",
+"en": "Beijing railway station",
+"cat": "transit",
+"coord": "Point(116.421111111 39.902222222)",
+"addr": "",
+"wd": "Q285141"
+},
+{
+"sl": 31,
+"zh": "凯迪拉克中心",
+"ko": "베이징 우커쑹 스포츠센터",
+"en": "Cadillac Arena",
+"cat": "sight",
+"coord": "Point(116.27474 39.90984)",
+"addr": "",
+"wd": "Q1321458"
+},
+{
+"sl": 30,
+"zh": "北海公园",
+"ko": "베이하이 공원",
+"en": "Beihai Park",
+"cat": "park",
+"coord": "Point(116.383055555 39.924444444)",
+"addr": "",
+"wd": "Q133650"
+},
+{
+"sl": 30,
+"zh": "北京南苑机场",
+"ko": "베이징 난유안 공항",
+"en": "Beijing Nanyuan Airport",
+"cat": "transit",
+"coord": "Point(116.387778 39.7825)",
+"addr": "",
+"wd": "Q1200842"
+},
+{
+"sl": 29,
+"zh": "中国尊",
+"ko": "중국존",
+"en": "China Zun",
+"cat": "sight",
+"coord": "Point(116.460277777 39.911388888)",
+"addr": "",
+"wd": "Q197833"
+},
+{
+"sl": 29,
+"zh": "中国国际贸易中心3期",
+"ko": "중국 제3세계무역센터",
+"en": "China World Trade Center Tower III",
+"cat": "sight",
+"coord": "Point(116.4522 39.91093)",
+"addr": "",
+"wd": "Q2006129"
+},
+{
+"sl": 26,
+"zh": "雍和宫",
+"ko": "옹화궁",
+"en": "Yonghe Temple",
+"cat": "sight",
+"coord": "Point(116.410916666 39.947086111)",
+"addr": "",
+"wd": "Q692723"
+},
+{
+"sl": 26,
+"zh": "北京南站",
+"ko": "베이징 남역",
+"en": "Beijingnan railway station",
+"cat": "transit",
+"coord": "Point(116.372573 39.863546)",
+"addr": "",
+"wd": "Q163962"
+},
+{
+"sl": 25,
+"zh": "奥林匹克公园",
+"ko": "올림픽 공원",
+"en": "Olympic Green",
+"cat": "park",
+"coord": "Point(116.38667 40.003031)",
+"addr": "",
+"wd": "Q912817"
+},
+{
+"sl": 25,
+"zh": "北京西站",
+"ko": "베이징 서역",
+"en": "Beijing West railway station",
+"cat": "transit",
+"coord": "Point(116.3149215 39.8935439)",
+"addr": "",
+"wd": "Q523887"
+},
+{
+"sl": 23,
+"zh": "王府井天主堂",
+"ko": "왕푸징 천주당",
+"en": "St. Joseph's Church, Beijing",
+"cat": "sight",
+"coord": "Point(116.405833333 39.915833333)",
+"addr": "",
+"wd": "Q1064185"
+},
+{
+"sl": 23,
+"zh": "正阳门",
+"ko": "정양문",
+"en": "Zhengyangmen",
+"cat": "sight",
+"coord": "Point(116.39166667 39.89925)",
+"addr": "",
+"wd": "Q197703"
+},
+{
+"sl": 22,
+"zh": "首都博物馆",
+"ko": "수도박물관",
+"en": "Capital Museum",
+"cat": "museum",
+"coord": "Point(116.336 39.905)",
+"addr": "",
+"wd": "Q1189666"
+},
+{
+"sl": 22,
+"zh": "首都体育馆",
+"ko": "베이징 수도 체육관",
+"en": "Capital Indoor Stadium",
+"cat": "sight",
+"coord": "Point(116.321111111 39.938888888)",
+"addr": "",
+"wd": "Q1589654"
+},
+{
+"sl": 22,
+"zh": "宣武门天主堂",
+"ko": "쉬안우먼 천주당",
+"en": "Cathedral of the Immaculate Conception",
+"cat": "sight",
+"coord": "Point(116.369291666 39.899463888)",
+"addr": "",
+"wd": "Q1188864"
+},
+{
+"sl": 20,
+"zh": "法源寺",
+"ko": "법원사",
+"en": "Fayuan Temple",
+"cat": "sight",
+"coord": "Point(116.363611111 39.883333333)",
+"addr": "",
+"wd": "Q1399104"
+},
+{
+"sl": 20,
+"zh": "故宫博物院",
+"ko": "고궁박물원",
+"en": "The Palace Museum",
+"cat": "museum",
+"coord": "Point(116.39083333 39.91555556)",
+"addr": "",
+"wd": "Q2047427"
+},
+{
+"sl": 20,
+"zh": "中国美术馆",
+"ko": "중국미술관",
+"en": "National Art Museum of China",
+"cat": "museum",
+"coord": "Point(116.40275 39.92382)",
+"addr": "",
+"wd": "Q233705"
+},
+{
+"sl": 19,
+"zh": "首钢滑雪大跳台",
+"ko": "빅에어 서우강",
+"en": "Big Air Shougang",
+"cat": "sight",
+"coord": "Point(116.14522 39.91057)",
+"addr": "",
+"wd": "Q108425071"
+},
+{
+"sl": 16,
+"zh": "恭王府",
+"ko": "공왕부",
+"en": "Prince Gong's Mansion",
+"cat": "sight",
+"coord": "Point(116.379862 39.936636)",
+"addr": "",
+"wd": "Q2666344"
+},
+{
+"sl": 15,
+"zh": "什刹海",
+"ko": "스차하이",
+"en": "Shichahai",
+"cat": "park",
+"coord": "Point(116.387061111 39.938019444)",
+"addr": "",
+"wd": "Q1136851"
+},
+{
+"sl": 14,
+"zh": "西直门天主堂",
+"ko": "시즈먼 천주당",
+"en": "Church of Our Lady of Mount Carmel",
+"cat": "sight",
+"coord": "Point(116.359722222 39.938611111)",
+"addr": "",
+"wd": "Q2601521"
+},
+{
+"sl": 14,
+"zh": "北京丰台站",
+"ko": "베이징 펑타이역",
+"en": "Beijing Fengtai railway station",
+"cat": "transit",
+"coord": "Point(116.294567 39.849772)",
+"addr": "",
+"wd": "Q130440"
+},
+{
+"sl": 13,
+"zh": "北京奥林匹克公园射箭场",
+"ko": "베이징 올림픽 공원 양궁장",
+"en": "Olympic Green Archery Field",
+"cat": "sight",
+"coord": "Point(116.37083333 40.0175)",
+"addr": "",
+"wd": "Q1326819"
+},
+{
+"sl": 13,
+"zh": "乾清宫",
+"ko": "건청궁",
+"en": "Palace of Heavenly Purity",
+"cat": "sight",
+"coord": "Point(116.3905 39.91877778)",
+"addr": "",
+"wd": "Q7126241"
+},
+{
+"sl": 13,
+"zh": "丰台体育中心体育场",
+"ko": "베이징 펑타이 스포츠 센터",
+"en": "Beijing Fengtai Stadium",
+"cat": "sight",
+"coord": "Point(116.272625 39.86569444)",
+"addr": "",
+"wd": "Q1144204"
+},
+{
+"sl": 11,
+"zh": "苹果园站",
+"ko": "핑궈위안역",
+"en": "Pingguoyuan station",
+"cat": "transit",
+"coord": "Point(116.171783 39.924909)",
+"addr": "",
+"wd": "Q1039443"
+},
+{
+"sl": 11,
+"zh": "石景山游乐园",
+"ko": "석경산유락원",
+"en": "Beijing Shijingshan Amusement Park",
+"cat": "sight",
+"coord": "Point(116.2028 39.9109)",
+"addr": "",
+"wd": "Q814725"
+},
+{
+"sl": 11,
+"zh": "工人体育场",
+"ko": "노동자 경기장",
+"en": "Workers' Stadium",
+"cat": "sight",
+"coord": "Point(116.441138888 39.929527777)",
+"addr": "",
+"wd": "Q120434845"
+},
+{
+"sl": 11,
+"zh": "北京世界公园",
+"ko": "베이징 세계공원",
+"en": "Beijing World Park",
+"cat": "park",
+"coord": "Point(116.281013 39.809327)",
+"addr": "",
+"wd": "Q814727"
+},
+{
+"sl": 11,
+"zh": "亚洲沃德兰游乐园",
+"ko": "원더랜드",
+"en": "Wonderland Amusement Park",
+"cat": "sight",
+"coord": "Point(116.164 40.233)",
+"addr": "",
+"wd": "Q8031892"
+},
+{
+"sl": 10,
+"zh": "明定陵",
+"ko": "정릉",
+"en": "Ding Mausoleum",
+"cat": "sight",
+"coord": "Point(116.21583333 40.295)",
+"addr": "",
+"wd": "Q11087810"
+},
+{
+"sl": 9,
+"zh": "十方普觉寺",
+"ko": "와불사",
+"en": "Wofo Temple",
+"cat": "sight",
+"coord": "Point(116.201111111 40.005)",
+"addr": "",
+"wd": "Q1544107"
+},
+{
+"sl": 9,
+"zh": "北京欢乐谷",
+"ko": "베이징 환러구",
+"en": "Happy Valley Beijing",
+"cat": "sight",
+"coord": "Point(116.488627 39.866418)",
+"addr": "",
+"wd": "Q3127206"
+},
+{
+"sl": 9,
+"zh": "北京五棵松体育中心棒球场",
+"ko": "베이징 우커숭 스포츠센터 야구장",
+"en": "Wukesong Baseball Field",
+"cat": "sight",
+"coord": "Point(116.27166667 39.9075)",
+"addr": "",
+"wd": "Q1195502"
+},
+{
+"sl": 9,
+"zh": "八达岭站",
+"ko": "바다링역",
+"en": "Badaling railway station",
+"cat": "transit",
+"coord": "Point(116.001666666 40.36)",
+"addr": "",
+"wd": "Q4840549"
+},
+{
+"sl": 9,
+"zh": "东直门",
+"ko": "둥지먼",
+"en": "Dongzhimen",
+"cat": "sight",
+"coord": "Point(116.4336 39.9411)",
+"addr": "",
+"wd": "Q3431711"
+},
+{
+"sl": 8,
+"zh": "虎坊桥站",
+"ko": "후팡차오역",
+"en": "Hufangqiao station",
+"cat": "transit",
+"coord": "Point(116.3774806 39.8883975)",
+"addr": "",
+"wd": "Q15953285"
+},
+{
+"sl": 8,
+"zh": "海淀堂",
+"ko": "하이딩당",
+"en": "Haidian Christian Church",
+"cat": "sight",
+"coord": "Point(116.301719 39.981825)",
+"addr": "",
+"wd": "Q1056869"
+},
+{
+"sl": 8,
+"zh": "广渠门内站",
+"ko": "광취먼네이역",
+"en": "Guangqumennei station",
+"cat": "transit",
+"coord": "Point(116.4277207 39.8922863)",
+"addr": "",
+"wd": "Q15941383"
+},
+{
+"sl": 8,
+"zh": "广安门",
+"ko": "광안문",
+"en": "Guang'anmen",
+"cat": "sight",
+"coord": "Point(116.349978 39.889423)",
+"addr": "",
+"wd": "Q5613603"
+},
+{
+"sl": 8,
+"zh": "国家奥林匹克体育中心体育场",
+"ko": "베이징 올림픽 스포츠 센터",
+"en": "National Olympic Sports Centre Stadium",
+"cat": "sight",
+"coord": "Point(116.393056 39.982222)",
+"addr": "",
+"wd": "Q1631730"
+},
+{
+"sl": 7,
+"zh": "黄土店站",
+"ko": "황투뎬역",
+"en": "Huangtudian railway station",
+"cat": "transit",
+"coord": "Point(116.358055555 40.068611111)",
+"addr": "",
+"wd": "Q5926056"
+},
+{
+"sl": 7,
+"zh": "永寿宫",
+"ko": "영수궁",
+"en": "Palace of Eternal Longevity",
+"cat": "sight",
+"coord": "Point(116.39796348 39.9207676)",
+"addr": "",
+"wd": "Q15903427"
+},
+{
+"sl": 6,
+"zh": "昌平北站",
+"ko": "창핑 북역",
+"en": "Changpingbei Railway Station",
+"cat": "transit",
+"coord": "Point(116.22694397 40.22999954)",
+"addr": "",
+"wd": "Q11087593"
+},
+{
+"sl": 6,
+"zh": "中央广播电视总台总部大楼",
+"ko": "CMG 본사 빌딩",
+"en": "China Media Group Headquarters",
+"cat": "sight",
+"coord": "Point(116.311956 39.907761)",
+"addr": "",
+"wd": "Q5099624"
+},
+{
+"sl": 5,
+"zh": "翊坤宮",
+"ko": "익곤궁",
+"en": "Palace of Earthly Honour",
+"cat": "sight",
+"coord": "Point(116.39796348 39.9207676)",
+"addr": "",
+"wd": "Q15902497"
+},
+{
+"sl": 5,
+"zh": "明昭陵",
+"ko": "소릉",
+"en": "Zhaoling Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.210359 40.291254)",
+"addr": "",
+"wd": "Q19842614"
+},
+{
+"sl": 5,
+"zh": "北京协和医院",
+"ko": "베이징 셰허 의원",
+"en": "Peking Union Medical College Hospital",
+"cat": "help",
+"coord": "Point(116.40953 39.91128)",
+"addr": "",
+"wd": "Q7161058"
+},
+{
+"sl": 4,
+"zh": "明裕陵",
+"ko": "유릉",
+"en": "Yuling Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.23194444 40.31444444)",
+"addr": "",
+"wd": "Q6789405"
+},
+{
+"sl": 4,
+"zh": "中华民族园",
+"ko": "중화민족원",
+"en": "China Ethnic Museum",
+"cat": "museum",
+"coord": "Point(116.39027778 39.98388889)",
+"addr": "",
+"wd": "Q5099673"
+},
+{
+"sl": 3,
+"zh": "景陽宮",
+"ko": "경양궁",
+"en": "Jingyang Palace",
+"cat": "sight",
+"coord": "Point(116.3986583 39.9209296)",
+"addr": "",
+"wd": "Q11090180"
+},
+{
+"sl": 3,
+"zh": "明长陵",
+"ko": "장릉",
+"en": "Changling Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.24305556 40.30111111)",
+"addr": "",
+"wd": "Q11088234"
+},
+{
+"sl": 3,
+"zh": "明茂陵",
+"ko": "무릉",
+"en": "Maoling Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.226473 40.314303)",
+"addr": "",
+"wd": "Q24841491"
+},
+{
+"sl": 3,
+"zh": "明思陵",
+"ko": "사릉",
+"en": "Siling Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.19208 40.26858)",
+"addr": "",
+"wd": "Q6789669"
+},
+{
+"sl": 3,
+"zh": "承乾宮",
+"ko": "승건궁",
+"en": "Cheng Qian Palace",
+"cat": "sight",
+"coord": "Point(116.39796348 39.9207676)",
+"addr": "",
+"wd": "Q10297088"
+},
+{
+"sl": 3,
+"zh": "儲秀宮",
+"ko": "저수궁",
+"en": "Palace for Gathered Elegance",
+"cat": "sight",
+"coord": "Point(116.3893581 39.9198277)",
+"addr": "",
+"wd": "Q10889500"
+},
+{
+"sl": 2,
+"zh": "明献陵",
+"ko": "헌릉",
+"en": "Xianling Tomb of the Ming Dynasty (Beijing)",
+"cat": "sight",
+"coord": "Point(116.2429526 40.3052639)",
+"addr": "",
+"wd": "Q11088114"
+},
+{
+"sl": 2,
+"zh": "明泰陵",
+"ko": "태릉",
+"en": "Tailing Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.21666667 40.32388889)",
+"addr": "",
+"wd": "Q11088097"
+},
+{
+"sl": 2,
+"zh": "明景陵",
+"ko": "경릉",
+"en": "Jingling (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.25222222 40.29916667)",
+"addr": "",
+"wd": "Q11087936"
+},
+{
+"sl": 2,
+"zh": "明庆陵",
+"ko": "경릉",
+"en": "Qingling Mausoleum (Ming dynasty)",
+"cat": "sight",
+"coord": "Point(116.23361111 40.30888889)",
+"addr": "",
+"wd": "Q11087823"
+},
+{
+"sl": 2,
+"zh": "安定站",
+"ko": "안딩 역 (베이징 시)",
+"en": "Anding Railway Station",
+"cat": "transit",
+"coord": "Point(116.489 39.6176)",
+"addr": "",
+"wd": "Q15922482"
+}
+]

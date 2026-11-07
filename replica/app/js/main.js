@@ -14,11 +14,12 @@ import * as pick from './screens/pick.js';
 import * as driver from './screens/driver.js';
 import * as more from './screens/more.js';
 import * as walknav from './screens/walknav.js';
+import * as trip from './screens/trip.js';
 
 export const app = {
   me: null,            // 현재 위치 {lat, lon, acc, at}
   tab: 'map',
-  screens: { home, search, place, route, nearby, favorites, station, pick, driver, more, walknav },
+  screens: { home, search, place, route, nearby, favorites, station, pick, driver, more, walknav, trip },
   go(hash) { location.hash = hash; },
   tabOf(hash) { const k = hash.replace(/^#\/?/, '').split('/')[0]; return ({ '': 'map', place: 'map', station: 'map', pick: 'map', nearby: 'nearby', route: 'route', walk: 'route', fav: 'fav', more: 'more' })[k] || 'map'; },
 };
@@ -58,6 +59,7 @@ async function onRoute() {
     case 'nearby': closeSheet(); document.body.classList.add('panel-open'); nearby.show(params); break;
     case 'fav': closeSheet(); document.body.classList.add('panel-open'); favorites.show(params); break;
     case 'more': closeSheet(); document.body.classList.add('panel-open'); more.show(params); break;
+    case 'trip': closeSheet(); document.body.classList.add('panel-open'); await trip.show(params); break;
     default: app.go('#/');
   }
 }

@@ -1,0 +1,72 @@
+[
+ {
+  "id": "sight",
+  "label_ko": "관광",
+  "label_zh": "景点",
+  "icon": "🏯",
+  "typecodes": [
+   "110000"
+  ],
+  "sort": 1
+ },
+ {
+  "id": "wall",
+  "label_ko": "만리장성",
+  "label_zh": "长城",
+  "icon": "🧱",
+  "typecodes": [
+   "110000"
+  ],
+  "sort": 2
+ },
+ {
+  "id": "food",
+  "label_ko": "맛집",
+  "label_zh": "美食",
+  "icon": "🥟",
+  "typecodes": [
+   "050000"
+  ],
+  "sort": 3
+ },
+ {
+  "id": "shop",
+  "label_ko": "쇼핑·거리",
+  "label_zh": "购物",
+  "icon": "🛍️",
+  "typecodes": [
+   "060000"
+  ],
+  "sort": 4
+ },
+ {
+  "id": "park",
+  "label_ko": "공원·호수",
+  "label_zh": "公园",
+  "icon": "🌳",
+  "typecodes": [
+   "110100"
+  ],
+  "sort": 5
+ },
+ {
+  "id": "transit",
+  "label_ko": "역·공항",
+  "label_zh": "交通",
+  "icon": "🚄",
+  "typecodes": [
+   "150000"
+  ],
+  "sort": 6
+ },
+ {
+  "id": "hotel",
+  "label_ko": "호텔",
+  "label_zh": "酒店",
+  "icon": "🏨",
+  "typecodes": [
+   "100000"
+  ],
+  "sort": 7
+ }
+]

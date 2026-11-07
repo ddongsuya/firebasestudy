@@ -1,0 +1,438 @@
+[
+ {
+  "station": "anhuaqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "aolinpike-gongyuan-olympic-park",
+  "walk_min": 4
+ },
+ {
+  "station": "bagou",
+  "walk_min": 4
+ },
+ {
+  "station": "baishiqiaonan",
+  "walk_min": 4
+ },
+ {
+  "station": "beijing-south-railway",
+  "walk_min": 4
+ },
+ {
+  "station": "beijing-west-railway",
+  "walk_min": 4
+ },
+ {
+  "station": "beitaipingzhuang",
+  "walk_min": 4
+ },
+ {
+  "station": "beitucheng",
+  "walk_min": 4
+ },
+ {
+  "station": "beixinqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "caishikou",
+  "walk_min": 4
+ },
+ {
+  "station": "caoqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "changchun-qiao",
+  "walk_min": 4
+ },
+ {
+  "station": "chaoyang-park",
+  "walk_min": 4
+ },
+ {
+  "station": "chaoyangmen",
+  "walk_min": 4
+ },
+ {
+  "station": "chegongzhuang",
+  "walk_min": 4
+ },
+ {
+  "station": "chongwenmen",
+  "walk_min": 4
+ },
+ {
+  "station": "ciqikou",
+  "walk_min": 4
+ },
+ {
+  "station": "ciqu",
+  "walk_min": 4
+ },
+ {
+  "station": "cishou-si",
+  "walk_min": 4
+ },
+ {
+  "station": "daguanying",
+  "walk_min": 4
+ },
+ {
+  "station": "dahong-men",
+  "walk_min": 4
+ },
+ {
+  "station": "datunludong",
+  "walk_min": 4
+ },
+ {
+  "station": "dawang-lu",
+  "walk_min": 4
+ },
+ {
+  "station": "dazhong-si",
+  "walk_min": 4
+ },
+ {
+  "station": "dongbabei",
+  "walk_min": 4
+ },
+ {
+  "station": "dongdan",
+  "walk_min": 4
+ },
+ {
+  "station": "dongdaqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "dongguantounan",
+  "walk_min": 4
+ },
+ {
+  "station": "dongsi",
+  "walk_min": 4
+ },
+ {
+  "station": "dongsi-shitiao",
+  "walk_min": 4
+ },
+ {
+  "station": "dongzhimen",
+  "walk_min": 6
+ },
+ {
+  "station": "erligou",
+  "walk_min": 4
+ },
+ {
+  "station": "fengtai-nanlu",
+  "walk_min": 4
+ },
+ {
+  "station": "fengtai-railway",
+  "walk_min": 4
+ },
+ {
+  "station": "fuchengmen",
+  "walk_min": 4
+ },
+ {
+  "station": "fuxingmen",
+  "walk_min": 4
+ },
+ {
+  "station": "gaojiayuan",
+  "walk_min": 4
+ },
+ {
+  "station": "gongzhufen",
+  "walk_min": 5
+ },
+ {
+  "station": "guangqumenwai",
+  "walk_min": 4
+ },
+ {
+  "station": "guangxi-men",
+  "walk_min": 4
+ },
+ {
+  "station": "gulou-dajie",
+  "walk_min": 4
+ },
+ {
+  "station": "guogongzhuang",
+  "walk_min": 4
+ },
+ {
+  "station": "guomao",
+  "walk_min": 6
+ },
+ {
+  "station": "haidian-huangzhuang",
+  "walk_min": 5
+ },
+ {
+  "station": "heping-xiqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "huazhuang",
+  "walk_min": 4
+ },
+ {
+  "station": "huilongguan-dongdajie",
+  "walk_min": 4
+ },
+ {
+  "station": "huixin-xijie-nankou",
+  "walk_min": 5
+ },
+ {
+  "station": "hujialou",
+  "walk_min": 5
+ },
+ {
+  "station": "huoying",
+  "walk_min": 4
+ },
+ {
+  "station": "jianguomen",
+  "walk_min": 4
+ },
+ {
+  "station": "jiaomen-xi-w",
+  "walk_min": 4
+ },
+ {
+  "station": "jimenqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "jin-anqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "jingfengmen",
+  "walk_min": 4
+ },
+ {
+  "station": "jintai-lu",
+  "walk_min": 5
+ },
+ {
+  "station": "jishuitan",
+  "walk_min": 4
+ },
+ {
+  "station": "jiulongshan",
+  "walk_min": 4
+ },
+ {
+  "station": "lishuiqiao",
+  "walk_min": 4
+ },
+ {
+  "station": "liudaokou",
+  "walk_min": 4
+ },
+ {
+  "station": "liuliqiao",
+  "walk_min": 6
+ },
+ {
+  "station": "lize-shangwuqu",
+  "walk_min": 4
+ },
+ {
+  "station": "military-museum",
+  "walk_min": 6
+ },
+ {
+  "station": "mudanyuan",
+  "walk_min": 4
+ },
+ {
+  "station": "muxidi",
+  "walk_min": 4
+ },
+ {
+  "station": "nanluogu-xiang",
+  "walk_min": 4
+ },
+ {
+  "station": "national-library",
+  "walk_min": 4
+ },
+ {
+  "station": "ping-anli",
+  "walk_min": 5
+ },
+ {
+  "station": "pingguoyuan",
+  "walk_min": 4
+ },
+ {
+  "station": "puhuangyu",
+  "walk_min": 4
+ },
+ {
+  "station": "qianmen",
+  "walk_min": 4
+ },
+ {
+  "station": "qilizhuang",
+  "walk_min": 4
+ },
+ {
+  "station": "qinghe-railway",
+  "walk_min": 4
+ },
+ {
+  "station": "qinghua-donglu-xikou",
+  "walk_min": 4
+ },
+ {
+  "station": "renmin-univ",
+  "walk_min": 4
+ },
+ {
+  "station": "sanyuan-qiao",
+  "walk_min": 4
+ },
+ {
+  "station": "shaoyaoju",
+  "walk_min": 5
+ },
+ {
+  "station": "shilihe",
+  "walk_min": 4
+ },
+ {
+  "station": "shoujingmao",
+  "walk_min": 4
+ },
+ {
+  "station": "shuangjing",
+  "walk_min": 4
+ },
+ {
+  "station": "songjiazhuang",
+  "walk_min": 5
+ },
+ {
+  "station": "suzhou-jie",
+  "walk_min": 4
+ },
+ {
+  "station": "suzhou-qiao",
+  "walk_min": 4
+ },
+ {
+  "station": "taiyanggong",
+  "walk_min": 4
+ },
+ {
+  "station": "tiantongyuan",
+  "walk_min": 4
+ },
+ {
+  "station": "tiantongyuandong",
+  "walk_min": 4
+ },
+ {
+  "station": "tuanjiehu",
+  "walk_min": 4
+ },
+ {
+  "station": "universal-resort",
+  "walk_min": 4
+ },
+ {
+  "station": "wangfujing",
+  "walk_min": 4
+ },
+ {
+  "station": "wangjing",
+  "walk_min": 5
+ },
+ {
+  "station": "wangjingxi",
+  "walk_min": 4
+ },
+ {
+  "station": "workers-stadium",
+  "walk_min": 4
+ },
+ {
+  "station": "xi-erqi",
+  "walk_min": 4
+ },
+ {
+  "station": "xi-yuan",
+  "walk_min": 4
+ },
+ {
+  "station": "xibahe",
+  "walk_min": 4
+ },
+ {
+  "station": "xidan",
+  "walk_min": 4
+ },
+ {
+  "station": "xiju",
+  "walk_min": 4
+ },
+ {
+  "station": "xingong",
+  "walk_min": 4
+ },
+ {
+  "station": "xitucheng",
+  "walk_min": 4
+ },
+ {
+  "station": "xizhimen",
+  "walk_min": 7
+ },
+ {
+  "station": "xuanwumen",
+  "walk_min": 5
+ },
+ {
+  "station": "yancun-dong-e",
+  "walk_min": 4
+ },
+ {
+  "station": "yong-anli",
+  "walk_min": 4
+ },
+ {
+  "station": "yongdingmenwai",
+  "walk_min": 4
+ },
+ {
+  "station": "yonghegong-lama-temple",
+  "walk_min": 5
+ },
+ {
+  "station": "zhangzizhong-lu",
+  "walk_min": 4
+ },
+ {
+  "station": "zhichun-lu",
+  "walk_min": 6
+ },
+ {
+  "station": "zhushikou",
+  "walk_min": 4
+ },
+ {
+  "station": "zhuxinzhuang",
+  "walk_min": 4
+ }
+]

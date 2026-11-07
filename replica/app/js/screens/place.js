@@ -1,5 +1,5 @@
 // S04 장소 상세 시트
-import { D, nearestStations } from '../data.js';
+import { D, nearestStations, bestExit, exitLabel, exitsOf } from '../data.js';
 import * as store from '../store.js';
 import * as mapx from '../map.js';
 import { $, html, raw, icon, toast, openSheet, lineChip, fmtDist } from '../ui.js';
@@ -20,6 +20,7 @@ function render(p) {
   const cat = D.catById[p.cat];
   const st = p.station_id ? D.stationById[p.station_id] : nearestStations(p, 1)[0]?.station;
   const stDist = st ? distance(p, st) : null;
+  const ex = st ? bestExit(p, st.id) : null; const exCount = st ? exitsOf(st.id).length : 0;
   const d = app.me ? distance(app.me, p) : null;
   const links = amapRoute(p, 'bus');
   const title = orig ? html`<span class="big-zh zh">${p.name_zh}</span><br><span class="t-md">${p.name_ko}</span>` : html`${p.name_ko}<br><span class="big-zh zh">${p.name_zh}</span>`;
@@ -36,7 +37,7 @@ function render(p) {
       <button type="button" class="btn ghost" id="btnCopy">${icon('copy')} 중국어 복사</button>
     </div>
     <div class="kv"><span class="k">주소</span><span class="v zh">${p.address_zh}</span></div>
-    ${st ? html`<div class="kv"><span class="k">지하철</span><span class="v">${raw(st.lines.map(l => lineChip(l, { badge: true }).__raw).join(' '))} <a href="#/station/${st.id}">${st.ko}역</a>${p.exit_code ? html` <span class="exit-chip">${p.exit_code}번 출구</span>` : ''} · 도보 약 ${Math.round(stDist * 1.3 / 75)}분${p.metro_note ? html`<br><span class="muted t-sm">${p.metro_note}</span>` : ''}</span></div>` : p.metro_note ? html`<div class="kv"><span class="k">교통</span><span class="v">${p.metro_note}</span></div>` : ''}
+    ${st ? html`<div class="kv"><span class="k">지하철</span><span class="v">${raw(st.lines.map(l => lineChip(l, { badge: true }).__raw).join(' '))} <a href="#/station/${st.id}">${st.ko}역</a>${ex ? html` <span class="exit-chip">${exitLabel(ex)}</span>` : p.exit_code ? html` <span class="exit-chip">${p.exit_code}번 출구</span>` : ''} · 도보 약 ${Math.round(stDist * 1.3 / 75)}분${ex?.landmarks_zh ? html`<br><span class="muted t-sm zh">${ex.code}: ${ex.street_zh || ''}${ex.street_zh && ex.landmarks_zh ? ' · ' : ''}${ex.landmarks_zh}</span>` : ''}${p.metro_note ? html`<br><span class="muted t-sm">${p.metro_note}</span>` : ''}${!ex && exCount ? html`<br><a class="t-sm" href="#/station/${st.id}">출구 ${exCount}개 보기</a>` : ''}</span></div>` : p.metro_note ? html`<div class="kv"><span class="k">교통</span><span class="v">${p.metro_note}</span></div>` : ''}
     ${p.opentime ? html`<div class="kv"><span class="k">시간</span><span class="v">${p.opentime}</span></div>` : ''}
     ${p.price_yuan ? html`<div class="kv"><span class="k">가격</span><span class="v">약 ¥${p.price_yuan} / 1인</span></div>` : ''}
     ${p.tel ? html`<div class="kv"><span class="k">전화</span><span class="v"><a href="tel:${p.tel}">${p.tel}</a></span></div>` : ''}

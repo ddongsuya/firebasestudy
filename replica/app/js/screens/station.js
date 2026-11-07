@@ -1,5 +1,5 @@
 // S13 지하철역 상세 시트
-import { D } from '../data.js';
+import { D, exitsOf } from '../data.js';
 import * as store from '../store.js';
 import * as mapx from '../map.js';
 import { $, html, raw, icon, toast, openSheet, lineChip } from '../ui.js';
@@ -14,7 +14,7 @@ export function show(id) {
   home.refreshMarkers(s.id); mapx.panToWithOffset(s, Math.max(mapx.map.getZoom(), 15));
   const fav = store.findFavorite({ station_id: s.id });
   const near = D.places.map(p => ({ kind: 'place', ref: p, d: distance(p, s) })).filter(x => x.d < 1200).sort((a, b) => a.d - b.d).slice(0, 5);
-  const exits = [...new Set(D.places.filter(p => p.station_id === s.id && p.exit_code).map(p => p.exit_code))];
+  const exits = exitsOf(s.id);
   openSheet(html`
     <div class="sheet-head">
       <h2>${s.ko}역<br><span class="big-zh zh">${s.zh}站</span><br><span class="muted t-sm">${s.py}${s.transfer ? ' · 환승역' : ''}</span></h2>
@@ -28,7 +28,7 @@ export function show(id) {
       <button type="button" class="btn ghost" id="btnDriver">${icon('car')} 기사에게 보여주기</button>
     </div>
     ${s.lines.map(l => { const line = D.lineById[l]; return html`<div class="kv"><span class="k">${line.ko}</span><span class="v">첫차 약 ${fmt(line.first_dep)} · 막차 약 ${fmt(line.last_dep)} <span class="muted t-sm">(종점 기준, 중간역은 다를 수 있어요)</span></span></div>`; })}
-    ${exits.length ? html`<div class="kv"><span class="k">출구</span><span class="v inline">${exits.map(e => html`<span class="exit-chip">${e}번 출구</span>`)}</span></div>` : ''}
+    ${exits.length ? html`<div class="section">출구 ${exits.length}개 <span class="muted" style="font-weight:400">(출구 번호·방향·주변, 중국어 위키백과 기준)</span></div><div class="list">${exits.map(e => html`<div class="row-place" style="align-items:flex-start"><span class="exit-chip" style="min-width:44px;justify-content:center">${e.code}</span><span class="main"><span class="name">${e.dir_ko || ''} ${e.accessible ? html`<span class="tag">엘리베이터</span>` : ''}</span><span class="sub zh" style="white-space:normal">${e.street_zh || ''}${e.landmarks_zh ? ' · ' + e.landmarks_zh : ''}</span></span></div>`)}</div>` : html`<p class="note">이 역의 출구 정보는 아직 없어요.</p>`}
     ${near.length ? html`<div class="section">이 역 근처</div><div class="list">${raw(near.map(n => row(n, { dist: n.d })).join(''))}</div>` : ''}
   `, { onClose: () => home.refreshMarkers() });
   $('#btnCloseSheet').onclick = () => history.length > 1 ? history.back() : app.go('#/');

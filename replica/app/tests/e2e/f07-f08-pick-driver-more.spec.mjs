@@ -62,3 +62,13 @@ test.describe('오프라인 지도 저장', () => {
     await expect(page.locator('#offProg')).toContainText(/완료/, { timeout: 60000 });
   });
 });
+
+test.describe('S13 출구 안내', () => {
+  test('역 카드에 출구 목록, 장소 카드에 맞는 출구', async ({ page }) => {
+    await boot(page, '#/station/wangfujing');
+    await expect(page.getByRole('dialog', { name: '상세' })).toContainText(/출구 \d+개/);
+    await expect(page.getByRole('dialog', { name: '상세' })).toContainText('동북쪽');
+    await go(page, '#/place/tiantan');
+    await expect(page.getByRole('dialog', { name: '상세' })).toContainText(/A\d?번 출구/);
+  });
+});

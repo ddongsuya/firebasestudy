@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const here = dirname(fileURLToPath(import.meta.url));
 const read = f => JSON.parse(readFileSync(join(here, '..', 'data', f + '.json'), 'utf8'));
-const cats = read('categories'), places = read('places'), stations = read('stations'), lines = read('lines'), transfers = read('transfers'), fares = read('fares');
+const cats = read('categories'), places = read('places'), stations = read('stations'), lines = read('lines'), transfers = read('transfers'), fares = read('fares'), exits = read('exits');
 const errs = [];
 const inBj = (lat, lon) => lat >= 39.4 && lat <= 41.1 && lon >= 115.4 && lon <= 117.6;
 const catIds = new Set(cats.map(c => c.id)), stIds = new Set(stations.map(s => s.id)), lineIds = new Set(lines.map(l => l.id));
@@ -33,6 +33,8 @@ for (const l of lines) {
   if (l.stations.length < 2) errs.push(`노선 ${l.ko}: 역 2개 미만`);
 }
 for (const t of transfers) { if (!stIds.has(t.station)) errs.push(`환승 ${t.station}: 역 없음`); if (!(t.walk_min >= 0 && t.walk_min <= 20)) errs.push(`환승 ${t.station}: 도보 분 범위`); }
+for (const e of exits) { if (!stIds.has(e.station)) errs.push(`출구 ${e.station}/${e.code}: 역 없음`); if (!/^[A-Z]\d?$/.test(e.code)) errs.push(`출구 ${e.station}/${e.code}: 코드 형식`); }
+const exitKeys = new Set(exits.map(e => e.station + '/' + e.code)); if (exitKeys.size !== exits.length) errs.push('출구 중복');
 if (!fares.metro_distance?.bands?.length || !fares.taxi?.flag_yuan) errs.push('요금표 누락');
 if (errs.length) { console.error('데이터 검증 실패:'); errs.forEach(e => console.error('  - ' + e)); process.exit(1); }
-console.log(`데이터 OK: 장소 ${places.length}, 역 ${stations.length}, 노선 ${lines.length}, 환승 ${transfers.length}`);
+console.log(`데이터 OK: 장소 ${places.length}, 역 ${stations.length}, 노선 ${lines.length}, 환승 ${transfers.length}, 출구 ${exits.length}`);

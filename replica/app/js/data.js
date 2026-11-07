@@ -1,7 +1,7 @@
 // 정적 데이터 로드·인덱스·검색. 전부 GCJ-02.
 import { distance } from './geo.js';
 
-const FILES = ['categories', 'places', 'stations', 'lines', 'transfers', 'fares', 'phrases', 'tips'];
+const FILES = ['categories', 'places', 'stations', 'lines', 'transfers', 'fares', 'phrases', 'tips', 'exits'];
 export const D = { ready: false };
 
 export async function load(base = './data/') {
@@ -18,7 +18,8 @@ export function index() {
   D.lineById = Object.fromEntries(D.lines.map(l => [l.id, l]));
   D.catById = Object.fromEntries(D.categories.map(c => [c.id, c]));
   D.transferMin = Object.fromEntries(D.transfers.map(t => [t.station, t.walk_min]));
-  D.phrases = D.phrases || []; D.tips = D.tips || [];
+  D.phrases = D.phrases || []; D.tips = D.tips || []; D.exits = D.exits || [];
+  D.exitsByStation = {}; for (const e of D.exits) (D.exitsByStation[e.station] ||= []).push(e);
   // 검색 인덱스: 정규화 문자열
   D.searchIndex = [
     ...D.places.map(p => ({ kind: 'place', ref: p, keys: [p.name_ko, p.name_zh, p.pinyin, p.address_zh, p.name_en].filter(Boolean).map(norm) })),
@@ -73,6 +74,18 @@ export function describePoint(pt) {
   return { label_ko: `${c.ko} 근처 (${Math.round(c.d / 10) * 10}m)`, label_zh: `${c.zh}附近` };
 }
 export const lineColor = id => D.lineById[id]?.color || '#888';
+/** 역의 출구 목록 */
+export const exitsOf = stationId => D.exitsByStation[stationId] || [];
+/** 장소에 맞는 출구: 데이터에 적힌 출구 → 출구 안내문에 장소 이름이 나오는 출구 → null */
+export function bestExit(place, stationId = place.station_id) {
+  if (!stationId) return null;
+  const list = exitsOf(stationId); if (!list.length) return null;
+  if (place.exit_code) { const hit = list.find(e => e.code === place.exit_code || e.code.startsWith(place.exit_code)); if (hit) return { ...hit, why: 'data' }; }
+  const key = (place.name_zh || '').replace(/\(.*?\)|（.*?）/g, '').replace(/·.*$/, '').replace(/(公园|景区|博物馆|博物院|大街|胡同|长城|店)$/, '').trim();
+  if (key.length >= 2) { const hit = list.find(e => (e.landmarks_zh || '').includes(key) || (e.street_zh || '').includes(key)); if (hit) return { ...hit, why: 'landmark' }; }
+  return null;
+}
+export const exitLabel = e => e ? `${e.code}번 출구${e.dir_ko ? ` (${e.dir_ko})` : ''}` : '';
 /** 노선색 밝기에 따라 글자색을 정한다(디자인 스펙) */
 export function isLightColor(hex) {
   const n = parseInt(hex.slice(1), 16); const r = n >> 16, g = (n >> 8) & 255, b = n & 255;

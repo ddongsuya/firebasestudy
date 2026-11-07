@@ -1,5 +1,5 @@
 // S05 경로 입력 · S06 결과 · S07 상세
-import { D, search, describePoint } from '../data.js';
+import { D, search, describePoint, bestExit, exitLabel, exitsOf } from '../data.js';
 import * as store from '../store.js';
 import * as mapx from '../map.js';
 import { $, $$, html, raw, icon, toast, lineChip, lineChain, crowdHint, fmtDist, fmtMin, promptSheet } from '../ui.js';
@@ -175,6 +175,14 @@ function detail(p) {
       <button type="button" class="btn ghost" data-driver>${icon('car')} 중국어 카드</button>
     </div>`);
 }
+function exitHint(p, s, to) {
+  const isLast = p.segments.filter(x => x.kind === 'ride').at(-1) === s; if (!isLast) return '';
+  const dest = state.to?.ref?.startsWith('place:') ? D.placeById[state.to.ref.slice(6)] : null;
+  const ex = dest ? bestExit(dest, to.id) : null; const all = exitsOf(to.id);
+  if (ex) return html`<div class="sub"><span class="exit-chip">${exitLabel(ex)}</span> <span class="zh">${ex.landmarks_zh || ex.street_zh || ''}</span></div>`;
+  if (all.length) return html`<div class="sub">출구 ${all.length}개: ${all.map(e => `${e.code}${e.dir_ko ? '(' + e.dir_ko.replace('쪽', '') + ')' : ''}`).join(' · ')} <a href="#/station/${to.id}">자세히</a></div>`;
+  return '';
+}
 function segmentItem(s, i, p) {
   if (s.kind === 'walk') { const st = D.stationById[s.to_station || s.from_station]; if (s.distance_m < 30) return ''; return html`<li class="walk"><span class="dot"></span><div class="title">도보 ${fmtDist(s.distance_m)} · 약 ${fmtMin(s.duration_s)}</div><div class="sub">${s.to_station ? `${st?.ko}역까지` : `${st?.ko}역에서 목적지까지`}</div></li>`; }
   if (s.kind === 'transfer') { const st = D.stationById[s.station]; return html`<li class="walk"><span class="dot"></span><div class="title">${st?.ko}역에서 ${D.lineById[s.to_line]?.ko}으로 환승</div><div class="sub">갈아타기 약 ${Math.round(s.walk_s / 60)}분 + 대기</div></li>`; }
@@ -185,7 +193,7 @@ function segmentItem(s, i, p) {
       <div class="sub">약 ${line.headway_min}분 간격 ${crowdHint(s.line, departAt())}</div>
       <button type="button" class="expand" data-expand="via${i}" aria-expanded="false" aria-controls="via${i}">${s.stops}역 · 약 ${fmtMin(s.duration_s)} ${icon('down', 'sm')}</button>
       <ol class="vias" id="via${i}" hidden>${s.via.map(id => html`<li>${D.stationById[id]?.ko} <span class="zh">${D.stationById[id]?.zh}</span></li>`)}</ol>
-      <div class="title" style="margin-top:8px">${to.ko} <span class="zh muted t-sm">${to.zh}</span> 하차${to.transfer ? ' · 환승역' : ''}</div></li>`;
+      <div class="title" style="margin-top:8px">${to.ko} <span class="zh muted t-sm">${to.zh}</span> 하차${to.transfer ? ' · 환승역' : ''}</div>${exitHint(p, s, to)}</li>`;
   }
   return '';
 }

@@ -9,7 +9,7 @@ feature,area,priority,original,clone,notes
 검색 결과 리스트+지도 (거리·평점 정렬),search,must,yes,yes,S03: Enter로 결과 화면(지도 핀 + 거리순/이름순 리스트)
 장소 상세: 한국어 이름 + 원문 토글 + 병음,place,must,yes,yes,"S04 ""원문 보기"""
 장소 상세: 중국어 주소·영업시간·전화·1인당 가격·팁,place,must,yes,yes,v1 데이터 확장
-장소 상세: 가까운 지하철역과 출구 안내,place,must,yes,yes,v1 metro 필드 구조화
+장소 상세: 가까운 지하철역과 출구 안내,place,must,yes,yes,장소별 출구 자동 매칭(데이터 지정 → 출구 안내문에 장소명 일치)
 장소 상세: 사진 스트립,place,could,yes,no,직접 찍은 사진만. 고덕 사진 사용 불가 · 데이터 없음(자체 사진 추가 시 스키마에 photos 자리 있음)
 장소 상세: 리뷰 요약·평점,place,could,yes,no,랭킹 데이터는 고덕 소유. 자체 한 줄 메모로 대체 · rating 필드는 있으나 데이터 없음
 출발/도착 입력 + 교환 + 바로가기(내 위치·저장·호텔·지도 선택),routing,must,yes,yes,S05
@@ -30,7 +30,7 @@ feature,area,priority,original,clone,notes
 주변 탭: 카테고리 칩 (맛집·관광·화장실·편의점·지하철역·약국),nearby,should,yes,yes,S10
 주변 탭: 거리순/평점순 정렬 + 반경,nearby,should,yes,yes,周边搜索 radius·sortrule 대응
 주변 탭: 랭킹 리스트 카드 (사진·지수·평점),nearby,could,yes,no,고덕 랭킹 데이터 없음. 자체 추천 태그로 축소 · 자체 태그·평점 자리만
-지하철역 상세: 노선·출구·첫차 막차,transit,should,yes,partial,S13 · 노선·첫차 막차·근처 장소. 출구 목록은 장소 데이터에 있는 출구만
+지하철역 상세: 노선·출구·첫차 막차,transit,should,yes,yes,"S13: 401역 1,677개 출구(번호·방향·주변, zh.wikipedia CC BY-SA). 첫차·막차는 노선 기준 근사"
 베이징 지하철 노선도 보기,transit,could,yes,no,자체 제작 SVG 또는 역 리스트로 대체 · 미구현
 즐겨찾기 저장(★)과 해제,favorites,must,yes,yes,v1에 있음
 즐겨찾기 폴더 (일정별 묶음),favorites,should,yes,yes,S11 创建收藏夹

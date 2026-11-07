@@ -49,7 +49,7 @@ function render() {
     body = head('더보기', false) + html`<div class="panel-body stack">
       <div class="list">${items.map(([v, ic, t, d]) => html`<button type="button" class="row-place" data-v="${v}"><span class="ico">${icon(ic)}</span><span class="main"><span class="name">${t}</span><span class="sub">${d}</span></span>${icon('chevron', 'sm')}</button>`)}</div>
       <a class="btn ghost" href="./design.html" target="_blank" rel="noopener">디자인 프리미티브 (개발용)</a>
-      <p class="note">고덕 KO v2 · 지도 타일 © AutoNavi(개인 용도) · 역 데이터 Wikidata(CC0) · 장소 정보는 참고용이며 방문 전 재확인하세요. 오프라인에서도 검색·길찾기가 되고, 최근 본 지도는 캐시돼요.</p>
+      <p class="note">고덕 KO v2 · 지도 타일 © AutoNavi(개인 용도) · 역·명소 좌표 Wikidata(CC0) · 출구 정보 中文维基百科(CC BY-SA 4.0) · 장소 정보는 참고용이며 방문 전 재확인하세요. 오프라인에서도 검색·길찾기가 되고, 최근 본 지도는 캐시돼요.</p>
     </div>`;
   }
   panel.innerHTML = body;

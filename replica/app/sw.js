@@ -9,7 +9,7 @@ const SHELL = [
   './js/routing/transit.js', './js/routing/walk.js', './js/routing/taxi.js', './js/routing/fare.js', './js/routing/schedule.js',
   './js/screens/home.js', './js/screens/search.js', './js/screens/place.js', './js/screens/route.js', './js/screens/walknav.js',
   './js/offline.js', './js/screens/nearby.js', './js/screens/favorites.js', './js/screens/station.js', './js/screens/pick.js', './js/screens/driver.js', './js/screens/more.js',
-  './data/categories.json', './data/places.json', './data/stations.json', './data/lines.json', './data/transfers.json', './data/fares.json', './data/phrases.json', './data/tips.json',
+  './data/categories.json', './data/places.json', './data/stations.json', './data/lines.json', './data/transfers.json', './data/fares.json', './data/phrases.json', './data/tips.json', './data/exits.json',
   './vendor/leaflet/leaflet.js', './vendor/leaflet/leaflet.css', './vendor/leaflet/images/marker-icon.png', './vendor/leaflet/images/marker-shadow.png',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
 ];

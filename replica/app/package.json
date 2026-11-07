@@ -10,6 +10,7 @@
     "test:e2e": "playwright test --config tests/e2e/playwright.config.mjs --trace off",
     "test": "npm run test:unit && npm run test:e2e",
     "build:data": "node tools/build-subway.mjs && node tools/build-places.mjs && node tools/validate-data.mjs",
+    "build:exits": "node tools/parse-zhwiki.mjs ${ZHWIKI_DIR:-/tmp/zhwiki} && node tools/validate-data.mjs",
     "build:tokens": "node ../design/build-tokens.mjs"
   },
   "devDependencies": {

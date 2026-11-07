@@ -100,3 +100,12 @@ test('주변: 자금성 1.5km 안에 장소와 역이 있다', () => {
   assert.ok(n.some(x => x.kind === 'place') && n.some(x => x.kind === 'station'));
   assert.ok(nearestStations(P('gugong'), 3).length === 3);
 });
+
+test('출구: 역별 출구 목록, 장소↔출구 매칭(데이터 지정 또는 안내문 일치)', async () => {
+  const { exitsOf, bestExit } = await import('../../js/data.js');
+  assert.ok(D.exits.length > 500, '출구 데이터');
+  const wfj = D.stations.find(s => s.zh === '王府井'); assert.ok(exitsOf(wfj.id).length >= 5);
+  const tiantan = P('tiantan'); const ex = bestExit(tiantan); assert.ok(ex && ex.code.startsWith('A'), '천단 동문 A출구');
+  const ming = { name_zh: '中华民族园', station_id: D.stations.find(s => s.zh === '北土城').id };
+  assert.equal(bestExit(ming)?.code, 'A');
+});

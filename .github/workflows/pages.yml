@@ -1,5 +1,5 @@
 # replica/app(고덕 KO v2)을 GitHub Pages에 배포
-# 처음 한 번: 저장소 Settings → Pages → Source 를 "GitHub Actions"로 (아래 configure-pages가 자동으로 켜 주지만, 안 되면 수동).
+# 전제: 저장소 Settings → Pages → Source = "GitHub Actions" (2026-11-07 설정 완료).
 name: Deploy to GitHub Pages
 
 on:

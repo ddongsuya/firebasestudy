@@ -39,7 +39,8 @@ export async function show(p) {
   } catch (e) {
     state.from = null; state.error = { denied: '위치 권한이 꺼져 있어요. 출발지를 직접 골라 주세요.', timeout: '위치를 찾지 못했어요. 출발지를 직접 골라 주세요.' }[e.code] || '출발지를 찾지 못했어요. 직접 골라 주세요.';
   }
-  if (!p.to && !state.editing) state.editing = 'to';
+  if (!state.from && !state.editing) state.editing = 'from';
+  else if (!p.to && !state.editing) state.editing = 'to';
   if (state.from && state.to && !state.editing) await compute(); else { state.status = 'idle'; render(); }
 }
 async function compute() {

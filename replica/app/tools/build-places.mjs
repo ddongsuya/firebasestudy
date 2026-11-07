@@ -23,8 +23,10 @@ const categories = [
   { id: 'hotel', label_ko: '호텔', label_zh: '酒店', icon: '🏨', typecodes: ['100000'], sort: 7 },
 ];
 
+// 입구 기준 좌표 보정(WGS-84). 관광지는 중앙이 아니라 '들어가는 문' 좌표여야 역에서의 도보 시간이 맞는다.
+const ENTRANCE = { gugong: [39.9134, 116.3912] /* 午门 */ };
 const places = D.places.map(p => {
-  const [lat, lon] = wgs2gcj(p.lat, p.lon);
+  const [lat, lon] = wgs2gcj(...(ENTRANCE[p.id] || [p.lat, p.lon]));
   // metro 문자열에서 첫 번째 역 이름(중국어)과 출구를 뽑는다. 예: "天坛东门(5호선) A출구 바로 앞"
   const m = (p.metro || '').match(/^([一-龥·]+?)(?:\(|（|\s)/);
   let station_id = null, exit_code = null;

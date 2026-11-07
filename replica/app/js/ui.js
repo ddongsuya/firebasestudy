@@ -10,7 +10,7 @@ class Raw extends String { get __raw() { return this.valueOf(); } }
 export function html(strings, ...vals) {
   return new Raw(strings.reduce((out, s, i) => out + s + (i < vals.length ? toStr(vals[i]) : ''), ''));
 }
-const toStr = v => v == null || v === false ? '' : Array.isArray(v) ? v.map(toStr).join('') : v.__raw != null ? v.__raw : esc(v);
+const toStr = v => v == null ? '' : typeof v === 'boolean' ? String(v) : Array.isArray(v) ? v.map(toStr).join('') : v.__raw != null ? v.__raw : esc(v);
 export const raw = s => new Raw(String(s));
 
 // ── 아이콘(자체 SVG, 24 그리드) ──

@@ -17,3 +17,7 @@ npm run build:data
 루트 v1 앱을 교체하려면 이 폴더 내용을 레포 루트로 옮기면 된다(`js/data.js`를 읽는 `tools/build-places.mjs`의 경로만 조정).
 
 장소 추가: `data/places.json`에 직접 추가하거나(좌표는 GCJ-02, `coord:"gcj02"`), v1 방식대로 루트 `js/data.js`에 WGS-84로 넣고 `npm run build:data`.
+
+## GitHub Pages 배포
+`.github/workflows/pages.yml`이 `main` 또는 작업 브랜치에 푸시될 때 이 폴더를 Pages로 배포한다(테스트·도구·원천 데이터 제외).
+주소: https://ddongsuya.github.io/firebasestudy/ — 처음에는 저장소 Settings → Pages → Source가 "GitHub Actions"여야 한다.

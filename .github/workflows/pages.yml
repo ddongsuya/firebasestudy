@@ -1,0 +1,53 @@
+# replica/app(고덕 KO v2)을 GitHub Pages에 배포
+# 처음 한 번: 저장소 Settings → Pages → Source 를 "GitHub Actions"로 (아래 configure-pages가 자동으로 켜 주지만, 안 되면 수동).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, claude/goduk-map-chinese-1qg02j]
+    paths: ['replica/app/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 데이터 검증 + 단위 테스트
+        working-directory: replica/app
+        run: |
+          node tools/validate-data.mjs
+          node --test "tests/unit/*.test.mjs"
+      - name: 배포 폴더 정리 (테스트·도구·원천 데이터 제외)
+        run: |
+          mkdir -p dist
+          rsync -a --exclude node_modules --exclude tests --exclude tools --exclude 'data/src' --exclude package.json --exclude package-lock.json --exclude .gitignore replica/app/ dist/
+          echo "배포 파일:"; du -sh dist; find dist -type f | wc -l
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

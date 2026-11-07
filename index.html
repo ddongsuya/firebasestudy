@@ -1,30 +1,77 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>로또 번호 생성기</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <title>고덕지도 한국어판 · 베이징</title>
+  <meta name="description" content="베이징 여행용 고덕지도(高德地图) 한국어 안내 지도. 명소·맛집·지하철·택시 기사용 중국어 카드.">
+  <meta name="theme-color" content="#0a84ff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="고덕지도">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>로또 번호 생성기</h1>
-    <div class="lotto-numbers" id="lottoNumbers">
-      <span class="ball">?</span>
-      <span class="ball">?</span>
-      <span class="ball">?</span>
-      <span class="ball">?</span>
-      <span class="ball">?</span>
-      <span class="ball">?</span>
-      <span class="plus">+</span>
-      <span class="ball bonus">?</span>
+<div id="app">
+  <div id="map" role="application" aria-label="베이징 지도"></div>
+
+  <!-- 상단 검색/카테고리 -->
+  <div class="topbar">
+    <div class="search">
+      <span class="logo">고덕지도</span>
+      <input id="q" type="search" placeholder="장소 검색 (한글 · 中文 · pinyin)" autocomplete="off" enterkeyhint="search">
+      <button class="iconbtn" id="btnClear" aria-label="지우기">✕</button>
     </div>
-    <button id="generateBtn" onclick="generateLotto()">번호 생성</button>
-    <div class="history">
-      <h3>생성 기록</h3>
-      <ul id="historyList"></ul>
-    </div>
+    <div id="results" class="results hidden"></div>
+    <div id="chips" class="chips"></div>
   </div>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <!-- 우측 플로팅 버튼 -->
+  <div class="fabs">
+    <button class="fab small" id="btnLang" title="지도 글자 언어 전환">中</button>
+    <button class="fab" id="btnZoomIn" aria-label="확대">＋</button>
+    <button class="fab" id="btnZoomOut" aria-label="축소">－</button>
+    <button class="fab" id="btnHome" aria-label="베이징 중심으로">🏯</button>
+    <button class="fab" id="btnLocate" aria-label="현재 위치">📍</button>
+  </div>
+
+  <!-- 장소 상세 시트 -->
+  <div id="sheet" class="sheet"><div class="grip"></div><div class="body" id="sheetBody"></div></div>
+
+  <!-- 패널들 -->
+  <div id="panelList" class="panel hidden"></div>
+  <div id="panelFav" class="panel hidden"></div>
+  <div id="panelPhrase" class="panel hidden"></div>
+  <div id="panelTips" class="panel hidden"></div>
+
+  <!-- 하단 탭 -->
+  <nav id="tabbar" class="tabbar">
+    <button class="tab on" data-tab="map"><span class="i">🗺️</span>지도</button>
+    <button class="tab" data-tab="list"><span class="i">📍</span>장소</button>
+    <button class="tab" data-tab="fav"><span class="i">♥</span>내 일정<span id="favBadge" class="badge hidden">0</span></button>
+    <button class="tab" data-tab="phrase"><span class="i">🗣️</span>회화</button>
+    <button class="tab" data-tab="tips"><span class="i">💡</span>팁</button>
+  </nav>
+
+  <!-- 기사에게 보여주기 -->
+  <div id="driver" class="driver hidden">
+    <button class="x" id="driverClose">닫기 ✕</button>
+    <div class="lead">请带我去这里 🙏<br><small>(여기로 데려다 주세요)</small></div>
+    <div class="zh" id="driverZh"></div>
+    <div class="addr" id="driverAddr"></div>
+    <div class="ko" id="driverKo"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+</div>
+
+<script src="./vendor/leaflet/leaflet.js"></script>
+<script src="./js/gcj02.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#0a84ff"/>
+  <path d="M256 92c-66 0-120 52-120 118 0 88 120 210 120 210s120-122 120-210c0-66-54-118-120-118z" fill="#fff"/>
+  <circle cx="256" cy="208" r="52" fill="#0a84ff"/>
+  <text x="256" y="462" text-anchor="middle" font-family="-apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-weight="800" font-size="78" fill="#fff">고덕</text>
+</svg>

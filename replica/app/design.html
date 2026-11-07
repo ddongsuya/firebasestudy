@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>고덕 KO · 디자인 프리미티브</title>
+<link rel="stylesheet" href="./css/tokens.css">
+<link rel="stylesheet" href="./css/ui.css">
+<style>
+  body { overflow: auto; padding: 16px 12px 80px; max-width: 480px; margin: 0 auto; }
+  h1 { font-size: var(--t-lg-size); margin: 0 0 4px; }
+  .demo { margin: 20px 0 8px; }
+  .wrap { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .phone { position: relative; height: 72px; border: 1px solid var(--c-border); border-radius: 12px; overflow: hidden; background: var(--c-bg); }
+  .phone .tabbar { position: absolute; }
+  .sheet-demo { position: relative; height: 260px; border: 1px solid var(--c-border); border-radius: 12px; overflow: hidden; background: var(--c-bg); }
+  .sheet-demo .sheet { position: absolute; transform: none; padding-bottom: 12px; }
+</style>
+</head>
+<body>
+<h1>디자인 프리미티브</h1>
+<p class="muted t-sm">토큰: replica/design/tokens.json · 스펙: components.md · 우측 상단 버튼으로 테마 전환</p>
+<div class="wrap"><button class="btn sm ghost" id="theme">다크 ↔ 라이트</button></div>
+
+<div class="section demo">Button</div>
+<div class="wrap">
+  <button class="btn primary">길찾기</button>
+  <button class="btn">저장</button>
+  <button class="btn ghost">복사</button>
+  <button class="btn danger">삭제</button>
+  <button class="btn sm">작게</button>
+  <button class="btn primary" aria-busy="true"><span class="spinner"></span>계산 중</button>
+  <button class="btn" disabled>비활성</button>
+  <button class="btn icon" aria-label="닫기"><svg class="ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+
+<div class="section demo">Searchbar</div>
+<div class="searchbar"><span class="brand">고덕 KO</span><input type="search" placeholder="장소·역 검색 (한글·中文·pinyin)"><button class="btn icon" aria-label="지우기"><svg class="ic sm" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div style="height:8px"></div>
+<div class="searchbar"><span class="city">베이징</span><input type="search" value="왕징" placeholder="근처 맛집"><button class="btn icon" aria-label="지우기"><svg class="ic sm" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+
+<div class="section demo">Chip</div>
+<div class="chips">
+  <button class="chip" aria-pressed="true">✓ 추천</button>
+  <button class="chip" aria-pressed="false">환승 적게</button>
+  <button class="chip" aria-pressed="false">걷기 적게</button>
+  <button class="chip">지금 출발 <span class="caret"></span></button>
+  <button class="chip on-map">🏯 관광</button>
+  <button class="chip on-map on">🥟 맛집</button>
+</div>
+<div class="wrap" style="margin-top:8px">
+  <span class="chip line" style="background:#A4D3EE;color:var(--c-text)">2호선</span>
+  <span class="chip line" style="background:#C23A30">1호선</span>
+  <span class="chip line" style="background:#008E9C">4호선</span>
+  <span class="chip line" style="background:#A6217F">5호선</span>
+  <span class="chip bus" style="--line:#1d5bd1">82</span>
+  <span class="chip taxi">택시 ¥22</span>
+  <span class="chip walk">🚶 14분</span>
+  <span class="badge-line" style="background:#009BC6">10호선</span>
+  <span class="badge-line bus" style="color:#1d5bd1">456</span>
+  <span class="crowd high"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i> 혼잡</span>
+</div>
+
+<div class="section demo">RouteInput · SegTabs</div>
+<div class="route-input">
+  <div class="lines">
+    <label class="field"><span class="dot start"></span><span class="sr-only">출발지</span><input value="내 위치"></label>
+    <label class="field"><span class="dot end"></span><span class="sr-only">도착지</span><input placeholder="어디로 가세요?"></label>
+  </div>
+  <button class="btn icon swap" aria-label="출발·도착 바꾸기"><svg class="ic" viewBox="0 0 24 24"><path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3"/></svg></button>
+</div>
+<div style="height:8px"></div>
+<div class="segtabs" role="tablist">
+  <button role="tab" aria-selected="true">🚇 지하철</button><button role="tab" aria-selected="false">🚶 도보</button><button role="tab" aria-selected="false">🚕 택시</button>
+</div>
+
+<div class="section demo">RouteCard</div>
+<article><button class="route-card selected">
+  <div class="head"><span class="time">약 48분</span><span class="walk">걷기 1.0km</span><span class="best">가장 빠름</span></div>
+  <ul class="linechain" style="margin-top:8px"><li><span class="chip walk">🚶 12분</span></li><li class="arrow" aria-hidden="true"></li><li><span class="chip line" style="background:#A4D3EE;color:var(--c-text)">2호선</span></li><li class="arrow" aria-hidden="true"></li><li><span class="chip line" style="background:#009BC6">10호선</span></li><li class="arrow" aria-hidden="true"></li><li><span class="chip walk">🚶 3분</span></li></ul>
+  <div class="summary">10역 · ¥5 · 난징둥루 2번 출구로 들어가기</div>
+  <div class="next"><span>2호선 쉬징둥 방면</span><span class="crowd"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="min">약 8분 간격</span></div>
+</button></article>
+<article><button class="route-card unavailable">
+  <div class="head"><span class="time">약 53분</span><span class="walk">걷기 1.0km</span></div>
+  <div class="banner danger" style="margin-top:8px">10호선 막차(23:05)가 지났어요. 택시를 권해요.</div>
+</button></article>
+<div class="skeleton" aria-busy="true"></div>
+
+<div class="section demo">Timeline</div>
+<ol class="timeline">
+  <li class="origin"><span class="dot"></span><div class="title">와이탄 (내 위치)</div></li>
+  <li class="walk"><span class="dot"></span><div class="title">도보 802m · 약 12분</div><div class="sub">난징둥루역 2번 출구까지</div><a class="expand" href="#">도보 안내 ›</a></li>
+  <li class="ride" style="--line:#A4D3EE"><span class="dot"></span><div class="title">난징둥루 <span class="badge-line light" style="background:#A4D3EE">2호선</span> 쉬징둥 방면</div><div class="sub">약 8분 간격 · 혼잡</div><button class="expand" aria-expanded="false">10역 · 30분 ▾</button></li>
+  <li class="walk"><span class="dot"></span><div class="title">훙차오 2터미널 하차 · 출입구</div><div class="sub">역 안팎 도보 207m · 약 3분</div></li>
+  <li class="destination current"><span class="dot"></span><div class="title">상하이 훙차오 국제공항</div><div class="sub">도착</div></li>
+</ol>
+
+<div class="section demo">PlaceRow · Tags · Empty</div>
+<div class="card" style="padding:0;overflow:hidden">
+  <button class="row-place"><span class="ico">🏯</span><span class="main"><span class="name">자금성 <span class="muted t-sm zh">故宫博物院</span></span><span class="sub">관광 · 天安门东(1호선) 도보 15분</span></span><span class="meta">1.6km</span></button>
+  <button class="row-place"><span class="ico">🥟</span><span class="main"><span class="name">자오장런자 (왕징점) <span class="star">★</span></span><span class="sub">산둥 요리 · ¥81/인 · <span class="closed">영업 종료</span></span><span class="tags"><span class="tag">현지인 추천</span><span class="tag">매우 매움</span></span></span><span class="meta"><span class="rating">4.7</span><br>1.8km</span></button>
+</div>
+<div class="empty"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><h2>'왕부정'을 못 찾았어요</h2><p>한글·중국어·병음으로 다시 검색해 보세요</p><button class="btn sm">주변에서 찾기</button></div>
+
+<div class="section demo">Banner · Toast</div>
+<div class="banner">📍 출발지는 현재 위치예요. 바꾸려면 탭하세요.</div><div style="height:6px"></div>
+<div class="banner warning" role="alert">⏰ 막차 23:10 · 지금 출발하면 여유 25분</div><div style="height:6px"></div>
+<div class="banner offline">오프라인 · 저장된 데이터로 동작 중</div>
+<div class="toast show" style="position:static;transform:none;display:inline-flex;margin-top:8px">저장했어요 <button>실행 취소</button></div>
+
+<div class="section demo">Radio · Toggle · Tabbar · FAB</div>
+<div class="radiolist">
+  <label><input type="radio" name="lab" checked><span class="lbl">한국어 + 중국어<small>지도 라벨에 둘 다 표시</small></span></label>
+  <label><input type="radio" name="lab"><span class="lbl">한국어만</span></label>
+  <label style="border-top:1px solid var(--c-border)"><span class="lbl">지도 글자 영어로</span><input type="checkbox" class="toggle"></label>
+</div>
+<div class="phone" style="margin-top:8px">
+  <nav class="tabbar" aria-label="주요"><button class="tab" role="tab" aria-selected="true">🗺️<span>지도</span></button><button class="tab" role="tab">📍<span>주변</span></button><button class="tab" role="tab">🧭<span>길찾기</span></button><button class="tab" role="tab">★<span>저장</span><span class="badge">3</span></button><button class="tab" role="tab">☰<span>더보기</span></button></nav>
+</div>
+<div class="wrap" style="margin-top:8px"><button class="fab" aria-label="현재 위치">◎</button><button class="fab" aria-pressed="true" aria-label="현재 위치 추적 중">◎</button><button class="fab text" aria-label="지도 글자">中</button><button class="fab route" aria-label="길찾기">➜</button>
+  <span class="pin sight"><span>🏯</span></span><span class="pin fav"><span>★</span></span><span class="pin station" style="--line:#C23A30"><span></span></span><span class="pt start"></span><span class="pt end"></span><span class="me-dot"></span></div>
+
+<div class="section demo">Sheet · KV · Actions</div>
+<div class="sheet-demo"><div class="sheet open" role="dialog"><div class="grip"></div><div class="sheet-body">
+  <div class="sheet-head"><h2>자금성 (고궁박물원)<br><span class="zh-big zh">故宫博物院</span><br><span class="muted t-sm">Gùgōng Bówùyuàn · 관광 · 1.6km</span></h2><button class="btn icon" aria-label="원문 보기">文</button><button class="btn icon" aria-label="저장" aria-pressed="true" style="color:var(--c-fav)">★</button></div>
+  <div class="actions"><button class="btn primary wide lg">🧭 여기로 길찾기</button><button class="btn">🚕 기사에게 보여주기</button><button class="btn ghost">중국어 복사</button></div>
+  <div class="kv"><span class="k">주소</span><span class="v zh">北京市东城区景山前街4号</span></div>
+  <div class="kv"><span class="k">지하철</span><span class="v"><span class="badge-line" style="background:#C23A30">1호선</span> 天安门东 하차 · 도보 15분</span></div>
+  <div class="kv"><span class="k">시간</span><span class="v">08:30–17:00 · <span class="closed" style="color:var(--c-warning);font-weight:600">월요일 휴관</span></span></div>
+</div></div></div>
+
+<div class="section demo">DriverCard (축소 미리보기)</div>
+<div class="driver" style="position:relative;inset:auto;height:300px;border-radius:12px;border:1px solid var(--c-border)">
+  <button class="x">닫기 ✕</button>
+  <div class="lead">请带我去这里 🙏</div>
+  <div class="zh">故宫博物院</div>
+  <div class="addr">北京市东城区景山前街4号</div>
+  <div class="ko">자금성 (고궁박물원)</div>
+</div>
+<script>
+  document.getElementById('theme').onclick = () => {
+    const r = document.documentElement; r.dataset.theme = r.dataset.theme === 'dark' ? 'light' : 'dark';
+  };
+</script>
+</body>
+</html>

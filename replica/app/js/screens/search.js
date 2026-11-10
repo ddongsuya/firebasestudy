@@ -10,7 +10,8 @@ export function init() {
   $('#btnSearchBack').innerHTML = icon('back').__raw; $('#btnClear').innerHTML = icon('x').__raw;
   inp.addEventListener('focus', open); inp.addEventListener('input', render);
   inp.addEventListener('keydown', e => {
-    if (e.key === 'Enter') { const q = inp.value.trim(); const rs = q ? search(q, { limit: 25 }) : []; if (rs.length >= 2) { store.pushHistory(q); close(); app.go('#/search?q=' + encodeURIComponent(q)); return; } const first = $('.row-place', results); if (first) first.click(); }
+    if (e.key === 'Enter') { const q = inp.value.trim(); const rs = q ? search(q, { limit: 25 }) : []; const lead = x => (x?.score ?? 0) >= 80; const exact = lead(rs[0]) && !lead(rs[1]); // 이름이 이 말로 시작하는 곳이 하나뿐이면(예: 자금성) 목록 대신 바로 연다
+    if (rs.length >= 2 && !exact) { store.pushHistory(q); close(); app.go('#/search?q=' + encodeURIComponent(q)); return; } const first = $('.row-place', results); if (first) first.click(); }
     if (e.key === 'ArrowDown') { $('.row-place', results)?.focus(); e.preventDefault(); }
     if (e.key === 'Escape') close();
   });

@@ -35,6 +35,16 @@ test.describe('F02 지하철 길찾기', () => {
     await page.locator('#rqList').getByRole('button', { name: /왕징역/ }).first().click();
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
   });
+  test('F02-H5 "여기서 출발" 뒤 다른 장소에서 "여기로 도착"을 눌러도 출발지가 남는다', async ({ page }) => {
+    await boot(page, '#/place/gugong');
+    await page.getByRole('link', { name: '여기서 출발' }).click();
+    await expect(page.getByRole('heading', { name: '어디로 가세요?' })).toBeVisible();
+    await go(page, '#/place/tiantan');
+    await page.getByRole('link', { name: '여기로 도착' }).click();
+    await expect(page.getByRole('button', { name: /출발지: 자금성/ })).toBeVisible();
+    await expect(page.getByRole('button', { name: /도착지: 천단공원/ })).toBeVisible();
+    await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
+  });
   test('F02-H2 전략 전환: 환승 적게 / 걷기 적게', async ({ page }) => {
     await boot(page, '#/route?from=station:wangjing&to=place:gugong');
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });

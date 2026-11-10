@@ -43,9 +43,10 @@ test.describe('F01 장소 검색 → 상세 → 길찾기', () => {
   test('F01-E3 키보드만으로 검색 → 상세', async ({ page }) => {
     await boot(page);
     await page.getByRole('combobox', { name: '장소 검색' }).focus();
-    await page.keyboard.type('천단');
+    // 결과가 하나뿐인 검색어로(천단은 '천단공원 북문'이 추가돼 결과가 2개가 됨)
+    await page.keyboard.type('이화원');
     await page.keyboard.press('Enter');
-    await expect(page).toHaveURL(/#\/place\/tiantan/);
+    await expect(page).toHaveURL(/#\/place\/yiheyuan/);
     await page.keyboard.press('Escape');
     await expect(page).toHaveURL(/#\/$/);
   });
@@ -76,7 +77,7 @@ test.describe('S03 검색 결과 화면', () => {
     await expect(dlg.getByRole('heading', { name: /검색 결과/ })).toBeVisible();
     await dlg.getByRole('button', { name: '이름순' }).click();
     await expect(dlg.getByRole('button', { name: '이름순' })).toHaveAttribute('aria-pressed', 'true');
-    await dlg.getByRole('button', { name: /천단공원/ }).click();
+    await dlg.locator('[data-place="tiantan"]').click();
     await expect(page).toHaveURL(/#\/place\/tiantan/);
   });
 });

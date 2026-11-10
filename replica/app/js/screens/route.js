@@ -37,13 +37,17 @@ export async function show(p) {
   state.status = 'resolving'; state.error = null; state.plans = []; render();
   try {
     // 출발지를 임의로 '내 위치'로 채우지 않는다. 비어 있으면 출발지부터 묻는다(내 위치는 목록 맨 위 한 번 탭)
-    [state.from, state.to] = await Promise.all([p.from ? resolve(p.from) : null, p.to ? resolve(p.to) : null]);
+    // 링크가 한쪽만 정하면(장소의 "여기서 출발"/"여기로 도착") 앞서 골라 둔 반대쪽은 그대로 둔다
+    const prevFrom = state.from && refOf(state.from), prevTo = state.to && refOf(state.to);
+    const fromRef = p.from || (prevFrom && prevFrom !== p.to ? prevFrom : null);
+    const toRef = p.to || (prevTo && prevTo !== p.from ? prevTo : null);
+    [state.from, state.to] = await Promise.all([fromRef ? resolve(fromRef) : null, toRef ? resolve(toRef) : null]);
   } catch (e) {
     state.from = null; state.error = { denied: '위치 권한이 꺼져 있어요. 출발지를 직접 골라 주세요.', timeout: '위치를 찾지 못했어요. 출발지를 직접 골라 주세요.' }[e.code] || '출발지를 찾지 못했어요. 직접 골라 주세요.';
   }
   if (!state.from && !state.editing) state.editing = 'from';
-  else if (!p.to && !state.editing) state.editing = 'to';
-  if (state.from && state.to && !state.editing) await compute(); else { state.status = 'idle'; render(); }
+  else if (!state.to && !state.editing) state.editing = 'to';
+  if (state.from && state.to && !state.editing) { setHash(); await compute(); } else { state.status = 'idle'; render(); }
 }
 async function compute() {
   state.status = 'computing'; render();

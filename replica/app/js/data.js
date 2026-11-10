@@ -91,3 +91,24 @@ export function isLightColor(hex) {
   const n = parseInt(hex.slice(1), 16); const r = n >> 16, g = (n >> 8) & 255, b = n & 255;
   const lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255; return lum > 0.6;
 }
+
+/** 영업 상태(베이징 시각). opentime 문자열에서 첫 구간("·" 앞)의 HH:MM-HH:MM 들과 "월 휴관", "24시간"을 읽는다. 확신이 없으면 null. */
+export function openStatus(opentime, at = new Date()) {
+  if (!opentime) return null;
+  const seg = opentime.split(' · ')[0];
+  const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Shanghai', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(at).map(x => [x.type, x.value]));
+  const now = (+p.hour % 24) * 60 + +p.minute; const mon = p.weekday === 'Mon';
+  if (/월\s*휴관/.test(seg) && !/다수/.test(seg) && mon) return { state: 'closed', label: '오늘 휴관(월)' };
+  if (/24시간/.test(seg)) return { state: 'open', label: '24시간' };
+  const ranges = [...seg.matchAll(/(\d{1,2}):(\d{2})\s*[-–~]\s*(\d{1,2}):(\d{2})/g)].map(m => [+m[1] * 60 + +m[2], +m[3] * 60 + +m[4]]);
+  if (!ranges.length) return null;
+  const fmt = m => `${String(Math.floor(m / 60) % 24).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+  for (const [a, b0] of ranges) {
+    const b = b0 <= a ? b0 + 1440 : b0;                       // 자정 넘김(10:30-04:00)
+    for (const n of [now, now + 1440]) {
+      if (n >= a && n < b) return b - n <= 60 ? { state: 'closing', label: `곧 마감 · ${fmt(b)}` } : { state: 'open', label: `영업 중 · ${fmt(b)}까지` };
+    }
+  }
+  const next = ranges.map(r => r[0]).find(a => a > now);
+  return { state: 'closed', label: next != null ? `영업 전 · ${fmt(next)} 시작` : `영업 종료 · 내일 ${fmt(ranges[0][0])}` };
+}

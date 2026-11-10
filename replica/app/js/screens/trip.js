@@ -8,14 +8,14 @@ import { copyText } from './place.js';
 let panel; let trip = null;
 const state = { view: 'plan', day: null, person: 0 };
 
-async function loadTrip() {
+export async function loadTrip() {
   if (trip) return trip;
   const r = await fetch('./data/trip.json'); if (!r.ok) throw new Error('trip.json ' + r.status);
   trip = await r.json(); return trip;
 }
 /** 베이징 시각 기준 오늘 날짜(YYYY-MM-DD) */
-const todayBj = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai' }).format(new Date());
-const nowHm = () => new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
+export const todayBj = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai' }).format(new Date());
+export const nowHm = () => new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
 
 export async function show(params) {
   panel = $('#panel'); panel.classList.remove('hidden');
@@ -27,7 +27,7 @@ export async function show(params) {
 }
 
 function render() {
-  const tabs = html`<div class="chips seg" role="tablist">${[['plan', '📅 일정'], ['pack', '🧳 준비물'], ['vault', '🔐 예약·티켓']].map(([v, l]) => html`<button type="button" class="chip" role="tab" data-view="${v}" aria-pressed="${state.view === v}">${l}</button>`)}</div>`;
+  const tabs = html`<div class="segtabs trip-tabs" role="tablist">${[['plan', '일정'], ['pack', '준비물'], ['vault', '예약·티켓']].map(([v, l]) => html`<button type="button" role="tab" data-view="${v}" aria-selected="${state.view === v}" aria-pressed="${state.view === v}">${l}</button>`)}</div>`;
   let body;
   if (state.view === 'pack') body = renderPack();
   else if (state.view === 'vault') body = renderVault();
@@ -54,7 +54,7 @@ function renderPlan() {
           <div class="trip-time">${s.t}${i === nextIdx ? html` <span class="exit-chip">다음</span>` : ''}</div>
           <div class="trip-title">${s.title}</div>
           ${s.desc ? html`<div class="trip-desc">${s.desc}</div>` : ''}
-          ${s.warn ? html`<div class="trip-warn">⚠️ ${s.warn}</div>` : ''}
+          ${s.warn ? html`<div class="trip-warn">${icon('alert', 'xs')} ${s.warn}</div>` : ''}
           ${s.transport ? html`<div class="trip-desc">${icon('car', 'sm')} ${s.transport}</div>` : ''}
           ${s.todo ? html`<ul class="trip-todo">${s.todo.map((t, j) => { const k = `${day.id}:${i}:${j}`; return html`<li><label><input type="checkbox" data-check="${k}" ${store.checked(k) ? 'checked' : ''}> <span>${t}</span></label></li>`; })}</ul>` : ''}
           ${p ? html`<div class="trip-place">
@@ -96,7 +96,7 @@ function renderPack() {
 function renderVault() {
   const v = store.vault();
   return html`<div style="padding:var(--s-2) var(--s-3) var(--s-6)" class="stack">
-    <div class="banner"><span>🔐 예약번호·항공권번호·여권 이름·입장권 QR은 인터넷에 올라가지 않고 <b>이 폰에만</b> 저장돼요. 다른 폰에 옮기려면 더보기 → 내 데이터로 복사하세요.</span></div>
+    <div class="banner"><span>예약번호·항공권번호·여권 이름·입장권 QR은 인터넷에 올라가지 않고 <b>이 폰에만</b> 저장돼요. 다른 폰에 옮기려면 더보기 → 내 데이터로 복사하세요.</span></div>
     ${v.notes.length ? '' : html`<button type="button" class="btn primary wide" id="btnVaultTemplate">${icon('edit')} 예약 메모 틀 만들기 (항공·호텔·천단·유니버설·보험)</button>`}
     ${v.notes.map(n => html`<div class="card vault-note" data-note="${n.id}"><div class="t-md" style="display:flex;justify-content:space-between;align-items:center"><b>${n.title}</b><span class="inline"><button type="button" class="btn icon sm" data-note-big="${n.id}" aria-label="크게 보기">${icon('speech', 'sm')}</button><button type="button" class="btn icon sm" data-note-edit="${n.id}" aria-label="고치기">${icon('edit', 'sm')}</button><button type="button" class="btn icon sm" data-note-del="${n.id}" aria-label="삭제">${icon('trash', 'sm')}</button></span></div><pre class="vault-body">${n.body}</pre></div>`)}
     <div class="inline"><button type="button" class="btn sm" id="btnNoteAdd">${icon('plus', 'sm')} 메모 추가</button></div>

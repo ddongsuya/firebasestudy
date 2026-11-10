@@ -2,7 +2,7 @@
 import { $, html, raw } from '../ui.js';
 let lastFocus = null;
 export function init() { $('#driver').addEventListener('click', e => { if (e.target.closest('.x')) close(); }); }
-export function show({ zh, addr = '', ko = '', lead = '请带我去这里 🙏', sub = '(여기로 데려다 주세요)' }) {
+export function show({ zh, addr = '', ko = '', lead = '请带我去这里，谢谢', sub = '(여기로 데려다 주세요)' }) {
   lastFocus = document.activeElement;
   $('#driver').innerHTML = html`<button type="button" class="x">닫기 ✕</button><div class="lead">${lead}<br><small>${sub}</small></div><div class="zh">${zh}</div>${addr ? html`<div class="addr zh">${addr}</div>` : ''}${ko ? html`<div class="ko">${ko}</div>` : ''}`;
   $('#driver').classList.remove('hidden'); $('.x', $('#driver')).focus();

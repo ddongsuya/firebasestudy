@@ -45,7 +45,7 @@ function render() {
       <div class="inline"><button type="button" class="btn" id="btnCopyData">${icon('copy')} 복사</button><button type="button" class="btn ghost" id="btnImportData">붙여넣은 내용으로 복구</button></div>
     </div>`;
   } else {
-    const items = [['trip', 'clock', '일정 · 준비물 · 예약 보관함', '11/11–14 베이징 일정, 체크리스트, 티켓 (폰에만 저장)'], ['offline', 'map', '오프라인 지도 저장', '보이는 지역의 타일을 미리 내려받기'], ['phrases', 'speech', '회화', '택시·식당·결제·긴급 24문장, 크게 보기'], ['tips', 'bulb', '여행 팁', '결제·VPN·예약·여권'], ['settings', 'menu', '설정', '라벨 언어·테마·도보 경로'], ['data', 'copy', '내 데이터', '저장한 곳 내보내기/복구']];
+    const items = [['trip', 'clock', '일정 · 준비물 · 예약 보관함', '11/11~14 베이징 일정, 체크리스트, 티켓 (폰에만 저장)'], ['offline', 'map', '오프라인 지도 저장', '보이는 지역의 타일을 미리 내려받기'], ['phrases', 'speech', '회화', '택시·식당·결제·긴급 24문장, 크게 보기'], ['tips', 'bulb', '여행 팁', '결제·VPN·예약·여권'], ['settings', 'menu', '설정', '라벨 언어·테마·도보 경로'], ['data', 'copy', '내 데이터', '저장한 곳 내보내기/복구']];
     body = head('더보기', false) + html`<div class="panel-body stack">
       <div class="list">${items.map(([v, ic, t, d]) => html`<button type="button" class="row-place" data-v="${v}"><span class="ico">${icon(ic)}</span><span class="main"><span class="name">${t}</span><span class="sub">${d}</span></span>${icon('chevron', 'sm')}</button>`)}</div>
       <a class="btn ghost" href="./design.html" target="_blank" rel="noopener">디자인 프리미티브 (개발용)</a>
@@ -53,11 +53,11 @@ function render() {
     </div>`;
   }
   panel.innerHTML = body;
-  panel.addEventListener('click', e => {
+  panel.onclick = (e => {
     const v = e.target.closest('[data-v]'); if (v) { if (v.dataset.v === 'trip') { app.go('#/trip'); return; } state.view = v.dataset.v; history.replaceState(null, '', '#/more?v=' + state.view); render(); return; }
     const ph = e.target.closest('[data-phrase]'); if (ph) { const p = D.phrases.find(x => x.id === ph.dataset.phrase); driver.show({ zh: p.zh, addr: '', ko: p.ko, lead: p.py, sub: '' }); }
   });
-  panel.addEventListener('change', e => {
+  panel.onchange = (e => {
     const r = e.target; if (r.type !== 'radio') return;
     store.setSetting(r.name, r.value);
     if (r.name === 'tile_lang') mapx.setTiles(r.value);

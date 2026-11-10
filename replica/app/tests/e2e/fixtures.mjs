@@ -9,6 +9,8 @@ export const test = base.extend({
     page.on('pageerror', e => errors.push('pageerror: ' + e.message));
     page.on('response', r => { if (r.status() >= 500) errors.push(`${r.status()} ${r.url()}`); });
     // 지도 타일은 네트워크 변수이므로 1px 투명 PNG로 대체
+    // 시간 의존(첫차·막차) 결과가 실행 시각에 따라 바뀌지 않도록 베이징 낮 10시로 고정
+    await page.clock.setFixedTime(new Date('2026-11-12T10:00:00+08:00'));
     await page.route(/autonavi\.com|amap\.com/, r => r.fulfill({ status: 200, contentType: 'image/png', body: Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64') }));
     await use(page);
     expect(errors, '콘솔 오류 / 5xx 없음').toEqual([]);

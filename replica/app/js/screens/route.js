@@ -33,6 +33,7 @@ const refOf = x => x?.ref || 'me';
 export async function show(p) {
   params = p; panel = $('#panel'); panel.classList.remove('hidden'); panel.classList.add('with-map');
   state.mode = p.mode || state.mode; state.strategy = p.strategy || state.strategy; state.sel = p.sel != null ? +p.sel : null; state.editing = p.edit || null;
+  state.depart = /^\d\d:\d\d$/.test(p.at || '') ? p.at : 'now'; // 출발 시각은 주소(at=)에만 남긴다. 다른 길찾기로 넘어가면 '지금 출발'로 돌아감
   state.status = 'resolving'; state.error = null; state.plans = []; render();
   try {
     [state.from, state.to] = await Promise.all([resolve(p.from || 'me'), p.to ? resolve(p.to) : null]);
@@ -60,7 +61,7 @@ async function compute() {
 }
 function departAt() { if (state.depart === 'now') return new Date(); const { y, mo, d } = beijingDateParts(); const [h, m] = state.depart.split(':'); return new Date(Date.UTC(y, mo - 1, d, +h - 8, +m)); }
 function setHash(extra = {}) {
-  const q = new URLSearchParams({ from: refOf(state.from), ...(state.to ? { to: refOf(state.to) } : {}), mode: state.mode, strategy: state.strategy, ...(state.sel != null ? { sel: state.sel } : {}), ...extra });
+  const q = new URLSearchParams({ from: refOf(state.from), ...(state.to ? { to: refOf(state.to) } : {}), mode: state.mode, strategy: state.strategy, ...(state.sel != null ? { sel: state.sel } : {}), ...(state.depart !== 'now' ? { at: state.depart } : {}), ...extra });
   for (const [k, v] of [...q]) if (v === '' || v == null) q.delete(k);
   history.replaceState(null, '', '#/route?' + q.toString());
 }
@@ -116,7 +117,7 @@ function bind() {
     if (pick) { const which = state.editing; state.editing = null; state.status = 'resolving'; render(); try { state[which] = await resolve(pick.dataset.pick); } catch { state.error = '위치를 찾지 못했어요'; state.status = 'idle'; render(); return; } state.sel = null; setHash(); if (state.from && state.to) compute(); else { state.editing = state.from ? 'to' : 'from'; state.status = 'idle'; render(); } return; }
     const mode = e.target.closest('[data-mode]'); if (mode) { state.mode = mode.dataset.mode; state.sel = null; setHash(); compute(); return; }
     const strat = e.target.closest('[data-strategy]'); if (strat) { state.strategy = strat.dataset.strategy; state.sel = null; setHash(); compute(); return; }
-    const dep = e.target.closest('[data-depart]'); if (dep) { promptSheet('출발 시각 (베이징 시각)', { value: state.depart === 'now' ? '' : state.depart, placeholder: '예 22:30 · 비우면 지금 출발', submitLabel: '적용', onSubmit: v => { state.depart = /^\d{1,2}:\d{2}$/.test((v || '').trim()) ? v.trim().padStart(5, '0') : 'now'; compute(); } }); return; }
+    const dep = e.target.closest('[data-depart]'); if (dep) { promptSheet('출발 시각 (베이징 시각)', { value: state.depart === 'now' ? '' : state.depart, placeholder: '예 22:30 · 비우면 지금 출발', submitLabel: '적용', onSubmit: v => { const m = (v || '').trim().match(/^(\d{1,2}):(\d{2})$/); state.depart = m && +m[1] < 24 && +m[2] < 60 ? m[1].padStart(2, '0') + ':' + m[2] : 'now'; state.sel = null; setHash(); compute(); } }); return; }
     const card = e.target.closest('[data-sel]'); if (card) { state.sel = +card.dataset.sel; setHash(); render(); mapx.drawPlan(state.plans[state.sel], { fit: true }); return; }
     const exp = e.target.closest('[data-expand]'); if (exp) { const ul = $('#' + exp.dataset.expand); const open = ul.hidden; ul.hidden = !open; exp.setAttribute('aria-expanded', String(open)); return; }
     const drv = e.target.closest('[data-driver]'); if (drv) { driver.show({ zh: state.to.name_zh, addr: state.to.addr || '', ko: state.to.name }); return; }

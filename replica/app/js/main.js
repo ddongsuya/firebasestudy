@@ -48,6 +48,8 @@ async function onRoute() {
   document.body.classList.remove('searching', 'picking', 'navigating', 'panel-open');
   $('#panel').classList.add('hidden'); $('#panel').classList.remove('with-map');
   walknav.stop();
+  if (seg[0] !== 'pick') pick.stop(); // 핀 고르기를 벗어나면 가운데 핀·이동 감시 정리
+  if (!['route', 'walk'].includes(seg[0])) mapx.clearRoute(); // 길찾기 밖에서는 경로선 지우기
   if (!seg.length) { closeSheet(); home.show(); return; }
   switch (seg[0]) {
     case 'search': home.show({ keepSheet: true }); search.showResults(params); break;

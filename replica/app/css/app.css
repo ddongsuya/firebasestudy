@@ -75,28 +75,42 @@ textarea.io { width: 100%; min-height: 120px; font: inherit; font-size: var(--t-
 
 /* ── 여행(일정·준비물·보관함) ── */
 .chips.seg .chip { flex: 1; justify-content: center; }
-.timeline.trip li { padding-left: 24px; padding-bottom: var(--s-4); }
-.timeline.trip li::after { content: ""; position: absolute; left: 1px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-border-input); }
-.timeline.trip li.next::after { background: var(--c-accent); box-shadow: 0 0 0 4px var(--c-accent-soft); }
-.timeline.trip li.warn::after { background: var(--c-warning); }
+.timeline.trip > li { padding-left: 24px; padding-bottom: var(--s-4); }
+.timeline.trip > li::after { content: ""; position: absolute; left: 1px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-border-input); }
+.timeline.trip > li.next::after { background: var(--c-accent); box-shadow: 0 0 0 4px var(--c-accent-soft); }
+.timeline.trip > li.warn::after { background: var(--c-warning); }
 .trip-time { font-size: var(--t-xs-size); font-weight: 700; color: var(--c-text-muted); letter-spacing: .3px; }
-.timeline.trip li.next .trip-time { color: var(--c-accent); }
+.timeline.trip > li.next .trip-time { color: var(--c-accent); }
 .trip-title { font-size: var(--t-md-size); font-weight: 700; line-height: var(--t-md-line); margin-top: 2px; }
 .trip-desc { font-size: var(--t-sm-size); line-height: var(--t-sm-line); color: var(--c-text-muted); margin-top: 2px; }
 .trip-desc .ic { vertical-align: -3px; }
 .trip-warn { font-size: var(--t-sm-size); font-weight: 700; color: var(--c-warning); margin-top: 2px; }
 .trip-todo { list-style: none; margin: 4px 0 0; padding: 0; font-size: var(--t-sm-size); }
-.trip-todo label { display: flex; gap: 8px; align-items: flex-start; padding: 3px 0; }
+.trip-todo li { position: static; padding: 0; }
+.trip-todo li::before, .trip-todo li::after { content: none; }
+.trip-todo label { display: flex; gap: 10px; align-items: center; min-height: 44px; padding: 2px 0; cursor: pointer; }
+.trip-todo input { width: 22px; height: 22px; margin: 0; accent-color: var(--c-accent); flex: 0 0 auto; }
 .trip-todo input:checked + span { text-decoration: line-through; color: var(--c-text-muted); }
 .trip-place { margin-top: var(--s-2); padding: var(--s-2) var(--s-3); background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r-md); }
 .trip-place-name { display: flex; flex-direction: column; color: inherit; text-decoration: none; margin-bottom: var(--s-2); }
 .trip-place-name .zh { font-size: var(--t-sm-size); color: var(--c-text-muted); }
 .trip-alts { display: flex; gap: var(--s-2); flex-wrap: wrap; margin-top: var(--s-2); }
-.trip-alts .chip { height: 26px; font-size: var(--t-xs-size); }
+.trip-alts .chip { height: 36px; font-size: var(--t-sm-size); }
+/* 날짜 칩: 390px에서 5일이 한 줄에 다 보이게 (날짜 / 요일 2줄) */
+.chips.days { display: grid; grid-template-columns: repeat(5, 1fr); overflow: visible; }
+.chips.days .chip { height: auto; min-height: 48px; padding: 4px 2px; flex-direction: column; justify-content: center; gap: 0; line-height: 1.2; text-align: center; white-space: nowrap; }
+.chips.days .chip small { font-size: var(--t-xs-size); font-weight: 500; opacity: .8; }
+/* 일정 화면 버튼은 걸으면서 누르므로 44px */
+.timeline.trip .btn.sm, .trip-pack .btn.sm, .trip-vault .btn.sm { min-height: 44px; }
+@media (pointer: coarse) { .btn.sm { min-height: 44px; } }
+.trip-place .inline .btn.sm { flex: 1 1 auto; justify-content: center; }
+.vault-note-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-2); }
+.vault-note-head b { flex: 1; min-width: 0; }
+.vault-note-head .inline { flex-wrap: nowrap; flex: 0 0 auto; gap: 4px; }
 .row-place.check { cursor: pointer; }
 .row-place.check input { width: 20px; height: 20px; accent-color: var(--c-accent); flex: 0 0 auto; }
 .row-place.check input:checked + .main .name { text-decoration: line-through; color: var(--c-text-muted); }
-.vault-note .vault-body { white-space: pre-wrap; font: inherit; font-size: var(--t-sm-size); line-height: var(--t-sm-line); margin: var(--s-2) 0 0; word-break: break-all; }
+.vault-note .vault-body { white-space: pre-wrap; font: inherit; font-size: var(--t-sm-size); line-height: var(--t-sm-line); margin: var(--s-2) 0 0; overflow-wrap: anywhere; }
 .vault-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-2); }
 .vault-thumb { position: relative; aspect-ratio: 1; border-radius: var(--r-md); overflow: hidden; background: var(--c-surface-2); border: 1px solid var(--c-border); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--c-text-muted); font-size: var(--t-xs-size); padding: 0; }
 .vault-thumb img { width: 100%; height: 100%; object-fit: cover; }

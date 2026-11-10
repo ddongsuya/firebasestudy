@@ -551,7 +551,7 @@
   "price_yuan": 0,
   "rating": null,
   "tags": [],
-  "tip_ko": "정양문 남쪽 보행자 거리. 전취덕 본점·관광 전차. 서쪽 골목 다자란(大栅栏)이 더 옛 느낌.",
+  "tip_ko": "정양문 남쪽 보행자 거리. 전취덕 본점·관광 전차. 서쪽 골목 다스란(大栅栏)이 더 옛 느낌.",
   "metro_note": "前门(2·8호선) C출구",
   "station_id": "qianmen",
   "exit_code": "C",
@@ -1247,7 +1247,7 @@
  {
   "id": "dashilan",
   "cat": "shop",
-  "name_ko": "다자란 (노포 거리)",
+  "name_ko": "다스란 (노포 거리)",
   "name_zh": "大栅栏",
   "name_en": null,
   "pinyin": "Dàshílànr",

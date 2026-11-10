@@ -145,6 +145,12 @@ function results() {
     ${state.mode === 'transit' ? html`<div class="chips route-opts"><button type="button" class="chip depart" data-depart>${icon('clock', 'sm')} ${state.depart === 'now' ? '지금 출발' : state.depart + ' 출발'} <span class="caret"></span></button><span class="sep" aria-hidden="true"></span>${Object.entries(transit.STRATEGIES).map(([k, s]) => html`<button type="button" class="chip" data-strategy="${k}" aria-pressed="${state.strategy === k}">${s.label}</button>`)}</div>` : ''}`;
   if (state.status === 'resolving' || state.status === 'computing') return raw(head + html`<div style="margin-top:var(--s-3)"><div class="skeleton" aria-busy="true"></div><div class="skeleton"></div><p class="note" style="text-align:center">${state.status === 'resolving' ? '위치 찾는 중…' : '경로 계산 중…'}</p></div>`);
   if (!state.from || !state.to) return raw(head + html`<div class="empty"><h2>출발지와 도착지를 골라 주세요</h2><p>위의 칸을 눌러 선택할 수 있어요</p></div>`);
+  const BJ = { lat: 39.9177, lon: 116.3970 }; // 자금성 (geo.js BEIJING_CENTER와 같음)
+  if (state.from.ref === 'me' && distance(state.from, BJ) > 80000) {
+    // 한국 등 베이징 밖에서 '내 위치'로 길찾기를 열면 경로가 없다는 오류처럼 보여서 따로 안내
+    const alt = refOf(state.to) === 'place:baochen_hotel' ? ['place:pek_t2', '공항(T2)'] : ['place:baochen_hotel', '호텔'];
+    return raw(head + html`<div class="empty">${icon('metro')}<h2>지금은 베이징 밖이에요</h2><p>내 위치가 베이징에서 약 ${fmtDist(distance(state.from, BJ))} 떨어져 있어요. 베이징에 도착하면 '내 위치'로 바로 길찾기가 돼요.</p><div class="inline" style="justify-content:center"><a class="btn sm primary" href="#/route?from=${alt[0]}&to=${refOf(state.to)}">${alt[1]}에서 출발로 미리 보기</a></div></div>`);
+  }
   if (!state.plans.length) {
     const d = distance(state.from, state.to);
     return raw(head + html`<div class="empty">${icon('metro')}<h2>지하철 경로가 없어요</h2><p>${d < 1500 ? `직선 ${fmtDist(d)}라 걸어가는 편이 빨라요.` : '근처(2.5km)에 역이 없거나 너무 멀어요. 택시를 확인해 보세요.'}</p><div class="inline" style="justify-content:center"><button type="button" class="btn sm" data-mode="walk">도보 보기</button><button type="button" class="btn sm" data-mode="taxi">택시 요금 보기</button></div></div>`);

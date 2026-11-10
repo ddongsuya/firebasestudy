@@ -3,15 +3,15 @@ import { test, expect, boot, go, a11y } from './fixtures.mjs';
 test.describe('F06 저장 · 호텔', () => {
   test('F06-H1 ★ 저장 → 저장 탭 → 호텔 설정 → 홈 "호텔로"', async ({ page }) => {
     await boot(page, '#/place/tiantan');
-    await page.getByRole('button', { name: '저장' }).click();
-    await expect(page.getByRole('button', { name: '저장' })).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('button', { name: /^저장(됨)?$/ }).click();
+    await expect(page.getByRole('button', { name: /^저장(됨)?$/ })).toHaveAttribute('aria-pressed', 'true');
     await go(page, '#/fav');
     await expect(page.getByRole('heading', { name: '저장' })).toBeVisible();
     await expect(page.locator('#panel').getByText('천단공원').first()).toBeVisible();
     await a11y(page, 'S11');
     await page.getByRole('link', { name: '설정' }).first().click();
     await expect(page.getByRole('heading', { name: '호텔로 쓸 곳 고르기' })).toBeVisible();
-    await page.getByRole('button', { name: /천단공원/ }).click();
+    await page.locator('#panel').getByRole('button', { name: /천단공원/ }).click();
     await expect(page.locator('#panel').getByText('호텔', { exact: true }).first()).toBeVisible();
     await go(page, '#/');
     await expect(page.getByRole('link', { name: '호텔로' })).toBeVisible();
@@ -20,7 +20,7 @@ test.describe('F06 저장 · 호텔', () => {
   });
   test('F06-E1 같은 곳 두 번 눌러도 하나만, 해제 실행 취소', async ({ page }) => {
     await boot(page, '#/place/tiantan');
-    const star = page.getByRole('button', { name: '저장' });
+    const star = page.getByRole('button', { name: /^저장(됨)?$/ });
     await star.click(); await star.click();
     await expect(star).toHaveAttribute('aria-pressed', 'false');
     await page.getByRole('button', { name: '실행 취소' }).click();
@@ -30,7 +30,7 @@ test.describe('F06 저장 · 호텔', () => {
   });
   test('F06-E2 새로고침 후에도 저장 유지, 전부 중국어로', async ({ page }) => {
     await boot(page, '#/place/tiantan');
-    await page.getByRole('button', { name: '저장' }).click();
+    await page.getByRole('button', { name: /^저장(됨)?$/ }).click();
     await page.reload(); await page.waitForSelector('#chips .chip', { state: 'attached' });
     await go(page, '#/fav');
     await page.getByRole('button', { name: '전부 중국어로' }).click();
@@ -53,7 +53,7 @@ test.describe('F06 저장 · 호텔', () => {
 test.describe('S11 항목 메뉴(액션 시트)', () => {
   test('F06-H2 메뉴에서 메모 쓰기와 폴더 이동', async ({ page }) => {
     await boot(page, '#/place/tiantan');
-    await page.getByRole('button', { name: '저장' }).click();
+    await page.getByRole('button', { name: /^저장(됨)?$/ }).click();
     await go(page, '#/fav');
     await page.getByRole('button', { name: '더보기' }).first().click();
     await page.getByRole('button', { name: /메모 쓰기/ }).click();

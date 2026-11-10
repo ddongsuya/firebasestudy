@@ -4,6 +4,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 export const test = base.extend({
   page: async ({ page }, use) => {
+    await page.clock.setFixedTime(new Date('2026-11-12T06:00:00Z'));   // 베이징 11/12 14:00 (지하철 운행 중)
     const errors = [];
     page.on('console', m => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
     page.on('pageerror', e => errors.push('pageerror: ' + e.message));

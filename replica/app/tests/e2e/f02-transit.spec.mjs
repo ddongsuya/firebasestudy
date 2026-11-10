@@ -6,19 +6,21 @@ test.describe('F02 지하철 길찾기', () => {
     const cards = page.locator('.route-card');
     await expect(cards.first()).toBeVisible({ timeout: 10000 });
     expect(await cards.count()).toBeGreaterThanOrEqual(1);
-    await expect(cards.first()).toContainText(/약 .*분/);
+    await expect(cards.first()).toContainText(/\d+분/);
+    await expect(cards.first()).toContainText(/\d\d:\d\d 도착/);
     await expect(cards.first()).toContainText('¥');
     await expect(page.getByText('가장 빠름')).toBeVisible();
     await a11y(page, 'S06');
     await cards.first().click();
     await expect(page).toHaveURL(/sel=0/);
     await expect(page.getByRole('list').filter({ hasText: '내 위치' })).toBeVisible();
-    const expand = page.getByRole('button', { name: /역 · 약/ }).first();
+    await page.getByRole('button', { name: '시트 펼치기' }).click();
+    const expand = page.getByRole('button', { name: /정거장/ }).first();
     await expand.click();
     await expect(expand).toHaveAttribute('aria-expanded', 'true');
     await a11y(page, 'S07');
-    await expect(page.getByRole('link', { name: /첫 역까지 도보 안내/ })).toBeVisible();
-    await expect(page.getByRole('link', { name: '고덕 앱으로 열기' })).toHaveAttribute('href', /uri\.amap\.com\/navigation/);
+    await expect(page.getByRole('link', { name: /첫 역까지 안내/ })).toBeVisible();
+    await expect(page.getByRole('link', { name: '고덕 앱' })).toHaveAttribute('href', /uri\.amap\.com\/navigation/);
   });
   test('F02-H2 전략 전환: 환승 적게 / 걷기 적게', async ({ page }) => {
     await boot(page, '#/route?from=station:wangjing&to=place:gugong');

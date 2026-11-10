@@ -1,7 +1,7 @@
 // S10 주변 탐색
 import { D, nearby } from '../data.js';
 import * as mapx from '../map.js';
-import { $, html, icon, toast } from '../ui.js';
+import { $, html, icon, catIcon, toast } from '../ui.js';
 import { locate } from '../geo.js';
 import { row } from './search.js';
 
@@ -15,7 +15,7 @@ export async function show(params) {
 }
 function render(status) {
   const center = state.centerMode === 'me' && app.me ? app.me : mapx.center();
-  const cats = [{ id: 'all', label_ko: '전체', icon: '🗺️' }, ...D.categories.filter(c => D.places.some(p => p.cat === c.id)), { id: 'station', label_ko: '지하철역', icon: '🚇' }];
+  const cats = [{ id: 'all', label_ko: '전체' }, ...D.categories.filter(c => D.places.some(p => p.cat === c.id)), { id: 'station', label_ko: '지하철역' }];
   const items = status ? [] : nearby(center, { radius: state.radius, cats: state.cat === 'all' ? null : [state.cat], kinds: state.cat === 'station' ? ['station'] : state.cat === 'all' ? ['place', 'station'] : ['place'], sort: state.sort, limit: 60 });
   panel.innerHTML = html`
     <div class="panel-head">
@@ -23,7 +23,7 @@ function render(status) {
       <button type="button" class="chip" id="btnCenter" aria-pressed="${state.centerMode === 'me'}">${icon('locate', 'sm')} ${state.centerMode === 'me' ? '내 위치 기준' : '지도 중심 기준'}</button>
     </div>
     <div class="panel-body">
-      <div class="chips">${cats.map(c => html`<button type="button" class="chip" data-cat="${c.id}" aria-pressed="${state.cat === c.id}">${c.icon} ${c.label_ko}</button>`)}</div>
+      <div class="chips">${cats.map(c => html`<button type="button" class="chip" data-cat="${c.id}" aria-pressed="${state.cat === c.id}">${catIcon(c.id, 'sm')} ${c.label_ko}</button>`)}</div>
       <div class="chips" style="margin-top:var(--s-2)">${[500, 1000, 1500, 3000].map(r => html`<button type="button" class="chip" data-radius="${r}" aria-pressed="${state.radius === r}">${r >= 1000 ? r / 1000 + 'km' : r + 'm'}</button>`)}<button type="button" class="chip" data-sort="distance" aria-pressed="${state.sort === 'distance'}">가까운 순</button><button type="button" class="chip" data-sort="rating" aria-pressed="${state.sort === 'rating'}">평점 순</button></div>
       ${status === 'locating' ? html`<div class="skeleton" style="margin-top:var(--s-3)" aria-busy="true"></div><p class="note" style="text-align:center">위치 찾는 중…</p>`
         : items.length ? html`<div class="list" style="margin-top:var(--s-3)">${items.map(it => row(it, { dist: it.distance_m }))}</div>`

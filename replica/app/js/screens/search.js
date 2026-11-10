@@ -1,7 +1,7 @@
 // S02 검색 입력·자동완성, S03 결과
 import { D, search } from '../data.js';
 import * as store from '../store.js';
-import { $, html, raw, icon, lineChip, fmtDist } from '../ui.js';
+import { $, html, raw, icon, catIcon, lineChip, fmtDist } from '../ui.js';
 import { distance } from '../geo.js';
 
 let inp, results;
@@ -25,8 +25,8 @@ export function init() {
   });
   results.addEventListener('keydown', e => { if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { const rows = [...results.querySelectorAll('.row-place')]; const i = rows.indexOf(document.activeElement); const n = rows[i + (e.key === 'ArrowDown' ? 1 : -1)]; if (n) n.focus(); else if (e.key === 'ArrowUp') inp.focus(); e.preventDefault(); } });
 }
-function open() { document.body.classList.add('searching'); $('#btnSearchBack').classList.remove('hidden'); results.classList.remove('hidden'); inp.setAttribute('aria-expanded', 'true'); render(); }
-export function close() { document.body.classList.remove('searching'); $('#btnSearchBack').classList.add('hidden'); results.classList.add('hidden'); inp.setAttribute('aria-expanded', 'false'); inp.blur(); }
+function open() { document.body.classList.add('searching'); $('#btnSearchBack').classList.remove('hidden'); results.classList.remove('hidden'); render(); }
+export function close() { document.body.classList.remove('searching'); $('#btnSearchBack').classList.add('hidden'); results.classList.add('hidden'); inp.blur(); }
 function render() {
   const q = inp.value.trim(); $('#btnClear').classList.toggle('hidden', !q);
   if (!q) {
@@ -54,15 +54,20 @@ export function showResults(params) {
   if (rstate.sort === 'distance') items.sort((a, b) => a.distance_m - b.distance_m);
   else items.sort((a, b) => (a.ref.name_ko || a.ref.ko).localeCompare(b.ref.name_ko || b.ref.ko, 'ko'));
   mapx.renderPlaces(items.map(({ kind, ref }) => ({ kind, ref })), { labelMode: store.settings().label_mode, onClick: (kind, ref) => app.go(kind === 'place' ? `#/place/${ref.id}` : `#/station/${ref.id}`) });
-  if (items.length) mapx.map.fitBounds(items.map(i => [i.ref.lat, i.ref.lon]), { paddingTopLeft: [30, 120], paddingBottomRight: [30, Math.round(mapx.map.getSize().y * 0.45)] });
   openSheet(html`
-    <div class="sheet-head"><h2>'${q}' 검색 결과 <span class="muted t-sm">${items.length}곳</span></h2><button type="button" class="btn icon" id="btnCloseSheet" aria-label="닫기">${icon('x')}</button></div>
+    <div class="sheet-head" data-peek><h2>'${q}' 검색 결과 <span class="muted t-sm tnum">${items.length}곳</span></h2><button type="button" class="btn icon ghost-round" id="btnCloseSheet" aria-label="닫기">${icon('x')}</button></div>
     <div class="chips" role="group" aria-label="정렬"><button type="button" class="chip" data-sort="distance" aria-pressed="${rstate.sort === 'distance'}">${app.me ? '내 위치에서 가까운 순' : '지도 중심에서 가까운 순'}</button><button type="button" class="chip" data-sort="name" aria-pressed="${rstate.sort === 'name'}">이름순</button></div>
     ${items.length ? html`<div class="list" style="margin-top:var(--s-2)">${items.map(it => row(it, { dist: it.distance_m }))}</div>` : html`<div class="empty">${icon('search')}<h2>'${q}'을(를) 못 찾았어요</h2><p>한글·중국어·병음으로 다시 검색해 보세요</p></div>`}
-  `, { onClose: () => { inp.value = ''; $('#btnClear').classList.add('hidden'); } });
+  `, { initial: 'half', keep: params._keep, onClose: () => { inp.value = ''; $('#btnClear').classList.add('hidden'); } });
+  if (items.length && !params._keep) requestAnimationFrame(() => {
+    // 먼 교외 결과 몇 개 때문에 지도가 너무 멀어지지 않게, 가까운 8곳(+ 그 거리의 1.5배 안)만 맞춘다
+    const near = [...items].sort((a, b) => a.distance_m - b.distance_m);
+    const lim = (near[Math.min(7, near.length - 1)].distance_m || 0) * 1.5 + 500;
+    mapx.fitVisible(near.filter(i => i.distance_m <= lim).map(i => [i.ref.lat, i.ref.lon]), { maxZoom: 15 });
+  });
   $('#btnCloseSheet').onclick = () => app.go('#/');
-  $('#sheetBody').addEventListener('click', e => {
-    const s = e.target.closest('[data-sort]'); if (s) { rstate.sort = s.dataset.sort; showResults(params); return; }
+  $('#sheetBody').onclick = (e => {
+    const s = e.target.closest('[data-sort]'); if (s) { rstate.sort = s.dataset.sort; showResults({ ...params, _keep: true }); return; }
     const go = e.target.closest('[data-go]'); if (go) app.go(go.dataset.go);
   });
 }
@@ -70,7 +75,7 @@ export function row({ kind, ref }, { dist = null } = {}) {
   const d = dist ?? (app.me ? distance(app.me, ref) : null);
   if (kind === 'place') {
     const cat = D.catById[ref.cat];
-    return html`<button type="button" class="row-place" data-go="#/place/${ref.id}" data-place="${ref.id}"><span class="ico" aria-hidden="true">${cat?.icon || '📍'}</span><span class="main"><span class="name">${ref.name_ko} <span class="muted t-sm zh">${ref.name_zh}</span></span><span class="sub">${cat?.label_ko || ''} · ${ref.metro_note || ref.address_zh}</span></span>${d != null ? html`<span class="meta">${fmtDist(d)}</span>` : ''}</button>`;
+    return html`<button type="button" class="row-place" data-go="#/place/${ref.id}" data-place="${ref.id}"><span class="ico cat-${ref.cat}" aria-hidden="true">${catIcon(ref.cat)}</span><span class="main"><span class="name">${ref.name_ko} <span class="muted t-sm zh">${ref.name_zh}</span></span><span class="sub">${cat?.label_ko || ''} · ${(ref.metro_note || ref.address_zh || '').split(/ · |, /)[0]}</span></span>${d != null ? html`<span class="meta">${fmtDist(d)}</span>` : ''}</button>`;
   }
-  return html`<button type="button" class="row-place" data-go="#/station/${ref.id}" data-station="${ref.id}"><span class="ico" aria-hidden="true">${icon('metro')}</span><span class="main"><span class="name">${ref.ko}역 <span class="muted t-sm zh">${ref.zh}站</span></span><span class="sub">${raw(ref.lines.map(l => lineChip(l, { badge: true }).__raw).join(' '))}</span></span>${d != null ? html`<span class="meta">${fmtDist(d)}</span>` : ''}</button>`;
+  return html`<button type="button" class="row-place" data-go="#/station/${ref.id}" data-station="${ref.id}"><span class="ico cat-station" aria-hidden="true">${icon('metro')}</span><span class="main"><span class="name">${ref.ko}역 <span class="muted t-sm zh">${ref.zh}站</span></span><span class="sub">${raw(ref.lines.map(l => lineChip(l, { badge: true }).__raw).join(' '))}</span></span>${d != null ? html`<span class="meta">${fmtDist(d)}</span>` : ''}</button>`;
 }

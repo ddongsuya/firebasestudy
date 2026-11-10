@@ -63,3 +63,35 @@ Actual: 빈 상태 문구만 보이고 배너 없음. 출발지 칸을 다시 �
 Evidence: e2e F02-E2 실패 `getByRole('alert') element(s) not found`
 Suspected cause: route.show()가 출발지 실패 시 editing='from'을 설정하지 않음
 Status: fixed (route.js show(): 출발지 없으면 editing='from')
+
+### BUG-005: 지도에서 위치를 고른 뒤 다른 화면으로 가도 가운데 핀과 시트가 남음
+
+- Severity: S1 (핀 찍기 이후 모든 화면이 가려짐)
+- Flow / case: F07 / 핀 찍기
+- Screen: S12
+- Steps: 지도 길게 누르기 → 지도 한 번 움직이기 → 하단 탭 이동
+- Expected: 핀·시트 사라짐 / Actual: 가운데 핀이 계속 떠 있고 시트가 다시 열림
+- Suspected cause: 첫 moveend 때 시트를 다시 열면서 정리 함수(_onClose)가 덮어써짐
+- Status: fixed (pick.js 재작성, 라우터에서 pick.stop() 호출)
+
+### BUG-006: 핀 위치가 실제 좌표보다 6~8px 위·옆으로 찍힘, iOS에서 길게 누르기 무반응
+
+- Severity: S2
+- Screen: S01 지도
+- Suspected cause: iconAnchor가 핀 꼬리 끝이 아님 / iOS Safari는 contextmenu를 안 보냄
+- Status: fixed (핀 형태·앵커 재설계, 550ms 롱프레스 핸들러)
+
+### BUG-007: 큐레이션 장소 좌표가 평균 300m 동쪽으로 치우침
+
+- Severity: S2 (핀·도보 시간·가까운 역이 틀어짐)
+- Evidence: OSM(Nominatim) 대조, Wikidata 좌표는 중앙값 10m로 일치. 수동 85곳은 표준편차 약 350m
+- Status: fixed for 58곳(이름·유형이 맞고 60~2,500m 차이인 것만 OSM 좌표로 교체, coord_src "osm"). 입구 기준 좌표(자금성·천단·이화원·원명원·장성 4곳)와 지점이 애매한 체인점은 유지
+
+### BUG-008: 그 밖의 정리
+
+- 길찾기 경로선이 홈 지도에 남음 → 라우터에서 clearRoute (fixed)
+- 검색 결과 정렬을 누를 때마다 클릭 리스너가 쌓임(더보기 패널도 같음) → onclick 대입으로 변경 (fixed)
+- 마우스로 시트 손잡이를 누르면 포인터 캡처가 시트 전체로 가서 click이 사라짐 → 실제 끌 때만 캡처 (fixed)
+- 장소 이름에 쉼표가 있으면 경로 출발·도착 해석 실패 → 파서 수정 (fixed)
+- 검색 결과 지도가 먼 교외 1~2곳 때문에 너무 멀리 축소됨 → 가까운 8곳 기준으로 맞춤 (fixed)
+- 첫차 전 경고가 노선마다 빨간 상자로 쌓임 → 한 상자로 묶음 (fixed)

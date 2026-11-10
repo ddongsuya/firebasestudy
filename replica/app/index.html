@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/tokens.css">
   <link rel="stylesheet" href="./css/ui.css">
   <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/v3.css">
 </head>
 <body>
 <div id="app">
@@ -25,26 +26,29 @@
   <div class="topbar" id="topbar">
     <div class="searchbar" id="searchbar">
       <button class="btn icon hidden" id="btnSearchBack" aria-label="뒤로"></button>
-      <span class="brand" id="brand">고덕 KO</span>
-      <input id="q" type="search" placeholder="장소·역 검색 (한글·中文·pinyin)" autocomplete="off" enterkeyhint="search" aria-label="장소 검색" role="combobox" aria-expanded="false" aria-controls="results">
+      <span class="sb-ic" id="brand" aria-hidden="true"></span>
+      <input id="q" type="search" placeholder="장소·역 검색 · 한글, 中文, pinyin" autocomplete="off" enterkeyhint="search" aria-label="장소 검색" aria-controls="results">
       <button class="btn icon hidden" id="btnClear" aria-label="지우기"></button>
     </div>
-    <div id="results" class="results hidden" role="listbox" aria-label="검색 결과"></div>
-    <div id="chips" class="chips"></div>
-    <div id="homeShortcuts" class="shortcuts"></div>
+    <div id="results" class="results hidden" role="region" aria-label="검색 결과"></div>
+    <div id="chips" class="chips" role="toolbar" aria-label="지도에 표시할 종류"></div>
   </div>
 
   <!-- 우측 FAB (S01) -->
   <div class="fabs" id="fabs">
-    <button class="fab text" id="btnLang" aria-label="지도 글자 언어 전환" aria-pressed="false">中</button>
-    <button class="fab" id="btnZoomIn" aria-label="확대"></button>
-    <button class="fab" id="btnZoomOut" aria-label="축소"></button>
+    <div class="fab-group">
+      <button class="fab text" id="btnLang" aria-label="지도 글자 언어 전환" aria-pressed="false">中</button>
+      <button class="fab desk" id="btnZoomIn" aria-label="확대"></button>
+      <button class="fab desk" id="btnZoomOut" aria-label="축소"></button>
+    </div>
     <button class="fab" id="btnLocate" aria-label="현재 위치" aria-pressed="false"></button>
-    <button class="fab route" id="btnRoute" aria-label="길찾기"></button>
   </div>
 
+  <!-- 홈: 다음 일정 카드 -->
+  <section id="nextCard" class="next-card hidden" aria-label="다음 일정"></section>
+
   <!-- 바텀 시트 (S04, S13, S14) -->
-  <div id="sheet" class="sheet" role="dialog" aria-label="상세"><div class="grip" aria-hidden="true"></div><div class="sheet-body" id="sheetBody"></div></div>
+  <div id="sheet" class="sheet" role="dialog" aria-label="상세"><div class="grip" role="button" tabindex="0" aria-label="시트 펼치기"><span></span></div><div class="sheet-body" id="sheetBody"></div></div>
 
   <!-- 전체 패널 (S05~S08, S10, S11, S12, S17) -->
   <section id="panel" class="panel hidden" aria-live="polite"></section>
@@ -52,7 +56,7 @@
   <!-- 하단 탭 -->
   <nav id="tabbar" class="tabbar" aria-label="주요" role="tablist">
     <button class="tab" role="tab" data-tab="map" aria-selected="true"><span class="i"></span>지도</button>
-    <button class="tab" role="tab" data-tab="nearby" aria-selected="false"><span class="i"></span>주변</button>
+    <button class="tab" role="tab" data-tab="trip" aria-selected="false"><span class="i"></span>일정</button>
     <button class="tab" role="tab" data-tab="route" aria-selected="false"><span class="i"></span>길찾기</button>
     <button class="tab" role="tab" data-tab="fav" aria-selected="false"><span class="i"></span>저장<span id="favBadge" class="badge hidden">0</span></button>
     <button class="tab" role="tab" data-tab="more" aria-selected="false"><span class="i"></span>더보기</button>

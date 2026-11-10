@@ -1,10 +1,10 @@
 /* 고덕 KO v2 — 오프라인 캐시: 앱 셸 + 데이터(캐시 우선, 백그라운드 갱신), 타일(네트워크 우선, 실패 시 캐시) */
-const VERSION = 'goduk-v2.2';
+const VERSION = 'goduk-v3.1';
 const TILE_CACHE = 'goduk-tiles-v2';
 const TILE_LIMIT = 5000; // 약 60~80MB. "이 지역 미리 저장"과 함께 씀
 const SHELL = [
   './', './index.html', './manifest.json',
-  './css/tokens.css', './css/ui.css', './css/app.css',
+  './css/tokens.css', './css/ui.css', './css/app.css', './css/v3.css', './js/sheet.js',
   './js/main.js', './js/ui.js', './js/map.js', './js/data.js', './js/geo.js', './js/gcj02.js', './js/store.js', './js/deeplink.js',
   './js/routing/transit.js', './js/routing/walk.js', './js/routing/taxi.js', './js/routing/fare.js', './js/routing/schedule.js',
   './js/screens/home.js', './js/screens/search.js', './js/screens/place.js', './js/screens/route.js', './js/screens/walknav.js', './js/screens/trip.js',

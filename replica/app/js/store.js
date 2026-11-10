@@ -1,6 +1,6 @@
 // 사용자 데이터: localStorage["goduk.v2"] 문서 하나. v1 키(goduk.favs, goduk.tileLang) 마이그레이션.
 const KEY = 'goduk.v2';
-const DEFAULT = () => ({ v: 2, folders: [], favorites: [], frequent: {}, history: [], settings: { tile_lang: 'zh_cn', label_mode: 'both', theme: 'auto', walk_router: 'straight', tile_url: '' } });
+const DEFAULT = () => ({ v: 2, folders: [], favorites: [], frequent: {}, history: [], checks: {}, vault: { notes: [], images: [] }, settings: { tile_lang: 'zh_cn', label_mode: 'both', theme: 'auto', walk_router: 'straight', tile_url: '' } });
 let doc = null;
 const listeners = new Set();
 export const uuid = () => (crypto.randomUUID ? crypto.randomUUID() : 'id-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8));
@@ -59,6 +59,18 @@ export function clearHistory() { const d = get(); d.history = []; save(d); }
 // ── 설정 ──
 export const settings = () => get().settings;
 export function setSetting(k, v) { const d = get(); d.settings[k] = v; save(d); }
+// ── 체크리스트(일정·준비물) ──
+export const checked = key => !!get().checks?.[key];
+export function setChecked(key, on) { const d = get(); d.checks ||= {}; if (on) d.checks[key] = 1; else delete d.checks[key]; save(d); }
+export function uncheckPrefix(prefix) { const d = get(); for (const k of Object.keys(d.checks || {})) if (k.startsWith(prefix)) delete d.checks[k]; save(d); }
+// ── 예약·티켓 보관함(이 기기에만) ──
+export const vault = () => { const d = get(); d.vault ||= { notes: [], images: [] }; d.vault.notes ||= []; d.vault.images ||= []; return d.vault; };
+export function addNote(title, body) { const d = get(); vault().notes.push({ id: uuid(), title, body, updated_at: new Date().toISOString() }); save(d); }
+export function updateNote(id, patch) { const d = get(); const n = vault().notes.find(x => x.id === id); if (n) Object.assign(n, patch, { updated_at: new Date().toISOString() }); save(d); }
+export function removeNote(id) { const d = get(); d.vault.notes = vault().notes.filter(x => x.id !== id); save(d); }
+export function addImage(title, data) { const d = get(); vault().images.push({ id: uuid(), title, data, created_at: new Date().toISOString() }); const ok = trySave(d); if (!ok) { d.vault.images.pop(); throw new Error('quota'); } }
+export function removeImage(id) { const d = get(); d.vault.images = vault().images.filter(x => x.id !== id); save(d); }
+function trySave(d) { try { localStorage.setItem(KEY, JSON.stringify(d)); doc = d; listeners.forEach(f => f(doc)); return true; } catch { return false; } }
 // ── 내보내기/가져오기 ──
 export const exportJSON = () => JSON.stringify(get());
 export function importJSON(text) { const j = JSON.parse(text); if (j.v !== 2 || !Array.isArray(j.favorites)) throw new Error('형식이 맞지 않아요'); save({ ...DEFAULT(), ...j }); }

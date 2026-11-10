@@ -2,7 +2,7 @@ import { test, expect, boot, go } from './fixtures.mjs';
 
 test.describe('F03 도보 · F04 택시', () => {
   test('F03-H1 도보 모드 결과와 도보 안내 시작', async ({ page }) => {
-    await boot(page, '#/route?to=station:wangjing&mode=walk');
+    await boot(page, '#/route?from=me&to=station:wangjing&mode=walk');
     await expect(page.locator('.route-card').first()).toContainText('kcal', { timeout: 10000 });
     await page.locator('.route-card').first().click();
     await page.getByRole('link', { name: '도보 안내 시작' }).click();

@@ -34,7 +34,10 @@ function render(p) {
     </div>
     <div class="place-meta"><span class="py">${p.pinyin}</span>${cat ? html`<span>${cat.icon || ''} ${cat.label_ko || ''}</span>` : ''}${d != null ? html`<span>여기서 ${fmtDist(d)}</span>` : ''}${p.price_yuan ? html`<span>1인 약 ¥${p.price_yuan}</span>` : ''}</div>
     <div class="place-actions">
-      <a class="btn primary lg go" href="#/route?to=place:${p.id}">${icon('route')} 여기로 길찾기</a>
+      <div class="go2" role="group" aria-label="길찾기">
+        <a class="btn lg" href="#/route?from=place:${p.id}"><span class="pt-dot start"></span>여기서 출발</a>
+        <a class="btn primary lg" href="#/route?to=place:${p.id}"><span class="pt-dot end"></span>여기로 도착</a>
+      </div>
       <div class="quick">
         <button type="button" class="qa" id="btnDriver">${icon('car')}<span>기사에게 보여주기</span></button>
         <button type="button" class="qa" id="btnCopy">${icon('copy')}<span>중국어 복사</span></button>

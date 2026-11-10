@@ -20,7 +20,7 @@ export function show(params) {
       <div class="actions">
         ${forWhat === 'from' ? html`<a class="btn primary wide lg" href="#/route?from=pt:${c.lat.toFixed(6)},${c.lon.toFixed(6)},${name}${params.to ? '&to=' + params.to : ''}">출발지로 쓰기</a>`
         : forWhat === 'to' ? html`<a class="btn primary wide lg" href="#/route?to=pt:${c.lat.toFixed(6)},${c.lon.toFixed(6)},${name}${params.from ? '&from=' + params.from : ''}">도착지로 쓰기</a>`
-        : html`<a class="btn primary wide lg" href="#/route?to=pt:${c.lat.toFixed(6)},${c.lon.toFixed(6)},${name}">여기로 길찾기</a><a class="btn" href="#/route?from=pt:${c.lat.toFixed(6)},${c.lon.toFixed(6)},${name}">여기서 출발</a><button type="button" class="btn ghost" id="btnSaveHere">${icon('star')} 이 지점 저장</button>`}
+        : html`<a class="btn lg" href="#/route?from=pt:${c.lat.toFixed(6)},${c.lon.toFixed(6)},${name}">여기서 출발</a><a class="btn primary lg" href="#/route?to=pt:${c.lat.toFixed(6)},${c.lon.toFixed(6)},${name}">여기로 도착</a><button type="button" class="btn ghost" id="btnSaveHere">${icon('star')} 이 지점 저장</button>`}
       </div>`);
     $('#btnCloseSheet').onclick = () => history.back();
     $('#btnSaveHere') && ($('#btnSaveHere').onclick = () => { store.toggleFavorite({ custom_name: d.label_ko, custom_zh: d.label_zh, lat: c.lat, lon: c.lon }); toast('저장했어요'); app.go('#/fav'); });

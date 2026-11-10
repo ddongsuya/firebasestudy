@@ -5,6 +5,9 @@ test.describe('F02 지하철 길찾기', () => {
     // 운행 시간(베이징 10:00)으로 고정: 밤에 돌리면 막차가 끊겨 '가장 빠름'이 없다
     await page.clock.setFixedTime(new Date('2026-11-10T02:00:00Z'));
     await boot(page, '#/route?to=place:gugong');
+    // 출발지를 자동으로 채우지 않으므로 먼저 묻는다 → 내 위치 선택
+    await expect(page.getByRole('heading', { name: '어디서 출발하세요?' })).toBeVisible();
+    await page.locator('[data-pick="me"]').click();
     const cards = page.locator('.route-card');
     await expect(cards.first()).toBeVisible({ timeout: 10000 });
     expect(await cards.count()).toBeGreaterThanOrEqual(1);
@@ -21,6 +24,16 @@ test.describe('F02 지하철 길찾기', () => {
     await a11y(page, 'S07');
     await expect(page.getByRole('link', { name: /첫 역까지 도보 안내/ })).toBeVisible();
     await expect(page.getByRole('link', { name: '고덕 앱으로 열기' })).toHaveAttribute('href', /uri\.amap\.com\/navigation/);
+  });
+  test('F02-H4 장소에서 "여기서 출발" → 도착지를 묻고, 고르면 결과', async ({ page }) => {
+    await boot(page, '#/place/gugong');
+    await page.getByRole('link', { name: '여기서 출발' }).click();
+    await expect(page).toHaveURL(/#\/route\?from=place:gugong/);
+    await expect(page.getByRole('heading', { name: '어디로 가세요?' })).toBeVisible();
+    await expect(page.getByRole('button', { name: /출발지: 자금성/ })).toBeVisible();
+    await page.getByRole('searchbox', { name: '도착지 검색' }).fill('왕징');
+    await page.locator('#rqList').getByRole('button', { name: /왕징역/ }).first().click();
+    await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
   });
   test('F02-H2 전략 전환: 환승 적게 / 걷기 적게', async ({ page }) => {
     await boot(page, '#/route?from=station:wangjing&to=place:gugong');
@@ -46,12 +59,12 @@ test.describe('F02 지하철 길찾기', () => {
   });
   test('F02-E2 위치 권한 거부: 출발지 선택기로 안내', async ({ page, context }) => {
     await context.clearPermissions();
-    await boot(page, '#/route?to=place:gugong');
+    await boot(page, '#/route?from=me&to=place:gugong');
     await expect(page.getByRole('alert')).toContainText(/위치 권한|출발지/, { timeout: 10000 });
     await expect(page.getByRole('searchbox', { name: '출발지 검색' })).toBeVisible();
   });
   test('F02-E3 출발지 검색으로 선택', async ({ page }) => {
-    await boot(page, '#/route?to=place:gugong');
+    await boot(page, '#/route?from=me&to=place:gugong');
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
     await page.getByRole('button', { name: /출발지:/ }).click();
     const rq = page.getByRole('searchbox', { name: '출발지 검색' });

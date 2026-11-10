@@ -36,7 +36,8 @@ export async function show(p) {
   state.mode = p.mode || state.mode; state.strategy = p.strategy || state.strategy; state.sel = p.sel != null ? +p.sel : null; state.editing = p.edit || null;
   state.status = 'resolving'; state.error = null; state.plans = []; render();
   try {
-    [state.from, state.to] = await Promise.all([resolve(p.from || 'me'), p.to ? resolve(p.to) : null]);
+    // 출발지를 임의로 '내 위치'로 채우지 않는다. 비어 있으면 출발지부터 묻는다(내 위치는 목록 맨 위 한 번 탭)
+    [state.from, state.to] = await Promise.all([p.from ? resolve(p.from) : null, p.to ? resolve(p.to) : null]);
   } catch (e) {
     state.from = null; state.error = { denied: '위치 권한이 꺼져 있어요. 출발지를 직접 골라 주세요.', timeout: '위치를 찾지 못했어요. 출발지를 직접 골라 주세요.' }[e.code] || '출발지를 찾지 못했어요. 직접 골라 주세요.';
   }
@@ -61,20 +62,21 @@ async function compute() {
 }
 function departAt() { if (state.depart === 'now') return new Date(); const { y, mo, d } = beijingDateParts(); const [h, m] = state.depart.split(':'); return new Date(Date.UTC(y, mo - 1, d, +h - 8, +m)); }
 function setHash(extra = {}) {
-  const q = new URLSearchParams({ from: refOf(state.from), ...(state.to ? { to: refOf(state.to) } : {}), mode: state.mode, strategy: state.strategy, ...(state.sel != null ? { sel: state.sel } : {}), ...extra });
+  const q = new URLSearchParams({ ...(state.from ? { from: refOf(state.from) } : {}), ...(state.to ? { to: refOf(state.to) } : {}), mode: state.mode, strategy: state.strategy, ...(state.sel != null ? { sel: state.sel } : {}), ...extra });
   for (const [k, v] of [...q]) if (v === '' || v == null) q.delete(k);
   history.replaceState(null, '', '#/route?' + q.toString());
 }
 
 function render() {
-  const fromTxt = state.from?.name || (state.status === 'resolving' ? '위치 찾는 중…' : ''), toTxt = state.to?.name || '';
+  const fromTxt = state.from?.name || (state.status === 'resolving' && params.from ? '위치 찾는 중…' : ''), toTxt = state.to?.name || '';
+  const act = w => state.editing === w ? ' active' : '';
   panel.innerHTML = html`
     <div class="panel-head">
       <button type="button" class="btn icon" id="btnBack" aria-label="뒤로">${icon('back')}</button>
       <div class="route-input grow">
         <div class="lines">
-          <button type="button" class="field" id="fFrom" aria-label="출발지: ${fromTxt || '선택'}"><span class="dot start"></span><span class="grow" style="text-align:left;${!fromTxt ? 'color:var(--c-text-muted)' : ''}">${fromTxt || '출발지 선택'}</span>${state.status === 'resolving' && !state.from ? html`<span class="spinner on"></span>` : ''}</button>
-          <button type="button" class="field" id="fTo" aria-label="도착지: ${toTxt || '선택'}"><span class="dot end"></span><span class="grow" style="text-align:left;${!toTxt ? 'color:var(--c-text-muted)' : ''}">${toTxt || '어디로 가세요?'}</span></button>
+          <button type="button" class="field${act('from')}" id="fFrom" aria-label="출발지: ${fromTxt || '선택'}" aria-current="${state.editing === 'from' ? 'true' : 'false'}"><span class="dot start"></span><span class="grow" style="text-align:left;${!fromTxt ? 'color:var(--c-text-muted)' : ''}">${fromTxt || '출발지 선택'}</span>${state.status === 'resolving' && !state.from && params.from ? html`<span class="spinner on"></span>` : ''}</button>
+          <button type="button" class="field${act('to')}" id="fTo" aria-label="도착지: ${toTxt || '선택'}" aria-current="${state.editing === 'to' ? 'true' : 'false'}"><span class="dot end"></span><span class="grow" style="text-align:left;${!toTxt ? 'color:var(--c-text-muted)' : ''}">${toTxt || '도착지 선택'}</span></button>
         </div>
         <button type="button" class="btn icon swap" id="btnSwap" aria-label="출발·도착 바꾸기">${icon('swap')}</button>
       </div>
@@ -95,7 +97,8 @@ function editor() {
   const other = which === 'from' ? (state.to ? 'to=' + refOf(state.to) : '') : (state.from ? 'from=' + refOf(state.from) : '');
   return html`
     ${state.error ? html`<div class="banner warning" role="alert">${state.error}</div>` : ''}
-    <div class="searchbar" style="margin:var(--s-2) 0"><input id="rq" type="search" placeholder="${which === 'from' ? '출발지' : '도착지'} 검색 (한글·中文·pinyin)" autocomplete="off" enterkeyhint="search" aria-label="${which === 'from' ? '출발지' : '도착지'} 검색"></div>
+    <h2 class="editor-title"><span class="dot ${which === 'from' ? 'start' : 'end'}"></span>${which === 'from' ? '어디서 출발하세요?' : '어디로 가세요?'}</h2>
+    <div class="searchbar editor-search"><input id="rq" type="search" placeholder="${which === 'from' ? '출발지' : '도착지'} 검색 (한글·中文·pinyin)" autocomplete="off" enterkeyhint="search" aria-label="${which === 'from' ? '출발지' : '도착지'} 검색"></div>
     <div class="list" id="rqList">
       <button type="button" class="row-place" data-pick="me"><span class="ico">${icon('locate')}</span><span class="main"><span class="name">내 위치</span><span class="sub">GPS 현재 위치</span></span></button>
       <a class="row-place" href="#/pick?for=${which}&${other}"><span class="ico">${icon('map')}</span><span class="main"><span class="name">지도에서 고르기</span><span class="sub">핀을 옮겨 선택</span></span></a>

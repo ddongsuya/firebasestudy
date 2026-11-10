@@ -1,5 +1,5 @@
 /* 고덕 KO v2 — 오프라인 캐시: 앱 셸 + 데이터(캐시 우선, 백그라운드 갱신), 타일(네트워크 우선, 실패 시 캐시) */
-const VERSION = 'goduk-v2.1';
+const VERSION = 'goduk-v2.2';
 const TILE_CACHE = 'goduk-tiles-v2';
 const TILE_LIMIT = 5000; // 약 60~80MB. "이 지역 미리 저장"과 함께 씀
 const SHELL = [
@@ -10,7 +10,7 @@ const SHELL = [
   './js/screens/home.js', './js/screens/search.js', './js/screens/place.js', './js/screens/route.js', './js/screens/walknav.js',
   './js/offline.js', './js/screens/nearby.js', './js/screens/favorites.js', './js/screens/station.js', './js/screens/pick.js', './js/screens/driver.js', './js/screens/more.js',
   './data/categories.json', './data/places.json', './data/stations.json', './data/lines.json', './data/transfers.json', './data/fares.json', './data/phrases.json', './data/tips.json', './data/exits.json',
-  './vendor/leaflet/leaflet.js', './vendor/leaflet/leaflet.css', './vendor/leaflet/images/marker-icon.png', './vendor/leaflet/images/marker-shadow.png',
+  './vendor/leaflet/leaflet.js', './vendor/leaflet/leaflet.css', './vendor/leaflet/images/marker-icon.png', './vendor/leaflet/images/marker-shadow.png', './vendor/pretendard/PretendardVariable.woff2',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png',
 ];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });

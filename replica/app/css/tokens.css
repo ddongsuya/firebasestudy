@@ -22,11 +22,11 @@
   --t-xs-size: 12px; --t-xs-line: 16px; --t-xs-weight: 600;
   --t-sm-size: 13px; --t-sm-line: 18px; --t-sm-weight: 400;
   --t-base-size: 15px; --t-base-line: 22px; --t-base-weight: 400;
-  --t-md-size: 17px; --t-md-line: 24px; --t-md-weight: 600;
-  --t-lg-size: 20px; --t-lg-line: 26px; --t-lg-weight: 700;
-  --t-xl-size: 26px; --t-xl-line: 32px; --t-xl-weight: 800;
-  --t-display-size: 34px; --t-display-line: 40px; --t-display-weight: 800;
-  --t-driver-zh-size: 64px; --t-driver-zh-line: 72px; --t-driver-zh-weight: 900;
+  --t-md-size: 16px; --t-md-line: 22px; --t-md-weight: 600;
+  --t-lg-size: 18px; --t-lg-line: 24px; --t-lg-weight: 700;
+  --t-xl-size: 22px; --t-xl-line: 28px; --t-xl-weight: 700;
+  --t-display-size: 28px; --t-display-line: 34px; --t-display-weight: 700;
+  --t-driver-zh-size: 64px; --t-driver-zh-line: 72px; --t-driver-zh-weight: 800;
   --t-driver-addr-size: 30px; --t-driver-addr-line: 38px; --t-driver-addr-weight: 700;
   --s-0: 0px;
   --s-1: 4px;
@@ -59,7 +59,7 @@
   --l-gutter: 12px;
   --l-desktop-panel: 420px;
   --l-desktop-breakpoint: 720px;
-  --font-sans: -apple-system, "Apple SD Gothic Neo", Pretendard, "Noto Sans KR", "Malgun Gothic", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
   --safe-t: env(safe-area-inset-top, 0px);
   --safe-b: env(safe-area-inset-bottom, 0px);

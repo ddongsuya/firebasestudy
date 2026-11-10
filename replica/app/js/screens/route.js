@@ -122,7 +122,8 @@ function bind() {
   }
   $('#routeBody').addEventListener('click', async e => {
     const pick = e.target.closest('[data-pick]');
-    if (pick) { const which = state.editing; state.editing = null; state.status = 'resolving'; render(); try { state[which] = await resolve(pick.dataset.pick); } catch { state.error = '위치를 찾지 못했어요'; state.status = 'idle'; render(); return; } state.sel = null; setHash(); if (state.from && state.to) compute(); else { state.editing = state.from ? 'to' : 'from'; state.status = 'idle'; render(); } return; }
+    if (pick) { const which = state.editing; state.editing = null; state.status = 'resolving'; render(); try { state[which] = await resolve(pick.dataset.pick); } catch (err) { state.error = { denied: '위치 권한이 꺼져 있어요. 설정에서 허용하거나 아래에서 직접 골라 주세요.', timeout: '위치를 찾지 못했어요. 하늘이 보이는 곳에서 다시 누르거나 직접 골라 주세요.' }[err?.code] || '위치를 찾지 못했어요. 직접 골라 주세요.'; state.editing = which; state.status = 'idle'; render(); return; } // 실패하면 고르던 칸을 다시 열고 이유를 보여준다
+    state.error = null; state.sel = null; setHash(); if (state.from && state.to) compute(); else { state.editing = state.from ? 'to' : 'from'; state.status = 'idle'; render(); } return; }
     const mode = e.target.closest('[data-mode]'); if (mode) { state.mode = mode.dataset.mode; state.sel = null; setHash(); compute(); return; }
     const strat = e.target.closest('[data-strategy]'); if (strat) { state.strategy = strat.dataset.strategy; state.sel = null; setHash(); compute(); return; }
     const dep = e.target.closest('[data-depart]'); if (dep) { promptSheet('출발 시각 (베이징 시각)', { value: state.depart === 'now' ? '' : state.depart, placeholder: '예 22:30 · 비우면 지금 출발', submitLabel: '적용', onSubmit: v => { const m = (v || '').trim().match(/^(\d{1,2}):(\d{2})$/); state.depart = m && +m[1] < 24 && +m[2] < 60 ? m[1].padStart(2, '0') + ':' + m[2] : 'now'; state.sel = null; setHash(); compute(); } }); return; }

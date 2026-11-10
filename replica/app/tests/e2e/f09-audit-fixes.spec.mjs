@@ -33,4 +33,11 @@ test.describe('점검 수정', () => {
     await expect(page.locator('.pick-pin')).toBeHidden();
     await expect(page.locator('body')).not.toHaveClass(/picking/);
   });
+  test('위치가 꺼진 폰에서 "내 위치"를 누르면 이유를 보여주고 선택 화면을 다시 연다', async ({ page, context }) => {
+    await context.clearPermissions();
+    await boot(page, '#/route?to=place:gugong');
+    await page.locator('[data-pick=me]').first().click();
+    await expect(page.getByRole('alert')).toContainText('위치');
+    await expect(page.locator('#rq')).toBeVisible();
+  });
 });

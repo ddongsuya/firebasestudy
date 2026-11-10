@@ -138,7 +138,7 @@ function results() {
   }
   const best = Math.min(...state.plans.map(p => p.duration_s));
   return raw(head + html`<div style="margin-top:var(--s-3)">${state.plans.map((p, i) => card(p, i, p.duration_s === best))}</div>
-    ${state.mode === 'transit' ? html`<p class="note">시간은 역간 거리로 계산한 추정치예요(±10%). 첫차·막차는 종점 시각에 이 역까지 오는 시간을 더한 추정이라 10분쯤 여유를 두세요.</p>` : state.mode === 'taxi' ? html`<p class="note">베이징 택시 공시 요금(기본 ¥13/3km, ¥2.3/km, 야간 할증)으로 계산한 추정이에요. 정체·우회에 따라 달라져요.</p>` : html`<p class="note">${state.plans[0].note || ''}</p>`}`);
+    ${state.mode === 'transit' ? html`<p class="note">시간은 역간 거리로 계산한 추정치예요(±10%). 막차는 종점 기준이라 중간역은 더 이를 수 있어요.</p>` : state.mode === 'taxi' ? html`<p class="note">베이징 택시 공시 요금(기본 ¥13/3km, ¥2.3/km, 야간 할증)으로 계산한 추정이에요. 정체·우회에 따라 달라져요.</p>` : html`<p class="note">${state.plans[0].note || ''}</p>`}`);
 }
 function card(p, i, best) {
   const sched = p.schedule || { ok: true, warnings: [] };

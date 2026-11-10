@@ -109,3 +109,11 @@ test('출구: 역별 출구 목록, 장소↔출구 매칭(데이터 지정 또�
   const ming = { name_zh: '中华民族园', station_id: D.stations.find(s => s.zh === '北土城').id };
   assert.equal(bestExit(ming)?.code, 'A');
 });
+
+test('막차는 탈 역 통과 추정 시각으로 본다: 22:20 왕징→바오천 호텔은 아직 운행', () => {
+  const p = plan({ origin: { ...S('望京') }, destination: { ...P('baochen_hotel') } }, D)[0];
+  const r = check(p, new Date('2026-11-12T14:20:00Z'), D); // 베이징 22:20
+  assert.ok(r.ok, JSON.stringify(r.warnings));
+  const late = check(p, new Date('2026-11-12T16:10:00Z'), D); // 베이징 00:10
+  assert.ok(!late.ok);
+});

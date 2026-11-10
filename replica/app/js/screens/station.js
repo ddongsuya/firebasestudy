@@ -27,11 +27,12 @@ export function show(id) {
       <a class="btn" href="#/route?from=station:${s.id}">${icon('nav')} 여기서 출발</a>
       <button type="button" class="btn ghost" id="btnDriver">${icon('car')} 기사에게 보여주기</button>
     </div>
-    ${s.lines.map(l => { const line = D.lineById[l]; return html`<div class="kv"><span class="k">${line.ko}</span><span class="v">첫차 약 ${fmt(line.first_dep)} · 막차 약 ${fmt(line.last_dep)} <span class="muted t-sm">(종점 기준, 중간역은 다를 수 있어요)</span></span></div>`; })}
+    ${s.lines.map(l => { const line = D.lineById[l]; return html`<div class="kv"><span class="k">${line.ko}</span><span class="v">첫차 약 ${fmt(line.first_dep)} · 막차 약 ${fmt(line.last_dep)} <span class="muted t-sm">(종점 기준 · 이 역은 이동 시간만큼 늦어요)</span></span></div>`; })}
     ${exits.length ? html`<div class="section">출구 ${exits.length}개 <span class="muted" style="font-weight:400">(출구 번호·방향·주변, 중국어 위키백과 기준)</span></div><div class="list">${exits.map(e => html`<div class="row-place" style="align-items:flex-start"><span class="exit-chip" style="min-width:44px;justify-content:center">${e.code}</span><span class="main"><span class="name">${e.dir_ko || ''} ${e.accessible ? html`<span class="tag">엘리베이터</span>` : ''}</span><span class="sub zh" style="white-space:normal">${e.street_zh || ''}${e.landmarks_zh ? ' · ' + e.landmarks_zh : ''}</span></span></div>`)}</div>` : html`<p class="note">이 역의 출구 정보는 아직 없어요.</p>`}
     ${near.length ? html`<div class="section">이 역 근처</div><div class="list">${raw(near.map(n => row(n, { dist: n.d })).join(''))}</div>` : ''}
   `, { onClose: () => home.refreshMarkers() });
   $('#btnCloseSheet').onclick = () => history.length > 1 ? history.back() : app.go('#/');
+  $('#sheetBody').onclick = e => { const go = e.target.closest('[data-go]'); if (go) app.go(go.dataset.go); }; // '이 역 근처' 목록
   $('#btnFav').onclick = () => { const r = store.toggleFavorite({ station_id: s.id }); toast(r.on ? '저장했어요' : '저장을 해제했어요'); show(id); };
   $('#btnDriver').onclick = () => driver.show({ zh: `${s.zh}站`, addr: `地铁${s.lines.map(l => D.lineById[l].zh).join('/')} ${s.zh}站`, ko: `${s.ko}역` });
 }

@@ -2,6 +2,8 @@ import { test, expect, boot, go, a11y } from './fixtures.mjs';
 
 test.describe('F02 지하철 길찾기', () => {
   test('F02-H1 내 위치 → 자금성: 결과 카드, 상세 타임라인, 경유역 펼침', async ({ page }) => {
+    // 운행 시간(베이징 10:00)으로 고정: 밤에 돌리면 막차가 끊겨 '가장 빠름'이 없다
+    await page.clock.setFixedTime(new Date('2026-11-10T02:00:00Z'));
     await boot(page, '#/route?to=place:gugong');
     const cards = page.locator('.route-card');
     await expect(cards.first()).toBeVisible({ timeout: 10000 });

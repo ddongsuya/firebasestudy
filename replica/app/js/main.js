@@ -44,7 +44,7 @@ async function onRoute() {
   const seg = path.split('/').filter(Boolean);
   const params = Object.fromEntries(new URLSearchParams(qs || ''));
   app.tab = app.tabOf(hash); renderTabs();
-  document.body.classList.remove('searching', 'picking', 'navigating', 'panel-open');
+  document.body.classList.remove('searching', 'picking', 'navigating', 'panel-open', 'routing');
   $('#panel').classList.add('hidden'); $('#panel').classList.remove('with-map');
   walknav.stop();
   if (!seg.length) { closeSheet(); home.show(); return; }

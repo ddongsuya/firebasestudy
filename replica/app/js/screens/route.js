@@ -12,6 +12,7 @@ import { beijingHHMM, beijingDateParts } from '../routing/fare.js';
 import { amapRoute } from '../deeplink.js';
 import * as driver from './driver.js';
 import { row as searchRow } from './search.js';
+import { copyText } from './place.js';
 
 const state = { from: null, to: null, mode: 'transit', strategy: 'recommend', depart: 'now', plans: [], sel: null, editing: null, status: 'idle', error: null, walkPlan: null, taxiPlan: null };
 let panel, params = {};
@@ -31,18 +32,23 @@ export async function resolve(ref) {
 const refOf = x => x?.ref || 'me';
 
 export async function show(p) {
-  params = p; panel = $('#panel'); panel.classList.remove('hidden'); panel.classList.add('with-map');
+  params = p; panel = $('#panel'); panel.classList.remove('hidden'); panel.classList.add('with-map'); document.body.classList.add('routing');
   state.mode = p.mode || state.mode; state.strategy = p.strategy || state.strategy; state.sel = p.sel != null ? +p.sel : null; state.editing = p.edit || null;
   state.depart = /^\d\d:\d\d$/.test(p.at || '') ? p.at : 'now'; // 출발 시각은 주소(at=)에만 남긴다. 다른 길찾기로 넘어가면 '지금 출발'로 돌아감
   state.status = 'resolving'; state.error = null; state.plans = []; render();
   try {
-    [state.from, state.to] = await Promise.all([resolve(p.from || 'me'), p.to ? resolve(p.to) : null]);
+    // 출발지를 임의로 '내 위치'로 채우지 않는다. 비어 있으면 출발지부터 묻는다(내 위치는 목록 맨 위 한 번 탭)
+    // 링크가 한쪽만 정하면(장소의 "여기서 출발"/"여기로 도착") 앞서 골라 둔 반대쪽은 그대로 둔다
+    const prevFrom = state.from && refOf(state.from), prevTo = state.to && refOf(state.to);
+    const fromRef = p.from || (prevFrom && prevFrom !== p.to ? prevFrom : null);
+    const toRef = p.to || (prevTo && prevTo !== p.from ? prevTo : null);
+    [state.from, state.to] = await Promise.all([fromRef ? resolve(fromRef) : null, toRef ? resolve(toRef) : null]);
   } catch (e) {
     state.from = null; state.error = { denied: '위치 권한이 꺼져 있어요. 출발지를 직접 골라 주세요.', timeout: '위치를 찾지 못했어요. 출발지를 직접 골라 주세요.' }[e.code] || '출발지를 찾지 못했어요. 직접 골라 주세요.';
   }
   if (!state.from && !state.editing) state.editing = 'from';
-  else if (!p.to && !state.editing) state.editing = 'to';
-  if (state.from && state.to && !state.editing) await compute(); else { state.status = 'idle'; render(); }
+  else if (!state.to && !state.editing) state.editing = 'to';
+  if (state.from && state.to && !state.editing) { setHash(); await compute(); } else { state.status = 'idle'; render(); }
 }
 async function compute() {
   state.status = 'computing'; render();
@@ -61,20 +67,21 @@ async function compute() {
 }
 function departAt() { if (state.depart === 'now') return new Date(); const { y, mo, d } = beijingDateParts(); const [h, m] = state.depart.split(':'); return new Date(Date.UTC(y, mo - 1, d, +h - 8, +m)); }
 function setHash(extra = {}) {
-  const q = new URLSearchParams({ from: refOf(state.from), ...(state.to ? { to: refOf(state.to) } : {}), mode: state.mode, strategy: state.strategy, ...(state.sel != null ? { sel: state.sel } : {}), ...(state.depart !== 'now' ? { at: state.depart } : {}), ...extra });
+  const q = new URLSearchParams({ ...(state.from ? { from: refOf(state.from) } : {}), ...(state.to ? { to: refOf(state.to) } : {}), mode: state.mode, strategy: state.strategy, ...(state.sel != null ? { sel: state.sel } : {}), ...(state.depart !== 'now' ? { at: state.depart } : {}), ...extra });
   for (const [k, v] of [...q]) if (v === '' || v == null) q.delete(k);
   history.replaceState(null, '', '#/route?' + q.toString());
 }
 
 function render() {
-  const fromTxt = state.from?.name || (state.status === 'resolving' ? '위치 찾는 중…' : ''), toTxt = state.to?.name || '';
+  const fromTxt = state.from?.name || (state.status === 'resolving' && params.from ? '위치 찾는 중…' : ''), toTxt = state.to?.name || '';
+  const act = w => state.editing === w ? ' active' : '';
   panel.innerHTML = html`
     <div class="panel-head">
       <button type="button" class="btn icon" id="btnBack" aria-label="뒤로">${icon('back')}</button>
       <div class="route-input grow">
         <div class="lines">
-          <button type="button" class="field" id="fFrom" aria-label="출발지: ${fromTxt || '선택'}"><span class="dot start"></span><span class="grow" style="text-align:left;${!fromTxt ? 'color:var(--c-text-muted)' : ''}">${fromTxt || '출발지 선택'}</span>${state.status === 'resolving' && !state.from ? html`<span class="spinner on"></span>` : ''}</button>
-          <button type="button" class="field" id="fTo" aria-label="도착지: ${toTxt || '선택'}"><span class="dot end"></span><span class="grow" style="text-align:left;${!toTxt ? 'color:var(--c-text-muted)' : ''}">${toTxt || '어디로 가세요?'}</span></button>
+          <button type="button" class="field${act('from')}" id="fFrom" aria-label="출발지: ${fromTxt || '선택'}" aria-current="${state.editing === 'from' ? 'true' : 'false'}"><span class="dot start"></span><span class="grow" style="text-align:left;${!fromTxt ? 'color:var(--c-text-muted)' : ''}">${fromTxt || '출발지 선택'}</span>${state.status === 'resolving' && !state.from && params.from ? html`<span class="spinner on"></span>` : ''}</button>
+          <button type="button" class="field${act('to')}" id="fTo" aria-label="도착지: ${toTxt || '선택'}" aria-current="${state.editing === 'to' ? 'true' : 'false'}"><span class="dot end"></span><span class="grow" style="text-align:left;${!toTxt ? 'color:var(--c-text-muted)' : ''}">${toTxt || '도착지 선택'}</span></button>
         </div>
         <button type="button" class="btn icon swap" id="btnSwap" aria-label="출발·도착 바꾸기">${icon('swap')}</button>
       </div>
@@ -95,7 +102,8 @@ function editor() {
   const other = which === 'from' ? (state.to ? 'to=' + refOf(state.to) : '') : (state.from ? 'from=' + refOf(state.from) : '');
   return html`
     ${state.error ? html`<div class="banner warning" role="alert">${state.error}</div>` : ''}
-    <div class="searchbar" style="margin:var(--s-2) 0"><input id="rq" type="search" placeholder="${which === 'from' ? '출발지' : '도착지'} 검색 (한글·中文·pinyin)" autocomplete="off" enterkeyhint="search" aria-label="${which === 'from' ? '출발지' : '도착지'} 검색"></div>
+    <h2 class="editor-title"><span class="dot ${which === 'from' ? 'start' : 'end'}"></span>${which === 'from' ? '어디서 출발하세요?' : '어디로 가세요?'}</h2>
+    <div class="searchbar editor-search"><input id="rq" type="search" placeholder="${which === 'from' ? '출발지' : '도착지'} 검색 (한글·中文·pinyin)" autocomplete="off" enterkeyhint="search" aria-label="${which === 'from' ? '출발지' : '도착지'} 검색"></div>
     <div class="list" id="rqList">
       <button type="button" class="row-place" data-pick="me"><span class="ico">${icon('locate')}</span><span class="main"><span class="name">내 위치</span><span class="sub">GPS 현재 위치</span></span></button>
       <a class="row-place" href="#/pick?for=${which}&${other}"><span class="ico">${icon('map')}</span><span class="main"><span class="name">지도에서 고르기</span><span class="sub">핀을 옮겨 선택</span></span></a>
@@ -120,16 +128,22 @@ function bind() {
     const dep = e.target.closest('[data-depart]'); if (dep) { promptSheet('출발 시각 (베이징 시각)', { value: state.depart === 'now' ? '' : state.depart, placeholder: '예 22:30 · 비우면 지금 출발', submitLabel: '적용', onSubmit: v => { const m = (v || '').trim().match(/^(\d{1,2}):(\d{2})$/); state.depart = m && +m[1] < 24 && +m[2] < 60 ? m[1].padStart(2, '0') + ':' + m[2] : 'now'; state.sel = null; setHash(); compute(); } }); return; }
     const card = e.target.closest('[data-sel]'); if (card) { state.sel = +card.dataset.sel; setHash(); render(); mapx.drawPlan(state.plans[state.sel], { fit: true }); return; }
     const exp = e.target.closest('[data-expand]'); if (exp) { const ul = $('#' + exp.dataset.expand); const open = ul.hidden; ul.hidden = !open; exp.setAttribute('aria-expanded', String(open)); return; }
+    if (e.target.closest('#btnCopyZh')) { copyText(`${state.to.name_zh}\n${state.to.addr || ''}`.trim()); return; }
     const drv = e.target.closest('[data-driver]'); if (drv) { driver.show({ zh: state.to.name_zh, addr: state.to.addr || '', ko: state.to.name }); return; }
   });
 }
 
 // ── 결과 목록 ──
+const hhmm = d => beijingHHMM(d).replace(/^(\d\d)(\d\d)$/, '$1:$2');
+const plus = (d, s) => new Date(d.getTime() + s * 1000);
+const dangerOf = p => (p.schedule?.warnings || []).find(w => w.level === 'danger');
+const offLabel = w => /첫차/.test(w.text) ? '첫차 전' : '막차 끊김';
+const shortReason = w => w.text.replace(/\s*택시를 권해요\.?$/, '');
 function results() {
   const modes = [['transit', 'metro', '지하철'], ['walk', 'walk', '도보'], ['taxi', 'car', '택시']];
   const head = html`
     <div class="segtabs" role="tablist" aria-label="이동 수단">${modes.map(([m, ic, lb]) => html`<button type="button" role="tab" data-mode="${m}" aria-selected="${state.mode === m}">${icon(ic, 'sm')} ${lb}</button>`)}</div>
-    ${state.mode === 'transit' ? html`<div class="chips" style="margin-top:var(--s-2)"><button type="button" class="chip" data-depart>${icon('clock', 'sm')} ${state.depart === 'now' ? '지금 출발' : state.depart + ' 출발'} <span class="caret"></span></button>${Object.entries(transit.STRATEGIES).map(([k, s]) => html`<button type="button" class="chip" data-strategy="${k}" aria-pressed="${state.strategy === k}">${state.strategy === k ? '✓ ' : ''}${s.label}</button>`)}</div>` : ''}`;
+    ${state.mode === 'transit' ? html`<div class="chips route-opts"><button type="button" class="chip depart" data-depart>${icon('clock', 'sm')} ${state.depart === 'now' ? '지금 출발' : state.depart + ' 출발'} <span class="caret"></span></button><span class="sep" aria-hidden="true"></span>${Object.entries(transit.STRATEGIES).map(([k, s]) => html`<button type="button" class="chip" data-strategy="${k}" aria-pressed="${state.strategy === k}">${s.label}</button>`)}</div>` : ''}`;
   if (state.status === 'resolving' || state.status === 'computing') return raw(head + html`<div style="margin-top:var(--s-3)"><div class="skeleton" aria-busy="true"></div><div class="skeleton"></div><p class="note" style="text-align:center">${state.status === 'resolving' ? '위치 찾는 중…' : '경로 계산 중…'}</p></div>`);
   if (!state.from || !state.to) return raw(head + html`<div class="empty"><h2>출발지와 도착지를 골라 주세요</h2><p>위의 칸을 눌러 선택할 수 있어요</p></div>`);
   const BJ = { lat: 39.9177, lon: 116.3970 }; // 자금성 (geo.js BEIJING_CENTER와 같음)
@@ -142,21 +156,30 @@ function results() {
     const d = distance(state.from, state.to);
     return raw(head + html`<div class="empty">${icon('metro')}<h2>지하철 경로가 없어요</h2><p>${d < 1500 ? `직선 ${fmtDist(d)}라 걸어가는 편이 빨라요.` : '근처(2.5km)에 역이 없거나 너무 멀어요. 택시를 확인해 보세요.'}</p><div class="inline" style="justify-content:center"><button type="button" class="btn sm" data-mode="walk">도보 보기</button><button type="button" class="btn sm" data-mode="taxi">택시 요금 보기</button></div></div>`);
   }
-  const best = Math.min(...state.plans.map(p => p.duration_s));
-  return raw(head + html`<div style="margin-top:var(--s-3)">${state.plans.map((p, i) => card(p, i, p.duration_s === best))}</div>
+  // 모든 지하철 경로가 운행 시간 밖이면 카드마다 경고를 반복하지 않고 맨 위에 한 번, 택시로 바로 넘어가는 버튼과 함께 알린다
+  let notice = '';
+  if (state.mode === 'transit' && state.plans.every(dangerOf)) {
+    const t = taxi.estimate(state.from, state.to, departAt(), D);
+    const night = /첫차/.test(dangerOf(state.plans[0]).text) ? '아직 첫차 전이에요' : '지하철 운행이 끝났어요';
+    notice = html`<div class="banner danger notice" role="alert">${icon('info', 'sm')}<div class="grow"><strong>${night}</strong><span>택시로 약 ${fmtMin(t.duration_s)}, ¥${t.fare_low}~${t.fare_high} 예상이에요.</span></div><button type="button" class="btn sm primary" data-mode="taxi">택시 보기</button></div>`;
+  }
+  const best = Math.min(...state.plans.filter(p => !dangerOf(p)).map(p => p.duration_s));
+  return raw(head + notice + html`<div class="route-list">${state.plans.map((p, i) => card(p, i, p.duration_s === best))}</div>
     ${state.mode === 'transit' ? html`<p class="note">시간은 역간 거리로 계산한 추정치예요(±10%). 막차는 종점 기준이라 중간역은 더 이를 수 있어요.</p>` : state.mode === 'taxi' ? html`<p class="note">베이징 택시 공시 요금(기본 ¥13/3km, ¥2.3/km, 야간 할증)으로 계산한 추정이에요. 정체·우회에 따라 달라져요.</p>` : html`<p class="note">${state.plans[0].note || ''}</p>`}`);
 }
 function card(p, i, best) {
   const sched = p.schedule || { ok: true, warnings: [] };
-  const danger = sched.warnings.find(w => w.level === 'danger'), warn = sched.warnings.find(w => w.level === 'warning');
-  if (p.mode === 'walk') return html`<button type="button" class="route-card" data-sel="${i}"><div class="head"><span class="time">약 ${fmtMin(p.duration_s)}</span><span class="walk">${fmtDist(p.distance_m)} · 약 ${p.kcal}kcal</span></div><div class="summary">${p.steps[0]?.instruction || ''}</div></button>`;
-  if (p.mode === 'taxi') return html`<button type="button" class="route-card" data-sel="${i}"><div class="head"><span class="fare">¥${p.fare_low}~${p.fare_high}</span><span class="walk">약 ${fmtMin(p.duration_s)} · ${fmtDist(p.distance_m)}${p.night ? ' · 야간 할증' : ''}</span></div><div class="summary">기사에게 보여줄 중국어 카드와 고덕·DiDi 딥링크는 상세에서</div></button>`;
+  const danger = dangerOf(p), warn = sched.warnings.find(w => w.level === 'warning');
+  const eta = html`<span class="eta">${hhmm(plus(departAt(), p.duration_s))} 도착</span>`;
+  if (p.mode === 'walk') return html`<button type="button" class="route-card" data-sel="${i}"><div class="head"><span class="time"><small>약</small> ${fmtMin(p.duration_s)}</span>${eta}</div><div class="meta"><span>${fmtDist(p.distance_m)}</span><span>약 ${p.kcal}kcal</span></div><div class="summary">${p.steps[0]?.instruction || ''}</div></button>`;
+  if (p.mode === 'taxi') return html`<button type="button" class="route-card" data-sel="${i}"><div class="head"><span class="time">¥${p.fare_low}~${p.fare_high}</span>${eta}</div><div class="meta"><span>약 ${fmtMin(p.duration_s)}</span><span>${fmtDist(p.distance_m)}</span>${p.night ? html`<span>야간 할증</span>` : ''}</div><div class="summary go">기사에게 보여줄 중국어 카드 보기 ${icon('chevron', 'sm')}</div></button>`;
   const firstRide = p.segments.find(s => s.kind === 'ride'); const fromSt = D.stationById[p.from_station], toSt = D.stationById[p.to_station];
   return html`<button type="button" class="route-card ${danger ? 'unavailable' : ''} ${state.sel === i ? 'selected' : ''}" data-sel="${i}">
-    <div class="head"><span class="time">약 ${fmtMin(p.duration_s)}</span><span class="walk">걷기 ${fmtDist(p.walking_distance_m)}</span>${best && !danger ? html`<span class="best">가장 빠름</span>` : ''}</div>
-    <div style="margin-top:8px">${lineChain(p)}</div>
-    <div class="summary">${p.stops}역 · ¥${p.fare_yuan} · ${p.transfers ? `환승 ${p.transfers}회 · ` : ''}${fromSt?.ko}역 승차 → ${toSt?.ko}역 하차</div>
-    ${danger ? html`<div class="banner danger" style="margin-top:8px">${danger.text}</div>` : warn ? html`<div class="banner warning" style="margin-top:8px">${warn.text}</div>` : firstRide ? html`<div class="next"><span>${D.lineById[firstRide.line].ko} ${firstRide.direction || ''}</span>${crowdHint(firstRide.line, departAt())}<span class="min">약 ${D.lineById[firstRide.line].headway_min}분 간격</span></div>` : ''}
+    <div class="head"><span class="time"><small>약</small> ${fmtMin(p.duration_s)}</span>${danger ? html`<span class="off">${offLabel(danger)}</span>` : best ? html`<span class="best">가장 빠름</span>` : ''}${eta}</div>
+    <div class="chain">${lineChain(p)}</div>
+    <div class="meta"><span class="price">¥${p.fare_yuan}</span><span>${p.transfers ? `환승 ${p.transfers}회` : '환승 없음'}</span><span>걷기 ${fmtDist(p.walking_distance_m)}</span><span>${p.stops}역</span></div>
+    <div class="summary">${fromSt?.ko}역 승차 → ${toSt?.ko}역 하차</div>
+    ${danger ? html`<div class="reason">${shortReason(danger)}</div>` : warn ? html`<div class="banner warning" style="margin-top:8px">${warn.text}</div>` : firstRide ? html`<div class="next"><span>${D.lineById[firstRide.line].ko} ${firstRide.direction || ''}</span>${crowdHint(firstRide.line, departAt())}<span class="min">약 ${D.lineById[firstRide.line].headway_min}분 간격</span></div>` : ''}
   </button>`;
 }
 
@@ -164,22 +187,29 @@ function card(p, i, best) {
 function detail(p) {
   const links = amapRoute(state.to, state.mode === 'taxi' ? 'car' : state.mode === 'walk' ? 'walk' : 'bus', state.from);
   const sched = p.schedule || { warnings: [] };
+  const dep = departAt(), arr = plus(dep, p.duration_s);
+  const span = html`<div class="span-time"><span>${hhmm(dep)} 출발</span><span class="arrow" aria-hidden="true"></span><span>${hhmm(arr)} 도착</span></div>`;
   let body;
-  if (p.mode === 'walk') body = html`<ol class="timeline"><li class="origin"><span class="dot"></span><div class="title">${state.from.name}</div></li>${p.steps.map(s => html`<li class="walk"><span class="dot"></span><div class="title">${s.instruction}</div><div class="sub">약 ${fmtMin(s.duration_s)}</div></li>`)}<li class="destination"><span class="dot"></span><div class="title">${state.to.name}</div><div class="sub zh">${state.to.name_zh}</div></li></ol>`;
-  else if (p.mode === 'taxi') body = html`<div class="card"><div class="t-xl">¥${p.fare_low}~${p.fare_high}</div><div class="muted t-sm">약 ${fmtMin(p.duration_s)} · 약 ${fmtDist(p.distance_m)}${p.night ? ' · 야간 할증 포함' : ''}</div></div>
-    <ol class="timeline" style="margin-top:var(--s-3)"><li class="origin"><span class="dot"></span><div class="title">${state.from.name}</div></li><li class="ride" style="--line:var(--c-accent)"><span class="dot"></span><div class="title">택시 · 기사에게 아래 카드를 보여주세요</div><div class="sub">미터기(打表)로 가는지 확인. 영수증(发票)은 내릴 때 요청.</div></li><li class="destination"><span class="dot"></span><div class="title">${state.to.name}</div><div class="sub zh">${state.to.name_zh}${state.to.addr ? ' · ' + state.to.addr : ''}</div></li></ol>`;
-  else body = html`<div class="card"><div class="inline"><span class="t-xl">약 ${fmtMin(p.duration_s)}</span><span class="muted t-sm">걷기 ${fmtDist(p.walking_distance_m)} · ¥${p.fare_yuan} · ${p.stops}역</span></div><div style="margin-top:8px">${lineChain(p)}</div></div>
-    ${sched.warnings.map(w => html`<div class="banner ${w.level}" role="alert" style="margin-top:var(--s-2)">${w.text}</div>`)}
-    <ol class="timeline" style="margin-top:var(--s-3)">
-      <li class="origin"><span class="dot"></span><div class="title">${state.from.name}</div></li>
-      ${p.segments.map((s, i) => segmentItem(s, i, p))}
-      <li class="destination"><span class="dot"></span><div class="title">${state.to.name}</div><div class="sub zh">${state.to.name_zh}</div></li>
+  if (p.mode === 'walk') body = html`<div class="card summary-card"><div class="t-xl"><small>약</small> ${fmtMin(p.duration_s)}</div>${span}<div class="meta"><span>${fmtDist(p.distance_m)}</span><span>약 ${p.kcal}kcal</span></div></div>
+    <ol class="timeline" style="margin-top:var(--s-4)"><li class="origin"><span class="dot"></span><div class="title">${state.from.name}</div></li>${p.steps.map(s => html`<li class="walk"><span class="dot"></span><div class="title">${s.instruction}</div><div class="sub">약 ${fmtMin(s.duration_s)}</div></li>`)}<li class="destination"><span class="dot"></span><div class="title">${state.to.name}</div><div class="sub zh">${state.to.name_zh}</div></li></ol>`;
+  else if (p.mode === 'taxi') body = html`<div class="card summary-card"><div class="t-xl">¥${p.fare_low}~${p.fare_high}</div>${span}<div class="meta"><span>약 ${fmtMin(p.duration_s)}</span><span>약 ${fmtDist(p.distance_m)}</span>${p.night ? html`<span>야간 할증 포함</span>` : ''}</div></div>
+    <ol class="timeline" style="margin-top:var(--s-4)"><li class="origin"><span class="dot"></span><div class="title">${state.from.name}</div></li><li class="ride" style="--line:var(--c-accent)"><span class="dot"></span><div class="title">택시 · 기사에게 아래 카드를 보여주세요</div><div class="sub">미터기(打表)로 가는지 확인. 영수증(发票)은 내릴 때 요청.</div></li><li class="destination"><span class="dot"></span><div class="title">${state.to.name}</div><div class="sub zh">${state.to.name_zh}${state.to.addr ? ' · ' + state.to.addr : ''}</div></li></ol>`;
+  else {
+    const ws = sched.warnings; const lvl = ws.some(w => w.level === 'danger') ? 'danger' : 'warning';
+    let t = dep;     const items = p.segments.map((s, i) => { const h = segmentItem(s, i, p, t); t = plus(t, s.kind === 'transfer' ? s.walk_s || 0 : s.duration_s || 0); return h; });
+    body = html`<div class="card summary-card"><div class="t-xl"><small>약</small> ${fmtMin(p.duration_s)}</div>${span}<div class="meta"><span class="price">¥${p.fare_yuan}</span><span>${p.transfers ? `환승 ${p.transfers}회` : '환승 없음'}</span><span>걷기 ${fmtDist(p.walking_distance_m)}</span><span>${p.stops}역</span></div><div class="chain">${lineChain(p)}</div></div>
+    ${ws.length ? html`<div class="banner ${lvl}" role="alert" style="margin-top:var(--s-3)">${icon('info', 'sm')}<div class="grow">${ws.map(w => html`<div>${w.text}</div>`)}${lvl === 'danger' ? html`<button type="button" class="link" data-mode="taxi">택시 요금 보기</button>` : ''}</div></div>` : ''}
+    <ol class="timeline" style="margin-top:var(--s-4)">
+      <li class="origin"><span class="dot"></span><div class="title"><span class="at">${hhmm(dep)}</span>${state.from.name}</div></li>
+      ${items}
+      <li class="destination"><span class="dot"></span><div class="title"><span class="at">${hhmm(arr)}</span>${state.to.name}</div><div class="sub zh">${state.to.name_zh}</div></li>
     </ol>`;
+  }
   return raw(body + html`
-    <div class="actions">
+    <div class="actions sticky">
       ${p.mode === 'taxi' ? html`<button type="button" class="btn primary wide lg" data-driver>${icon('car')} 기사에게 보여주기</button>` : html`<a class="btn primary wide lg" href="#/walk?to=${refOf(state.to)}${p.mode === 'transit' ? '&via=' + p.from_station : ''}">${icon('nav')} ${p.mode === 'transit' ? '첫 역까지 도보 안내' : '도보 안내 시작'}</a>`}
-      <a class="btn" href="${links.web}" target="_blank" rel="noopener">고덕 앱으로 열기</a>
-      <button type="button" class="btn ghost" data-driver>${icon('car')} 중국어 카드</button>
+      <a class="btn ghost" href="${links.web}" target="_blank" rel="noopener">고덕 앱으로 열기</a>
+      ${p.mode === 'taxi' ? html`<button type="button" class="btn ghost" id="btnCopyZh">${icon('copy', 'sm')} 중국어 복사</button>` : html`<button type="button" class="btn ghost" data-driver>${icon('car', 'sm')} 중국어 카드</button>`}
     </div>`);
 }
 function exitHint(p, s, to) {
@@ -190,17 +220,19 @@ function exitHint(p, s, to) {
   if (all.length) return html`<div class="sub">출구 ${all.length}개: ${all.map(e => `${e.code}${e.dir_ko ? '(' + e.dir_ko.replace('쪽', '') + ')' : ''}`).join(' · ')} <a href="#/station/${to.id}">자세히</a></div>`;
   return '';
 }
-function segmentItem(s, i, p) {
+function segmentItem(s, i, p, t) {
+  const at = d => html`<span class="at">${hhmm(d)}</span>`;
   if (s.kind === 'walk') { const st = D.stationById[s.to_station || s.from_station]; if (s.distance_m < 30) return ''; return html`<li class="walk"><span class="dot"></span><div class="title">도보 ${fmtDist(s.distance_m)} · 약 ${fmtMin(s.duration_s)}</div><div class="sub">${s.to_station ? `${st?.ko}역까지` : `${st?.ko}역에서 목적지까지`}</div></li>`; }
-  if (s.kind === 'transfer') { const st = D.stationById[s.station]; return html`<li class="walk"><span class="dot"></span><div class="title">${st?.ko}역에서 ${D.lineById[s.to_line]?.ko}으로 환승</div><div class="sub">갈아타기 약 ${Math.round(s.walk_s / 60)}분 + 대기</div></li>`; }
+  if (s.kind === 'transfer') { const st = D.stationById[s.station]; return html`<li class="walk transfer"><span class="dot"></span><div class="title">${st?.ko}역에서 ${lineChip(s.to_line, { badge: true })} 환승</div><div class="sub">갈아타기 약 ${Math.round(s.walk_s / 60)}분 + 대기</div></li>`; }
   if (s.kind === 'ride') {
     const line = D.lineById[s.line]; const from = D.stationById[s.from_station], to = D.stationById[s.to_station];
     return html`<li class="ride" style="--line:${line.color}"><span class="dot"></span>
-      <div class="title">${from.ko} <span class="zh muted t-sm">${from.zh}</span> ${lineChip(s.line, { badge: true })} ${s.direction || ''}</div>
-      <div class="sub">약 ${line.headway_min}분 간격 ${crowdHint(s.line, departAt())}</div>
+      <div class="title">${at(t)}${from.ko}역 <span class="zh muted t-sm">${from.zh}</span> 승차</div>
+      <div class="board">${lineChip(s.line, { badge: true })} <span>${s.direction || ''}</span></div>
+      <div class="sub">약 ${line.headway_min}분 간격 · ${crowdHint(s.line, departAt())}</div>
       <button type="button" class="expand" data-expand="via${i}" aria-expanded="false" aria-controls="via${i}">${s.stops}역 · 약 ${fmtMin(s.duration_s)} ${icon('down', 'sm')}</button>
       <ol class="vias" id="via${i}" hidden>${s.via.map(id => html`<li>${D.stationById[id]?.ko} <span class="zh">${D.stationById[id]?.zh}</span></li>`)}</ol>
-      <div class="title" style="margin-top:8px">${to.ko} <span class="zh muted t-sm">${to.zh}</span> 하차${to.transfer ? ' · 환승역' : ''}</div>${exitHint(p, s, to)}</li>`;
+      <div class="title alight">${at(plus(t, s.duration_s))}${to.ko}역 <span class="zh muted t-sm">${to.zh}</span> 하차${to.transfer ? html` <span class="muted t-sm">· 환승역</span>` : ''}</div>${exitHint(p, s, to)}</li>`;
   }
   return '';
 }

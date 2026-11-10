@@ -12,8 +12,11 @@ test.describe('F01 장소 검색 → 상세 → 길찾기', () => {
     await expect(page).toHaveURL(/#\/place\/gugong/);
     await expect(page.getByRole('dialog', { name: '상세' }).getByRole('heading', { name: /자금성/ })).toBeVisible();
     await a11y(page, 'S04');
-    await page.getByRole('link', { name: /여기로 길찾기/ }).click();
+    await page.getByRole('link', { name: /여기로 도착/ }).click();
     await expect(page).toHaveURL(/#\/route\?to=place:gugong/);
+    // 출발지를 자동으로 채우지 않으므로 먼저 묻는다 → 내 위치 선택
+    await expect(page.getByRole('heading', { name: '어디서 출발하세요?' })).toBeVisible();
+    await page.locator('[data-pick="me"]').click();
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
   });
   test('F01-H2 중국어·병음으로도 같은 결과', async ({ page }) => {

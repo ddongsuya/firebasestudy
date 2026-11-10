@@ -14,7 +14,8 @@ test.describe('점검 수정', () => {
     expect(calls).toBe(1);
   });
   test('출발 시각은 주소에 남고, 다른 길찾기로 가면 "지금 출발"로 돌아간다', async ({ page }) => {
-    await boot(page, '#/route?to=place:gugong');
+    // 출발지는 자동으로 채우지 않으므로 내 위치를 명시(두 번째 길찾기는 도착지만 바꿔도 출발지가 남는다)
+    await boot(page, '#/route?from=me&to=place:gugong');
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
     await page.locator('[data-depart]').click();
     await page.locator('#psInput').fill('23:30'); await page.locator('#psOk').click();

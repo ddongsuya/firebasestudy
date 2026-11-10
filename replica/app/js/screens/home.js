@@ -28,8 +28,8 @@ export function renderShortcuts() {
   const favRef = f => f.place_id ? `place:${f.place_id}` : f.station_id ? `station:${f.station_id}` : `pt:${f.lat},${f.lon},${encodeURIComponent(f.custom_name || '')}`;
   $('#homeShortcuts').innerHTML = [
     html`<a class="chip" href="#/trip">📅 일정</a>`,
-    hotel ? html`<a class="chip" href="#/route?to=${favRef(hotel)}">${icon('hotel', 'sm')} 호텔로</a>` : html`<a class="chip" href="#/fav?set=hotel">${icon('hotel', 'sm')} 호텔 설정</a>`,
-    airport ? html`<a class="chip" href="#/route?to=${favRef(airport)}">${icon('plane', 'sm')} 공항으로</a>` : '',
+    hotel ? html`<a class="chip" href="#/route?from=me&to=${favRef(hotel)}">${icon('hotel', 'sm')} 호텔로</a>` : html`<a class="chip" href="#/fav?set=hotel">${icon('hotel', 'sm')} 호텔 설정</a>`,
+    airport ? html`<a class="chip" href="#/route?from=me&to=${favRef(airport)}">${icon('plane', 'sm')} 공항으로</a>` : '',
   ].join('');
 }
 export function refreshMarkers(selectedId = null) {

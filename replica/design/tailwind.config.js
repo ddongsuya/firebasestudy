@@ -46,38 +46,38 @@ module.exports = {
             }
       ],
       "md": [
-            "17px",
+            "16px",
             {
-                  "lineHeight": "24px",
+                  "lineHeight": "22px",
                   "fontWeight": "600"
             }
       ],
       "lg": [
-            "20px",
+            "18px",
             {
-                  "lineHeight": "26px",
+                  "lineHeight": "24px",
                   "fontWeight": "700"
             }
       ],
       "xl": [
-            "26px",
+            "22px",
             {
-                  "lineHeight": "32px",
-                  "fontWeight": "800"
+                  "lineHeight": "28px",
+                  "fontWeight": "700"
             }
       ],
       "display": [
-            "34px",
+            "28px",
             {
-                  "lineHeight": "40px",
-                  "fontWeight": "800"
+                  "lineHeight": "34px",
+                  "fontWeight": "700"
             }
       ],
       "driver-zh": [
             "64px",
             {
                   "lineHeight": "72px",
-                  "fontWeight": "900"
+                  "fontWeight": "800"
             }
       ],
       "driver-addr": [

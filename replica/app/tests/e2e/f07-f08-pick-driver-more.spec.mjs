@@ -4,8 +4,11 @@ test.describe('F07 지도 선택 · F08 중국어 보여주기 · 더보기', ()
   test('F07-H1 지도에서 지점 골라 길찾기', async ({ page }) => {
     await boot(page, '#/pick?for=view&lat=39.9177&lon=116.3970');
     await expect(page.getByRole('heading', { name: /자금성|근처/ })).toBeVisible();
-    await page.getByRole('link', { name: '여기로 길찾기' }).click();
+    await page.getByRole('link', { name: '여기로 도착' }).click();
     await expect(page).toHaveURL(/#\/route\?to=pt:/);
+    // 출발지를 자동으로 채우지 않으므로 먼저 묻는다 → 내 위치 선택
+    await expect(page.getByRole('heading', { name: '어디서 출발하세요?' })).toBeVisible();
+    await page.locator('[data-pick="me"]').click();
     await expect(page.locator('.route-card').first()).toBeVisible({ timeout: 10000 });
   });
   test('F07-E1 지점 저장', async ({ page }) => {

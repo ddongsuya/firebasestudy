@@ -39,11 +39,11 @@ body.searching .results { max-height: none; flex: 1; }
 .panel-body > .section:first-child { margin-top: 0; }
 .cat-rail { display: flex; gap: var(--s-2); overflow-x: auto; scrollbar-width: none; padding: var(--s-2) 0; }
 .cat-rail::-webkit-scrollbar { display: none; }
-.big-zh { font-size: var(--t-xl-size); font-weight: 800; line-height: var(--t-xl-line); }
+.big-zh { font-size: var(--t-xl-size); font-weight: 700; line-height: var(--t-xl-line); }
 .exit-chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: var(--r-sm); background: var(--c-surface-2); font-size: var(--t-sm-size); font-weight: 600; }
 .walk-nav { position: absolute; left: var(--l-gutter); right: var(--l-gutter); top: calc(var(--l-gutter) + var(--safe-t)); z-index: 660; }
 .walk-nav .card { display: flex; gap: var(--s-3); align-items: center; }
-.walk-nav .big { font-size: var(--t-display-size); line-height: var(--t-display-line); font-weight: 800; }
+.walk-nav .big { font-size: var(--t-display-size); line-height: var(--t-display-line); font-weight: 700; }
 .walk-bottom { position: absolute; left: 0; right: 0; bottom: 0; z-index: 660; background: var(--c-surface); border-radius: var(--r-sheet) var(--r-sheet) 0 0; box-shadow: var(--sh-sheet); padding: var(--s-3) var(--s-4) calc(var(--s-4) + var(--safe-b)); display: flex; align-items: center; gap: var(--s-3); }
 .pick-pin { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -100%); z-index: 610; pointer-events: none; color: var(--c-end); }
 .pick-pin .ic { width: 40px; height: 40px; filter: drop-shadow(0 2px 4px rgba(0,0,0,.3)); }
@@ -55,7 +55,7 @@ body.navigating .topbar, body.navigating #tabbar, body.navigating .fabs { displa
 .strategy-row { display: flex; gap: var(--s-2); align-items: center; }
 .kv.tight { padding: 4px 0; border: 0; }
 .phrase { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); padding: var(--s-3) var(--s-4); border-bottom: 1px solid var(--c-border); }
-.phrase .zh { font-size: var(--t-lg-size); font-weight: 800; }
+.phrase .zh { font-size: var(--t-lg-size); font-weight: 700; }
 .phrase .py { color: var(--c-text-muted); font-size: var(--t-xs-size); font-weight: 400; }
 .phrase .ko { font-size: var(--t-sm-size); }
 textarea.io { width: 100%; min-height: 120px; font: inherit; font-size: var(--t-sm-size); padding: var(--s-2); border: 1px solid var(--c-border-input); border-radius: var(--r-md); background: var(--c-surface); color: var(--c-text); }

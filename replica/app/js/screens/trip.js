@@ -44,7 +44,7 @@ function renderPlan() {
   let nextIdx = -1;
   if (isToday) nextIdx = day.stops.findIndex(s => /^\d\d:\d\d$/.test(s.t) && s.t >= hm);
   return html`
-    <div class="chips" style="padding:var(--s-2) var(--s-3)">${trip.days.map(d => html`<button type="button" class="chip" data-day="${d.id}" aria-pressed="${d.id === day.id}">${d.label}${d.date === todayBj() ? ' · 오늘' : ''}</button>`)}</div>
+    <div class="chips days" style="padding:var(--s-2) var(--s-3)">${trip.days.map(d => { const m = /^(\S+)\s*\((.)\)$/.exec(d.label); const today = d.date === todayBj(); return html`<button type="button" class="chip" data-day="${d.id}" aria-pressed="${d.id === day.id}" aria-label="${d.label}${today ? ' 오늘' : ''}">${m ? m[1] : d.label}<small>${today ? '오늘' : m ? m[2] : ''}</small></button>`; })}</div>
     <div class="section" style="padding:0 var(--s-4)">${day.sub}</div>
     <ol class="timeline trip" style="padding:var(--s-2) var(--s-4) var(--s-6)">
       ${day.stops.map((s, i) => {
@@ -72,12 +72,12 @@ function renderPlan() {
         </li>`;
       })}
     </ol>
-    <div style="padding:0 var(--s-4) var(--s-6)"><button type="button" class="btn wide" id="btnDayZh">${icon('car')} 오늘 갈 곳 전부 중국어로</button><p class="note">${trip.note}</p></div>`;
+    <div style="padding:0 var(--s-4) var(--s-6)">${day.stops.some(s => s.place) ? html`<button type="button" class="btn wide" id="btnDayZh">${icon('car')} ${isToday ? '오늘' : '이 날'} 갈 곳 전부 중국어로</button>` : ''}<p class="note">${trip.note}</p></div>`;
 }
 
 // ── 준비물 ──
 function renderPack() {
-  return html`<div class="panel-body-inner" style="padding:var(--s-2) var(--s-3) var(--s-6)">
+  return html`<div class="panel-body-inner trip-pack" style="padding:var(--s-2) var(--s-3) var(--s-6)">
     <p class="note">체크한 항목은 이 폰에만 저장돼요. 사람별 항목은 이름 칩을 눌러 바꿔요.</p>
     ${trip.checklist.map(g => {
       const people = g.people || [null];
@@ -95,10 +95,10 @@ function renderPack() {
 // ── 보관함 ──
 function renderVault() {
   const v = store.vault();
-  return html`<div style="padding:var(--s-2) var(--s-3) var(--s-6)" class="stack">
+  return html`<div style="padding:var(--s-2) var(--s-3) var(--s-6)" class="stack trip-vault">
     <div class="banner"><span>🔐 예약번호·항공권번호·여권 이름·입장권 QR은 인터넷에 올라가지 않고 <b>이 폰에만</b> 저장돼요. 다른 폰에 옮기려면 더보기 → 내 데이터로 복사하세요.</span></div>
     ${v.notes.length ? '' : html`<button type="button" class="btn primary wide" id="btnVaultTemplate">${icon('edit')} 예약 메모 틀 만들기 (항공·호텔·천단·유니버설·보험)</button>`}
-    ${v.notes.map(n => html`<div class="card vault-note" data-note="${n.id}"><div class="t-md" style="display:flex;justify-content:space-between;align-items:center"><b>${n.title}</b><span class="inline"><button type="button" class="btn icon sm" data-note-big="${n.id}" aria-label="크게 보기">${icon('speech', 'sm')}</button><button type="button" class="btn icon sm" data-note-edit="${n.id}" aria-label="고치기">${icon('edit', 'sm')}</button><button type="button" class="btn icon sm" data-note-del="${n.id}" aria-label="삭제">${icon('trash', 'sm')}</button></span></div><pre class="vault-body">${n.body}</pre></div>`)}
+    ${v.notes.map(n => html`<div class="card vault-note" data-note="${n.id}"><div class="t-md vault-note-head"><b>${n.title}</b><span class="inline"><button type="button" class="btn icon sm" data-note-big="${n.id}" aria-label="크게 보기">${icon('speech', 'sm')}</button><button type="button" class="btn icon sm" data-note-edit="${n.id}" aria-label="고치기">${icon('edit', 'sm')}</button><button type="button" class="btn icon sm" data-note-del="${n.id}" aria-label="삭제">${icon('trash', 'sm')}</button></span></div><pre class="vault-body">${n.body}</pre></div>`)}
     <div class="inline"><button type="button" class="btn sm" id="btnNoteAdd">${icon('plus', 'sm')} 메모 추가</button></div>
     <div class="section">입장권·예약 화면 캡처</div>
     <div class="vault-grid">${v.images.map(im => html`<button type="button" class="vault-thumb" data-img="${im.id}"><img src="${im.data}" alt="${im.title}"><span>${im.title}</span></button>`)}

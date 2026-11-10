@@ -80,7 +80,7 @@ export { fmtDist, fmtMin };
 
 // ── 시트 ──
 export function openSheet(contentHtml, { onClose } = {}) {
-  const sheet = $('#sheet'); $('#sheetBody').innerHTML = contentHtml;
+  const sheet = $('#sheet'); $('#sheetBody').innerHTML = contentHtml; $('#sheetBody').onclick = null; // 이전 시트의 클릭 처리기가 남지 않게
   sheet.classList.add('open'); sheet.dataset.open = '1'; sheet._onClose = onClose;
   $('#sheetBody').scrollTop = 0;
   const h = $('h2', sheet); if (h) { h.tabIndex = -1; h.focus({ preventScroll: true }); }

@@ -87,7 +87,7 @@ function assemble(r, D, o, d, fromSt, toSt, walkIn, walkOut) {
   let cur = null;
   for (const st of r.steps) {
     if (st.kind === 'ride') {
-      if (!cur || cur.line !== st.line) { cur = { kind: 'ride', line: st.line, from_station: st.from.split('|')[0], to_station: st.toStation, stops: 0, distance_m: 0, duration_s: 0, start_offset_s: Math.round(t), via: [] }; segments.push(cur); lines.add(st.line); t += D.lineById[st.line].headway_min * 30; }
+      if (!cur || cur.line !== st.line) { cur = { kind: 'ride', line: st.line, from_station: st.from.split('|')[0], to_station: st.toStation, stops: 0, distance_m: 0, duration_s: 0, start_offset_s: Math.round(t), via: [] }; const first = !lines.size; segments.push(cur); lines.add(st.line); if (first) t += D.lineById[st.line].headway_min * 30; } // 환승 뒤 대기는 환승 비용에 이미 들어 있음
       cur.stops++; cur.distance_m += st.dist; cur.duration_s += st.s; cur.to_station = st.toStation; cur.via.push(st.toStation); t += st.s; rideDist += st.dist;
     } else if (st.kind === 'transfer') {
       segments.push({ kind: 'transfer', station: st.toStation, to_line: st.line, walk_s: st.walk_s, duration_s: Math.round(st.s), start_offset_s: Math.round(t) });

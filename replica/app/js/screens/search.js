@@ -61,10 +61,11 @@ export function showResults(params) {
     ${items.length ? html`<div class="list" style="margin-top:var(--s-2)">${items.map(it => row(it, { dist: it.distance_m }))}</div>` : html`<div class="empty">${icon('search')}<h2>'${q}'을(를) 못 찾았어요</h2><p>한글·중국어·병음으로 다시 검색해 보세요</p></div>`}
   `, { onClose: () => { inp.value = ''; $('#btnClear').classList.add('hidden'); } });
   $('#btnCloseSheet').onclick = () => app.go('#/');
-  $('#sheetBody').addEventListener('click', e => {
+  // onclick 대입: 정렬을 누를 때마다 다시 그려도 처리기가 쌓이지 않는다
+  $('#sheetBody').onclick = e => {
     const s = e.target.closest('[data-sort]'); if (s) { rstate.sort = s.dataset.sort; showResults(params); return; }
     const go = e.target.closest('[data-go]'); if (go) app.go(go.dataset.go);
-  });
+  };
 }
 export function row({ kind, ref }, { dist = null } = {}) {
   const d = dist ?? (app.me ? distance(app.me, ref) : null);

@@ -1,5 +1,5 @@
 /* 고덕 KO v2 — 오프라인 캐시: 앱 셸 + 데이터(캐시 우선, 백그라운드 갱신), 타일(네트워크 우선, 실패 시 캐시) */
-const VERSION = 'goduk-v2.3';
+const VERSION = 'goduk-v2.4';
 const TILE_CACHE = 'goduk-tiles-v2';
 const TILE_LIMIT = 5000; // 약 60~80MB. "이 지역 미리 저장"과 함께 씀
 const SHELL = [
